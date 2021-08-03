@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Aji Arya</title>
-    <link>https://blog.ajiarya.id/</link>
-    <description>Recent content on Aji Arya</description>
+    <title>containerd on Aji Arya</title>
+    <link>https://blog.ajiarya.id/tags/containerd/</link>
+    <description>Recent content in containerd on Aji Arya</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 03 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.ajiarya.id/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 03 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.ajiarya.id/tags/containerd/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Memasang Kata Container dengan Containerd Pada Ubuntu 20.04</title>
       <link>https://blog.ajiarya.id/posts/kata/install-kata/</link>
@@ -14,7 +14,6 @@
       <guid>https://blog.ajiarya.id/posts/kata/install-kata/</guid>
       <description>Cara mudah memasang Kata Container dengan Containerd pada Sistem Operasi Ubuntu 20.04</description>
     </item>
-    
     
   </channel>
 </rss>

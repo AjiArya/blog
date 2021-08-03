@@ -3,11 +3,35 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://blog.ajiarya.id/</loc>
+    <lastmod>2021-08-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.ajiarya.id/categories/</loc>
+    <lastmod>2021-08-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.ajiarya.id/search/</loc>
+    <loc>https://blog.ajiarya.id/tags/container/</loc>
+    <lastmod>2021-08-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.ajiarya.id/tags/containerd/</loc>
+    <lastmod>2021-08-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.ajiarya.id/tags/kata/</loc>
+    <lastmod>2021-08-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.ajiarya.id/categories/kata/</loc>
+    <lastmod>2021-08-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.ajiarya.id/posts/kata/install-kata/</loc>
+    <lastmod>2021-08-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.ajiarya.id/tags/openinfra/</loc>
+    <lastmod>2021-08-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.ajiarya.id/posts/</loc>
+    <lastmod>2021-08-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.ajiarya.id/tags/</loc>
+    <lastmod>2021-08-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.ajiarya.id/search/</loc>
   </url>
 </urlset>

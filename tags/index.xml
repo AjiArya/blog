@@ -4,6 +4,43 @@
     <title>Tags on Aji Arya</title>
     <link>https://blog.ajiarya.id/tags/</link>
     <description>Recent content in Tags on Aji Arya</description>
-    <generator>Hugo -- gohugo.io</generator><atom:link href="https://blog.ajiarya.id/tags/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 03 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.ajiarya.id/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>container</title>
+      <link>https://blog.ajiarya.id/tags/container/</link>
+      <pubDate>Tue, 03 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.ajiarya.id/tags/container/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>containerd</title>
+      <link>https://blog.ajiarya.id/tags/containerd/</link>
+      <pubDate>Tue, 03 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.ajiarya.id/tags/containerd/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>kata</title>
+      <link>https://blog.ajiarya.id/tags/kata/</link>
+      <pubDate>Tue, 03 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.ajiarya.id/tags/kata/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>OpenInfra</title>
+      <link>https://blog.ajiarya.id/tags/openinfra/</link>
+      <pubDate>Tue, 03 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.ajiarya.id/tags/openinfra/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>
