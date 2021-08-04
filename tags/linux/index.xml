@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>linux on Aji Arya</title>
+    <link>https://blog.ajiarya.id/tags/linux/</link>
+    <description>Recent content in linux on Aji Arya</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 04 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.ajiarya.id/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cara Melakukan Perulangan Pada Bash</title>
+      <link>https://blog.ajiarya.id/posts/bash/cara-looping-pada-bash/</link>
+      <pubDate>Wed, 04 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.ajiarya.id/posts/bash/cara-looping-pada-bash/</guid>
+      <description>Cara mudah melakukan perulangan pada _bash script_</description>
+    </item>
+    
+  </channel>
+</rss>
