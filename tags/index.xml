@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Wed, 04 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.ajiarya.id/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>bash</title>
+      <title>Bash</title>
       <link>https://blog.ajiarya.id/tags/bash/</link>
       <pubDate>Wed, 04 Aug 2021 00:00:00 +0000</pubDate>
       
@@ -16,7 +16,7 @@
     </item>
     
     <item>
-      <title>canonical</title>
+      <title>Canonical</title>
       <link>https://blog.ajiarya.id/tags/canonical/</link>
       <pubDate>Wed, 04 Aug 2021 00:00:00 +0000</pubDate>
       
@@ -25,7 +25,7 @@
     </item>
     
     <item>
-      <title>juju</title>
+      <title>Juju</title>
       <link>https://blog.ajiarya.id/tags/juju/</link>
       <pubDate>Wed, 04 Aug 2021 00:00:00 +0000</pubDate>
       
@@ -34,7 +34,7 @@
     </item>
     
     <item>
-      <title>linux</title>
+      <title>Linux</title>
       <link>https://blog.ajiarya.id/tags/linux/</link>
       <pubDate>Wed, 04 Aug 2021 00:00:00 +0000</pubDate>
       
@@ -43,7 +43,7 @@
     </item>
     
     <item>
-      <title>ubuntu</title>
+      <title>Ubuntu</title>
       <link>https://blog.ajiarya.id/tags/ubuntu/</link>
       <pubDate>Wed, 04 Aug 2021 00:00:00 +0000</pubDate>
       
@@ -52,7 +52,16 @@
     </item>
     
     <item>
-      <title>container</title>
+      <title>Virtualisasi</title>
+      <link>https://blog.ajiarya.id/tags/virtualisasi/</link>
+      <pubDate>Wed, 04 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.ajiarya.id/tags/virtualisasi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Container</title>
       <link>https://blog.ajiarya.id/tags/container/</link>
       <pubDate>Tue, 03 Aug 2021 00:00:00 +0000</pubDate>
       
@@ -61,7 +70,7 @@
     </item>
     
     <item>
-      <title>containerd</title>
+      <title>Containerd</title>
       <link>https://blog.ajiarya.id/tags/containerd/</link>
       <pubDate>Tue, 03 Aug 2021 00:00:00 +0000</pubDate>
       
@@ -70,7 +79,7 @@
     </item>
     
     <item>
-      <title>kata</title>
+      <title>Kata</title>
       <link>https://blog.ajiarya.id/tags/kata/</link>
       <pubDate>Tue, 03 Aug 2021 00:00:00 +0000</pubDate>
       

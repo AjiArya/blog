@@ -25,6 +25,15 @@
     </item>
     
     <item>
+      <title>Cara Mengetahui Virtualisasi Yang Digunakan oleh VM Linux</title>
+      <link>https://blog.ajiarya.id/posts/linux/cara-memeriksa-virtualiasasi/</link>
+      <pubDate>Wed, 04 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.ajiarya.id/posts/linux/cara-memeriksa-virtualiasasi/</guid>
+      <description>Cara mudah mengetahui virtualisasi yang digunakan oleh VM Linux</description>
+    </item>
+    
+    <item>
       <title>Memasang Kata Container dengan Containerd Pada Ubuntu 20.04</title>
       <link>https://blog.ajiarya.id/posts/kata/install-kata/</link>
       <pubDate>Tue, 03 Aug 2021 00:00:00 +0000</pubDate>
