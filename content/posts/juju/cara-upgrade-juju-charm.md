@@ -2,8 +2,8 @@
 title: "Cara Memperbarui Juju Charm"
 description: "Cara mudah memperbarui juju charm pada unit yang sudah berjalan"
 date: "2021-08-04"
-tags: ["juju", "canonical",  "ubuntu"]
-categories: ["juju"]
+tags: ["Juju", "Canonical",  "Ubuntu"]
+categories: ["Juju"]
 ShowToc: true
 ---
 

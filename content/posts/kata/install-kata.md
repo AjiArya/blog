@@ -2,8 +2,8 @@
 title: "Memasang Kata Container dengan Containerd Pada Ubuntu 20.04"
 description: "Cara mudah memasang Kata Container dengan Containerd pada Sistem Operasi Ubuntu 20.04"
 date: "2021-08-03"
-tags: ["container", "containerd", "kata", "OpenInfra"]
-categories: ["kata"]
+tags: ["Container", "Containerd", "Kata", "OpenInfra"]
+categories: ["Kata"]
 ShowToc: true
 ---
 

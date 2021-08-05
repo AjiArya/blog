@@ -2,8 +2,8 @@
 title: "Cara Melakukan Perulangan Pada Bash"
 description: "Cara mudah melakukan perulangan pada _bash script_"
 date: "2021-08-04"
-tags: ["bash", "linux"]
-categories: ["bash"]
+tags: ["Bash", "Linux"]
+categories: ["Bash"]
 ShowToc: true
 ---
 
