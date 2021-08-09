@@ -5,7 +5,34 @@
     <link>https://blog.ajiarya.id/</link>
     <description>Recent content on Aji Arya</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 04 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.ajiarya.id/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 09 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.ajiarya.id/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cara Install ZFS Pada Linux [CentOS/Rocky]</title>
+      <link>https://blog.ajiarya.id/posts/zfs/cara-install-zfs-centos/</link>
+      <pubDate>Mon, 09 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.ajiarya.id/posts/zfs/cara-install-zfs-centos/</guid>
+      <description>Cara mudah install ZFS pada CentOS 8 atau Rocky 8</description>
+    </item>
+    
+    <item>
+      <title>Cara Install ZFS Pada Linux [Debian]</title>
+      <link>https://blog.ajiarya.id/posts/zfs/cara-install-zfs-debian/</link>
+      <pubDate>Mon, 09 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.ajiarya.id/posts/zfs/cara-install-zfs-debian/</guid>
+      <description>Cara mudah install ZFS pada Debian Buster</description>
+    </item>
+    
+    <item>
+      <title>Cara Install ZFS Pada Linux [Ubuntu]</title>
+      <link>https://blog.ajiarya.id/posts/zfs/cara-install-zfs-ubuntu/</link>
+      <pubDate>Mon, 09 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.ajiarya.id/posts/zfs/cara-install-zfs-ubuntu/</guid>
+      <description>Cara mudah install ZFS pada Ubuntu</description>
+    </item>
+    
     <item>
       <title>Cara Melakukan Perulangan Pada Bash</title>
       <link>https://blog.ajiarya.id/posts/bash/cara-looping-pada-bash/</link>
