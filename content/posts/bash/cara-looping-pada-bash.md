@@ -5,6 +5,7 @@ date: "2021-08-04"
 tags: ["Bash", "Linux"]
 categories: ["Bash"]
 ShowToc: true
+TocOpen: true
 ---
 
 # Perulangan Pada Bash

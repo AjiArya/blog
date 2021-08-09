@@ -5,6 +5,7 @@ date: "2021-08-03"
 tags: ["Container", "Containerd", "Kata", "OpenInfra"]
 categories: ["Kata"]
 ShowToc: true
+TocOpen: true
 ---
 
 # Prasyarat

@@ -5,6 +5,7 @@ date: "2021-08-04"
 tags: ["Juju", "Canonical",  "Ubuntu"]
 categories: ["Juju"]
 ShowToc: true
+TocOpen: true
 ---
 
 # Perintah
