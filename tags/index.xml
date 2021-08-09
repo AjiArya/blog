@@ -7,6 +7,24 @@
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Mon, 09 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.ajiarya.id/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Elasticsearch</title>
+      <link>https://blog.ajiarya.id/tags/elasticsearch/</link>
+      <pubDate>Mon, 09 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.ajiarya.id/tags/elasticsearch/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ELK</title>
+      <link>https://blog.ajiarya.id/tags/elk/</link>
+      <pubDate>Mon, 09 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.ajiarya.id/tags/elk/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Filesystem</title>
       <link>https://blog.ajiarya.id/tags/filesystem/</link>
       <pubDate>Mon, 09 Aug 2021 00:00:00 +0000</pubDate>

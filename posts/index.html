@@ -112,6 +112,16 @@ IMTEK
 </article>
 <article class=post-entry>
 <header class=entry-header>
+<h2>Cara Mengganti Password User Elasticsearch</h2>
+</header>
+<section class=entry-content>
+<p>Panduan Perintah mengganti password user sendiri curl -u &lt;user> -XPUT \ 'http://localhost:9200/_xpack/security/user/_password?pretty' \ -H 'Content-Type: application/json' -d' { "password": "&lt;password>" }' Contoh mengganti password user sendiri curl -u elastic -XPUT \ 'http://localhost:9200/_xpack/security/user/_password?pretty' \ -H 'Content-Type: application/json' -d' { "password": "sangatrahasia" }' Contoh output [root@rocky ~]# curl -u elastic -XPUT \ > 'http://localhost:9200/_xpack/security/user/_password?pretty' \ > -H 'Content-Type: application/json' -d' > { "password": "sangatrahasia" }' Enter host password for user 'elastic': { } Perintah mengganti password user lain (Admin) curl -u &lt;user_admin> -XPUT \ 'http://localhost:9200/_xpack/security/user/&lt;user_lain>/_password?...</p>
+</section>
+<footer class=entry-footer>August 9, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Cara Mengganti Password User Elasticsearch" href=https://blog.ajiarya.id/posts/elk/elasticsearch/cara-ganti-password-elasticsearch/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
 <h2>Cara Melakukan Perulangan Pada Bash</h2>
 </header>
 <section class=entry-content>
@@ -120,16 +130,6 @@ Buat file dengan nama buat-user.sh #!/bin/bash for i in {1..10}; do sudo useradd
 </section>
 <footer class=entry-footer>August 4, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
 <a class=entry-link aria-label="post link to Cara Melakukan Perulangan Pada Bash" href=https://blog.ajiarya.id/posts/bash/cara-looping-pada-bash/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>Cara Memperbarui Juju Charm</h2>
-</header>
-<section class=entry-content>
-<p>Perintah juju refresh [options] &lt;application> Perbarui ke versi terbaru juju refresh &lt;application> Contoh juju refresh prometheus Perbarui ke versi revision spesifik juju refresh --revision &lt;revision number> &lt;application> Contoh juju refresh --revision 22 prometheus Perbarui ke versi channel spesifik juju refresh --channel &lt;channel> &lt;application> Contoh juju refresh --channel latest/stable prometheus </p>
-</section>
-<footer class=entry-footer>August 4, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Memperbarui Juju Charm" href=https://blog.ajiarya.id/posts/juju/cara-upgrade-juju-charm/></a>
 </article>
 <footer class=page-footer>
 <nav class=pagination>
