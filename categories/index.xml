@@ -5,7 +5,16 @@
     <link>https://blog.ajiarya.id/categories/</link>
     <description>Recent content in Categories on Aji Arya</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 09 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.ajiarya.id/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 10 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.ajiarya.id/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Linux</title>
+      <link>https://blog.ajiarya.id/categories/linux/</link>
+      <pubDate>Tue, 10 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.ajiarya.id/categories/linux/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>ELK</title>
       <link>https://blog.ajiarya.id/categories/elk/</link>
@@ -39,15 +48,6 @@
       <pubDate>Wed, 04 Aug 2021 00:00:00 +0000</pubDate>
       
       <guid>https://blog.ajiarya.id/categories/juju/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Linux</title>
-      <link>https://blog.ajiarya.id/categories/linux/</link>
-      <pubDate>Wed, 04 Aug 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.ajiarya.id/categories/linux/</guid>
       <description></description>
     </item>
     

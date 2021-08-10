@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>SCP on Aji Arya</title>
+    <link>https://blog.ajiarya.id/tags/scp/</link>
+    <description>Recent content in SCP on Aji Arya</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 10 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.ajiarya.id/tags/scp/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cara SCP Antar Dua Host Remote</title>
+      <link>https://blog.ajiarya.id/posts/linux/cara-scp-antar-dua-remote-host/</link>
+      <pubDate>Tue, 10 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.ajiarya.id/posts/linux/cara-scp-antar-dua-remote-host/</guid>
+      <description>Cara mudah mengirimkan file antara dua remote host melalui local host</description>
+    </item>
+    
+  </channel>
+</rss>
