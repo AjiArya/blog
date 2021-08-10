@@ -5,6 +5,7 @@ date: "2021-08-04"
 tags: ["Linux", "Virtualisasi"]
 categories: ["Linux"]
 ShowToc: true
+TocOpen: true
 ---
 
 # Pendahuluan

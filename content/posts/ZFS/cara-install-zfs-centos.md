@@ -27,3 +27,6 @@ sudo dnf install epel-release kernel-devel zfs
 ```bash
 modinfo zfs | grep version
 ```
+
+# Referensi
+* [OpenZFS Docs](https://openzfs.github.io/openzfs-docs/Getting%20Started/RHEL-based%20distro/index.html)

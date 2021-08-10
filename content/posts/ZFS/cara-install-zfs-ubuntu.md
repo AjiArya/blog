@@ -19,3 +19,6 @@ sudo apt install zfsutils-linux
 ```bash
 modinfo zfs | grep version
 ```
+
+# Referensi
+* [OpenZFS Docs](https://openzfs.github.io/openzfs-docs/Getting%20Started/Ubuntu/index.html)

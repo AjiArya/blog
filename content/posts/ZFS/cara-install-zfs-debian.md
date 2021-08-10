@@ -50,3 +50,6 @@ sudo sh -c "echo zfs> /etc/modules-load.d/zfs.conf"
 ```bash
 modinfo zfs | grep version
 ```
+
+# Referensi
+* [OpenZFS Docs](https://openzfs.github.io/openzfs-docs/Getting%20Started/Debian/index.html)
