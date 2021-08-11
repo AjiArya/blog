@@ -80,6 +80,16 @@ IMTEK
 <main class=main>
 <article class=post-entry>
 <header class=entry-header>
+<h2>Cara Mengganti Password User Elasticsearch</h2>
+</header>
+<section class=entry-content>
+<p>Panduan Perintah mengganti password user sendiri curl -u &lt;user> -XPUT \ 'http://localhost:9200/_xpack/security/user/_password?pretty' \ -H 'Content-Type: application/json' -d' { "password": "&lt;password>" }' Contoh mengganti password user sendiri curl -u elastic -XPUT \ 'http://localhost:9200/_xpack/security/user/_password?pretty' \ -H 'Content-Type: application/json' -d' { "password": "sangatrahasia" }' Contoh output [root@rocky ~]# curl -u elastic -XPUT \ > 'http://localhost:9200/_xpack/security/user/_password?pretty' \ > -H 'Content-Type: application/json' -d' > { "password": "sangatrahasia" }' Enter host password for user 'elastic': { } Perintah mengganti password user lain (Admin) curl -u &lt;user_admin> -XPUT \ 'http://localhost:9200/_xpack/security/user/&lt;user_lain>/_password?...</p>
+</section>
+<footer class=entry-footer>August 9, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Cara Mengganti Password User Elasticsearch" href=https://blog.ajiarya.id/posts/elk/elasticsearch/cara-ganti-password-elasticsearch/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
 <h2>Cara Melakukan Perulangan Pada Bash</h2>
 </header>
 <section class=entry-content>
@@ -108,7 +118,7 @@ Buat file dengan nama buat-user.sh #!/bin/bash for i in {1..10}; do sudo useradd
 Perintah sudo dmidecode -s system-product-name Contoh pada virtualisasi KVM student@machine:~$ sudo dmidecode -s system-product-name KVM Contoh pada virtualisasi OpenStack student@machine:~$ sudo dmidecode -s system-product-name OpenStack Compute </p>
 </section>
 <footer class=entry-footer>August 4, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Mengetahui Virtualisasi Yang Digunakan oleh VM Linux" href=https://blog.ajiarya.id/posts/linux/cara-memeriksa-virtualiasasi/></a>
+<a class=entry-link aria-label="post link to Cara Mengetahui Virtualisasi Yang Digunakan oleh VM Linux" href=https://blog.ajiarya.id/posts/linux/cara-memeriksa-jenis-virtualiasasi/></a>
 </article>
 <article class=post-entry>
 <header class=entry-header>

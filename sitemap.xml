@@ -5,16 +5,25 @@
     <loc>https://blog.ajiarya.id/</loc>
     <lastmod>2021-08-10T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://blog.ajiarya.id/posts/podman/cara-install-container-tools/</loc>
+    <lastmod>2021-08-10T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://blog.ajiarya.id/posts/linux/cara-scp-antar-dua-remote-host/</loc>
     <lastmod>2021-08-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.ajiarya.id/categories/</loc>
     <lastmod>2021-08-10T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://blog.ajiarya.id/tags/container/</loc>
+    <lastmod>2021-08-10T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://blog.ajiarya.id/tags/linux/</loc>
     <lastmod>2021-08-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.ajiarya.id/categories/linux/</loc>
+    <lastmod>2021-08-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.ajiarya.id/categories/podman/</loc>
     <lastmod>2021-08-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.ajiarya.id/posts/</loc>
@@ -71,7 +80,7 @@
     <loc>https://blog.ajiarya.id/posts/juju/cara-upgrade-juju-charm/</loc>
     <lastmod>2021-08-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.ajiarya.id/posts/linux/cara-memeriksa-virtualiasasi/</loc>
+    <loc>https://blog.ajiarya.id/posts/linux/cara-memeriksa-jenis-virtualiasasi/</loc>
     <lastmod>2021-08-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.ajiarya.id/tags/juju/</loc>
@@ -85,9 +94,6 @@
   </url><url>
     <loc>https://blog.ajiarya.id/tags/virtualisasi/</loc>
     <lastmod>2021-08-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://blog.ajiarya.id/tags/container/</loc>
-    <lastmod>2021-08-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.ajiarya.id/tags/containerd/</loc>
     <lastmod>2021-08-03T00:00:00+00:00</lastmod>

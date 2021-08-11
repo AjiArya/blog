@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Podman on Aji Arya</title>
+    <link>https://blog.ajiarya.id/categories/podman/</link>
+    <description>Recent content in Podman on Aji Arya</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 10 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.ajiarya.id/categories/podman/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cara Install Podman, Skopeo, dan Buildah Pada Linux (CentOS/Rocky)</title>
+      <link>https://blog.ajiarya.id/posts/podman/cara-install-container-tools/</link>
+      <pubDate>Tue, 10 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.ajiarya.id/posts/podman/cara-install-container-tools/</guid>
+      <description>Cara mudah install podman, skopeo, dan buildah pada linux</description>
+    </item>
+    
+  </channel>
+</rss>
