@@ -81,6 +81,16 @@ IMTEK
 </header>
 <article class="post-entry tag-entry">
 <header class=entry-header>
+<h2>Cara Install ZFS Pada Linux [Debian]</h2>
+</header>
+<section class=entry-content>
+<p>Panduan Menambahkan backports repository Tambahkan repository sudo vi /etc/apt/sources.list.d/buster-backports.list /etc/apt/sources.list.d/buster-backports.list deb http://deb.debian.org/debian buster-backports main contrib deb-src http://deb.debian.org/debian buster-backports main contrib Tambahkan konfigurasi APT sudo vi /etc/apt/preferences.d/90_zfs /etc/apt/preferences.d/90_zfs Package: libnvpair1linux libuutil1linux libzfs2linux libzpool2linux spl-dkms zfs-dkms zfs-test zfsutils-linux zfsutils-linux-dev zfs-zed Pin: release n=buster-backports Pin-Priority: 990 Install package ZFS Install package sudo apt update sudo apt install dpkg-dev linux-headers-$(uname -r) linux-image-amd64 sudo apt install zfs-dkms zfsutils-linux Buat konfigurasi ZFS untuk kernel module load sudo sh -c "echo zfs> /etc/modules-load....</p>
+</section>
+<footer class=entry-footer>August 9, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Cara Install ZFS Pada Linux [Debian]" href=https://blog.ajiarya.id/posts/zfs/cara-install-zfs-debian/></a>
+</article>
+<article class="post-entry tag-entry">
+<header class=entry-header>
 <h2>Cara Install ZFS Pada Linux [Ubuntu]</h2>
 </header>
 <section class=entry-content>

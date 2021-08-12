@@ -5,7 +5,16 @@
     <link>https://blog.ajiarya.id/</link>
     <description>Recent content on Aji Arya</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 11 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.ajiarya.id/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 12 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.ajiarya.id/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cara Debug Bash Script</title>
+      <link>https://blog.ajiarya.id/posts/bash/cara-debug-bash/</link>
+      <pubDate>Thu, 12 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.ajiarya.id/posts/bash/cara-debug-bash/</guid>
+      <description>Cara mudah yang bisa dilakukan agar kita bisa memperbaiki atau debug bash script</description>
+    </item>
+    
     <item>
       <title>Cara Local Port Forwarding SSH</title>
       <link>https://blog.ajiarya.id/posts/linux/cara-ssh-local-forwarding-port/</link>
