@@ -33,12 +33,12 @@ sudo apt upgrade
 sudo apt install cockpit cockpit-machines qemu-system-x86 libvirt-daemon-system libvirt-clients bridge-utils
 ```
 
-3. Aktifkan dan enable servis libvirt
+3. Jalankan dan enable servis libvirt
 ```bash
 sudo systemctl enable --now libvirtd
 ```
 
-4. Aktifkan dan enable servis cockpit
+4. Jalankan dan enable servis cockpit
 ```bash
 sudo systemctl enable --now cockpit.socket
 ```

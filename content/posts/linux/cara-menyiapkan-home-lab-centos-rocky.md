@@ -28,7 +28,7 @@ sudo dnf upgrade
 sudo dnf groupinstall -y "Virtualization Host"
 ```
 
-5. Aktifkan dan enable servis libvirt
+3. Jalankan dan enable servis libvirt
 ```bash
 sudo systemctl enable --now libvirtd
 ```
@@ -38,7 +38,7 @@ sudo systemctl enable --now libvirtd
 sudo dnf install -y cockpit-machines
 ```
 
-5. Aktifkan dan enable servis cockpit
+5. Jalankan dan enable servis cockpit
 ```bash
 sudo systemctl enable --now cockpit.socket
 ```
