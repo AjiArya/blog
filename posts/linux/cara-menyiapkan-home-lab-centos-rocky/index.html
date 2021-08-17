@@ -29,7 +29,7 @@
 <meta name=twitter:title content="Cara Menyiapkan Home Lab Linux [CentOS/Rocky 8]">
 <meta name=twitter:description content="Cara mudah menyiapkan home lab untuk riset">
 <script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":2,"name":"Posts","item":"https://blog.ajiarya.id/posts/"},{"@type":"ListItem","position":3,"name":"Cara Menyiapkan Home Lab Linux [CentOS/Rocky 8]","item":"https://blog.ajiarya.id/posts/linux/cara-menyiapkan-home-lab-centos-rocky/"}]}</script>
-<script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"Cara Menyiapkan Home Lab Linux [CentOS/Rocky 8]","name":"Cara Menyiapkan Home Lab Linux [CentOS\/Rocky 8]","description":"Cara mudah menyiapkan home lab untuk riset","keywords":["Linux","Virtualisasi","KVM","Cockpit"],"articleBody":"Referensi Sewa Server  Hetzner Robot - Server Auction  Prasyarat  Server Sistem Operasi CentOS 8 atau Rocky 8 terinstall  Panduan  Update \u0026 Upgrade Package  sudo dnf update sudo dnf upgrade Install grup package untuk host virtualisasi  sudo dnf groupinstall -y \"Virtualization Host\" Aktifkan dan enable servis libvirt  sudo systemctl enable --now libvirtd Install cockpit plugin untuk VM  sudo dnf install -y cockpit-machines Aktifkan dan enable servis cockpit  sudo systemctl enable --now cockpit.socket Buka port tcp/9090 firewall  sudo firewall-cmd --permanent --zone=public --add-service=cockpit sudo firewall-cmd --reload Referensi  Cockpit Project - CentOS  Baca juga  Cara membuat Guest KVM dengan menggunakan Terraform Libvirt Provider  ","wordCount":"99","inLanguage":"en","datePublished":"2021-08-17T00:00:00Z","dateModified":"2021-08-17T00:00:00Z","author":{"@type":"Person","name":"Aji Arya"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://blog.ajiarya.id/posts/linux/cara-menyiapkan-home-lab-centos-rocky/"},"publisher":{"@type":"Organization","name":"Aji Arya","logo":{"@type":"ImageObject","url":"https://blog.ajiarya.id/favicon.ico"}}}</script>
+<script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"Cara Menyiapkan Home Lab Linux [CentOS/Rocky 8]","name":"Cara Menyiapkan Home Lab Linux [CentOS\/Rocky 8]","description":"Cara mudah menyiapkan home lab untuk riset","keywords":["Linux","Virtualisasi","KVM","Cockpit"],"articleBody":"Referensi Sewa Server  Hetzner Robot - Server Auction  Prasyarat  Server Sistem Operasi CentOS 8 atau Rocky 8 terinstall  Panduan  Update \u0026 Upgrade Package  sudo dnf update sudo dnf upgrade Install grup package untuk host virtualisasi  sudo dnf groupinstall -y \"Virtualization Host\" Jalankan dan enable servis libvirt  sudo systemctl enable --now libvirtd Install cockpit plugin untuk VM  sudo dnf install -y cockpit-machines Jalankan dan enable servis cockpit  sudo systemctl enable --now cockpit.socket Buka port tcp/9090 firewall  sudo firewall-cmd --permanent --zone=public --add-service=cockpit sudo firewall-cmd --reload Referensi  Cockpit Project - CentOS  Baca juga  Cara membuat Guest KVM dengan menggunakan Terraform Libvirt Provider  ","wordCount":"99","inLanguage":"en","datePublished":"2021-08-17T00:00:00Z","dateModified":"2021-08-17T00:00:00Z","author":{"@type":"Person","name":"Aji Arya"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://blog.ajiarya.id/posts/linux/cara-menyiapkan-home-lab-centos-rocky/"},"publisher":{"@type":"Organization","name":"Aji Arya","logo":{"@type":"ImageObject","url":"https://blog.ajiarya.id/favicon.ico"}}}</script>
 </head>
 <body id=top>
 <script>localStorage.getItem("pref-theme")==="dark"?document.body.classList.add('dark'):localStorage.getItem("pref-theme")==="light"?document.body.classList.remove('dark'):window.matchMedia('(prefers-color-scheme: dark)').matches&&document.body.classList.add('dark')</script>
@@ -133,8 +133,8 @@ sudo dnf upgrade
 <li>Install grup package untuk host virtualisasi</li>
 </ol>
 <div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>sudo dnf groupinstall -y <span style=color:#e6db74>&#34;Virtualization Host&#34;</span>
-</code></pre></div><ol start=5>
-<li>Aktifkan dan enable servis libvirt</li>
+</code></pre></div><ol start=3>
+<li>Jalankan dan enable servis libvirt</li>
 </ol>
 <div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>sudo systemctl enable --now libvirtd
 </code></pre></div><ol start=4>
@@ -142,7 +142,7 @@ sudo dnf upgrade
 </ol>
 <div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>sudo dnf install -y cockpit-machines
 </code></pre></div><ol start=5>
-<li>Aktifkan dan enable servis cockpit</li>
+<li>Jalankan dan enable servis cockpit</li>
 </ol>
 <div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>sudo systemctl enable --now cockpit.socket
 </code></pre></div><ol start=6>
