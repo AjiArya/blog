@@ -5,22 +5,67 @@
     <link>https://blog.ajiarya.id/tags/</link>
     <description>Recent content in Tags on Aji Arya</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 12 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.ajiarya.id/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 17 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.ajiarya.id/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Bash</title>
-      <link>https://blog.ajiarya.id/tags/bash/</link>
-      <pubDate>Thu, 12 Aug 2021 00:00:00 +0000</pubDate>
+      <title>Cockpit</title>
+      <link>https://blog.ajiarya.id/tags/cockpit/</link>
+      <pubDate>Tue, 17 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.ajiarya.id/tags/bash/</guid>
+      <guid>https://blog.ajiarya.id/tags/cockpit/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>KVM</title>
+      <link>https://blog.ajiarya.id/tags/kvm/</link>
+      <pubDate>Tue, 17 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.ajiarya.id/tags/kvm/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Linux</title>
       <link>https://blog.ajiarya.id/tags/linux/</link>
-      <pubDate>Thu, 12 Aug 2021 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 17 Aug 2021 00:00:00 +0000</pubDate>
       
       <guid>https://blog.ajiarya.id/tags/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>python-tfgen</title>
+      <link>https://blog.ajiarya.id/tags/python-tfgen/</link>
+      <pubDate>Tue, 17 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.ajiarya.id/tags/python-tfgen/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Terraform</title>
+      <link>https://blog.ajiarya.id/tags/terraform/</link>
+      <pubDate>Tue, 17 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.ajiarya.id/tags/terraform/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Virtualisasi</title>
+      <link>https://blog.ajiarya.id/tags/virtualisasi/</link>
+      <pubDate>Tue, 17 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.ajiarya.id/tags/virtualisasi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Bash</title>
+      <link>https://blog.ajiarya.id/tags/bash/</link>
+      <pubDate>Thu, 12 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.ajiarya.id/tags/bash/</guid>
       <description></description>
     </item>
     
@@ -111,15 +156,6 @@
       <pubDate>Wed, 04 Aug 2021 00:00:00 +0000</pubDate>
       
       <guid>https://blog.ajiarya.id/tags/ubuntu/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Virtualisasi</title>
-      <link>https://blog.ajiarya.id/tags/virtualisasi/</link>
-      <pubDate>Wed, 04 Aug 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.ajiarya.id/tags/virtualisasi/</guid>
       <description></description>
     </item>
     

@@ -3,7 +3,61 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://blog.ajiarya.id/</loc>
-    <lastmod>2021-08-12T00:00:00+00:00</lastmod>
+    <lastmod>2021-08-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.ajiarya.id/categories/automation/</loc>
+    <lastmod>2021-08-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.ajiarya.id/posts/python-tfgen/cara-membuat-image-dengan-python-tfgen/</loc>
+    <lastmod>2021-08-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.ajiarya.id/posts/python-tfgen/cara-membuat-network-dengan-python-tfgen/</loc>
+    <lastmod>2021-08-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.ajiarya.id/posts/python-tfgen/cara-membuat-pool-dengan-python-tfgen/</loc>
+    <lastmod>2021-08-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.ajiarya.id/posts/python-tfgen/cara-membuat-vm-dengan-python-tfgen/</loc>
+    <lastmod>2021-08-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.ajiarya.id/posts/linux/cara-menggunakan-terraform-libvirt-provider/</loc>
+    <lastmod>2021-08-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.ajiarya.id/posts/linux/cara-menyiapkan-home-lab-centos-rocky/</loc>
+    <lastmod>2021-08-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.ajiarya.id/posts/linux/cara-menyiapkan-home-lab-debian-ubuntu/</loc>
+    <lastmod>2021-08-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.ajiarya.id/categories/</loc>
+    <lastmod>2021-08-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.ajiarya.id/tags/cockpit/</loc>
+    <lastmod>2021-08-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.ajiarya.id/tags/kvm/</loc>
+    <lastmod>2021-08-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.ajiarya.id/tags/linux/</loc>
+    <lastmod>2021-08-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.ajiarya.id/categories/linux/</loc>
+    <lastmod>2021-08-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.ajiarya.id/posts/</loc>
+    <lastmod>2021-08-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.ajiarya.id/tags/python-tfgen/</loc>
+    <lastmod>2021-08-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.ajiarya.id/tags/</loc>
+    <lastmod>2021-08-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.ajiarya.id/tags/terraform/</loc>
+    <lastmod>2021-08-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.ajiarya.id/tags/virtualisasi/</loc>
+    <lastmod>2021-08-17T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.ajiarya.id/tags/bash/</loc>
     <lastmod>2021-08-12T00:00:00+00:00</lastmod>
@@ -17,22 +71,7 @@
     <loc>https://blog.ajiarya.id/posts/bash/cara-melakukan-percabangan-pada-bash-bagian-1/</loc>
     <lastmod>2021-08-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.ajiarya.id/categories/</loc>
-    <lastmod>2021-08-12T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://blog.ajiarya.id/tags/linux/</loc>
-    <lastmod>2021-08-12T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://blog.ajiarya.id/posts/</loc>
-    <lastmod>2021-08-12T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://blog.ajiarya.id/tags/</loc>
-    <lastmod>2021-08-12T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://blog.ajiarya.id/posts/linux/cara-ssh-local-forwarding-port/</loc>
-    <lastmod>2021-08-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://blog.ajiarya.id/categories/linux/</loc>
     <lastmod>2021-08-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.ajiarya.id/tags/ssh/</loc>
@@ -102,9 +141,6 @@
     <lastmod>2021-08-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.ajiarya.id/tags/ubuntu/</loc>
-    <lastmod>2021-08-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://blog.ajiarya.id/tags/virtualisasi/</loc>
     <lastmod>2021-08-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.ajiarya.id/tags/containerd/</loc>

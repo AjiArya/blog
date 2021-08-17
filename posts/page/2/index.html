@@ -82,54 +82,58 @@ IMTEK
 </header>
 <article class=post-entry>
 <header class=entry-header>
-<h2>Cara Install ZFS Pada Linux [CentOS/Rocky]</h2>
+<h2>Cara Menyiapkan Home Lab Linux [CentOS/Rocky 8]</h2>
 </header>
 <section class=entry-content>
-<p>Panduan Menambahkan repository dan public signing key source /etc/os-release sudo dnf install https://zfsonlinux.org/epel/zfs-release.el${VERSION_ID/./_}.noarch.rpm sudo rpm --import /etc/pki/rpm-gpg/RPM-GPG-KEY-zfsonlinux Install package ZFS sudo yum-config-manager --disable zfs sudo yum-config-manager --enable zfs-kmod sudo dnf install epel-release kernel-devel zfs Verifikasi versi modinfo zfs | grep version Referensi OpenZFS Docs </p>
+<p>Referensi Sewa Server Hetzner Robot - Server Auction Prasyarat Server Sistem Operasi CentOS 8 atau Rocky 8 terinstall Panduan Update & Upgrade Package sudo dnf update sudo dnf upgrade Install grup package untuk host virtualisasi sudo dnf groupinstall -y "Virtualization Host" Aktifkan dan enable servis libvirt sudo systemctl enable --now libvirtd Install cockpit plugin untuk VM sudo dnf install -y cockpit-machines Aktifkan dan enable servis cockpit sudo systemctl enable --now cockpit....</p>
 </section>
-<footer class=entry-footer>August 9, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Install ZFS Pada Linux [CentOS/Rocky]" href=https://blog.ajiarya.id/posts/zfs/cara-install-zfs-centos/></a>
+<footer class=entry-footer>August 17, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Cara Menyiapkan Home Lab Linux [CentOS/Rocky 8]" href=https://blog.ajiarya.id/posts/linux/cara-menyiapkan-home-lab-centos-rocky/></a>
 </article>
 <article class=post-entry>
 <header class=entry-header>
-<h2>Cara Install ZFS Pada Linux [Debian]</h2>
+<h2>Cara Menyiapkan Home Lab Linux [Debian Bullseye/Ubuntu Focal]</h2>
 </header>
 <section class=entry-content>
-<p>Panduan Menambahkan backports repository Tambahkan repository sudo vi /etc/apt/sources.list.d/buster-backports.list /etc/apt/sources.list.d/buster-backports.list deb http://deb.debian.org/debian buster-backports main contrib deb-src http://deb.debian.org/debian buster-backports main contrib Tambahkan konfigurasi APT sudo vi /etc/apt/preferences.d/90_zfs /etc/apt/preferences.d/90_zfs Package: libnvpair1linux libuutil1linux libzfs2linux libzpool2linux spl-dkms zfs-dkms zfs-test zfsutils-linux zfsutils-linux-dev zfs-zed Pin: release n=buster-backports Pin-Priority: 990 Install package ZFS Install package sudo apt update sudo apt install dpkg-dev linux-headers-$(uname -r) linux-image-amd64 sudo apt install zfs-dkms zfsutils-linux Buat konfigurasi ZFS untuk kernel module load sudo sh -c "echo zfs> /etc/modules-load....</p>
+<p>Debian Cockpit
+Ubuntu Cockpit
+Referensi Sewa Server Hetzner Robot - Server Auction Prasyarat Server Sistem Operasi Debian 11 (Bullseye) atau Ubuntu 20.04 (Focal) terinstall Panduan Update & Upgrade package sudo apt update sudo apt upgrade Install package-package untuk host virtualisasi sudo apt install cockpit cockpit-machines qemu-system-x86 libvirt-daemon-system libvirt-clients bridge-utils Aktifkan dan enable servis libvirt sudo systemctl enable --now libvirtd Aktifkan dan enable servis cockpit sudo systemctl enable --now cockpit....</p>
 </section>
-<footer class=entry-footer>August 9, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Install ZFS Pada Linux [Debian]" href=https://blog.ajiarya.id/posts/zfs/cara-install-zfs-debian/></a>
+<footer class=entry-footer>August 17, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Cara Menyiapkan Home Lab Linux [Debian Bullseye/Ubuntu Focal]" href=https://blog.ajiarya.id/posts/linux/cara-menyiapkan-home-lab-debian-ubuntu/></a>
 </article>
 <article class=post-entry>
 <header class=entry-header>
-<h2>Cara Install ZFS Pada Linux [Ubuntu]</h2>
+<h2>Cara Debug Bash Script</h2>
 </header>
 <section class=entry-content>
-<p>Ubuntu Install package ZFS sudo apt update sudo apt install zfsutils-linux Verifikasi versi modinfo zfs | grep version Referensi OpenZFS Docs </p>
+<p>Panduan Gunakan kata kunci set pada bash dengan opsi -v #!/bin/bash # Tambahkan set -v pada script set -v Contoh read.sh #!/bin/bash # Baris berikut akan membuat bash script menjadi verbose set -v echo "Siapa namamu?" read NAMA echo "Berapa umurmu? (Dalam Tahun)" read UMUR # tampilkan nama echo "${NAMA}" # tampilkan umur echho "${UMUR}Tahun" # Sapa nama echo "Halo, ${NAMA}!" Ketika menjalankan read.sh...</p>
 </section>
-<footer class=entry-footer>August 9, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Install ZFS Pada Linux [Ubuntu]" href=https://blog.ajiarya.id/posts/zfs/cara-install-zfs-ubuntu/></a>
+<footer class=entry-footer>August 12, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Cara Debug Bash Script" href=https://blog.ajiarya.id/posts/bash/cara-debug-bash/></a>
 </article>
 <article class=post-entry>
 <header class=entry-header>
-<h2>Cara Mengganti Password User Elasticsearch</h2>
+<h2>Cara Melakukan Percabangan Dasar Bash - Bagian 1 [Operator Aritmatika]</h2>
 </header>
 <section class=entry-content>
-<p>Panduan Perintah mengganti password user sendiri curl -u &lt;user> -XPUT \ 'http://localhost:9200/_xpack/security/user/_password?pretty' \ -H 'Content-Type: application/json' -d' { "password": "&lt;password>" }' Contoh mengganti password user sendiri curl -u elastic -XPUT \ 'http://localhost:9200/_xpack/security/user/_password?pretty' \ -H 'Content-Type: application/json' -d' { "password": "sangatrahasia" }' Contoh output [root@rocky ~]# curl -u elastic -XPUT \ > 'http://localhost:9200/_xpack/security/user/_password?pretty' \ > -H 'Content-Type: application/json' -d' > { "password": "sangatrahasia" }' Enter host password for user 'elastic': { } Perintah mengganti password user lain (Admin) curl -u &lt;user_admin> -XPUT \ 'http://localhost:9200/_xpack/security/user/&lt;user_lain>/_password?...</p>
+<p>Pendahuluan Jika kita ingin melakukan pengecekan terhadap suatu variabel maka kita membutuhkan yang namanya percabangan sebagai contoh, jika (if) variabel umur kurang dari 5 maka sama dengan balita, untuk melakukan hal tersebut berikut contoh singkatnya
+balita.sh #!/bin/bash export umur=4 # Cara 1 echo "Menjalankan cara 1" if [[ umur -lt 5 ]]; then echo "Kamu balita!" fi # Cara 2 echo "Menjalankan cara 2" if (( umur >= 5 )); then echo "Kamu balita!...</p>
 </section>
-<footer class=entry-footer>August 9, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Mengganti Password User Elasticsearch" href=https://blog.ajiarya.id/posts/elk/elasticsearch/cara-ganti-password-elasticsearch/></a>
+<footer class=entry-footer>August 12, 2021&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Cara Melakukan Percabangan Dasar Bash - Bagian 1 [Operator Aritmatika]" href=https://blog.ajiarya.id/posts/bash/cara-melakukan-percabangan-pada-bash-bagian-1/></a>
 </article>
 <article class=post-entry>
 <header class=entry-header>
-<h2>Cara Melakukan Perulangan Pada Bash</h2>
+<h2>Cara Local Port Forwarding SSH</h2>
 </header>
 <section class=entry-content>
-<p>Perulangan Pada Bash Perulangan atau Looping adalah cara mudah untuk menyelesaikan pekerjaan yang sifatnya berulang-ulang, semisal ingin membuat 10 user maka kita tidak perlu menjalankan perintah useradd 10 kali melainkan kita membuat Bash Script sebagai berikut
-Buat file dengan nama buat-user.sh #!/bin/bash for i in {1..10}; do sudo useradd user$i done Hasil Bash Script # Jalankan Script yang telah dibuat student@latihan-bash:~$ bash buat-user.sh # Verifikasi student@latihan-bash:~$ getent passwd | grep user user1:x:1002:1002::/home/user1:/bin/sh user2:x:1003:1003::/home/user2:/bin/sh user3:x:1004:1004::/home/user3:/bin/sh user4:x:1005:1005::/home/user4:/bin/sh user5:x:1006:1006::/home/user5:/bin/sh user6:x:1007:1007::/home/user6:/bin/sh user7:x:1008:1008::/home/user7:/bin/sh user8:x:1009:1009::/home/user8:/bin/sh user9:x:1010:1010::/home/user9:/bin/sh user10:x:1011:1011::/home/user10:/bin/sh Panduan Perulangan tak terbatas #!...</p>
+<p>Pendahuluan Ketika kita ingin mengakses sebuah layanan pada remote host yang hanya listen pada address 127.0.0.1 kita tidak bisa menggunakan fitur Dynamic Port Forwarding sebagai alternatif kita bisa menggunakan fitur Local Port Forwarding
+Perintah ssh [local_address_bind]:[local_port_bind]:[remote_address_bind]:[remote_port_bind] &lt;remote_host> Contoh serverku menjalankan web server yang hanya listen pada address 127.0.0.1:80 lalu saya ingin mencoba mengakses web server tersebut dari laptopku pada address 192.168.10.10:8080
+Jalankan web server menggunakan python pada serverku # Perintah python [root@serverku ~]# python3 -m http....</p>
 </section>
-<footer class=entry-footer>August 4, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Melakukan Perulangan Pada Bash" href=https://blog.ajiarya.id/posts/bash/cara-looping-pada-bash/></a>
+<footer class=entry-footer>August 11, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Cara Local Port Forwarding SSH" href=https://blog.ajiarya.id/posts/linux/cara-ssh-local-forwarding-port/></a>
 </article>
 <footer class=page-footer>
 <nav class=pagination>
