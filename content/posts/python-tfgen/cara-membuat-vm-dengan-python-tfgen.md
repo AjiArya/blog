@@ -50,34 +50,34 @@ spec:
         dns: [8.8.8.8, 8.8.4.4]
 ```
 
-3. Buat HCL berdasarkan yaml yang telah dibuat
+2. Buat HCL berdasarkan yaml yang telah dibuat
 ```bash
 ./tfgen.py -f vm.yaml -o vm
 ```
 
-4. Berpindah ke direktori yang dihasilkan python-tfgen
+3. Berpindah ke direktori yang dihasilkan python-tfgen
 ```bash
 cd vm/
 ```
 
-5. Jalankan inisiasi terraform
+4. Jalankan inisiasi terraform
 ```bash
 terraform init
 ```
 
-6. Jalankan terraform untuk membuat VM
+5. Jalankan terraform untuk membuat VM
 ```bash
 terraform apply
 ```
 > **Tips!**  
 > Gunakan `terraform apply -auto-approve` untuk melewati prompt persetujuan.
 
-7. Verifikasi VM yang telah terbuat
+6. Verifikasi VM yang telah terbuat
 ```bash
 virsh list
 ```
 
-8. SSH VM
+7. SSH VM
 ```bash
 ssh root@192.168.100.10
 ```

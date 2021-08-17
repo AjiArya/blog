@@ -28,7 +28,7 @@ spec:
     pool: images
 ```
 
-3. Buat HCL berdasarkan yaml yang telah dibuat
+2. Buat HCL berdasarkan yaml yang telah dibuat
 ```bash
 ./tfgen.py -f image.yaml -o image
 ```
@@ -60,24 +60,24 @@ resource "libvirt_volume" "ubuntu-focal" {
 }
 ```
 
-4. Berpindah ke direktori yang dihasilkan python-tfgen
+3. Berpindah ke direktori yang dihasilkan python-tfgen
 ```bash
 cd image/
 ```
 
-5. Jalankan inisiasi terraform
+4. Jalankan inisiasi terraform
 ```bash
 terraform init
 ```
 
-6. Jalankan terraform untuk membuat image
+5. Jalankan terraform untuk membuat image
 ```bash
 terraform apply
 ```
 > **Tips!**  
 > Gunakan `terraform apply -auto-approve` untuk melewati prompt persetujuan.
 
-7. Verifikasi image yang telah terbuat
+6. Verifikasi image yang telah terbuat
 ```bash
 virsh vol-list images
 ```

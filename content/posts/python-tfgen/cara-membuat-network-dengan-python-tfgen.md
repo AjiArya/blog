@@ -26,7 +26,7 @@ spec:
     addresses4: "192.168.100.0/24"
 ```
 
-3. Buat HCL berdasarkan yaml yang telah dibuat
+2. Buat HCL berdasarkan yaml yang telah dibuat
 ```bash
 ./tfgen.py -f network.yaml -o network
 ```
@@ -58,24 +58,24 @@ resource "libvirt_network" "home-lab-network" {
 }
 ```
 
-4. Berpindah ke direktori yang dihasilkan python-tfgen
+3. Berpindah ke direktori yang dihasilkan python-tfgen
 ```bash
 cd network/
 ```
 
-5. Jalankan inisiasi terraform
+4. Jalankan inisiasi terraform
 ```bash
 terraform init
 ```
 
-6. Jalankan terraform untuk membuat network
+5. Jalankan terraform untuk membuat network
 ```bash
 terraform apply
 ```
 > **Tips!**  
 > Gunakan `terraform apply -auto-approve` untuk melewati prompt persetujuan.
 
-7. Verifikasi network yang telah terbuat
+6. Verifikasi network yang telah terbuat
 ```bash
 virsh net-list
 ```
