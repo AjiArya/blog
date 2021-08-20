@@ -86,6 +86,16 @@ IMTEK
 </header>
 <article class="post-entry tag-entry">
 <header class=entry-header>
+<h2>Cara Membuat Cluster Elasticsearch 7 beserta module security xpack [Debian/Ubuntu]</h2>
+</header>
+<section class=entry-content>
+<p>Panduan Tambahkan host pada file /etc/hosts vim /etc/hosts /etc/hosts 127.0.0.1 localhost 192.168.10.71 elasticsearch-node01 192.168.10.72 elasticsearch-node02 192.168.10.73 elasticsearch-node03 Unduh dan install package elasticsearch wget https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-7.14.0-amd64.deb dpkg -i elasticsearch-7.14.0-amd64.deb Konfigurasi elasticsearch /etc/elasticsearch/elasticsearch.yml cluster.name: elasticsearch-demo node.name: elasticsearch-node01 path.data: /var/lib/elasticsearch path.logs: /var/log/elasticsearch network.host: 0.0.0.0 http.port: 9200 cluster.initial_master_nodes: ["elasticsearch-node01", "elasticsearch-node02", "elasticsearch-node03"] node.master: true node.data: true discovery.zen.ping.unicast.hosts: ["192.168.10.71" , "192.168.10.72", "192.168.10.73"] discovery.zen.minimum_master_nodes: 2 xpack.security.enabled: true xpack.security.transport.ssl.enabled: true xpack.security.transport.ssl.verification_mode: certificate xpack....</p>
+</section>
+<footer class=entry-footer>August 20, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Cara Membuat Cluster Elasticsearch 7 beserta module security xpack [Debian/Ubuntu]" href=https://blog.ajiarya.id/posts/elk/elasticsearch/cara-membuat-cluster-elasticsearch-7/></a>
+</article>
+<article class="post-entry tag-entry">
+<header class=entry-header>
 <h2>Cara Mengganti Password User Elasticsearch</h2>
 </header>
 <section class=entry-content>

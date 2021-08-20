@@ -5,7 +5,16 @@
     <link>https://blog.ajiarya.id/categories/elk/</link>
     <description>Recent content in ELK on Aji Arya</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 09 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.ajiarya.id/categories/elk/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 20 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.ajiarya.id/categories/elk/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cara Membuat Cluster Elasticsearch 7 beserta module security xpack [Debian/Ubuntu]</title>
+      <link>https://blog.ajiarya.id/posts/elk/elasticsearch/cara-membuat-cluster-elasticsearch-7/</link>
+      <pubDate>Fri, 20 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.ajiarya.id/posts/elk/elasticsearch/cara-membuat-cluster-elasticsearch-7/</guid>
+      <description>Cara mudah membuat cluster elasticsearch</description>
+    </item>
+    
     <item>
       <title>Cara Mengganti Password User Elasticsearch</title>
       <link>https://blog.ajiarya.id/posts/elk/elasticsearch/cara-ganti-password-elasticsearch/</link>
