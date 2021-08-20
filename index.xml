@@ -7,6 +7,15 @@
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Fri, 20 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.ajiarya.id/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Cara Konfigurasi SSH Config</title>
+      <link>https://blog.ajiarya.id/posts/linux/cara-konfigurasi-ssh-config/</link>
+      <pubDate>Fri, 20 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.ajiarya.id/posts/linux/cara-konfigurasi-ssh-config/</guid>
+      <description>Cara membuat jalan pintas untuk ssh</description>
+    </item>
+    
+    <item>
       <title>Cara Membuat Cluster Elasticsearch 7 beserta module security xpack [Debian/Ubuntu]</title>
       <link>https://blog.ajiarya.id/posts/elk/elasticsearch/cara-membuat-cluster-elasticsearch-7/</link>
       <pubDate>Fri, 20 Aug 2021 00:00:00 +0000</pubDate>

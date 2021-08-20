@@ -5,7 +5,16 @@
     <link>https://blog.ajiarya.id/tags/ssh/</link>
     <description>Recent content in SSH on Aji Arya</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 11 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.ajiarya.id/tags/ssh/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 20 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.ajiarya.id/tags/ssh/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cara Konfigurasi SSH Config</title>
+      <link>https://blog.ajiarya.id/posts/linux/cara-konfigurasi-ssh-config/</link>
+      <pubDate>Fri, 20 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.ajiarya.id/posts/linux/cara-konfigurasi-ssh-config/</guid>
+      <description>Cara membuat jalan pintas untuk ssh</description>
+    </item>
+    
     <item>
       <title>Cara Local Port Forwarding SSH</title>
       <link>https://blog.ajiarya.id/posts/linux/cara-ssh-local-forwarding-port/</link>

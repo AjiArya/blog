@@ -5,6 +5,9 @@
     <loc>https://blog.ajiarya.id/</loc>
     <lastmod>2021-08-20T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://blog.ajiarya.id/posts/linux/cara-konfigurasi-ssh-config/</loc>
+    <lastmod>2021-08-20T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://blog.ajiarya.id/posts/elk/elasticsearch/cara-membuat-cluster-elasticsearch-7/</loc>
     <lastmod>2021-08-20T00:00:00+00:00</lastmod>
   </url><url>
@@ -20,7 +23,16 @@
     <loc>https://blog.ajiarya.id/categories/elk/</loc>
     <lastmod>2021-08-20T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://blog.ajiarya.id/tags/linux/</loc>
+    <lastmod>2021-08-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.ajiarya.id/categories/linux/</loc>
+    <lastmod>2021-08-20T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://blog.ajiarya.id/posts/</loc>
+    <lastmod>2021-08-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.ajiarya.id/tags/ssh/</loc>
     <lastmod>2021-08-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.ajiarya.id/tags/</loc>
@@ -56,12 +68,6 @@
     <loc>https://blog.ajiarya.id/tags/kvm/</loc>
     <lastmod>2021-08-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.ajiarya.id/tags/linux/</loc>
-    <lastmod>2021-08-17T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://blog.ajiarya.id/categories/linux/</loc>
-    <lastmod>2021-08-17T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://blog.ajiarya.id/tags/python-tfgen/</loc>
     <lastmod>2021-08-17T00:00:00+00:00</lastmod>
   </url><url>
@@ -84,9 +90,6 @@
     <lastmod>2021-08-12T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.ajiarya.id/posts/linux/cara-ssh-local-forwarding-port/</loc>
-    <lastmod>2021-08-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://blog.ajiarya.id/tags/ssh/</loc>
     <lastmod>2021-08-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.ajiarya.id/posts/podman/cara-install-container-tools/</loc>

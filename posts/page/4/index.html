@@ -87,6 +87,16 @@ IMTEK
 </header>
 <article class=post-entry>
 <header class=entry-header>
+<h2>Cara Install ZFS Pada Linux [Debian]</h2>
+</header>
+<section class=entry-content>
+<p>Panduan Menambahkan backports repository Tambahkan repository sudo vi /etc/apt/sources.list.d/buster-backports.list /etc/apt/sources.list.d/buster-backports.list deb http://deb.debian.org/debian buster-backports main contrib deb-src http://deb.debian.org/debian buster-backports main contrib Tambahkan konfigurasi APT sudo vi /etc/apt/preferences.d/90_zfs /etc/apt/preferences.d/90_zfs Package: libnvpair1linux libuutil1linux libzfs2linux libzpool2linux spl-dkms zfs-dkms zfs-test zfsutils-linux zfsutils-linux-dev zfs-zed Pin: release n=buster-backports Pin-Priority: 990 Install package ZFS Install package sudo apt update sudo apt install dpkg-dev linux-headers-$(uname -r) linux-image-amd64 sudo apt install zfs-dkms zfsutils-linux Buat konfigurasi ZFS untuk kernel module load sudo sh -c "echo zfs> /etc/modules-load....</p>
+</section>
+<footer class=entry-footer>August 9, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Cara Install ZFS Pada Linux [Debian]" href=https://blog.ajiarya.id/posts/zfs/cara-install-zfs-debian/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
 <h2>Cara Install ZFS Pada Linux [Ubuntu]</h2>
 </header>
 <section class=entry-content>
@@ -125,17 +135,6 @@ Buat file dengan nama buat-user.sh #!/bin/bash for i in {1..10}; do sudo useradd
 </section>
 <footer class=entry-footer>August 4, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
 <a class=entry-link aria-label="post link to Cara Memperbarui Juju Charm" href=https://blog.ajiarya.id/posts/juju/cara-upgrade-juju-charm/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>Cara Mengetahui Virtualisasi Yang Digunakan oleh VM Linux</h2>
-</header>
-<section class=entry-content>
-<p>Pendahuluan Ketika kita menggunakan layanan VPS ataupun Public Cloud kita bisa memeriksa jenis virtualisasi yang diberikan oleh penyedia layanan dengan menggunakan perintah dmidecode pada sistem operasi Linux.
-Perintah sudo dmidecode -s system-product-name Contoh pada virtualisasi KVM student@machine:~$ sudo dmidecode -s system-product-name KVM Contoh pada virtualisasi OpenStack student@machine:~$ sudo dmidecode -s system-product-name OpenStack Compute </p>
-</section>
-<footer class=entry-footer>August 4, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Mengetahui Virtualisasi Yang Digunakan oleh VM Linux" href=https://blog.ajiarya.id/posts/linux/cara-memeriksa-jenis-virtualiasasi/></a>
 </article>
 <footer class=page-footer>
 <nav class=pagination>

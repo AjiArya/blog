@@ -3,11 +3,11 @@
 <meta http-equiv=x-ua-compatible content="IE=edge">
 <meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
 <meta name=robots content="index, follow">
-<title>Aji Arya</title>
-<meta name=keywords content="Blog,Portfolio,PaperMod">
+<title>Linux | Aji Arya</title>
+<meta name=keywords content>
 <meta name=description content="Aji Arya's Personal Blog">
 <meta name=author content="Aji Arya">
-<link rel=canonical href=https://blog.ajiarya.id/>
+<link rel=canonical href=https://blog.ajiarya.id/categories/linux/>
 <meta name=google-site-verification content="7xkl7tm1-iJxieMKGetoXQpqJffAVKatOFgXg7ddX_Y">
 <link crossorigin=anonymous href=/assets/css/stylesheet.min.35cd0f65a15cafa92372b8313deef5960aae04b90ad722f2bbf509eb0468137e.css integrity="sha256-Nc0PZaFcr6kjcrgxPe71lgquBLkK1yLyu/UJ6wRoE34=" rel="preload stylesheet" as=style>
 <link rel=icon href=https://blog.ajiarya.id/favicon.ico>
@@ -18,16 +18,14 @@
 <meta name=theme-color content="#2e2e33">
 <meta name=msapplication-TileColor content="#2e2e33">
 <meta name=generator content="Hugo 0.87.0">
-<link rel=alternate type=application/rss+xml href=https://blog.ajiarya.id/index.xml>
-<link rel=alternate type=application/json href=https://blog.ajiarya.id/index.json>
-<script type=application/javascript>var doNotTrack=!1;doNotTrack||(function(a,e,f,g,b,c,d){a.GoogleAnalyticsObject=b,a[b]=a[b]||function(){(a[b].q=a[b].q||[]).push(arguments)},a[b].l=1*new Date,c=e.createElement(f),d=e.getElementsByTagName(f)[0],c.async=1,c.src=g,d.parentNode.insertBefore(c,d)}(window,document,'script','https://www.google-analytics.com/analytics.js','ga'),ga('create','UA-182251419-3','auto'),ga('send','pageview'))</script><meta property="og:title" content="Aji Arya">
+<link rel=alternate type=application/rss+xml href=https://blog.ajiarya.id/categories/linux/index.xml>
+<script type=application/javascript>var doNotTrack=!1;doNotTrack||(function(a,e,f,g,b,c,d){a.GoogleAnalyticsObject=b,a[b]=a[b]||function(){(a[b].q=a[b].q||[]).push(arguments)},a[b].l=1*new Date,c=e.createElement(f),d=e.getElementsByTagName(f)[0],c.async=1,c.src=g,d.parentNode.insertBefore(c,d)}(window,document,'script','https://www.google-analytics.com/analytics.js','ga'),ga('create','UA-182251419-3','auto'),ga('send','pageview'))</script><meta property="og:title" content="Linux">
 <meta property="og:description" content="Aji Arya's Personal Blog">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://blog.ajiarya.id/"><meta property="og:site_name" content="Aji Arya">
+<meta property="og:url" content="https://blog.ajiarya.id/categories/linux/"><meta property="og:site_name" content="Aji Arya">
 <meta name=twitter:card content="summary">
-<meta name=twitter:title content="Aji Arya">
+<meta name=twitter:title content="Linux">
 <meta name=twitter:description content="Aji Arya's Personal Blog">
-<script type=application/ld+json>{"@context":"https://schema.org","@type":"Organization","name":"Aji Arya","url":"https://blog.ajiarya.id","description":"Aji Arya\u0026#39;s Personal Blog","thumbnailUrl":"https://blog.ajiarya.id/favicon.ico","sameAs":["https://www.linkedin.com/in/ajiarya","https://instagram.com/ajiaryaa","https://twitter.com/aryasaurus","https://github.com/ajiarya"]}</script>
 </head>
 <body class=list id=top>
 <script>localStorage.getItem("pref-theme")==="dark"?document.body.classList.add('dark'):localStorage.getItem("pref-theme")==="light"?document.body.classList.remove('dark'):window.matchMedia('(prefers-color-scheme: dark)').matches&&document.body.classList.add('dark')</script>
@@ -83,7 +81,10 @@ IMTEK
 </nav>
 </header>
 <main class=main>
-<article class=post-entry>
+<header class=page-header><div class=breadcrumbs><a href=https://blog.ajiarya.id>Home</a>&nbsp;»&nbsp;<a href=https://blog.ajiarya.id/categories/>Categories</a></div>
+<h1>Linux</h1>
+</header>
+<article class="post-entry tag-entry">
 <header class=entry-header>
 <h2>Cara Mengetahui Virtualisasi Yang Digunakan oleh VM Linux</h2>
 </header>
@@ -94,20 +95,9 @@ Perintah sudo dmidecode -s system-product-name Contoh pada virtualisasi KVM stud
 <footer class=entry-footer>August 4, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
 <a class=entry-link aria-label="post link to Cara Mengetahui Virtualisasi Yang Digunakan oleh VM Linux" href=https://blog.ajiarya.id/posts/linux/cara-memeriksa-jenis-virtualiasasi/></a>
 </article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>Memasang Kata Container dengan Containerd Pada Ubuntu 20.04</h2>
-</header>
-<section class=entry-content>
-<p>Prasyarat Baremetal atau Virtualisasi yang mendukung Nested Virtualization Panduan 1. Pasang Repository Kata Container ARCH=$(arch) BRANCH="${BRANCH:-master}" sudo sh -c "echo 'deb http://download.opensuse.org/repositories/home:/katacontainers:/releases:/${ARCH}:/${BRANCH}/xUbuntu_$(lsb_release -rs)/ /' > /etc/apt/sources.list.d/kata-containers.list" curl -sL http://download.opensuse.org/repositories/home:/katacontainers:/releases:/${ARCH}:/${BRANCH}/xUbuntu_$(lsb_release -rs)/Release.key | sudo apt-key add - sudo -E apt-get update sudo -E apt-get -y install kata-runtime kata-proxy kata-shim 2. Periksa kemampuan host untuk menjalankan Kata Container kata-runtime kata-check Keluaran yang diharapkan
-student@kata-host:~$ kata-runtime kata-check No newer release available System is capable of running Kata Containers 3....</p>
-</section>
-<footer class=entry-footer>August 3, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Memasang Kata Container dengan Containerd Pada Ubuntu 20.04" href=https://blog.ajiarya.id/posts/kata/install-kata/></a>
-</article>
 <footer class=page-footer>
 <nav class=pagination>
-<a class=prev href=https://blog.ajiarya.id/page/4/>« Prev Page</a>
+<a class=prev href=https://blog.ajiarya.id/categories/linux/>« Prev Page</a>
 </nav>
 </footer>
 </main>
