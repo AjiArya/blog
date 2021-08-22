@@ -16,6 +16,15 @@
     </item>
     
     <item>
+      <title>Cara Upgrade Cluster Ceph Yang Menggunakan cephadm</title>
+      <link>https://blog.ajiarya.id/posts/ceph/cara-upgrade-cluster-cephadm/</link>
+      <pubDate>Sun, 22 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.ajiarya.id/posts/ceph/cara-upgrade-cluster-cephadm/</guid>
+      <description>Cara mudah upgrade ceph cluster yang menggunakan deployment tools cephadm</description>
+    </item>
+    
+    <item>
       <title>Cara Konfigurasi SSH Config</title>
       <link>https://blog.ajiarya.id/posts/linux/cara-konfigurasi-ssh-config/</link>
       <pubDate>Fri, 20 Aug 2021 00:00:00 +0000</pubDate>
