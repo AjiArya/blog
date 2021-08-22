@@ -12,7 +12,7 @@ TocOpen: true
 - Minimal 3 Nodes dengan 3 disk tambahan
 
 # Panduan
-1. Login as root
+1. Login sebagai root
 ```bash
 sudo -i
 ```
