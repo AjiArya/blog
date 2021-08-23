@@ -11,7 +11,7 @@ TocOpen: true
 # Pendahuluan
 Ketika kita ingin mengakses sebuah layanan pada remote host yang hanya listen pada address `127.0.0.1` kita tidak bisa menggunakan fitur `Dynamic Port Forwarding` sebagai alternatif kita bisa menggunakan fitur `Local Port Forwarding`
 
-# Perintah
+# Panduan
 ```bash
 ssh -L [local_address_bind]:[local_port_bind]:[remote_address_bind]:[remote_port_bind] <remote_host>
 ```
