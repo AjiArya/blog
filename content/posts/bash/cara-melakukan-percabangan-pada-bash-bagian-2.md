@@ -54,3 +54,6 @@ if [[ -v VAR1 ]]; then
 fi
 ```
 ![](/images/perulangan-bagian2-variabel.png)
+
+# Referensi
+- [GNU Org - Bash Manual](https://www.gnu.org/software/bash/manual/html_node/Bash-Conditional-Expressions.html)
