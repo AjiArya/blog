@@ -3,15 +3,33 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://blog.ajiarya.id/</loc>
-    <lastmod>2021-08-22T00:00:00+00:00</lastmod>
+    <lastmod>2021-08-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.ajiarya.id/posts/podman/cara-membuat-container-podman-bisa-dikelola-sebagai-service/</loc>
+    <lastmod>2021-08-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.ajiarya.id/categories/</loc>
+    <lastmod>2021-08-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.ajiarya.id/tags/container/</loc>
+    <lastmod>2021-08-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.ajiarya.id/tags/linux/</loc>
+    <lastmod>2021-08-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.ajiarya.id/categories/podman/</loc>
+    <lastmod>2021-08-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.ajiarya.id/posts/</loc>
+    <lastmod>2021-08-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.ajiarya.id/tags/</loc>
+    <lastmod>2021-08-23T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.ajiarya.id/posts/ceph/cara-deploy-ceph-menggunakan-cephadm/</loc>
     <lastmod>2021-08-22T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.ajiarya.id/posts/ceph/cara-upgrade-cluster-cephadm/</loc>
-    <lastmod>2021-08-22T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://blog.ajiarya.id/categories/</loc>
     <lastmod>2021-08-22T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.ajiarya.id/tags/ceph/</loc>
@@ -20,13 +38,7 @@
     <loc>https://blog.ajiarya.id/categories/ceph/</loc>
     <lastmod>2021-08-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.ajiarya.id/posts/</loc>
-    <lastmod>2021-08-22T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://blog.ajiarya.id/tags/storage/</loc>
-    <lastmod>2021-08-22T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://blog.ajiarya.id/tags/</loc>
     <lastmod>2021-08-22T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.ajiarya.id/posts/linux/cara-konfigurasi-ssh-config/</loc>
@@ -42,9 +54,6 @@
     <lastmod>2021-08-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.ajiarya.id/categories/elk/</loc>
-    <lastmod>2021-08-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://blog.ajiarya.id/tags/linux/</loc>
     <lastmod>2021-08-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.ajiarya.id/categories/linux/</loc>
@@ -111,12 +120,6 @@
     <lastmod>2021-08-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.ajiarya.id/posts/linux/cara-scp-antar-dua-remote-host/</loc>
-    <lastmod>2021-08-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://blog.ajiarya.id/tags/container/</loc>
-    <lastmod>2021-08-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://blog.ajiarya.id/categories/podman/</loc>
     <lastmod>2021-08-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.ajiarya.id/tags/scp/</loc>
