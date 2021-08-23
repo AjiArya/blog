@@ -13,7 +13,7 @@ Ketika kita ingin mengakses sebuah layanan pada remote host yang hanya listen pa
 
 # Perintah
 ```bash
-ssh [local_address_bind]:[local_port_bind]:[remote_address_bind]:[remote_port_bind] <remote_host>
+ssh -L [local_address_bind]:[local_port_bind]:[remote_address_bind]:[remote_port_bind] <remote_host>
 ```
 
 # Contoh
