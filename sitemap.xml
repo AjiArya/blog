@@ -5,6 +5,15 @@
     <loc>https://blog.ajiarya.id/</loc>
     <lastmod>2021-08-23T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://blog.ajiarya.id/tags/bash/</loc>
+    <lastmod>2021-08-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.ajiarya.id/categories/bash/</loc>
+    <lastmod>2021-08-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.ajiarya.id/posts/bash/cara-melakukan-percabangan-pada-bash-bagian-2/</loc>
+    <lastmod>2021-08-23T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://blog.ajiarya.id/posts/podman/cara-membuat-container-podman-bisa-dikelola-sebagai-service/</loc>
     <lastmod>2021-08-23T00:00:00+00:00</lastmod>
   </url><url>
@@ -100,12 +109,6 @@
   </url><url>
     <loc>https://blog.ajiarya.id/tags/virtualisasi/</loc>
     <lastmod>2021-08-17T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://blog.ajiarya.id/tags/bash/</loc>
-    <lastmod>2021-08-12T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://blog.ajiarya.id/categories/bash/</loc>
-    <lastmod>2021-08-12T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.ajiarya.id/posts/bash/cara-debug-bash/</loc>
     <lastmod>2021-08-12T00:00:00+00:00</lastmod>
