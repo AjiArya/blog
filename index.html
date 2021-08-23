@@ -126,6 +126,18 @@ Buat direktori untuk menyimpan konten mkdir website echo '&lt;h1>Halo Dunia!&lt;
 </article>
 <article class=post-entry>
 <header class=entry-header>
+<h2>Cara Remote Port Forwarding SSH</h2>
+</header>
+<section class=entry-content>
+<p>Pendahuluan Remote Port Forwarding adalah salah satu cara agar kita bisa menyediakan service atau port yang ada pada localhost agar bisa digunakan oleh remote host.
+Sebagai contoh kita akan menggunakan squid3 yang tersedia pada localhost yang kemudian akan diakses oleh remote host
+Panduan ssh -R [remote_address_bind]:[remote_port_bind]:[local_address_bind]:[local_port_bind] &lt;remote_host> Contoh laptopku menjalankan proxy server yang tersedia pada alamat 0.0.0.0:3128 lalu saya ingin mencoba mengakses proxy server tersebut dari home-lab pada alamat 127.0.0.1:8080...</p>
+</section>
+<footer class=entry-footer>August 23, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Cara Remote Port Forwarding SSH" href=https://blog.ajiarya.id/posts/linux/cara-ssh-remote-forwarding-port/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
 <h2>Cara Deploy Ceph Cluster Menggunakan cephadm Pada Rocky Linux 8</h2>
 </header>
 <section class=entry-content>
@@ -145,18 +157,6 @@ ceph orch upgrade status ceph -W cephadm ceph orch ps ceph versions ceph version
 </section>
 <footer class=entry-footer>August 22, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
 <a class=entry-link aria-label="post link to Cara Upgrade Cluster Ceph Yang Menggunakan cephadm" href=https://blog.ajiarya.id/posts/ceph/cara-upgrade-cluster-cephadm/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>Cara Konfigurasi SSH Config</h2>
-</header>
-<section class=entry-content>
-<p>Contoh SSH Config host &lt;nama_pintas> # Nama pintasan hostname &lt;alamat_tujuan> # Bisa IP Address ataupun domain user &lt;user> # Nama user untuk remote port &lt;port> # Port yang digunakan untuk SSH Panduan Buat file ssh config vim ~/.ssh/config ~/.ssh/config host home-lab hostname 1.tcp.jp.ngrok.io user ubuntu port 2222 Lakukan SSH ssh home-lab Catatan
-Cara manual jika tanpa menggunakan ssh config: ssh ubuntu@1.tcp.jp.ngrok.io -p2222
-</p>
-</section>
-<footer class=entry-footer>August 20, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Konfigurasi SSH Config" href=https://blog.ajiarya.id/posts/linux/cara-konfigurasi-ssh-config/></a>
 </article>
 <footer class=page-footer>
 <nav class=pagination>
