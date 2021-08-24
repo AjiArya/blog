@@ -5,7 +5,16 @@
     <link>https://blog.ajiarya.id/posts/</link>
     <description>Recent content in Posts on Aji Arya</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 23 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.ajiarya.id/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 24 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.ajiarya.id/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cara Membuat Ulang Ceph Monitor Yang Rusak [Manual Deployment]</title>
+      <link>https://blog.ajiarya.id/posts/ceph/cara-membuat-ulang-ceph-mon/</link>
+      <pubDate>Tue, 24 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.ajiarya.id/posts/ceph/cara-membuat-ulang-ceph-mon/</guid>
+      <description>Cara mudah membuat ulang monitor yang rusak pada ceph cluster</description>
+    </item>
+    
     <item>
       <title>Cara Melakukan Percabangan Dasar Bash - Bagian 2 [Periksa Direktori, File, &amp; Variabel]</title>
       <link>https://blog.ajiarya.id/posts/bash/cara-melakukan-percabangan-pada-bash-bagian-2/</link>

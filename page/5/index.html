@@ -85,6 +85,16 @@ IMTEK
 <main class=main>
 <article class=post-entry>
 <header class=entry-header>
+<h2>Cara Install ZFS Pada Linux [CentOS/Rocky]</h2>
+</header>
+<section class=entry-content>
+<p>Panduan Menambahkan repository dan public signing key source /etc/os-release sudo dnf install https://zfsonlinux.org/epel/zfs-release.el${VERSION_ID/./_}.noarch.rpm sudo rpm --import /etc/pki/rpm-gpg/RPM-GPG-KEY-zfsonlinux Install package ZFS sudo yum-config-manager --disable zfs sudo yum-config-manager --enable zfs-kmod sudo dnf install epel-release kernel-devel zfs Verifikasi versi modinfo zfs | grep version Referensi OpenZFS Docs </p>
+</section>
+<footer class=entry-footer>August 9, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Cara Install ZFS Pada Linux [CentOS/Rocky]" href=https://blog.ajiarya.id/posts/zfs/cara-install-zfs-centos/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
 <h2>Cara Install ZFS Pada Linux [Debian]</h2>
 </header>
 <section class=entry-content>
@@ -123,16 +133,6 @@ Buat file dengan nama buat-user.sh #!/bin/bash for i in {1..10}; do sudo useradd
 </section>
 <footer class=entry-footer>August 4, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
 <a class=entry-link aria-label="post link to Cara Melakukan Perulangan Pada Bash" href=https://blog.ajiarya.id/posts/bash/cara-looping-pada-bash/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>Cara Memperbarui Juju Charm</h2>
-</header>
-<section class=entry-content>
-<p>Perintah juju refresh [options] &lt;application> Perbarui ke versi terbaru juju refresh &lt;application> Contoh juju refresh prometheus Perbarui ke versi revision spesifik juju refresh --revision &lt;revision number> &lt;application> Contoh juju refresh --revision 22 prometheus Perbarui ke versi channel spesifik juju refresh --channel &lt;channel> &lt;application> Contoh juju refresh --channel latest/stable prometheus </p>
-</section>
-<footer class=entry-footer>August 4, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Memperbarui Juju Charm" href=https://blog.ajiarya.id/posts/juju/cara-upgrade-juju-charm/></a>
 </article>
 <footer class=page-footer>
 <nav class=pagination>

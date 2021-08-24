@@ -105,6 +105,17 @@ IMTEK
 </article>
 <article class=post-entry>
 <header class=entry-header>
+<h2>Cara Membuat Ulang Ceph Monitor Yang Rusak [Manual Deployment]</h2>
+</header>
+<section class=entry-content>
+<p>Pendahuluan Jika mengalami kerusakan pada ceph monitor kita bisa melakukan hapus dan buat monitor yang rusak tersebut dengan ceph-monitor lainnya masih tersedia bagi cluster
+Panduan Login sebagai root sudo -i Hentikan service monitor jika masih berjalan systemctl stop ceph-mon@&lt;monitor_name> Hapus direktori monitor dan buat ulang direktori rm -rf /var/lib/ceph/mon/ceph-&lt;monitor_name> mkdir /var/lib/ceph/mon/ceph-&lt;monitor_name> Remove monitor from the cluster ceph mon rm &lt;monitor_name> Dapatkan keyring dan monmap (monitor map) ceph auth get mon....</p>
+</section>
+<footer class=entry-footer>August 24, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Cara Membuat Ulang Ceph Monitor Yang Rusak [Manual Deployment]" href=https://blog.ajiarya.id/posts/ceph/cara-membuat-ulang-ceph-mon/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
 <h2>Cara Melakukan Percabangan Dasar Bash - Bagian 2 [Periksa Direktori, File, & Variabel]</h2>
 </header>
 <section class=entry-content>
@@ -145,18 +156,6 @@ Panduan ssh -R [remote_address_bind]:[remote_port_bind]:[local_address_bind]:[lo
 </section>
 <footer class=entry-footer>August 22, 2021&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Aji Arya</footer>
 <a class=entry-link aria-label="post link to Cara Deploy Ceph Cluster Menggunakan cephadm Pada Rocky Linux 8" href=https://blog.ajiarya.id/posts/ceph/cara-deploy-ceph-menggunakan-cephadm/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>Cara Upgrade Cluster Ceph Yang Menggunakan cephadm</h2>
-</header>
-<section class=entry-content>
-<p>Panduan Periksa versi ceph yang sedang digunakan ceph versions Lihat rilis ceph dan baca catatan rilis (release note) Kunjungi Ceph Release
-Lakukan upgrade ceph orch upgrade start --ceph-version &lt;versi_ceph> # Contoh # ceph orch upgrade start --ceph-version 16.2.5 Pantau proses upgrade Gunakan perintah-perintah dibawah untuk melakukan pengecekan pada proses upgrade
-ceph orch upgrade status ceph -W cephadm ceph orch ps ceph versions ceph versions saat proses upgrade sedang berlangsung...</p>
-</section>
-<footer class=entry-footer>August 22, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Upgrade Cluster Ceph Yang Menggunakan cephadm" href=https://blog.ajiarya.id/posts/ceph/cara-upgrade-cluster-cephadm/></a>
 </article>
 <footer class=page-footer>
 <nav class=pagination>
