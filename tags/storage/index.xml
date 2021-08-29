@@ -5,7 +5,16 @@
     <link>https://blog.ajiarya.id/tags/storage/</link>
     <description>Recent content in Storage on Aji Arya</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 24 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.ajiarya.id/tags/storage/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 29 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.ajiarya.id/tags/storage/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cara Deploy Ceph Dashboard Pada Deployment Manual</title>
+      <link>https://blog.ajiarya.id/posts/ceph/cara-deploy-ceph-dashboard-pada-deployment-manual/</link>
+      <pubDate>Sun, 29 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.ajiarya.id/posts/ceph/cara-deploy-ceph-dashboard-pada-deployment-manual/</guid>
+      <description>Cara mudah deploy ceph dashboard pada deployment manual</description>
+    </item>
+    
     <item>
       <title>Cara Membuat Ulang Ceph Monitor Yang Rusak [Manual Deployment]</title>
       <link>https://blog.ajiarya.id/posts/ceph/cara-membuat-ulang-ceph-mon/</link>
