@@ -85,6 +85,16 @@ IMTEK
 <main class=main>
 <article class=post-entry>
 <header class=entry-header>
+<h2>Cara Deploy Ceph Cluster Menggunakan cephadm Pada Rocky Linux 8</h2>
+</header>
+<section class=entry-content>
+<p>Prasyarat Minimal 3 Nodes dengan 3 disk tambahan Panduan Login sebagai root sudo -i Tambahkan host pada file /etc/hosts vim /etc/hosts /etc/hosts 127.0.0.1 localhost localhost.localdomain localhost4 localhost4.localdomain4 ::1 localhost localhost.localdomain localhost6 localhost6.localdomain6 192.168.10.201 rocky-ceph-node01 192.168.10.202 rocky-ceph-node02 192.168.10.203 rocky-ceph-node03 Update dan Upgrade package dnf update; dnf upgrade Install python3, lvm2, dan podman dnf install -y python3 lvm2 podman Unduh cephadm pada node pertama curl --silent --remote-name --location https://github....</p>
+</section>
+<footer class=entry-footer>August 22, 2021&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Cara Deploy Ceph Cluster Menggunakan cephadm Pada Rocky Linux 8" href=https://blog.ajiarya.id/posts/ceph/cara-deploy-ceph-menggunakan-cephadm/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
 <h2>Cara Upgrade Cluster Ceph Yang Menggunakan cephadm</h2>
 </header>
 <section class=entry-content>
@@ -126,16 +136,6 @@ Cara manual jika tanpa menggunakan ssh config: ssh ubuntu@1.tcp.jp.ngrok.io -p22
 </section>
 <footer class=entry-footer>August 17, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
 <a class=entry-link aria-label="post link to Cara Membuat Image Libvirt Menggunakan python-tfgen" href=https://blog.ajiarya.id/posts/python-tfgen/cara-membuat-image-dengan-python-tfgen/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>Cara Membuat Network Libvirt Menggunakan python-tfgen</h2>
-</header>
-<section class=entry-content>
-<p>Prasyarat Terraform python-tfgen Panduan Buat yaml dengan kind: network lalu isikan dengan daftar network yang diinginkan network.yaml kind: network uri: "qemu:///system" spec: - name: home-lab-network mode: nat bridge: home-lab-bridge dhcp: true addresses4: "192.168.100.0/24" Buat HCL berdasarkan yaml yang telah dibuat ./tfgen.py -f network.yaml -o network image/main.tf (Hasil tfgen) terraform { required_providers { libvirt = { source = "dmacvicar/libvirt" } } } provider "libvirt" { uri = "qemu:///system" } resource "libvirt_network" "home-lab-network" { name = "home-lab-network" mode = "nat" bridge = "home-lab-bridge" mtu = 1500 autostart = true addresses = ["192....</p>
-</section>
-<footer class=entry-footer>August 17, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Membuat Network Libvirt Menggunakan python-tfgen" href=https://blog.ajiarya.id/posts/python-tfgen/cara-membuat-network-dengan-python-tfgen/></a>
 </article>
 <footer class=page-footer>
 <nav class=pagination>
