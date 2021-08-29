@@ -105,6 +105,16 @@ IMTEK
 </article>
 <article class=post-entry>
 <header class=entry-header>
+<h2>Cara Memasang Minikube Pada WSL [Docker Driver]</h2>
+</header>
+<section class=entry-content>
+<p>Prasyarat Windows 10 WSL 2 Docker Desktop WSL 2 Backend Panduan Unduh dan install binary file minikube curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64 sudo install minikube-linux-amd64 /usr/local/bin/minikube Jalankan minikube menggunakan driver docker minikube start --driver=docker Unduh dan install kubectl curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl" sudo install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl Verifikasi status minikube minikube status kubectl get pods -n kube-system Referensi Docker Desktop WSL 2 backend Minikube Docker Driver Install Kubectl </p>
+</section>
+<footer class=entry-footer>August 29, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Cara Memasang Minikube Pada WSL [Docker Driver]" href=https://blog.ajiarya.id/posts/kubernetes/cara-memasang-minikube-pada-wsl/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
 <h2>Cara Memasang Nginx Ingress Controller Pada Kubernetes Cluster [External IP]</h2>
 </header>
 <section class=entry-content>
@@ -146,18 +156,6 @@ Buat direktori untuk menyimpan konten mkdir website echo '&lt;h1>Halo Dunia!&lt;
 </section>
 <footer class=entry-footer>August 23, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
 <a class=entry-link aria-label="post link to Cara Membuat Rootless Container Podman Bisa Dikelola Sebagai Service" href=https://blog.ajiarya.id/posts/podman/cara-membuat-container-podman-bisa-dikelola-sebagai-service/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>Cara Remote Port Forwarding SSH</h2>
-</header>
-<section class=entry-content>
-<p>Pendahuluan Remote Port Forwarding adalah salah satu cara agar kita bisa menyediakan service atau port yang ada pada localhost agar bisa digunakan oleh remote host.
-Sebagai contoh kita akan menggunakan squid3 yang tersedia pada localhost yang kemudian akan diakses oleh remote host
-Panduan ssh -R [remote_address_bind]:[remote_port_bind]:[local_address_bind]:[local_port_bind] &lt;remote_host> Contoh laptopku menjalankan proxy server yang tersedia pada alamat 0.0.0.0:3128 lalu saya ingin mencoba mengakses proxy server tersebut dari home-lab pada alamat 127.0.0.1:8080...</p>
-</section>
-<footer class=entry-footer>August 23, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Remote Port Forwarding SSH" href=https://blog.ajiarya.id/posts/linux/cara-ssh-remote-forwarding-port/></a>
 </article>
 <footer class=page-footer>
 <nav class=pagination>
