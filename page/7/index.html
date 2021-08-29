@@ -85,62 +85,29 @@ IMTEK
 <main class=main>
 <article class=post-entry>
 <header class=entry-header>
-<h2>Cara Membuat VM Libvirt Menggunakan python-tfgen</h2>
+<h2>Cara Mengetahui Virtualisasi Yang Digunakan oleh VM Linux</h2>
 </header>
 <section class=entry-content>
-<p>Prasyarat Terraform python-tfgen Storage Pool (Baca disini untuk cara membuat Storage Pool) Image (Baca disini untuk cara membuat Image) Network (Baca disini untuk cara membuat Network) Panduan Buat yaml dengan kind: vm lalu isikan dengan daftar image yang diinginkan image.yaml kind: vm uri: "qemu:///system" spec: - name: vm1 hostname: vm1 nested_enabled: true os: ubuntu vcpus: 2 memory: 2G console: vnc cloud_data: users: - name: root public_key: - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDBpZKhFbJ9r/gEef9KYo13VoEgBOkyMw06aOCzltT8wsjYPRMYzb2cbuiJBqJq5sXBrpaunTh5M7F9TyHQxhZnGgGVdutX7Q3RTOxWCHNMOxnrN7gQAHQ0kdqegrvUKNB7ym/2G3baz7pmxXf+I1Tw5AChJ8kIBDB9DnzVdtnMYxT0nivY1f6gSR2cgStEsuSbZDlBQ5Lt6W+sUyNkffddpZl0+QHAFM6UFTJNcuwMBqQG75/ZcwqLkQKU6pg0kZnDgmElXtJUKu141PJ0EbhkeOsh+zjYuwScotQYbN/MLN8fAhlQLFOwX/g3o6M9A49jyHVglQCxP2mI+d3Fra+ykrcQ7eTkPncwCCEmZYLjonQl3qhHHcbM7He1kOnORdVC/f/Uz4VsX+cMn5WGs1P+qyZKRAvw6egqWAkS0GPfEjdkhqLQ4WU9mC26aaaQfBqmMos1XZ/nRTuGAc6qb0SOkz5XN0g5ISNmCUpsnxO4YocmWP/sNDRPWBIzcycZE6s= student@home-lab base_image: storage_pool: images name: ubuntu-focal disks: storage_pool: vms disks: - name: vm1-vda....</p>
+<p>Pendahuluan Ketika kita menggunakan layanan VPS ataupun Public Cloud kita bisa memeriksa jenis virtualisasi yang diberikan oleh penyedia layanan dengan menggunakan perintah dmidecode pada sistem operasi Linux.
+Perintah sudo dmidecode -s system-product-name Contoh pada virtualisasi KVM student@machine:~$ sudo dmidecode -s system-product-name KVM Contoh pada virtualisasi OpenStack student@machine:~$ sudo dmidecode -s system-product-name OpenStack Compute </p>
 </section>
-<footer class=entry-footer>August 17, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Membuat VM Libvirt Menggunakan python-tfgen" href=https://blog.ajiarya.id/posts/python-tfgen/cara-membuat-vm-dengan-python-tfgen/></a>
+<footer class=entry-footer>August 4, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Cara Mengetahui Virtualisasi Yang Digunakan oleh VM Linux" href=https://blog.ajiarya.id/posts/linux/cara-memeriksa-jenis-virtualiasasi/></a>
 </article>
 <article class=post-entry>
 <header class=entry-header>
-<h2>Cara Menggunakan Terraform Libvirt Provider Dengan Bantuan python-tfgen</h2>
+<h2>Memasang Kata Container dengan Containerd Pada Ubuntu 20.04</h2>
 </header>
 <section class=entry-content>
-<p>Pendahuluan Apa yang membuat kita malas untuk belajar atau mempraktikan ilmu IT? Membuat Lab! Tenang semua itu bisa dibuat tidak membosankan dan bisa dilakukan dengan cepat.
-Saya menggunakan KVM Host untuk melakukan riset ataupun belajar hal baru, sehingga intensitas saya dalam membuat VM itu bisa dibilang sangat sering dan saya rasa membuat VM adalah hal membosankan yang berulang-ulang sehingga saya membuat sebuah tools agar mempermudah dan mempercepat pembuatan VM.
-Panduan Unduh Terraform wget https://releases....</p>
+<p>Prasyarat Baremetal atau Virtualisasi yang mendukung Nested Virtualization Panduan 1. Pasang Repository Kata Container ARCH=$(arch) BRANCH="${BRANCH:-master}" sudo sh -c "echo 'deb http://download.opensuse.org/repositories/home:/katacontainers:/releases:/${ARCH}:/${BRANCH}/xUbuntu_$(lsb_release -rs)/ /' > /etc/apt/sources.list.d/kata-containers.list" curl -sL http://download.opensuse.org/repositories/home:/katacontainers:/releases:/${ARCH}:/${BRANCH}/xUbuntu_$(lsb_release -rs)/Release.key | sudo apt-key add - sudo -E apt-get update sudo -E apt-get -y install kata-runtime kata-proxy kata-shim 2. Periksa kemampuan host untuk menjalankan Kata Container kata-runtime kata-check Keluaran yang diharapkan
+student@kata-host:~$ kata-runtime kata-check No newer release available System is capable of running Kata Containers 3....</p>
 </section>
-<footer class=entry-footer>August 17, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Menggunakan Terraform Libvirt Provider Dengan Bantuan python-tfgen" href=https://blog.ajiarya.id/posts/linux/cara-menggunakan-terraform-libvirt-provider/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>Cara Menyiapkan Home Lab Linux [CentOS/Rocky 8]</h2>
-</header>
-<section class=entry-content>
-<p>Referensi Sewa Server Hetzner Robot - Server Auction Prasyarat Server Sistem Operasi CentOS 8 atau Rocky 8 terinstall Panduan Update & Upgrade Package sudo dnf update sudo dnf upgrade Install grup package untuk host virtualisasi sudo dnf groupinstall -y "Virtualization Host" Jalankan dan enable servis libvirt sudo systemctl enable --now libvirtd Install cockpit plugin untuk VM sudo dnf install -y cockpit-machines Jalankan dan enable servis cockpit sudo systemctl enable --now cockpit....</p>
-</section>
-<footer class=entry-footer>August 17, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Menyiapkan Home Lab Linux [CentOS/Rocky 8]" href=https://blog.ajiarya.id/posts/linux/cara-menyiapkan-home-lab-centos-rocky/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>Cara Menyiapkan Home Lab Linux [Debian Bullseye/Ubuntu Focal]</h2>
-</header>
-<section class=entry-content>
-<p>Debian Cockpit
-Ubuntu Cockpit
-Referensi Sewa Server Hetzner Robot - Server Auction Prasyarat Server Sistem Operasi Debian 11 (Bullseye) atau Ubuntu 20.04 (Focal) terinstall Panduan Update & Upgrade package sudo apt update sudo apt upgrade Install package-package untuk host virtualisasi sudo apt install cockpit cockpit-machines qemu-system-x86 libvirt-daemon-system libvirt-clients bridge-utils Jalankan dan enable servis libvirt sudo systemctl enable --now libvirtd Jalankan dan enable servis cockpit sudo systemctl enable --now cockpit....</p>
-</section>
-<footer class=entry-footer>August 17, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Menyiapkan Home Lab Linux [Debian Bullseye/Ubuntu Focal]" href=https://blog.ajiarya.id/posts/linux/cara-menyiapkan-home-lab-debian-ubuntu/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>Cara Debug Bash Script</h2>
-</header>
-<section class=entry-content>
-<p>Panduan Gunakan kata kunci set pada bash dengan opsi -v #!/bin/bash # Tambahkan set -v pada script set -v Contoh read.sh #!/bin/bash # Baris berikut akan membuat bash script menjadi verbose set -v echo "Siapa namamu?" read NAMA echo "Berapa umurmu? (Dalam Tahun)" read UMUR # tampilkan nama echo "${NAMA}" # tampilkan umur echho "${UMUR}Tahun" # Sapa nama echo "Halo, ${NAMA}!" Ketika menjalankan read.sh...</p>
-</section>
-<footer class=entry-footer>August 12, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Debug Bash Script" href=https://blog.ajiarya.id/posts/bash/cara-debug-bash/></a>
+<footer class=entry-footer>August 3, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Memasang Kata Container dengan Containerd Pada Ubuntu 20.04" href=https://blog.ajiarya.id/posts/kata/install-kata/></a>
 </article>
 <footer class=page-footer>
 <nav class=pagination>
-<a class=prev href=https://blog.ajiarya.id/page/3/>« Prev Page</a>
-<a class=next href=https://blog.ajiarya.id/page/5/>Next Page »</a>
+<a class=prev href=https://blog.ajiarya.id/page/6/>« Prev Page</a>
 </nav>
 </footer>
 </main>

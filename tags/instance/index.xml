@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Instance on Aji Arya</title>
+    <link>https://blog.ajiarya.id/tags/instance/</link>
+    <description>Recent content in Instance on Aji Arya</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sun, 29 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.ajiarya.id/tags/instance/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cara Reset Password Root Dari OpenStack Console [RHEL/CentOS/Rocky]</title>
+      <link>https://blog.ajiarya.id/posts/openstack/cara-reset-password-root-instance-centos/</link>
+      <pubDate>Sun, 29 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.ajiarya.id/posts/openstack/cara-reset-password-root-instance-centos/</guid>
+      <description>Cara reset password root dari openstack console untuk instance yang menggunakan image RHEL/CentOS/Rocky</description>
+    </item>
+    
+    <item>
+      <title>Cara Reset Password Root Dari OpenStack Console [Ubuntu]</title>
+      <link>https://blog.ajiarya.id/posts/openstack/cara-reset-password-root-instance-ubuntu/</link>
+      <pubDate>Sun, 29 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.ajiarya.id/posts/openstack/cara-reset-password-root-instance-ubuntu/</guid>
+      <description>Cara reset password root dari openstack console untuk instance yang menggunakan image ubuntu</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -87,63 +87,29 @@ IMTEK
 </header>
 <article class=post-entry>
 <header class=entry-header>
-<h2>Cara Melakukan Percabangan Dasar Bash - Bagian 1 [Operator Aritmatika]</h2>
+<h2>Cara Mengetahui Virtualisasi Yang Digunakan oleh VM Linux</h2>
 </header>
 <section class=entry-content>
-<p>Pendahuluan Jika kita ingin melakukan pengecekan terhadap suatu variabel maka kita membutuhkan yang namanya percabangan sebagai contoh, jika (if) variabel umur kurang dari 5 maka sama dengan balita, untuk melakukan hal tersebut berikut contoh singkatnya
-balita.sh #!/bin/bash export umur=4 # Cara 1 echo "Menjalankan cara 1" if [[ umur -lt 5 ]]; then echo "Kamu balita!" fi # Cara 2 echo "Menjalankan cara 2" if (( umur >= 5 )); then echo "Kamu balita!...</p>
+<p>Pendahuluan Ketika kita menggunakan layanan VPS ataupun Public Cloud kita bisa memeriksa jenis virtualisasi yang diberikan oleh penyedia layanan dengan menggunakan perintah dmidecode pada sistem operasi Linux.
+Perintah sudo dmidecode -s system-product-name Contoh pada virtualisasi KVM student@machine:~$ sudo dmidecode -s system-product-name KVM Contoh pada virtualisasi OpenStack student@machine:~$ sudo dmidecode -s system-product-name OpenStack Compute </p>
 </section>
-<footer class=entry-footer>August 12, 2021&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Melakukan Percabangan Dasar Bash - Bagian 1 [Operator Aritmatika]" href=https://blog.ajiarya.id/posts/bash/cara-melakukan-percabangan-pada-bash-bagian-1/></a>
+<footer class=entry-footer>August 4, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Cara Mengetahui Virtualisasi Yang Digunakan oleh VM Linux" href=https://blog.ajiarya.id/posts/linux/cara-memeriksa-jenis-virtualiasasi/></a>
 </article>
 <article class=post-entry>
 <header class=entry-header>
-<h2>Cara Local Port Forwarding SSH</h2>
+<h2>Memasang Kata Container dengan Containerd Pada Ubuntu 20.04</h2>
 </header>
 <section class=entry-content>
-<p>Pendahuluan Ketika kita ingin mengakses sebuah layanan pada remote host yang hanya listen pada address 127.0.0.1 kita tidak bisa menggunakan fitur Dynamic Port Forwarding sebagai alternatif kita bisa menggunakan fitur Local Port Forwarding
-Panduan ssh -L [local_address_bind]:[local_port_bind]:[remote_address_bind]:[remote_port_bind] &lt;remote_host> Contoh serverku menjalankan web server yang hanya listen pada address 127.0.0.1:80 lalu saya ingin mencoba mengakses web server tersebut dari laptopku pada address 192.168.10.10:8080
-Jalankan web server menggunakan python pada serverku # Perintah python [root@serverku ~]# python3 -m http....</p>
+<p>Prasyarat Baremetal atau Virtualisasi yang mendukung Nested Virtualization Panduan 1. Pasang Repository Kata Container ARCH=$(arch) BRANCH="${BRANCH:-master}" sudo sh -c "echo 'deb http://download.opensuse.org/repositories/home:/katacontainers:/releases:/${ARCH}:/${BRANCH}/xUbuntu_$(lsb_release -rs)/ /' > /etc/apt/sources.list.d/kata-containers.list" curl -sL http://download.opensuse.org/repositories/home:/katacontainers:/releases:/${ARCH}:/${BRANCH}/xUbuntu_$(lsb_release -rs)/Release.key | sudo apt-key add - sudo -E apt-get update sudo -E apt-get -y install kata-runtime kata-proxy kata-shim 2. Periksa kemampuan host untuk menjalankan Kata Container kata-runtime kata-check Keluaran yang diharapkan
+student@kata-host:~$ kata-runtime kata-check No newer release available System is capable of running Kata Containers 3....</p>
 </section>
-<footer class=entry-footer>August 11, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Local Port Forwarding SSH" href=https://blog.ajiarya.id/posts/linux/cara-ssh-local-forwarding-port/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>Cara Install Podman, Skopeo, dan Buildah Pada Linux (CentOS/Rocky)</h2>
-</header>
-<section class=entry-content>
-<p>Perintah Periksa versi yang tersedia untuk diinstall sudo dnf module list container-tools Contoh keluaran pada Rocky Linux [student@rocky ~]$ sudo dnf module list container-tools Last metadata expiration check: 0:23:42 ago on Tue Aug 10 15:24:06 2021. Rocky Linux 8 - AppStream Name Stream Profiles Summary container-tools rhel8 [d] common [d] Most recent (rolling) versions of podman, buildah, skopeo, runc, conmon, runc, conmon, CRIU, Udica, etc as well as dependencies such as container-selinux built and tested together, and updated as frequently as every 12 weeks....</p>
-</section>
-<footer class=entry-footer>August 10, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Install Podman, Skopeo, dan Buildah Pada Linux (CentOS/Rocky)" href=https://blog.ajiarya.id/posts/podman/cara-install-container-tools/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>Cara SCP Antar Dua Host Remote</h2>
-</header>
-<section class=entry-content>
-<p>Pendahuluan Cara ini digunakan agar kita tidak melakukan hal yang membosankan seperti kejadian berikut
-Conor ingin mengirimkan file dari host1 ke host2 dan hal yang dilakukannya adalah mengirimkan file dari host1 ke localhost terlebih dahulu dan lalu mengirimkan file dari localhost ke host2
-Conor menyalin file file100Giga dari host1 ke localhost (Misal 15 menit) scp host1:file100Giga file100Giga Conor menyalin file file100Giga dari localhost ke host2 (Misal 15 menit) scp file100Giga host1:file100Giga Total waktu yang dihabiskan 30 menit untuk memindahkan file dari host1 ke host2, agar lebih efisien waktu kita bisa memanfaatkan opsi -3 pada scp....</p>
-</section>
-<footer class=entry-footer>August 10, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara SCP Antar Dua Host Remote" href=https://blog.ajiarya.id/posts/linux/cara-scp-antar-dua-remote-host/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>Cara Install ZFS Pada Linux [CentOS/Rocky]</h2>
-</header>
-<section class=entry-content>
-<p>Panduan Menambahkan repository dan public signing key source /etc/os-release sudo dnf install https://zfsonlinux.org/epel/zfs-release.el${VERSION_ID/./_}.noarch.rpm sudo rpm --import /etc/pki/rpm-gpg/RPM-GPG-KEY-zfsonlinux Install package ZFS sudo yum-config-manager --disable zfs sudo yum-config-manager --enable zfs-kmod sudo dnf install epel-release kernel-devel zfs Verifikasi versi modinfo zfs | grep version Referensi OpenZFS Docs </p>
-</section>
-<footer class=entry-footer>August 9, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Install ZFS Pada Linux [CentOS/Rocky]" href=https://blog.ajiarya.id/posts/zfs/cara-install-zfs-centos/></a>
+<footer class=entry-footer>August 3, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Memasang Kata Container dengan Containerd Pada Ubuntu 20.04" href=https://blog.ajiarya.id/posts/kata/install-kata/></a>
 </article>
 <footer class=page-footer>
 <nav class=pagination>
-<a class=prev href=https://blog.ajiarya.id/posts/page/4/>« Prev Page</a>
-<a class=next href=https://blog.ajiarya.id/posts/page/6/>Next Page »</a>
+<a class=prev href=https://blog.ajiarya.id/posts/page/6/>« Prev Page</a>
 </nav>
 </footer>
 </main>

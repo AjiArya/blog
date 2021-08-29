@@ -25,6 +25,24 @@
     </item>
     
     <item>
+      <title>Cara Reset Password Root Dari OpenStack Console [RHEL/CentOS/Rocky]</title>
+      <link>https://blog.ajiarya.id/posts/openstack/cara-reset-password-root-instance-centos/</link>
+      <pubDate>Sun, 29 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.ajiarya.id/posts/openstack/cara-reset-password-root-instance-centos/</guid>
+      <description>Cara reset password root dari openstack console untuk instance yang menggunakan image RHEL/CentOS/Rocky</description>
+    </item>
+    
+    <item>
+      <title>Cara Reset Password Root Dari OpenStack Console [Ubuntu]</title>
+      <link>https://blog.ajiarya.id/posts/openstack/cara-reset-password-root-instance-ubuntu/</link>
+      <pubDate>Sun, 29 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.ajiarya.id/posts/openstack/cara-reset-password-root-instance-ubuntu/</guid>
+      <description>Cara reset password root dari openstack console untuk instance yang menggunakan image ubuntu</description>
+    </item>
+    
+    <item>
       <title>Cara Membuat Ulang Ceph Monitor Yang Rusak [Manual Deployment]</title>
       <link>https://blog.ajiarya.id/posts/ceph/cara-membuat-ulang-ceph-mon/</link>
       <pubDate>Tue, 24 Aug 2021 00:00:00 +0000</pubDate>

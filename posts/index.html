@@ -109,6 +109,32 @@ spec: externalIPs: - &lt;IP_NODE_1> - &lt;IP_NODE_2> - &lt;IP_NODE_N> Referensi 
 </article>
 <article class=post-entry>
 <header class=entry-header>
+<h2>Cara Reset Password Root Dari OpenStack Console [RHEL/CentOS/Rocky]</h2>
+</header>
+<section class=entry-content>
+<p>Prasyarat OpenStack User Horizon Instance RHEL/CentOS/Rocky Panduan Buka console instance pada horizon
+Masuk ke boot option dengan cara interupsi proses booting
+Reboot instance dan tekan tombol panah arah apapun di keyboard pada saat proses reboot Saat masuk boot option pilih kernel dan tekan tombol e pada keyboard
+Cari baris dengan awalan linux /boot/vmlinuz-xxxxxxxx Tambahkan baris berikut rd.break pada baris yang sama dengan linux /boot/vmlinuz-xxxxxxxx Hapus kata berikut console=ttyS0 Lalu tekan Ctrl + x Reset password root menggunakan perintah passwd...</p>
+</section>
+<footer class=entry-footer>August 29, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Cara Reset Password Root Dari OpenStack Console [RHEL/CentOS/Rocky]" href=https://blog.ajiarya.id/posts/openstack/cara-reset-password-root-instance-centos/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
+<h2>Cara Reset Password Root Dari OpenStack Console [Ubuntu]</h2>
+</header>
+<section class=entry-content>
+<p>Prasyarat OpenStack User Horizon Instance Ubuntu Panduan Buka console instance pada horizon
+Masuk ke boot option dengan cara interupsi proses booting
+Reboot instance dan tekan tombol Shift keyboard pada saat proses reboot Saat masuk boot option pilih kernel dan tekan tombol e pada keyboard
+Cari baris dengan awalan linux /boot/vmlinuz-xxxxxxxx Temukan ro quiet dan ganti dengan rw init=/bin/bash Hapus kata berikut console=ttyS0 Lalu tekan Ctrl + x Reset password root menggunakan perintah passwd...</p>
+</section>
+<footer class=entry-footer>August 29, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Cara Reset Password Root Dari OpenStack Console [Ubuntu]" href=https://blog.ajiarya.id/posts/openstack/cara-reset-password-root-instance-ubuntu/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
 <h2>Cara Membuat Ulang Ceph Monitor Yang Rusak [Manual Deployment]</h2>
 </header>
 <section class=entry-content>
@@ -117,27 +143,6 @@ Panduan Login sebagai root sudo -i Hentikan service monitor jika masih berjalan 
 </section>
 <footer class=entry-footer>August 24, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
 <a class=entry-link aria-label="post link to Cara Membuat Ulang Ceph Monitor Yang Rusak [Manual Deployment]" href=https://blog.ajiarya.id/posts/ceph/cara-membuat-ulang-ceph-mon/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>Cara Melakukan Percabangan Dasar Bash - Bagian 2 [Periksa Direktori, File, & Variabel]</h2>
-</header>
-<section class=entry-content>
-<p>Panduan Parameter yang bisa digunakan -d true jika direktori ada -e true jika file ada -v true jika variabel memiliki nilai Contoh 1: Periksa Direktori Script #!/bin/bash if [[ -d halo ]]; then echo "Direktori ada" else echo "Direktori tidak ada" fi Contoh 2: Periksa File Script #!/bin/bash if [[ -e halo.txt ]]; then echo "File ada" else echo "File tidak ada" fi Contoh 3: Periksa Variabel Script #!...</p>
-</section>
-<footer class=entry-footer>August 23, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Melakukan Percabangan Dasar Bash - Bagian 2 [Periksa Direktori, File, & Variabel]" href=https://blog.ajiarya.id/posts/bash/cara-melakukan-percabangan-pada-bash-bagian-2/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>Cara Membuat Rootless Container Podman Bisa Dikelola Sebagai Service</h2>
-</header>
-<section class=entry-content>
-<p>Prasyarat Podman Panduan Sebagai contoh kita akan membuat container nginx pada non-root user bernama student
-Buat direktori untuk menyimpan konten mkdir website echo '&lt;h1>Halo Dunia!&lt;/h1>' > website/index.html Buat container nginx podman run -d --name websiteku -p 8080:80 -v ~/website:/usr/share/nginx/html:Z nginx Verifikasi container podman ps curl localhost:8080 Contoh output [student@podman-host ~]$ podman ps CONTAINER ID IMAGE COMMAND CREATED STATUS PORTS NAMES 109ed419f29e docker.io/library/nginx:latest nginx -g daemon o....</p>
-</section>
-<footer class=entry-footer>August 23, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Membuat Rootless Container Podman Bisa Dikelola Sebagai Service" href=https://blog.ajiarya.id/posts/podman/cara-membuat-container-podman-bisa-dikelola-sebagai-service/></a>
 </article>
 <footer class=page-footer>
 <nav class=pagination>
