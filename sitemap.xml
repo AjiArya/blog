@@ -14,6 +14,9 @@
     <loc>https://blog.ajiarya.id/posts/kubernetes/cara-memasang-ingress-controller-pada-k8s/</loc>
     <lastmod>2021-08-29T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://blog.ajiarya.id/posts/openshift/cara-memasang-openshift-codeready/</loc>
+    <lastmod>2021-08-29T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://blog.ajiarya.id/posts/linux/cara-mengubah-format-image-vm/</loc>
     <lastmod>2021-08-29T00:00:00+00:00</lastmod>
   </url><url>
@@ -60,6 +63,12 @@
     <lastmod>2021-08-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.ajiarya.id/tags/nginx/</loc>
+    <lastmod>2021-08-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.ajiarya.id/tags/okd/</loc>
+    <lastmod>2021-08-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.ajiarya.id/categories/okd/</loc>
     <lastmod>2021-08-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.ajiarya.id/tags/openstack/</loc>

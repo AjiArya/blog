@@ -121,6 +121,16 @@ spec: externalIPs: - &lt;IP_NODE_1> - &lt;IP_NODE_2> - &lt;IP_NODE_N> Referensi 
 </article>
 <article class=post-entry>
 <header class=entry-header>
+<h2>Cara Memasang OpenShift CodeReady Pada Fedora 34</h2>
+</header>
+<section class=entry-content>
+<p>Prasyarat Mesin Fedora 34 (Baremetal atau VM) Akun Red Hat Versi Sistem Operasi: Fedora 34 Cloud Image CodeReady: 1.31.2+19538dab OpenShift: 4.8.4 Panduan Update dan Upgrade package sudo dnf update -y; sudo dnf upgrade -y Install package NetworkManager dan wget sudo dnf install -y NetworkManager wget Unduh CodeReady dan salin pull secret Tautan Disini wget https://developers.redhat.com/content-gateway/file/pub/openshift-v4/clients/crc/1.31.2/crc-linux-amd64.tar.xz tar xf crc-linux-amd64.tar.xz cd crc-linux-1.31.2-amd64/ sudo mv crc /usr/local/bin # Verifikasi crc version Setup dan jalankan CodeReady (Tempel pull secret pada proses crc start) crc setup crc start Akses CodeReady...</p>
+</section>
+<footer class=entry-footer>August 29, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Cara Memasang OpenShift CodeReady Pada Fedora 34" href=https://blog.ajiarya.id/posts/openshift/cara-memasang-openshift-codeready/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
 <h2>Cara Mengubah Format Image VM</h2>
 </header>
 <section class=entry-content>
@@ -128,19 +138,6 @@ spec: externalIPs: - &lt;IP_NODE_1> - &lt;IP_NODE_2> - &lt;IP_NODE_N> Referensi 
 </section>
 <footer class=entry-footer>August 29, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
 <a class=entry-link aria-label="post link to Cara Mengubah Format Image VM" href=https://blog.ajiarya.id/posts/linux/cara-mengubah-format-image-vm/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>Cara Reset Password Root Dari OpenStack Console [RHEL/CentOS/Rocky]</h2>
-</header>
-<section class=entry-content>
-<p>Prasyarat OpenStack User Horizon Instance RHEL/CentOS/Rocky Panduan Buka console instance pada horizon
-Masuk ke boot option dengan cara interupsi proses booting
-Reboot instance dan tekan tombol panah arah apapun di keyboard pada saat proses reboot Saat masuk boot option pilih kernel dan tekan tombol e pada keyboard
-Cari baris dengan awalan linux /boot/vmlinuz-xxxxxxxx Tambahkan baris berikut rd.break pada baris yang sama dengan linux /boot/vmlinuz-xxxxxxxx Hapus kata berikut console=ttyS0 Lalu tekan Ctrl + x Reset password root menggunakan perintah passwd...</p>
-</section>
-<footer class=entry-footer>August 29, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Reset Password Root Dari OpenStack Console [RHEL/CentOS/Rocky]" href=https://blog.ajiarya.id/posts/openstack/cara-reset-password-root-instance-centos/></a>
 </article>
 <footer class=page-footer>
 <nav class=pagination>
