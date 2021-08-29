@@ -52,6 +52,24 @@
     </item>
     
     <item>
+      <title>KVM</title>
+      <link>https://blog.ajiarya.id/tags/kvm/</link>
+      <pubDate>Sun, 29 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.ajiarya.id/tags/kvm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Linux</title>
+      <link>https://blog.ajiarya.id/tags/linux/</link>
+      <pubDate>Sun, 29 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.ajiarya.id/tags/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Minikube</title>
       <link>https://blog.ajiarya.id/tags/minikube/</link>
       <pubDate>Sun, 29 Aug 2021 00:00:00 +0000</pubDate>
@@ -88,6 +106,15 @@
     </item>
     
     <item>
+      <title>Virtualisasi</title>
+      <link>https://blog.ajiarya.id/tags/virtualisasi/</link>
+      <pubDate>Sun, 29 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.ajiarya.id/tags/virtualisasi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Bash</title>
       <link>https://blog.ajiarya.id/tags/bash/</link>
       <pubDate>Mon, 23 Aug 2021 00:00:00 +0000</pubDate>
@@ -102,15 +129,6 @@
       <pubDate>Mon, 23 Aug 2021 00:00:00 +0000</pubDate>
       
       <guid>https://blog.ajiarya.id/tags/container/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Linux</title>
-      <link>https://blog.ajiarya.id/tags/linux/</link>
-      <pubDate>Mon, 23 Aug 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.ajiarya.id/tags/linux/</guid>
       <description></description>
     </item>
     
@@ -151,15 +169,6 @@
     </item>
     
     <item>
-      <title>KVM</title>
-      <link>https://blog.ajiarya.id/tags/kvm/</link>
-      <pubDate>Tue, 17 Aug 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.ajiarya.id/tags/kvm/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>python-tfgen</title>
       <link>https://blog.ajiarya.id/tags/python-tfgen/</link>
       <pubDate>Tue, 17 Aug 2021 00:00:00 +0000</pubDate>
@@ -174,15 +183,6 @@
       <pubDate>Tue, 17 Aug 2021 00:00:00 +0000</pubDate>
       
       <guid>https://blog.ajiarya.id/tags/terraform/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Virtualisasi</title>
-      <link>https://blog.ajiarya.id/tags/virtualisasi/</link>
-      <pubDate>Tue, 17 Aug 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.ajiarya.id/tags/virtualisasi/</guid>
       <description></description>
     </item>
     

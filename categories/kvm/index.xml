@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>KVM on Aji Arya</title>
+    <link>https://blog.ajiarya.id/categories/kvm/</link>
+    <description>Recent content in KVM on Aji Arya</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sun, 29 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.ajiarya.id/categories/kvm/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cara Mengubah Format Image VM</title>
+      <link>https://blog.ajiarya.id/posts/linux/cara-mengubah-format-image-vm/</link>
+      <pubDate>Sun, 29 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.ajiarya.id/posts/linux/cara-mengubah-format-image-vm/</guid>
+      <description>Cara mudah mengubah format image vm</description>
+    </item>
+    
+  </channel>
+</rss>

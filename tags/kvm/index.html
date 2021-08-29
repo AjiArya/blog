@@ -86,6 +86,16 @@ IMTEK
 </header>
 <article class="post-entry tag-entry">
 <header class=entry-header>
+<h2>Cara Mengubah Format Image VM</h2>
+</header>
+<section class=entry-content>
+<p>Prasyarat Image yang ingin diubah Binary qemu-img Panduan Install qemu-img Ubuntu/Debian sudo apt install -y qemu-img RHEL/CentOS/Rocky 7 sudo yum install -y qemu-img RHEL/CentOS/Rocky 8 sudo dnf install -y qemu-img Perintah qemu-img convert -f &lt;format_sekarang> -O &lt;format_output> &lt;image_sekarang> &lt;image_output> Contoh qcow2 ke raw qemu-img convert -f qcow2 -O raw contoh.qcow2 contoh.img raw ke qcow2 qemu-img convert -f raw -O qcow2 contoh.img contoh.qcow2 vmdk ke qcow2 qemu-img convert -f vmdk -O qcow2 contoh....</p>
+</section>
+<footer class=entry-footer>August 29, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Cara Mengubah Format Image VM" href=https://blog.ajiarya.id/posts/linux/cara-mengubah-format-image-vm/></a>
+</article>
+<article class="post-entry tag-entry">
+<header class=entry-header>
 <h2>Cara Membuat Image Libvirt Menggunakan python-tfgen</h2>
 </header>
 <section class=entry-content>
@@ -125,18 +135,6 @@ Buat yaml dengan kind: pool pool.yaml kind: pool uri: "qemu:///system" spec: - n
 </section>
 <footer class=entry-footer>August 17, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
 <a class=entry-link aria-label="post link to Cara Membuat VM Libvirt Menggunakan python-tfgen" href=https://blog.ajiarya.id/posts/python-tfgen/cara-membuat-vm-dengan-python-tfgen/></a>
-</article>
-<article class="post-entry tag-entry">
-<header class=entry-header>
-<h2>Cara Menggunakan Terraform Libvirt Provider Dengan Bantuan python-tfgen</h2>
-</header>
-<section class=entry-content>
-<p>Pendahuluan Apa yang membuat kita malas untuk belajar atau mempraktikan ilmu IT? Membuat Lab! Tenang semua itu bisa dibuat tidak membosankan dan bisa dilakukan dengan cepat.
-Saya menggunakan KVM Host untuk melakukan riset ataupun belajar hal baru, sehingga intensitas saya dalam membuat VM itu bisa dibilang sangat sering dan saya rasa membuat VM adalah hal membosankan yang berulang-ulang sehingga saya membuat sebuah tools agar mempermudah dan mempercepat pembuatan VM.
-Panduan Unduh Terraform wget https://releases....</p>
-</section>
-<footer class=entry-footer>August 17, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Menggunakan Terraform Libvirt Provider Dengan Bantuan python-tfgen" href=https://blog.ajiarya.id/posts/linux/cara-menggunakan-terraform-libvirt-provider/></a>
 </article>
 <footer class=page-footer>
 <nav class=pagination>

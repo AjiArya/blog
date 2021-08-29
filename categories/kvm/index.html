@@ -3,11 +3,11 @@
 <meta http-equiv=x-ua-compatible content="IE=edge">
 <meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
 <meta name=robots content="index, follow">
-<title>Virtualisasi | Aji Arya</title>
+<title>KVM | Aji Arya</title>
 <meta name=keywords content>
 <meta name=description content="Aji Arya's Personal Blog">
 <meta name=author content="Aji Arya">
-<link rel=canonical href=https://blog.ajiarya.id/tags/virtualisasi/>
+<link rel=canonical href=https://blog.ajiarya.id/categories/kvm/>
 <meta name=google-site-verification content="7xkl7tm1-iJxieMKGetoXQpqJffAVKatOFgXg7ddX_Y">
 <link crossorigin=anonymous href=/assets/css/stylesheet.min.35cd0f65a15cafa92372b8313deef5960aae04b90ad722f2bbf509eb0468137e.css integrity="sha256-Nc0PZaFcr6kjcrgxPe71lgquBLkK1yLyu/UJ6wRoE34=" rel="preload stylesheet" as=style>
 <link rel=icon href=https://blog.ajiarya.id/favicon.ico>
@@ -18,13 +18,13 @@
 <meta name=theme-color content="#2e2e33">
 <meta name=msapplication-TileColor content="#2e2e33">
 <meta name=generator content="Hugo 0.87.0">
-<link rel=alternate type=application/rss+xml href=https://blog.ajiarya.id/tags/virtualisasi/index.xml>
-<script type=application/javascript>var doNotTrack=!1;doNotTrack||(function(a,e,f,g,b,c,d){a.GoogleAnalyticsObject=b,a[b]=a[b]||function(){(a[b].q=a[b].q||[]).push(arguments)},a[b].l=1*new Date,c=e.createElement(f),d=e.getElementsByTagName(f)[0],c.async=1,c.src=g,d.parentNode.insertBefore(c,d)}(window,document,'script','https://www.google-analytics.com/analytics.js','ga'),ga('create','UA-182251419-3','auto'),ga('send','pageview'))</script><meta property="og:title" content="Virtualisasi">
+<link rel=alternate type=application/rss+xml href=https://blog.ajiarya.id/categories/kvm/index.xml>
+<script type=application/javascript>var doNotTrack=!1;doNotTrack||(function(a,e,f,g,b,c,d){a.GoogleAnalyticsObject=b,a[b]=a[b]||function(){(a[b].q=a[b].q||[]).push(arguments)},a[b].l=1*new Date,c=e.createElement(f),d=e.getElementsByTagName(f)[0],c.async=1,c.src=g,d.parentNode.insertBefore(c,d)}(window,document,'script','https://www.google-analytics.com/analytics.js','ga'),ga('create','UA-182251419-3','auto'),ga('send','pageview'))</script><meta property="og:title" content="KVM">
 <meta property="og:description" content="Aji Arya's Personal Blog">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://blog.ajiarya.id/tags/virtualisasi/"><meta property="og:site_name" content="Aji Arya">
+<meta property="og:url" content="https://blog.ajiarya.id/categories/kvm/"><meta property="og:site_name" content="Aji Arya">
 <meta name=twitter:card content="summary">
-<meta name=twitter:title content="Virtualisasi">
+<meta name=twitter:title content="KVM">
 <meta name=twitter:description content="Aji Arya's Personal Blog">
 </head>
 <body class=list id=top>
@@ -81,59 +81,19 @@ IMTEK
 </nav>
 </header>
 <main class=main>
-<header class=page-header><div class=breadcrumbs><a href=https://blog.ajiarya.id>Home</a>&nbsp;»&nbsp;<a href=https://blog.ajiarya.id/tags/>Tags</a></div>
-<h1>Virtualisasi</h1>
+<header class=page-header><div class=breadcrumbs><a href=https://blog.ajiarya.id>Home</a>&nbsp;»&nbsp;<a href=https://blog.ajiarya.id/categories/>Categories</a></div>
+<h1>KVM</h1>
 </header>
 <article class="post-entry tag-entry">
 <header class=entry-header>
-<h2>Cara Menggunakan Terraform Libvirt Provider Dengan Bantuan python-tfgen</h2>
+<h2>Cara Mengubah Format Image VM</h2>
 </header>
 <section class=entry-content>
-<p>Pendahuluan Apa yang membuat kita malas untuk belajar atau mempraktikan ilmu IT? Membuat Lab! Tenang semua itu bisa dibuat tidak membosankan dan bisa dilakukan dengan cepat.
-Saya menggunakan KVM Host untuk melakukan riset ataupun belajar hal baru, sehingga intensitas saya dalam membuat VM itu bisa dibilang sangat sering dan saya rasa membuat VM adalah hal membosankan yang berulang-ulang sehingga saya membuat sebuah tools agar mempermudah dan mempercepat pembuatan VM.
-Panduan Unduh Terraform wget https://releases....</p>
+<p>Prasyarat Image yang ingin diubah Binary qemu-img Panduan Install qemu-img Ubuntu/Debian sudo apt install -y qemu-img RHEL/CentOS/Rocky 7 sudo yum install -y qemu-img RHEL/CentOS/Rocky 8 sudo dnf install -y qemu-img Perintah qemu-img convert -f &lt;format_sekarang> -O &lt;format_output> &lt;image_sekarang> &lt;image_output> Contoh qcow2 ke raw qemu-img convert -f qcow2 -O raw contoh.qcow2 contoh.img raw ke qcow2 qemu-img convert -f raw -O qcow2 contoh.img contoh.qcow2 vmdk ke qcow2 qemu-img convert -f vmdk -O qcow2 contoh....</p>
 </section>
-<footer class=entry-footer>August 17, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Menggunakan Terraform Libvirt Provider Dengan Bantuan python-tfgen" href=https://blog.ajiarya.id/posts/linux/cara-menggunakan-terraform-libvirt-provider/></a>
+<footer class=entry-footer>August 29, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Cara Mengubah Format Image VM" href=https://blog.ajiarya.id/posts/linux/cara-mengubah-format-image-vm/></a>
 </article>
-<article class="post-entry tag-entry">
-<header class=entry-header>
-<h2>Cara Menyiapkan Home Lab Linux [CentOS/Rocky 8]</h2>
-</header>
-<section class=entry-content>
-<p>Referensi Sewa Server Hetzner Robot - Server Auction Prasyarat Server Sistem Operasi CentOS 8 atau Rocky 8 terinstall Panduan Update & Upgrade Package sudo dnf update sudo dnf upgrade Install grup package untuk host virtualisasi sudo dnf groupinstall -y "Virtualization Host" Jalankan dan enable servis libvirt sudo systemctl enable --now libvirtd Install cockpit plugin untuk VM sudo dnf install -y cockpit-machines Jalankan dan enable servis cockpit sudo systemctl enable --now cockpit....</p>
-</section>
-<footer class=entry-footer>August 17, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Menyiapkan Home Lab Linux [CentOS/Rocky 8]" href=https://blog.ajiarya.id/posts/linux/cara-menyiapkan-home-lab-centos-rocky/></a>
-</article>
-<article class="post-entry tag-entry">
-<header class=entry-header>
-<h2>Cara Menyiapkan Home Lab Linux [Debian Bullseye/Ubuntu Focal]</h2>
-</header>
-<section class=entry-content>
-<p>Debian Cockpit
-Ubuntu Cockpit
-Referensi Sewa Server Hetzner Robot - Server Auction Prasyarat Server Sistem Operasi Debian 11 (Bullseye) atau Ubuntu 20.04 (Focal) terinstall Panduan Update & Upgrade package sudo apt update sudo apt upgrade Install package-package untuk host virtualisasi sudo apt install cockpit cockpit-machines qemu-system-x86 libvirt-daemon-system libvirt-clients bridge-utils Jalankan dan enable servis libvirt sudo systemctl enable --now libvirtd Jalankan dan enable servis cockpit sudo systemctl enable --now cockpit....</p>
-</section>
-<footer class=entry-footer>August 17, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Menyiapkan Home Lab Linux [Debian Bullseye/Ubuntu Focal]" href=https://blog.ajiarya.id/posts/linux/cara-menyiapkan-home-lab-debian-ubuntu/></a>
-</article>
-<article class="post-entry tag-entry">
-<header class=entry-header>
-<h2>Cara Mengetahui Virtualisasi Yang Digunakan oleh VM Linux</h2>
-</header>
-<section class=entry-content>
-<p>Pendahuluan Ketika kita menggunakan layanan VPS ataupun Public Cloud kita bisa memeriksa jenis virtualisasi yang diberikan oleh penyedia layanan dengan menggunakan perintah dmidecode pada sistem operasi Linux.
-Perintah sudo dmidecode -s system-product-name Contoh pada virtualisasi KVM student@machine:~$ sudo dmidecode -s system-product-name KVM Contoh pada virtualisasi OpenStack student@machine:~$ sudo dmidecode -s system-product-name OpenStack Compute </p>
-</section>
-<footer class=entry-footer>August 4, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Mengetahui Virtualisasi Yang Digunakan oleh VM Linux" href=https://blog.ajiarya.id/posts/linux/cara-memeriksa-jenis-virtualiasasi/></a>
-</article>
-<footer class=page-footer>
-<nav class=pagination>
-<a class=prev href=https://blog.ajiarya.id/tags/virtualisasi/>« Prev Page</a>
-</nav>
-</footer>
 </main>
 <footer class=footer>
 <span>&copy; 2021 <a href=https://blog.ajiarya.id>Aji Arya</a></span>
