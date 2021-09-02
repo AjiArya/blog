@@ -17,7 +17,7 @@
 <link rel=mask-icon href=https://blog.ajiarya.id/%3Clink%20/%20abs%20url%3E>
 <meta name=theme-color content="#2e2e33">
 <meta name=msapplication-TileColor content="#2e2e33">
-<meta name=generator content="Hugo 0.87.0">
+<meta name=generator content="Hugo 0.88.0">
 <link rel=alternate type=application/rss+xml href=https://blog.ajiarya.id/index.xml>
 <link rel=alternate type=application/json href=https://blog.ajiarya.id/index.json>
 <script type=application/javascript>var doNotTrack=!1;doNotTrack||(function(a,e,f,g,b,c,d){a.GoogleAnalyticsObject=b,a[b]=a[b]||function(){(a[b].q=a[b].q||[]).push(arguments)},a[b].l=1*new Date,c=e.createElement(f),d=e.getElementsByTagName(f)[0],c.async=1,c.src=g,d.parentNode.insertBefore(c,d)}(window,document,'script','https://www.google-analytics.com/analytics.js','ga'),ga('create','UA-182251419-3','auto'),ga('send','pageview'))</script><meta property="og:title" content="Aji Arya">
@@ -105,6 +105,16 @@ IMTEK
 </article>
 <article class=post-entry>
 <header class=entry-header>
+<h2>Cara Setup OpenStack Magnum Dengan Deployment Kolla-Ansible [Kubernetes COE]</h2>
+</header>
+<section class=entry-content>
+<p>Lingkungan Sistem Operasi: CentOS 8 OpenStack: Ussuri Kolla-Ansible: 10.3.0 Kubernetes Image: Fedora CoreOS 32 Panduan Install Dependensi sudo dnf install -y python3-devel libffi-devel gcc openssl-devel python3-libselinux Siapkan python3 virtual environment python3 -m venv kolla source kolla/bin/activate Upgrade package pip pip install -U pip Install kolla-ansible & ansible pip install 'ansible&lt;2.10' kolla-ansible==10.3.0 Buat direktori /etc/kolla sudo mkdir -p /etc/kolla sudo chown $USER:$USER /etc/kolla Salin globals....</p>
+</section>
+<footer class=entry-footer>August 30, 2021&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Cara Setup OpenStack Magnum Dengan Deployment Kolla-Ansible [Kubernetes COE]" href=https://blog.ajiarya.id/posts/openstack/cara-setup-magnum-kolla/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
 <h2>Cara Deploy Ceph Dashboard Pada Deployment Manual</h2>
 </header>
 <section class=entry-content>
@@ -146,16 +156,6 @@ spec: externalIPs: - &lt;IP_NODE_1> - &lt;IP_NODE_2> - &lt;IP_NODE_N> Referensi 
 </section>
 <footer class=entry-footer>August 29, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
 <a class=entry-link aria-label="post link to Cara Memasang OpenShift CodeReady Pada Fedora 34" href=https://blog.ajiarya.id/posts/openshift/cara-memasang-openshift-codeready/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>Cara Mengubah Format Image VM</h2>
-</header>
-<section class=entry-content>
-<p>Prasyarat Image yang ingin diubah Binary qemu-img Panduan Install qemu-img Ubuntu/Debian sudo apt install -y qemu-img RHEL/CentOS/Rocky 7 sudo yum install -y qemu-img RHEL/CentOS/Rocky 8 sudo dnf install -y qemu-img Perintah qemu-img convert -f &lt;format_sekarang> -O &lt;format_output> &lt;image_sekarang> &lt;image_output> Contoh qcow2 ke raw qemu-img convert -f qcow2 -O raw contoh.qcow2 contoh.img raw ke qcow2 qemu-img convert -f raw -O qcow2 contoh.img contoh.qcow2 vmdk ke qcow2 qemu-img convert -f vmdk -O qcow2 contoh....</p>
-</section>
-<footer class=entry-footer>August 29, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Mengubah Format Image VM" href=https://blog.ajiarya.id/posts/linux/cara-mengubah-format-image-vm/></a>
 </article>
 <footer class=page-footer>
 <nav class=pagination>

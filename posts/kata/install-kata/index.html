@@ -18,7 +18,7 @@
 <link rel=mask-icon href=https://blog.ajiarya.id/%3Clink%20/%20abs%20url%3E>
 <meta name=theme-color content="#2e2e33">
 <meta name=msapplication-TileColor content="#2e2e33">
-<meta name=generator content="Hugo 0.87.0">
+<meta name=generator content="Hugo 0.88.0">
 <script type=application/javascript>var doNotTrack=!1;doNotTrack||(function(a,e,f,g,b,c,d){a.GoogleAnalyticsObject=b,a[b]=a[b]||function(){(a[b].q=a[b].q||[]).push(arguments)},a[b].l=1*new Date,c=e.createElement(f),d=e.getElementsByTagName(f)[0],c.async=1,c.src=g,d.parentNode.insertBefore(c,d)}(window,document,'script','https://www.google-analytics.com/analytics.js','ga'),ga('create','UA-182251419-3','auto'),ga('send','pageview'))</script><meta property="og:title" content="Memasang Kata Container dengan Containerd Pada Ubuntu 20.04">
 <meta property="og:description" content="Cara mudah memasang Kata Container dengan Containerd pada Sistem Operasi Ubuntu 20.04">
 <meta property="og:type" content="article">
@@ -130,7 +130,7 @@ Cara mudah memasang Kata Container dengan Containerd pada Sistem Operasi Ubuntu 
 </ul>
 <h1 id=panduan>Panduan<a hidden class=anchor aria-hidden=true href=#panduan>#</a></h1>
 <h2 id=1-pasang-repository-kata-container>1. Pasang Repository Kata Container<a hidden class=anchor aria-hidden=true href=#1-pasang-repository-kata-container>#</a></h2>
-<pre><code>ARCH=$(arch)
+<pre tabindex=0><code>ARCH=$(arch)
 BRANCH=&quot;${BRANCH:-master}&quot;
 sudo sh -c &quot;echo 'deb http://download.opensuse.org/repositories/home:/katacontainers:/releases:/${ARCH}:/${BRANCH}/xUbuntu_$(lsb_release -rs)/ /' &gt; /etc/apt/sources.list.d/kata-containers.list&quot;
 curl -sL  http://download.opensuse.org/repositories/home:/katacontainers:/releases:/${ARCH}:/${BRANCH}/xUbuntu_$(lsb_release -rs)/Release.key | sudo apt-key add -

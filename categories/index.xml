@@ -5,7 +5,16 @@
     <link>https://blog.ajiarya.id/categories/</link>
     <description>Recent content in Categories on Aji Arya</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 29 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.ajiarya.id/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 30 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.ajiarya.id/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>OpenStack</title>
+      <link>https://blog.ajiarya.id/categories/openstack/</link>
+      <pubDate>Mon, 30 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.ajiarya.id/categories/openstack/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Ceph</title>
       <link>https://blog.ajiarya.id/categories/ceph/</link>
@@ -39,15 +48,6 @@
       <pubDate>Sun, 29 Aug 2021 00:00:00 +0000</pubDate>
       
       <guid>https://blog.ajiarya.id/categories/okd/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>OpenStack</title>
-      <link>https://blog.ajiarya.id/categories/openstack/</link>
-      <pubDate>Sun, 29 Aug 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.ajiarya.id/categories/openstack/</guid>
       <description></description>
     </item>
     
