@@ -32,7 +32,7 @@ TocOpen: true
    - File
    1. Masuk shell targetcli
    ```bash
-   targetcli
+   sudo targetcli
    ``` 
 
    2. (Dalam targetcli) berpindah ke direktori backstores/fileio
@@ -60,7 +60,7 @@ TocOpen: true
    - Block
    1. Masuk shell targetcli
    ```bash
-   targetcli
+   sudo targetcli
    ``` 
 
    2. (Dalam targetcli) berpindah ke direktori backstores/block
@@ -88,7 +88,7 @@ TocOpen: true
 3. Buat iSCSI Portal
    1. Masuk shell targetcli
    ```bash
-   targetcli
+   sudo targetcli
    ``` 
 
    2. (Dalam targetcli) berpindah ke direktori iscsi
