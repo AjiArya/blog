@@ -87,6 +87,20 @@ IMTEK
 </header>
 <article class=post-entry>
 <header class=entry-header>
+<h2>Cara Menghitung Jumlah PG Untuk Klaster Ceph</h2>
+</header>
+<section class=entry-content>
+<p>Prasyarat Klaster Ceph Pendahuluan Ceph Placement Groups (PGs) adalah implementasi internal yang dilakukan oleh Ceph untuk melakukan distribusi data
+Mapping PG pada Pool
+Gambaran Pool yang menggunakan replikasi dengan nilai 2
+Sumber Gambar: https://docs.ceph.com/en/latest/rados/operations/placement-groups/
+Panduan Gunakan perhitungan 50-100 PG untuk 1 OSD Hitung jumlah OSD pada klaster Jumlah Replikasi yang diinginkan Gunakan Kalkulator PG PGCalc Contoh Klaster Ceph untuk servis OpenStack Klaster memiliki 100 OSD dengan ukuran 1 TB setiap OSD (100 TB Total) Target 100 PG untuk 1 OSD Replikasi data sebanyak 3 (Size) Alokasi pool cinder-backup 25% (25 TB) cinder-volumes 53% (53 TB) ephemeral-vms 15% (15 TB) glance-vms 7% (7 TB) Pool Name: Nama Pool Size: Ukuran replikasi atau EC (K+M) OSD: Jumlah OSD untuk pool tersebut (Berdasarkan OSD device class untuk pool) Target PGs Per OSD: Target PG untuk 1 OSD (Rekomendasi 50-100 PG) Suggested PG Count: Saran PG merupakan kelipatan 2, Jumlah PG untuk pool Referensi Ceph Docs - Placement Groups </p>
+</section>
+<footer class=entry-footer>September 4, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Cara Menghitung Jumlah PG Untuk Klaster Ceph" href=https://blog.ajiarya.id/posts/ceph/cara-menghitung-pg-untuk-klaster-ceph/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
 <h2>Cara Setup OpenStack Magnum Dengan Deployment Kolla-Ansible [Kubernetes COE]</h2>
 </header>
 <section class=entry-content>
@@ -128,16 +142,6 @@ spec: externalIPs: - &lt;IP_NODE_1> - &lt;IP_NODE_2> - &lt;IP_NODE_N> Referensi 
 </section>
 <footer class=entry-footer>August 29, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
 <a class=entry-link aria-label="post link to Cara Memasang Nginx Ingress Controller Pada Kubernetes Cluster [External IP]" href=https://blog.ajiarya.id/posts/kubernetes/cara-memasang-ingress-controller-pada-k8s/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>Cara Memasang OpenShift CodeReady Pada Fedora 34</h2>
-</header>
-<section class=entry-content>
-<p>Prasyarat Mesin Fedora 34 (Baremetal atau VM) Akun Red Hat Versi Sistem Operasi: Fedora 34 Cloud Image CodeReady: 1.31.2+19538dab OpenShift: 4.8.4 Panduan Update dan Upgrade package sudo dnf update -y; sudo dnf upgrade -y Install package NetworkManager dan wget sudo dnf install -y NetworkManager wget Unduh CodeReady dan salin pull secret Tautan Disini wget https://developers.redhat.com/content-gateway/file/pub/openshift-v4/clients/crc/1.31.2/crc-linux-amd64.tar.xz tar xf crc-linux-amd64.tar.xz cd crc-linux-1.31.2-amd64/ sudo mv crc /usr/local/bin # Verifikasi crc version Setup dan jalankan CodeReady (Tempel pull secret pada proses crc start) crc setup crc start Akses CodeReady...</p>
-</section>
-<footer class=entry-footer>August 29, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Memasang OpenShift CodeReady Pada Fedora 34" href=https://blog.ajiarya.id/posts/openshift/cara-memasang-openshift-codeready/></a>
 </article>
 <footer class=page-footer>
 <nav class=pagination>
