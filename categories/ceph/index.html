@@ -100,6 +100,17 @@ Panduan Gunakan perhitungan 50-100 PG untuk 1 OSD Hitung jumlah OSD pada klaster
 </article>
 <article class="post-entry tag-entry">
 <header class=entry-header>
+<h2>Cara Stop atau Pause Klaster Ceph</h2>
+</header>
+<section class=entry-content>
+<p>Pendahuluan Saat kita ingin melakukan Maintenance atau Mematikan server sebaiknya kita menghentikan atau menjeda klaster Ceph yang sedang berjalan
+Panduan Menghentikan atau melakukan pause klaster ceph osd set noout ceph osd set norecover ceph osd set norebalance ceph osd set nobackfill ceph osd set nodown ceph osd set pause Menjalankan atau menghentikan pause klaster ceph osd unset noout ceph osd unset norecover ceph osd unset norebalance ceph osd unset nobackfill ceph osd unset nodown ceph osd unset pause Referensi Red Hat Ceph Storage 3 - 2....</p>
+</section>
+<footer class=entry-footer>September 4, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Cara Stop atau Pause Klaster Ceph" href=https://blog.ajiarya.id/posts/ceph/cara-stop-atau-pause-klaster-ceph/></a>
+</article>
+<article class="post-entry tag-entry">
+<header class=entry-header>
 <h2>Cara Deploy Ceph Dashboard Pada Deployment Manual</h2>
 </header>
 <section class=entry-content>
@@ -131,18 +142,11 @@ Panduan Login sebagai root sudo -i Hentikan service monitor jika masih berjalan 
 <footer class=entry-footer>August 22, 2021&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Aji Arya</footer>
 <a class=entry-link aria-label="post link to Cara Deploy Ceph Cluster Menggunakan cephadm Pada Rocky Linux 8" href=https://blog.ajiarya.id/posts/ceph/cara-deploy-ceph-menggunakan-cephadm/></a>
 </article>
-<article class="post-entry tag-entry">
-<header class=entry-header>
-<h2>Cara Upgrade Cluster Ceph Yang Menggunakan cephadm</h2>
-</header>
-<section class=entry-content>
-<p>Panduan Periksa versi ceph yang sedang digunakan ceph versions Lihat rilis ceph dan baca catatan rilis (release note) Kunjungi Ceph Release
-Lakukan upgrade ceph orch upgrade start --ceph-version &lt;versi_ceph> # Contoh # ceph orch upgrade start --ceph-version 16.2.5 Pantau proses upgrade Gunakan perintah-perintah dibawah untuk melakukan pengecekan pada proses upgrade
-ceph orch upgrade status ceph -W cephadm ceph orch ps ceph versions ceph versions saat proses upgrade sedang berlangsung...</p>
-</section>
-<footer class=entry-footer>August 22, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Upgrade Cluster Ceph Yang Menggunakan cephadm" href=https://blog.ajiarya.id/posts/ceph/cara-upgrade-cluster-cephadm/></a>
-</article>
+<footer class=page-footer>
+<nav class=pagination>
+<a class=next href=https://blog.ajiarya.id/categories/ceph/page/2/>Next Page »</a>
+</nav>
+</footer>
 </main>
 <footer class=footer>
 <span>&copy; 2021 <a href=https://blog.ajiarya.id>Aji Arya</a></span>

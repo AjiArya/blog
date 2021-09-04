@@ -86,6 +86,16 @@ IMTEK
 </header>
 <article class="post-entry tag-entry">
 <header class=entry-header>
+<h2>Cara Menyiapkan ISCSI Initiator (Linux)</h2>
+</header>
+<section class=entry-content>
+<p>Panduan Install package open-iscsi Debian Based sudo apt install -y open-iscsi RHEL Based sudo dnf install -y iscsi-initiator-utils # or sudo yum install -y iscsi-initiator-utils Konfigurasi IQN initiator sudo vim /etc/iscsi/initiatorname.iscsi Tambahkan baris berikut InitiatorName=iqn.2021-08.aa-lio-initiator:lio.initiator01 Konfigurasi iscsi initiator sudo vim /etc/iscsi/iscsid.conf Sesuaikan baris berikut node.session.auth.authmethod = CHAP node.session.auth.username = &lt;user> node.session.auth.password = &lt;password> Restart servis iscsi Debian Based sudo systemctl restart iscsid open-iscsi RHEL Based sudo systemctl restart iscsid Discover target sudo iscsiadm -m discovery -t sendtargets -p &lt;ip_iscsi_target> Masuk iSCSI target (Login) sudo iscsiadm -m node --login Verifikasi sudo iscsiadm -m session -o show Referensi Server World - iSCSI Initiator (Debian 11) Server World - iSCSI Initiator (CentOS 8) </p>
+</section>
+<footer class=entry-footer>September 4, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Cara Menyiapkan ISCSI Initiator (Linux)" href=https://blog.ajiarya.id/posts/linux/cara-menyiapkan-iscsi-initiator/></a>
+</article>
+<article class="post-entry tag-entry">
+<header class=entry-header>
 <h2>Cara Menyiapkan ISCSI Target - targetcli (Linux)</h2>
 </header>
 <section class=entry-content>
@@ -131,18 +141,6 @@ Cara manual jika tanpa menggunakan ssh config: ssh ubuntu@1.tcp.jp.ngrok.io -p22
 </section>
 <footer class=entry-footer>August 17, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
 <a class=entry-link aria-label="post link to Cara Menyiapkan Home Lab Linux [CentOS/Rocky 8]" href=https://blog.ajiarya.id/posts/linux/cara-menyiapkan-home-lab-centos-rocky/></a>
-</article>
-<article class="post-entry tag-entry">
-<header class=entry-header>
-<h2>Cara Menyiapkan Home Lab Linux [Debian Bullseye/Ubuntu Focal]</h2>
-</header>
-<section class=entry-content>
-<p>Debian Cockpit
-Ubuntu Cockpit
-Referensi Sewa Server Hetzner Robot - Server Auction Prasyarat Server Sistem Operasi Debian 11 (Bullseye) atau Ubuntu 20.04 (Focal) terinstall Panduan Update & Upgrade package sudo apt update sudo apt upgrade Install package-package untuk host virtualisasi sudo apt install cockpit cockpit-machines qemu-system-x86 libvirt-daemon-system libvirt-clients bridge-utils Jalankan dan enable servis libvirt sudo systemctl enable --now libvirtd Jalankan dan enable servis cockpit sudo systemctl enable --now cockpit....</p>
-</section>
-<footer class=entry-footer>August 17, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Menyiapkan Home Lab Linux [Debian Bullseye/Ubuntu Focal]" href=https://blog.ajiarya.id/posts/linux/cara-menyiapkan-home-lab-debian-ubuntu/></a>
 </article>
 <footer class=page-footer>
 <nav class=pagination>

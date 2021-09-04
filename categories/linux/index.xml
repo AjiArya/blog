@@ -7,6 +7,15 @@
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Sat, 04 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.ajiarya.id/categories/linux/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Cara Menyiapkan ISCSI Initiator (Linux)</title>
+      <link>https://blog.ajiarya.id/posts/linux/cara-menyiapkan-iscsi-initiator/</link>
+      <pubDate>Sat, 04 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.ajiarya.id/posts/linux/cara-menyiapkan-iscsi-initiator/</guid>
+      <description>Cara mudah mengkonsumsi LUN yang disediakan oleh iSCSI Target</description>
+    </item>
+    
+    <item>
       <title>Cara Menyiapkan ISCSI Target - targetcli (Linux)</title>
       <link>https://blog.ajiarya.id/posts/linux/cara-menyiapkan-iscsi-target-targetcli/</link>
       <pubDate>Sat, 04 Sep 2021 00:00:00 +0000</pubDate>
