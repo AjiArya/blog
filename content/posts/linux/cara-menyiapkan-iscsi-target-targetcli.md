@@ -100,6 +100,7 @@ TocOpen: true
        - [Baca Standar IQN](https://datatracker.ietf.org/doc/html/rfc3720#section-3.2.6.3.1)
    ```bash
    # Buat Target
+   # iqn.<YYYY-MM>.<reverse_domain>:<nama_target>
    create iqn.2021-08.aa-lio-target:lio.target01
 
    # Daftarkan backstore untuk dijadikan LUN
