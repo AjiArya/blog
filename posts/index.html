@@ -90,10 +90,21 @@ IMTEK
 <h2>Cara Menghapus OSD [Manual]</h2>
 </header>
 <section class=entry-content>
-<p>Panduan Hentikan servis jika masih berjalan sudo systemctl stop ceph-osd@&lt;id> Atur state OSD sebagai down dan out ceph osd set out &lt;id> ceph osd set down &lt;id> Zap disk # ceph-volume lvm destroy &lt;device_path> --destroy ceph-volume lvm destroy /dev/sdX --destroy Solusi (Workaround) Tidak bisa menjalankan ceph-volume lvm destroy Catat informasi mengenai OSD yang ingin dihapus block osd_id ceph-volume lvm list Format Disk menggunakan wipefs wipefs -fa &lt;device_path> Hapus LVM jika masih ada # Lihat device mapper dmsetup ls # Hapus device mapper OSD yang ingin dihapus dmsetup remove &lt;device_map> Zap disk # ceph-volume lvm destroy &lt;device_path> --destroy ceph-volume lvm destroy /dev/sdX --destroy Referensi Ceph Docs - ceph-volume ZAP The Geek Diary - dmsetup </p>
+<p>Panduan Hentikan servis jika masih berjalan sudo systemctl stop ceph-osd@&lt;id> Atur state OSD sebagai down dan out ceph osd set out &lt;id> ceph osd set down &lt;id> Hapus OSD dari klaster ceph # Hapus auth ceph auth rm osd.&lt;osd_id> # Hapus dari CRUSH Map ceph osd crush remove osd.&lt;osd_id> # Hapus dari OSD Map ceph osd rm &lt;osd_id> Zap disk # ceph-volume lvm destroy &lt;device_path> --destroy ceph-volume lvm destroy /dev/sdX --destroy Solusi (Workaround) Tidak bisa menjalankan ceph-volume lvm destroy Catat informasi mengenai OSD yang ingin dihapus block osd_id ceph-volume lvm list Format Disk menggunakan wipefs wipefs -fa &lt;device_path> Hapus LVM jika masih ada # Lihat device mapper dmsetup ls # Hapus device mapper OSD yang ingin dihapus dmsetup remove &lt;device_map> Zap disk # ceph-volume lvm destroy &lt;device_path> --destroy ceph-volume lvm destroy /dev/sdX --destroy Referensi Ceph Docs - ceph-volume ZAP The Geek Diary - dmsetup </p>
 </section>
 <footer class=entry-footer>September 5, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
 <a class=entry-link aria-label="post link to Cara Menghapus OSD [Manual]" href=https://blog.ajiarya.id/posts/ceph/cara-menghapus-osd/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
+<h2>Cara Mengubah Device Class OSD</h2>
+</header>
+<section class=entry-content>
+<p>Pendahuluan Device Class berguna untuk mempermudah ceph untuk mendistribusikan data berdasarkan device class yang telah ditentukan didalam CRUSH Rule
+Panduan Hapus class default yang didapatkan ketika membuat OSD ceph osd crush rm-device-class &lt;osd_id> Berikan class baru pada OSD yang diinginkan ceph osd crush set-device-class performance $i Contoh memanfaatkan device class # Buat CRUSH rule # Contoh: # ceph osd crush rule create-replicated &lt;rule-name> &lt;root> &lt;failure-domain> &lt;class> ceph osd crush rule create-replicated replicated-performance default host performance # Buat pool ceph osd pool create performance-pool 32 32 replicated replicated-performance Referensi Ceph News - Crush Device Classes </p>
+</section>
+<footer class=entry-footer>September 5, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Cara Mengubah Device Class OSD" href=https://blog.ajiarya.id/posts/ceph/cara-mengubah-device-class-osd/></a>
 </article>
 <article class=post-entry>
 <header class=entry-header>
@@ -132,20 +143,6 @@ Panduan Gunakan perhitungan 50-100 PG untuk 1 OSD Hitung jumlah OSD pada klaster
 </section>
 <footer class=entry-footer>September 4, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
 <a class=entry-link aria-label="post link to Cara Menyiapkan ISCSI Initiator (Linux)" href=https://blog.ajiarya.id/posts/linux/cara-menyiapkan-iscsi-initiator/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>Cara Menyiapkan ISCSI Target - targetcli (Linux)</h2>
-</header>
-<section class=entry-content>
-<p>Pendahuluan iSCSI Target adalah server yang memiliki sumber daya penyimpanan dan penyimpanan tersebut bisa bisa digunakan oleh iSCSI Initiator
-targetcli adalah tool manajemen LIO (Linux IO).
-Panduan Install package targetcli
-Debian Distribution sudo apt install -y targetcli-fb RHEL Distribution sudo dnf install -y targetcli # or sudo yum install -y targetcli Buat backstore
-backstore adalah sumber daya penyimpanan yang akan disediakan dan bisa gunakan oleh iSCSI Initiator....</p>
-</section>
-<footer class=entry-footer>September 4, 2021&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Menyiapkan ISCSI Target - targetcli (Linux)" href=https://blog.ajiarya.id/posts/linux/cara-menyiapkan-iscsi-target-targetcli/></a>
 </article>
 <footer class=page-footer>
 <nav class=pagination>

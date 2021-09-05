@@ -29,7 +29,7 @@
 <meta name=twitter:title content="Cara Menghapus OSD [Manual]">
 <meta name=twitter:description content="Cara menghapus OSD dari klaster ceph">
 <script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":2,"name":"Posts","item":"https://blog.ajiarya.id/posts/"},{"@type":"ListItem","position":3,"name":"Cara Menghapus OSD [Manual]","item":"https://blog.ajiarya.id/posts/ceph/cara-menghapus-osd/"}]}</script>
-<script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"Cara Menghapus OSD [Manual]","name":"Cara Menghapus OSD [Manual]","description":"Cara menghapus OSD dari klaster ceph","keywords":["Ceph","Storage"],"articleBody":"Panduan  Hentikan servis jika masih berjalan  sudo systemctl stop ceph-osd@ Atur state OSD sebagai down dan out  ceph osd set out  ceph osd set down  Zap disk  # ceph-volume lvm destroy  --destroy ceph-volume lvm destroy /dev/sdX --destroy Solusi (Workaround) Tidak bisa menjalankan ceph-volume lvm destroy  Catat informasi mengenai OSD yang ingin dihapus  block osd_id    ceph-volume lvm list Format Disk menggunakan wipefs  wipefs -fa  Hapus LVM jika masih ada  # Lihat device mapper  dmsetup ls # Hapus device mapper OSD yang ingin dihapus dmsetup remove  Zap disk  # ceph-volume lvm destroy  --destroy ceph-volume lvm destroy /dev/sdX --destroy Referensi  Ceph Docs - ceph-volume ZAP The Geek Diary - dmsetup  ","wordCount":"113","inLanguage":"en","datePublished":"2021-09-05T00:00:00Z","dateModified":"2021-09-05T00:00:00Z","author":{"@type":"Person","name":"Aji Arya"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://blog.ajiarya.id/posts/ceph/cara-menghapus-osd/"},"publisher":{"@type":"Organization","name":"Aji Arya","logo":{"@type":"ImageObject","url":"https://blog.ajiarya.id/favicon.ico"}}}</script>
+<script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"Cara Menghapus OSD [Manual]","name":"Cara Menghapus OSD [Manual]","description":"Cara menghapus OSD dari klaster ceph","keywords":["Ceph","Storage"],"articleBody":"Panduan  Hentikan servis jika masih berjalan  sudo systemctl stop ceph-osd@ Atur state OSD sebagai down dan out  ceph osd set out  ceph osd set down  Hapus OSD dari klaster ceph  # Hapus auth ceph auth rm osd. # Hapus dari CRUSH Map ceph osd crush remove osd. # Hapus dari OSD Map ceph osd rm  Zap disk  # ceph-volume lvm destroy  --destroy ceph-volume lvm destroy /dev/sdX --destroy Solusi (Workaround) Tidak bisa menjalankan ceph-volume lvm destroy  Catat informasi mengenai OSD yang ingin dihapus  block osd_id    ceph-volume lvm list Format Disk menggunakan wipefs  wipefs -fa  Hapus LVM jika masih ada  # Lihat device mapper  dmsetup ls # Hapus device mapper OSD yang ingin dihapus dmsetup remove  Zap disk  # ceph-volume lvm destroy  --destroy ceph-volume lvm destroy /dev/sdX --destroy Referensi  Ceph Docs - ceph-volume ZAP The Geek Diary - dmsetup  ","wordCount":"144","inLanguage":"en","datePublished":"2021-09-05T00:00:00Z","dateModified":"2021-09-05T00:00:00Z","author":{"@type":"Person","name":"Aji Arya"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://blog.ajiarya.id/posts/ceph/cara-menghapus-osd/"},"publisher":{"@type":"Organization","name":"Aji Arya","logo":{"@type":"ImageObject","url":"https://blog.ajiarya.id/favicon.ico"}}}</script>
 </head>
 <body id=top>
 <script>localStorage.getItem("pref-theme")==="dark"?document.body.classList.add('dark'):localStorage.getItem("pref-theme")==="light"?document.body.classList.remove('dark'):window.matchMedia('(prefers-color-scheme: dark)').matches&&document.body.classList.add('dark')</script>
@@ -123,11 +123,22 @@ Cara menghapus OSD dari klaster ceph
 </ol>
 <div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>sudo systemctl stop ceph-osd@&lt;id&gt;
 </code></pre></div><ol start=2>
-<li>Atur <em>state</em> OSD sebagai down dan out</li>
+<li>Atur <em>state</em> OSD sebagai <em>down</em> dan <em>out</em></li>
 </ol>
 <div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>ceph osd set out &lt;id&gt;
 ceph osd set down &lt;id&gt;
 </code></pre></div><ol start=3>
+<li>Hapus OSD dari klaster ceph</li>
+</ol>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=color:#75715e># Hapus auth</span>
+ceph auth rm osd.&lt;osd_id&gt; 
+
+<span style=color:#75715e># Hapus dari CRUSH Map</span>
+ceph osd crush remove osd.&lt;osd_id&gt; 
+
+<span style=color:#75715e># Hapus dari OSD Map</span>
+ceph osd rm &lt;osd_id&gt; 
+</code></pre></div><ol start=4>
 <li><em>Zap</em> disk</li>
 </ol>
 <div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=color:#75715e># ceph-volume lvm destroy &lt;device_path&gt; --destroy</span>
@@ -172,10 +183,10 @@ ceph-volume lvm destroy /dev/sdX --destroy
 <li><a href=https://blog.ajiarya.id/tags/storage/>Storage</a></li>
 </ul>
 <nav class=paginav>
-<a class=next href=https://blog.ajiarya.id/posts/ceph/memilih-deployment-tool-ceph/>
+<a class=next href=https://blog.ajiarya.id/posts/ceph/cara-mengubah-device-class-osd/>
 <span class=title>Next Page »</span>
 <br>
-<span>Memilih Deployment Tool Ceph</span>
+<span>Cara Mengubah Device Class OSD</span>
 </a>
 </nav>
 <div class=share-buttons>

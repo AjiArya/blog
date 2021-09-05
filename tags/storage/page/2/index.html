@@ -86,6 +86,20 @@ IMTEK
 </header>
 <article class="post-entry tag-entry">
 <header class=entry-header>
+<h2>Cara Menyiapkan ISCSI Target - targetcli (Linux)</h2>
+</header>
+<section class=entry-content>
+<p>Pendahuluan iSCSI Target adalah server yang memiliki sumber daya penyimpanan dan penyimpanan tersebut bisa bisa digunakan oleh iSCSI Initiator
+targetcli adalah tool manajemen LIO (Linux IO).
+Panduan Install package targetcli
+Debian Distribution sudo apt install -y targetcli-fb RHEL Distribution sudo dnf install -y targetcli # or sudo yum install -y targetcli Buat backstore
+backstore adalah sumber daya penyimpanan yang akan disediakan dan bisa gunakan oleh iSCSI Initiator....</p>
+</section>
+<footer class=entry-footer>September 4, 2021&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Cara Menyiapkan ISCSI Target - targetcli (Linux)" href=https://blog.ajiarya.id/posts/linux/cara-menyiapkan-iscsi-target-targetcli/></a>
+</article>
+<article class="post-entry tag-entry">
+<header class=entry-header>
 <h2>Cara Stop atau Pause Klaster Ceph</h2>
 </header>
 <section class=entry-content>
@@ -128,21 +142,10 @@ Panduan Login sebagai root sudo -i Hentikan service monitor jika masih berjalan 
 <footer class=entry-footer>August 22, 2021&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Aji Arya</footer>
 <a class=entry-link aria-label="post link to Cara Deploy Ceph Cluster Menggunakan cephadm Pada Rocky Linux 8" href=https://blog.ajiarya.id/posts/ceph/cara-deploy-ceph-menggunakan-cephadm/></a>
 </article>
-<article class="post-entry tag-entry">
-<header class=entry-header>
-<h2>Cara Upgrade Cluster Ceph Yang Menggunakan cephadm</h2>
-</header>
-<section class=entry-content>
-<p>Panduan Periksa versi ceph yang sedang digunakan ceph versions Lihat rilis ceph dan baca catatan rilis (release note) Kunjungi Ceph Release
-Lakukan upgrade ceph orch upgrade start --ceph-version &lt;versi_ceph> # Contoh # ceph orch upgrade start --ceph-version 16.2.5 Pantau proses upgrade Gunakan perintah-perintah dibawah untuk melakukan pengecekan pada proses upgrade
-ceph orch upgrade status ceph -W cephadm ceph orch ps ceph versions ceph versions saat proses upgrade sedang berlangsung...</p>
-</section>
-<footer class=entry-footer>August 22, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Upgrade Cluster Ceph Yang Menggunakan cephadm" href=https://blog.ajiarya.id/posts/ceph/cara-upgrade-cluster-cephadm/></a>
-</article>
 <footer class=page-footer>
 <nav class=pagination>
 <a class=prev href=https://blog.ajiarya.id/tags/storage/>« Prev Page</a>
+<a class=next href=https://blog.ajiarya.id/tags/storage/page/3/>Next Page »</a>
 </nav>
 </footer>
 </main>
