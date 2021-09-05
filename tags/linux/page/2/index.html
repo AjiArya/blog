@@ -86,6 +86,17 @@ IMTEK
 </header>
 <article class="post-entry tag-entry">
 <header class=entry-header>
+<h2>Cara Membuat Rootless Container Podman Bisa Dikelola Sebagai Service</h2>
+</header>
+<section class=entry-content>
+<p>Prasyarat Podman Panduan Sebagai contoh kita akan membuat container nginx pada non-root user bernama student
+Buat direktori untuk menyimpan konten mkdir website echo '&lt;h1>Halo Dunia!&lt;/h1>' > website/index.html Buat container nginx podman run -d --name websiteku -p 8080:80 -v ~/website:/usr/share/nginx/html:Z nginx Verifikasi container podman ps curl localhost:8080 Contoh output [student@podman-host ~]$ podman ps CONTAINER ID IMAGE COMMAND CREATED STATUS PORTS NAMES 109ed419f29e docker.io/library/nginx:latest nginx -g daemon o....</p>
+</section>
+<footer class=entry-footer>August 23, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Cara Membuat Rootless Container Podman Bisa Dikelola Sebagai Service" href=https://blog.ajiarya.id/posts/podman/cara-membuat-container-podman-bisa-dikelola-sebagai-service/></a>
+</article>
+<article class="post-entry tag-entry">
+<header class=entry-header>
 <h2>Cara Remote Port Forwarding SSH</h2>
 </header>
 <section class=entry-content>
@@ -127,18 +138,6 @@ Cara manual jika tanpa menggunakan ssh config: ssh ubuntu@1.tcp.jp.ngrok.io -p22
 </section>
 <footer class=entry-footer>August 17, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
 <a class=entry-link aria-label="post link to Cara Membuat Network Libvirt Menggunakan python-tfgen" href=https://blog.ajiarya.id/posts/python-tfgen/cara-membuat-network-dengan-python-tfgen/></a>
-</article>
-<article class="post-entry tag-entry">
-<header class=entry-header>
-<h2>Cara Membuat Storage Pool Libvirt Menggunakan python-tfgen</h2>
-</header>
-<section class=entry-content>
-<p>Prasyarat Terraform python-tfgen Panduan Buat direktori untuk penyimpanan data mkdir -p /data/images mkdir -p /data/vms Tips!
-Mount direktori ke drive dengan kapasitas besar atau kecepatan tinggi.
-Buat yaml dengan kind: pool pool.yaml kind: pool uri: "qemu:///system" spec: - name: images path: /data/images - name: vms path: /data/vms Buat HCL berdasarkan yaml yang telah dibuat ./tfgen.py -f pool.yaml -o pool pool/main....</p>
-</section>
-<footer class=entry-footer>August 17, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Membuat Storage Pool Libvirt Menggunakan python-tfgen" href=https://blog.ajiarya.id/posts/python-tfgen/cara-membuat-pool-dengan-python-tfgen/></a>
 </article>
 <footer class=page-footer>
 <nav class=pagination>
