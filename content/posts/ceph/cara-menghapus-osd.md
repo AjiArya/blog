@@ -14,13 +14,25 @@ TocOpen: true
 sudo systemctl stop ceph-osd@<id>
 ```
 
-2. Atur _state_ OSD sebagai down dan out
+2. Atur _state_ OSD sebagai _down_ dan _out_
 ```bash
 ceph osd set out <id>
 ceph osd set down <id>
 ```
 
-3. _Zap_ disk
+3. Hapus OSD dari klaster ceph
+```bash
+# Hapus auth
+ceph auth rm osd.<osd_id> 
+
+# Hapus dari CRUSH Map
+ceph osd crush remove osd.<osd_id> 
+
+# Hapus dari OSD Map
+ceph osd rm <osd_id> 
+```
+
+4. _Zap_ disk
 ```bash
 # ceph-volume lvm destroy <device_path> --destroy
 ceph-volume lvm destroy /dev/sdX --destroy
