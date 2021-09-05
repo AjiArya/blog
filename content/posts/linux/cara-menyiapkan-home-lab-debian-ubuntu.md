@@ -3,7 +3,7 @@ title: "Cara Menyiapkan Home Lab Linux [Debian Bullseye/Ubuntu Focal]"
 description: "Cara mudah menyiapkan home lab untuk riset"
 date: "2021-08-17"
 tags: ["Linux", "Virtualisasi", "KVM", "Cockpit"]
-categories: ["Linux"]
+categories: ["Virtualisasi"]
 ShowToc: true
 TocOpen: true
 ---

@@ -3,7 +3,7 @@ title: "Cara Mengetahui Virtualisasi Yang Digunakan oleh VM Linux"
 description: "Cara mudah mengetahui virtualisasi yang digunakan oleh VM Linux"
 date: "2021-08-04"
 tags: ["Linux", "Virtualisasi"]
-categories: ["Linux"]
+categories: ["Virtualisasi"]
 ShowToc: true
 TocOpen: true
 ---
