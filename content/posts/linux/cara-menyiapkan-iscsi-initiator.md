@@ -18,7 +18,7 @@ sudo apt install -y open-iscsi
 - RHEL Based
 ```bash
 sudo dnf install -y iscsi-initiator-utils 
-# or 
+# atau 
 sudo yum install -y iscsi-initiator-utils 
 ```
 

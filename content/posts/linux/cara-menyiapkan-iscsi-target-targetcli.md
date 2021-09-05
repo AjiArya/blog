@@ -23,7 +23,7 @@ TocOpen: true
     - RHEL Distribution
     ```bash
     sudo dnf install -y targetcli
-    # or
+    # atau
     sudo yum install -y targetcli
     ```
 
