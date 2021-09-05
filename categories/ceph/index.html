@@ -86,6 +86,16 @@ IMTEK
 </header>
 <article class="post-entry tag-entry">
 <header class=entry-header>
+<h2>Cara Menghapus OSD [Manual]</h2>
+</header>
+<section class=entry-content>
+<p>Panduan Hentikan servis jika masih berjalan sudo systemctl stop ceph-osd@&lt;id> Atur state OSD sebagai down dan out ceph osd set out &lt;id> ceph osd set down &lt;id> Zap disk # ceph-volume lvm destroy &lt;device_path> --destroy ceph-volume lvm destroy /dev/sdX --destroy Solusi (Workaround) Tidak bisa menjalankan ceph-volume lvm destroy Catat informasi mengenai OSD yang ingin dihapus block osd_id ceph-volume lvm list Format Disk menggunakan wipefs wipefs -fa &lt;device_path> Hapus LVM jika masih ada # Lihat device mapper dmsetup ls # Hapus device mapper OSD yang ingin dihapus dmsetup remove &lt;device_map> Zap disk # ceph-volume lvm destroy &lt;device_path> --destroy ceph-volume lvm destroy /dev/sdX --destroy Referensi Ceph Docs - ceph-volume ZAP The Geek Diary - dmsetup </p>
+</section>
+<footer class=entry-footer>September 5, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Cara Menghapus OSD [Manual]" href=https://blog.ajiarya.id/posts/ceph/cara-menghapus-osd/></a>
+</article>
+<article class="post-entry tag-entry">
+<header class=entry-header>
 <h2>Memilih Deployment Tool Ceph</h2>
 </header>
 <section class=entry-content>
@@ -134,17 +144,6 @@ ceph mgr module enable dashboard Buat TLS untuk ceph dashboard ceph dashboard cr
 </section>
 <footer class=entry-footer>August 29, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
 <a class=entry-link aria-label="post link to Cara Deploy Ceph Dashboard Pada Deployment Manual" href=https://blog.ajiarya.id/posts/ceph/cara-deploy-ceph-dashboard-pada-deployment-manual/></a>
-</article>
-<article class="post-entry tag-entry">
-<header class=entry-header>
-<h2>Cara Membuat Ulang Ceph Monitor Yang Rusak [Manual Deployment]</h2>
-</header>
-<section class=entry-content>
-<p>Pendahuluan Jika mengalami kerusakan pada ceph monitor kita bisa melakukan hapus dan buat monitor yang rusak tersebut dengan ceph-monitor lainnya masih tersedia bagi cluster
-Panduan Login sebagai root sudo -i Hentikan service monitor jika masih berjalan systemctl stop ceph-mon@&lt;monitor_name> Hapus direktori monitor dan buat ulang direktori rm -rf /var/lib/ceph/mon/ceph-&lt;monitor_name> mkdir /var/lib/ceph/mon/ceph-&lt;monitor_name> Remove monitor from the cluster ceph mon rm &lt;monitor_name> Dapatkan keyring dan monmap (monitor map) ceph auth get mon....</p>
-</section>
-<footer class=entry-footer>August 24, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Membuat Ulang Ceph Monitor Yang Rusak [Manual Deployment]" href=https://blog.ajiarya.id/posts/ceph/cara-membuat-ulang-ceph-mon/></a>
 </article>
 <footer class=page-footer>
 <nav class=pagination>
