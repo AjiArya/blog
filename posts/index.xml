@@ -25,6 +25,15 @@
     </item>
     
     <item>
+      <title>Cara Menyiapkan Nextcloud Dengan Let&#39;s Encrypt</title>
+      <link>https://blog.ajiarya.id/posts/nextcloud/cara-setup-nextcloud/</link>
+      <pubDate>Sun, 05 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.ajiarya.id/posts/nextcloud/cara-setup-nextcloud/</guid>
+      <description>Cara mudah setup nextcloud menggunakan snap</description>
+    </item>
+    
+    <item>
       <title>Memilih Deployment Tool Ceph</title>
       <link>https://blog.ajiarya.id/posts/ceph/memilih-deployment-tool-ceph/</link>
       <pubDate>Sun, 05 Sep 2021 00:00:00 +0000</pubDate>

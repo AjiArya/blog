@@ -87,13 +87,23 @@ IMTEK
 </header>
 <article class=post-entry>
 <header class=entry-header>
+<h2>Cara Menyiapkan ISCSI Initiator (Linux)</h2>
+</header>
+<section class=entry-content>
+<p>Panduan Install package open-iscsi Debian Based sudo apt install -y open-iscsi RHEL Based sudo dnf install -y iscsi-initiator-utils # atau sudo yum install -y iscsi-initiator-utils Konfigurasi IQN initiator sudo vim /etc/iscsi/initiatorname.iscsi Tambahkan baris berikut InitiatorName=iqn.2021-08.aa-lio-initiator:lio.initiator01 Konfigurasi iscsi initiator sudo vim /etc/iscsi/iscsid.conf Sesuaikan baris berikut node.session.auth.authmethod = CHAP node.session.auth.username = &lt;user> node.session.auth.password = &lt;password> Restart servis iscsi Debian Based sudo systemctl restart iscsid open-iscsi RHEL Based sudo systemctl restart iscsid Discover target sudo iscsiadm -m discovery -t sendtargets -p &lt;ip_iscsi_target> Masuk iSCSI target (Login) sudo iscsiadm -m node --login Verifikasi sudo iscsiadm -m session -o show Referensi Server World - iSCSI Initiator (Debian 11) Server World - iSCSI Initiator (CentOS 8) </p>
+</section>
+<footer class=entry-footer>September 4, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Cara Menyiapkan ISCSI Initiator (Linux)" href=https://blog.ajiarya.id/posts/linux/cara-menyiapkan-iscsi-initiator/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
 <h2>Cara Menyiapkan ISCSI Target - targetcli (Linux)</h2>
 </header>
 <section class=entry-content>
 <p>Pendahuluan iSCSI Target adalah server yang memiliki sumber daya penyimpanan dan penyimpanan tersebut bisa bisa digunakan oleh iSCSI Initiator
 targetcli adalah tool manajemen LIO (Linux IO).
 Panduan Install package targetcli
-Debian Distribution sudo apt install -y targetcli-fb RHEL Distribution sudo dnf install -y targetcli # or sudo yum install -y targetcli Buat backstore
+Debian Distribution sudo apt install -y targetcli-fb RHEL Distribution sudo dnf install -y targetcli # atau sudo yum install -y targetcli Buat backstore
 backstore adalah sumber daya penyimpanan yang akan disediakan dan bisa gunakan oleh iSCSI Initiator....</p>
 </section>
 <footer class=entry-footer>September 4, 2021&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Aji Arya</footer>
@@ -131,16 +141,6 @@ ceph mgr module enable dashboard Buat TLS untuk ceph dashboard ceph dashboard cr
 </section>
 <footer class=entry-footer>August 29, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
 <a class=entry-link aria-label="post link to Cara Deploy Ceph Dashboard Pada Deployment Manual" href=https://blog.ajiarya.id/posts/ceph/cara-deploy-ceph-dashboard-pada-deployment-manual/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>Cara Memasang Minikube Pada WSL [Docker Driver]</h2>
-</header>
-<section class=entry-content>
-<p>Prasyarat Windows 10 WSL 2 Docker Desktop WSL 2 Backend Panduan Unduh dan install binary file minikube curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64 sudo install minikube-linux-amd64 /usr/local/bin/minikube Jalankan minikube menggunakan driver docker minikube start --driver=docker Unduh dan install kubectl curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl" sudo install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl Verifikasi status minikube minikube status kubectl get pods -n kube-system Referensi Docker Desktop WSL 2 backend Minikube Docker Driver Install Kubectl </p>
-</section>
-<footer class=entry-footer>August 29, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Memasang Minikube Pada WSL [Docker Driver]" href=https://blog.ajiarya.id/posts/kubernetes/cara-memasang-minikube-pada-wsl/></a>
 </article>
 <footer class=page-footer>
 <nav class=pagination>
