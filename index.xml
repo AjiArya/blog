@@ -5,7 +5,16 @@
     <link>https://blog.ajiarya.id/</link>
     <description>Recent content on Aji Arya</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 05 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.ajiarya.id/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 06 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.ajiarya.id/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cara Simulasi Kegagalan Disk Pada Klaster Ceph</title>
+      <link>https://blog.ajiarya.id/posts/ceph/cara-simulasi-kegagalan-disk-ceph/</link>
+      <pubDate>Mon, 06 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.ajiarya.id/posts/ceph/cara-simulasi-kegagalan-disk-ceph/</guid>
+      <description>Cara untuk uji coba kegagalan disk pada klaster Ceph</description>
+    </item>
+    
     <item>
       <title>Cara Memperbarui libosinfo osinfo-db</title>
       <link>https://blog.ajiarya.id/posts/linux/cara-update-osinfo-db/</link>

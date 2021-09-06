@@ -3,7 +3,28 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://blog.ajiarya.id/</loc>
-    <lastmod>2021-09-05T00:00:00+00:00</lastmod>
+    <lastmod>2021-09-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.ajiarya.id/posts/ceph/cara-simulasi-kegagalan-disk-ceph/</loc>
+    <lastmod>2021-09-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.ajiarya.id/categories/</loc>
+    <lastmod>2021-09-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.ajiarya.id/tags/ceph/</loc>
+    <lastmod>2021-09-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.ajiarya.id/categories/ceph/</loc>
+    <lastmod>2021-09-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.ajiarya.id/posts/</loc>
+    <lastmod>2021-09-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.ajiarya.id/tags/storage/</loc>
+    <lastmod>2021-09-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.ajiarya.id/tags/</loc>
+    <lastmod>2021-09-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.ajiarya.id/posts/linux/cara-update-osinfo-db/</loc>
     <lastmod>2021-09-05T00:00:00+00:00</lastmod>
@@ -15,15 +36,6 @@
     <lastmod>2021-09-05T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.ajiarya.id/posts/nextcloud/cara-setup-nextcloud/</loc>
-    <lastmod>2021-09-05T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://blog.ajiarya.id/categories/</loc>
-    <lastmod>2021-09-05T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://blog.ajiarya.id/tags/ceph/</loc>
-    <lastmod>2021-09-05T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://blog.ajiarya.id/categories/ceph/</loc>
     <lastmod>2021-09-05T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.ajiarya.id/tags/dms/</loc>
@@ -39,15 +51,6 @@
     <lastmod>2021-09-05T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.ajiarya.id/categories/nextcloud/</loc>
-    <lastmod>2021-09-05T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://blog.ajiarya.id/posts/</loc>
-    <lastmod>2021-09-05T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://blog.ajiarya.id/tags/storage/</loc>
-    <lastmod>2021-09-05T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://blog.ajiarya.id/tags/</loc>
     <lastmod>2021-09-05T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.ajiarya.id/tags/virtualisasi/</loc>

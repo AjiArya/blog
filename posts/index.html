@@ -87,6 +87,16 @@ IMTEK
 </header>
 <article class=post-entry>
 <header class=entry-header>
+<h2>Cara Simulasi Kegagalan Disk Pada Klaster Ceph</h2>
+</header>
+<section class=entry-content>
+<p>Panduan Tentukan disk untuk simulasi # Lihat OSD ceph osd tree # Temukan lokasi OSD ceph osd find &lt;osd_id> Masuk ke Node OSD ssh ceph-osd-01 Hapus device dari sysfs # echo 1 > /sys/block/BLOCK_DEVICE/device/delete echo 1 > /sys/block/sdb/device/delete Setelah beberapa saat, osd akan menjadi down dan kemudian menjadi out ceph -s ceph osd tree ceph osd tree down ceph osd tree out SCSI Scan (Untuk memunculkan SCSI yang belum terdeteksi oleh Sistem Operasi) # Tampilkan host bus ls /sys/class/scsi_host # Scan ulang scsi berdasarkan host bus echo "- - -" > /sys/class/scsi_host/hostX/scan Referensi Red Hat Ceph Storage 4 Docs - Handling a disk failure </p>
+</section>
+<footer class=entry-footer>September 6, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Cara Simulasi Kegagalan Disk Pada Klaster Ceph" href=https://blog.ajiarya.id/posts/ceph/cara-simulasi-kegagalan-disk-ceph/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
 <h2>Cara Memperbarui libosinfo osinfo-db</h2>
 </header>
 <section class=entry-content>
@@ -131,20 +141,6 @@ sudo snap install nextcloud Konfigurasi Akun administratif sudo nextcloud....</p
 </section>
 <footer class=entry-footer>September 5, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
 <a class=entry-link aria-label="post link to Cara Menyiapkan Nextcloud Dengan Let's Encrypt" href=https://blog.ajiarya.id/posts/nextcloud/cara-setup-nextcloud/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>Memilih Deployment Tool Ceph</h2>
-</header>
-<section class=entry-content>
-<p>Panduan Rekomendasi cephadm (Container)
-cephadm tersedia sejak versi v15.2.0 (Octopus). cephadm mendeploy servis-servis Ceph dalam bentuk container, dengan cephadm mempermudah untuk memanajemen klaster seperti menambahkan, menghapuskan, atau memperbarui komponen Ceph.
-cephadm mendukung docker dan podman sebagai container runtime.
-Rook (Container / Manage by Kubernetes)
-Rook tersedia sejak versi Nautilus. Rook men-deploy dan melakukan manajemen klaster Ceph yang berjalan didalam Kubernetes. Jika ingin menggunakan Ceph sebagai storage untuk klaster Kubernetes, Rook adalah tool cocok digunakan....</p>
-</section>
-<footer class=entry-footer>September 5, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Memilih Deployment Tool Ceph" href=https://blog.ajiarya.id/posts/ceph/memilih-deployment-tool-ceph/></a>
 </article>
 <footer class=page-footer>
 <nav class=pagination>
