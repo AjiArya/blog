@@ -1,5 +1,5 @@
 ---
-title: "Cara Menyiapkan Setup External Metric Server Proxmox - InfluxDB"
+title: "Cara Menyiapkan Monitoring Proxmox Menggunakan InfluxDB dan Grafana"
 description: "Cara mudah mempersiapkan external metric server untuk proxmox menggunakan InfluxDB"
 date: "2021-09-09"
 tags: ["Virtual Environment", "Proxmox", "Virtualisasi"]
@@ -49,7 +49,11 @@ Sesuaikan baris berikut
 systemctl restart influxdb 
 ```
 
-5. Pasang Grafana
+5. Tambahkan Metric Server
+    - Tambahkan InfluxDB
+    ![](/images/proxmox-ext-metric.png)
+
+6. Pasang Grafana
     - Tambahkan apt key
     ```bash
     wget -q -O - https://packages.grafana.com/gpg.key | apt-key add -
@@ -76,7 +80,7 @@ systemctl restart influxdb
     systemctl enable --now grafana-server
     ```
 
-6. Tambahkan InfluxDB sebagai datasource pada Grafana
+7. Tambahkan InfluxDB sebagai datasource pada Grafana
     - Configuration > Data sources > Add data source
     - Lakukan konfigurasi seperti berikut:
         - Isikan HTTP > URL. Isikan URL: `http://<IP_Address>:8086`
@@ -84,7 +88,7 @@ systemctl restart influxdb
         - Isikan InfluxDB Details > User. Isikan User: `<user_influx>` sesuai dengan langkah 2
     ![](/images/proxmox-influxdb.png)
 
-7. (Opsional) Import grafana dashboard yang sudah tersedia pada grafana.com
+8. (Opsional) Import grafana dashboard yang sudah tersedia pada grafana.com
     - https://grafana.com/grafana/dashboards/10048
 
     1. Create > Import
