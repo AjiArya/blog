@@ -54,7 +54,7 @@ TocOpen: true
     touch /.autorelabel
     ```
 
-5. Jika sudah reboot sistem menggunakan perintah berikut (2 kali exit)
+5. Reboot sistem menggunakan perintah berikut (2 kali exit)
 ```bash
 # Keluar dari chroot
 exit

@@ -39,7 +39,7 @@ TocOpen: true
     passwd
     ```
 
-5. Jika sudah reboot sistem menggunakan perintah berikut
+5. Reboot sistem menggunakan perintah berikut
 ```bash
 exec /sbin/init 
 ```
