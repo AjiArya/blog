@@ -86,6 +86,18 @@ IMTEK
 </header>
 <article class="post-entry tag-entry">
 <header class=entry-header>
+<h2>Cara Membuat Storage Pool Libvirt Menggunakan python-tfgen</h2>
+</header>
+<section class=entry-content>
+<p>Prasyarat Terraform python-tfgen Panduan Buat direktori untuk penyimpanan data mkdir -p /data/images mkdir -p /data/vms Tips!
+Mount direktori ke drive dengan kapasitas besar atau kecepatan tinggi.
+Buat yaml dengan kind: pool pool.yaml kind: pool uri: "qemu:///system" spec: - name: images path: /data/images - name: vms path: /data/vms Buat HCL berdasarkan yaml yang telah dibuat ./tfgen.py -f pool.yaml -o pool pool/main....</p>
+</section>
+<footer class=entry-footer>August 17, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Cara Membuat Storage Pool Libvirt Menggunakan python-tfgen" href=https://blog.ajiarya.id/posts/python-tfgen/cara-membuat-pool-dengan-python-tfgen/></a>
+</article>
+<article class="post-entry tag-entry">
+<header class=entry-header>
 <h2>Cara Membuat VM Libvirt Menggunakan python-tfgen</h2>
 </header>
 <section class=entry-content>
@@ -128,20 +140,10 @@ Referensi Sewa Server Hetzner Robot - Server Auction Prasyarat Server Sistem Ope
 <footer class=entry-footer>August 17, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
 <a class=entry-link aria-label="post link to Cara Menyiapkan Home Lab Linux [Debian Bullseye/Ubuntu Focal]" href=https://blog.ajiarya.id/posts/linux/cara-menyiapkan-home-lab-debian-ubuntu/></a>
 </article>
-<article class="post-entry tag-entry">
-<header class=entry-header>
-<h2>Cara Mengetahui Virtualisasi Yang Digunakan oleh VM Linux</h2>
-</header>
-<section class=entry-content>
-<p>Pendahuluan Ketika kita menggunakan layanan VPS ataupun Public Cloud kita bisa memeriksa jenis virtualisasi yang diberikan oleh penyedia layanan dengan menggunakan perintah dmidecode pada sistem operasi Linux.
-Perintah sudo dmidecode -s system-product-name Contoh pada virtualisasi KVM student@machine:~$ sudo dmidecode -s system-product-name KVM Contoh pada virtualisasi OpenStack student@machine:~$ sudo dmidecode -s system-product-name OpenStack Compute </p>
-</section>
-<footer class=entry-footer>August 4, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Mengetahui Virtualisasi Yang Digunakan oleh VM Linux" href=https://blog.ajiarya.id/posts/linux/cara-memeriksa-jenis-virtualiasasi/></a>
-</article>
 <footer class=page-footer>
 <nav class=pagination>
 <a class=prev href=https://blog.ajiarya.id/tags/virtualisasi/>« Prev Page</a>
+<a class=next href=https://blog.ajiarya.id/tags/virtualisasi/page/3/>Next Page »</a>
 </nav>
 </footer>
 </main>

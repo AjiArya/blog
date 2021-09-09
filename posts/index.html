@@ -87,6 +87,18 @@ IMTEK
 </header>
 <article class=post-entry>
 <header class=entry-header>
+<h2>Cara Menyiapkan Setup External Metric Server Proxmox - InfluxDB</h2>
+</header>
+<section class=entry-content>
+<p>Prasyarat Proxmox Terinstall Panduan Pasang influxdb dan influxdb-client apt install influxdb influxdb-client Buat user database dan database influx (Dalam shell influx) Buat user dan database
+CREATE USER admin WITH PASSWORD 'keraktelor' WITH ALL PRIVILEGES CREATE DATABASE monitoring CREATE USER influx WITH PASSWORD 'piesusu' GRANT ALL ON monitoring TO influx exit Konfigurasi influxdb vi /etc/influxdb/influxdb.conf Sesuaikan baris berikut
+[[udp]] enabled = true bind-address = ":8089" database = "mondb" Restart InfluxDB systemctl restart influxdb Pasang Grafana...</p>
+</section>
+<footer class=entry-footer>September 9, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Cara Menyiapkan Setup External Metric Server Proxmox - InfluxDB" href=https://blog.ajiarya.id/posts/proxmox/cara-menyiapkan-monitoring-proxmox/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
 <h2>Cara Simulasi Kegagalan Disk Pada Klaster Ceph</h2>
 </header>
 <section class=entry-content>
@@ -129,18 +141,6 @@ Panduan Hapus class default yang didapatkan ketika membuat OSD ceph osd crush rm
 </section>
 <footer class=entry-footer>September 5, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
 <a class=entry-link aria-label="post link to Cara Mengubah Device Class OSD" href=https://blog.ajiarya.id/posts/ceph/cara-mengubah-device-class-osd/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>Cara Menyiapkan Nextcloud Dengan Let's Encrypt</h2>
-</header>
-<section class=entry-content>
-<p>Panduan Pasang snap (Jika belum tersedia)
-Debian Based sudo apt install -y snapd RHEL Based sudo yum install -y epel-release sudo yum install -y snapd # atau sudo dnf install -y epel-release sudo dnf install -y snapd sudo systemctl enable --now snapd.socket sudo ln -s /var/lib/snapd/snap /snap Pasang Nextcloud melalui snapd
-sudo snap install nextcloud Konfigurasi Akun administratif sudo nextcloud....</p>
-</section>
-<footer class=entry-footer>September 5, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Menyiapkan Nextcloud Dengan Let's Encrypt" href=https://blog.ajiarya.id/posts/nextcloud/cara-setup-nextcloud/></a>
 </article>
 <footer class=page-footer>
 <nav class=pagination>

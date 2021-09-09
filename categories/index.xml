@@ -5,7 +5,16 @@
     <link>https://blog.ajiarya.id/categories/</link>
     <description>Recent content in Categories on Aji Arya</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 06 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.ajiarya.id/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 09 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.ajiarya.id/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Proxmox</title>
+      <link>https://blog.ajiarya.id/categories/proxmox/</link>
+      <pubDate>Thu, 09 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.ajiarya.id/categories/proxmox/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Ceph</title>
       <link>https://blog.ajiarya.id/categories/ceph/</link>

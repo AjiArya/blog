@@ -5,7 +5,16 @@
     <link>https://blog.ajiarya.id/posts/</link>
     <description>Recent content in Posts on Aji Arya</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 06 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.ajiarya.id/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 09 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.ajiarya.id/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cara Menyiapkan Setup External Metric Server Proxmox - InfluxDB</title>
+      <link>https://blog.ajiarya.id/posts/proxmox/cara-menyiapkan-monitoring-proxmox/</link>
+      <pubDate>Thu, 09 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.ajiarya.id/posts/proxmox/cara-menyiapkan-monitoring-proxmox/</guid>
+      <description>Cara mudah mempersiapkan external metric server untuk proxmox menggunakan InfluxDB</description>
+    </item>
+    
     <item>
       <title>Cara Simulasi Kegagalan Disk Pada Klaster Ceph</title>
       <link>https://blog.ajiarya.id/posts/ceph/cara-simulasi-kegagalan-disk-ceph/</link>

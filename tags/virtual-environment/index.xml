@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Virtual Environment on Aji Arya</title>
+    <link>https://blog.ajiarya.id/tags/virtual-environment/</link>
+    <description>Recent content in Virtual Environment on Aji Arya</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 09 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.ajiarya.id/tags/virtual-environment/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cara Menyiapkan Setup External Metric Server Proxmox - InfluxDB</title>
+      <link>https://blog.ajiarya.id/posts/proxmox/cara-menyiapkan-monitoring-proxmox/</link>
+      <pubDate>Thu, 09 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.ajiarya.id/posts/proxmox/cara-menyiapkan-monitoring-proxmox/</guid>
+      <description>Cara mudah mempersiapkan external metric server untuk proxmox menggunakan InfluxDB</description>
+    </item>
+    
+  </channel>
+</rss>
