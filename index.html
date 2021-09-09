@@ -105,15 +105,15 @@ IMTEK
 </article>
 <article class=post-entry>
 <header class=entry-header>
-<h2>Cara Menyiapkan Setup External Metric Server Proxmox - InfluxDB</h2>
+<h2>Cara Menyiapkan Monitoring Proxmox Menggunakan InfluxDB dan Grafana</h2>
 </header>
 <section class=entry-content>
 <p>Prasyarat Proxmox Terinstall Panduan Pasang influxdb dan influxdb-client apt install influxdb influxdb-client Buat user database dan database influx (Dalam shell influx) Buat user dan database
 CREATE USER admin WITH PASSWORD 'keraktelor' WITH ALL PRIVILEGES CREATE DATABASE monitoring CREATE USER influx WITH PASSWORD 'piesusu' GRANT ALL ON monitoring TO influx exit Konfigurasi influxdb vi /etc/influxdb/influxdb.conf Sesuaikan baris berikut
-[[udp]] enabled = true bind-address = ":8089" database = "mondb" Restart InfluxDB systemctl restart influxdb Pasang Grafana...</p>
+[[udp]] enabled = true bind-address = ":8089" database = "mondb" Restart InfluxDB systemctl restart influxdb Tambahkan Metric Server...</p>
 </section>
 <footer class=entry-footer>September 9, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Menyiapkan Setup External Metric Server Proxmox - InfluxDB" href=https://blog.ajiarya.id/posts/proxmox/cara-menyiapkan-monitoring-proxmox/></a>
+<a class=entry-link aria-label="post link to Cara Menyiapkan Monitoring Proxmox Menggunakan InfluxDB dan Grafana" href=https://blog.ajiarya.id/posts/proxmox/cara-menyiapkan-monitoring-proxmox/></a>
 </article>
 <article class=post-entry>
 <header class=entry-header>
