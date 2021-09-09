@@ -12,7 +12,7 @@
       <pubDate>Thu, 09 Sep 2021 00:00:00 +0000</pubDate>
       
       <guid>https://blog.ajiarya.id/posts/proxmox/cara-menyiapkan-monitoring-proxmox/</guid>
-      <description>Cara mudah mempersiapkan external metric server untuk proxmox menggunakan InfluxDB</description>
+      <description>Cara mudah mempersiapkan monitoring proxmox menggunakan influxdb dan grafana</description>
     </item>
     
   </channel>
