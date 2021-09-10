@@ -3,11 +3,11 @@
 <meta http-equiv=x-ua-compatible content="IE=edge">
 <meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
 <meta name=robots content="index, follow">
-<title>Proxmox | Aji Arya</title>
+<title>Volume | Aji Arya</title>
 <meta name=keywords content>
 <meta name=description content="Aji Arya's Personal Blog">
 <meta name=author content="Aji Arya">
-<link rel=canonical href=https://blog.ajiarya.id/tags/proxmox/>
+<link rel=canonical href=https://blog.ajiarya.id/tags/volume/>
 <meta name=google-site-verification content="7xkl7tm1-iJxieMKGetoXQpqJffAVKatOFgXg7ddX_Y">
 <link crossorigin=anonymous href=/assets/css/stylesheet.min.35cd0f65a15cafa92372b8313deef5960aae04b90ad722f2bbf509eb0468137e.css integrity="sha256-Nc0PZaFcr6kjcrgxPe71lgquBLkK1yLyu/UJ6wRoE34=" rel="preload stylesheet" as=style>
 <link rel=icon href=https://blog.ajiarya.id/favicon.ico>
@@ -18,13 +18,13 @@
 <meta name=theme-color content="#2e2e33">
 <meta name=msapplication-TileColor content="#2e2e33">
 <meta name=generator content="Hugo 0.88.1">
-<link rel=alternate type=application/rss+xml href=https://blog.ajiarya.id/tags/proxmox/index.xml>
-<script type=application/javascript>var doNotTrack=!1;doNotTrack||(function(a,e,f,g,b,c,d){a.GoogleAnalyticsObject=b,a[b]=a[b]||function(){(a[b].q=a[b].q||[]).push(arguments)},a[b].l=1*new Date,c=e.createElement(f),d=e.getElementsByTagName(f)[0],c.async=1,c.src=g,d.parentNode.insertBefore(c,d)}(window,document,'script','https://www.google-analytics.com/analytics.js','ga'),ga('create','UA-182251419-3','auto'),ga('send','pageview'))</script><meta property="og:title" content="Proxmox">
+<link rel=alternate type=application/rss+xml href=https://blog.ajiarya.id/tags/volume/index.xml>
+<script type=application/javascript>var doNotTrack=!1;doNotTrack||(function(a,e,f,g,b,c,d){a.GoogleAnalyticsObject=b,a[b]=a[b]||function(){(a[b].q=a[b].q||[]).push(arguments)},a[b].l=1*new Date,c=e.createElement(f),d=e.getElementsByTagName(f)[0],c.async=1,c.src=g,d.parentNode.insertBefore(c,d)}(window,document,'script','https://www.google-analytics.com/analytics.js','ga'),ga('create','UA-182251419-3','auto'),ga('send','pageview'))</script><meta property="og:title" content="Volume">
 <meta property="og:description" content="Aji Arya's Personal Blog">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://blog.ajiarya.id/tags/proxmox/"><meta property="og:site_name" content="Aji Arya">
+<meta property="og:url" content="https://blog.ajiarya.id/tags/volume/"><meta property="og:site_name" content="Aji Arya">
 <meta name=twitter:card content="summary">
-<meta name=twitter:title content="Proxmox">
+<meta name=twitter:title content="Volume">
 <meta name=twitter:description content="Aji Arya's Personal Blog">
 </head>
 <body class=list id=top>
@@ -82,29 +82,17 @@ IMTEK
 </header>
 <main class=main>
 <header class=page-header><div class=breadcrumbs><a href=https://blog.ajiarya.id>Home</a>&nbsp;»&nbsp;<a href=https://blog.ajiarya.id/tags/>Tags</a></div>
-<h1>Proxmox</h1>
+<h1>Volume</h1>
 </header>
 <article class="post-entry tag-entry">
 <header class=entry-header>
-<h2>Cara Membuat VM Menggunakan Cloud Image - Proxmox</h2>
+<h2>Cara Mengubah Volume Type Dengan Backend Yang Berbeda - CLI</h2>
 </header>
 <section class=entry-content>
-<p>Prasyarat Proxmox terinstall Panduan Buat template Unduh file image cloud ubuntu 18 wget https://cloud-images.ubuntu.com/bionic/current/bionic-server-cloudimg-amd64.img Buat VM qm create 100 --memory 2048 --net0 virtio,bridge=vmbr0 Import image ke dalam local-lvm storage qm importdisk 100 bionic-server-cloudimg-amd64.img local-lvm Atur disk VM qm set 100 --scsihw virtio-scsi-pci --scsi0 local-lvm:vm-100-disk-0 Buat drive cloud-image qm set 100 --ide2 local-lvm:cloudinit Atur boot menggunakan cloud-init qm set 100 --boot c --bootdisk scsi0 Atur console qm set 100 --serial0 socket --vga serial0 Atur console qm template 100 Buat VM Klon template qm clone 100 200 --name ubuntu20 Konfigurasi publickey dan IP Address qm set 200 --sshkey ~/....</p>
+<p>Prasyarat Cinder dengan 2 atau lebih backend Panduan Lihat volume type yang tersedia openstack volume type list Ubah volume type pada volume yang dimaksud openstack volume set --type &lt;new_type> --retype-policy on-demand &lt;vol_id/vol_name> Tunggu sampai proses retyping selesai </p>
 </section>
 <footer class=entry-footer>September 10, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Membuat VM Menggunakan Cloud Image - Proxmox" href=https://blog.ajiarya.id/posts/proxmox/cara-deploy-vm-menggunakan-cloud-image/></a>
-</article>
-<article class="post-entry tag-entry">
-<header class=entry-header>
-<h2>Cara Menyiapkan Monitoring Proxmox Menggunakan InfluxDB dan Grafana</h2>
-</header>
-<section class=entry-content>
-<p>Prasyarat Proxmox Terinstall Panduan Pasang influxdb dan influxdb-client apt install influxdb influxdb-client Buat user database dan database influx (Dalam shell influx) Buat user dan database
-CREATE USER admin WITH PASSWORD 'keraktelor' WITH ALL PRIVILEGES CREATE DATABASE monitoring CREATE USER influx WITH PASSWORD 'piesusu' GRANT ALL ON monitoring TO influx exit Konfigurasi influxdb vi /etc/influxdb/influxdb.conf Sesuaikan baris berikut
-[[udp]] enabled = true bind-address = ":8089" database = "mondb" Restart InfluxDB systemctl restart influxdb Tambahkan Metric Server...</p>
-</section>
-<footer class=entry-footer>September 9, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Menyiapkan Monitoring Proxmox Menggunakan InfluxDB dan Grafana" href=https://blog.ajiarya.id/posts/proxmox/cara-menyiapkan-monitoring-proxmox/></a>
+<a class=entry-link aria-label="post link to Cara Mengubah Volume Type Dengan Backend Yang Berbeda - CLI" href=https://blog.ajiarya.id/posts/openstack/cara-mengganti-volume-type-ke-backend-yang-berbeda-cli/></a>
 </article>
 </main>
 <footer class=footer>

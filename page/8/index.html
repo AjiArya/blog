@@ -85,6 +85,28 @@ IMTEK
 <main class=main>
 <article class=post-entry>
 <header class=entry-header>
+<h2>Cara Menyiapkan Home Lab Linux [Debian Bullseye/Ubuntu Focal]</h2>
+</header>
+<section class=entry-content>
+<p>Debian Cockpit
+Ubuntu Cockpit
+Referensi Sewa Server Hetzner Robot - Server Auction Prasyarat Server Sistem Operasi Debian 11 (Bullseye) atau Ubuntu 20.04 (Focal) terinstall Panduan Update & Upgrade package sudo apt update sudo apt upgrade Install package-package untuk host virtualisasi sudo apt install cockpit cockpit-machines qemu-system-x86 libvirt-daemon-system libvirt-clients bridge-utils Jalankan dan enable servis libvirt sudo systemctl enable --now libvirtd Jalankan dan enable servis cockpit sudo systemctl enable --now cockpit....</p>
+</section>
+<footer class=entry-footer>August 17, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Cara Menyiapkan Home Lab Linux [Debian Bullseye/Ubuntu Focal]" href=https://blog.ajiarya.id/posts/linux/cara-menyiapkan-home-lab-debian-ubuntu/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
+<h2>Cara Debug Bash Script</h2>
+</header>
+<section class=entry-content>
+<p>Panduan Gunakan kata kunci set pada bash dengan opsi -v #!/bin/bash # Tambahkan set -v pada script set -v Contoh read.sh #!/bin/bash # Baris berikut akan membuat bash script menjadi verbose set -v echo "Siapa namamu?" read NAMA echo "Berapa umurmu? (Dalam Tahun)" read UMUR # tampilkan nama echo "${NAMA}" # tampilkan umur echho "${UMUR}Tahun" # Sapa nama echo "Halo, ${NAMA}!" Ketika menjalankan read.sh...</p>
+</section>
+<footer class=entry-footer>August 12, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Cara Debug Bash Script" href=https://blog.ajiarya.id/posts/bash/cara-debug-bash/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
 <h2>Cara Melakukan Percabangan Dasar Bash - Bagian 1 [Operator Aritmatika]</h2>
 </header>
 <section class=entry-content>
@@ -115,28 +137,6 @@ Jalankan web server menggunakan python pada serverku # Perintah python [root@ser
 </section>
 <footer class=entry-footer>August 10, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
 <a class=entry-link aria-label="post link to Cara Install Podman, Skopeo, dan Buildah Pada Linux (CentOS/Rocky)" href=https://blog.ajiarya.id/posts/podman/cara-install-container-tools/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>Cara SCP Antar Dua Host Remote</h2>
-</header>
-<section class=entry-content>
-<p>Pendahuluan Cara ini digunakan agar kita tidak melakukan hal yang membosankan seperti kejadian berikut
-Conor ingin mengirimkan file dari host1 ke host2 dan hal yang dilakukannya adalah mengirimkan file dari host1 ke localhost terlebih dahulu dan lalu mengirimkan file dari localhost ke host2
-Conor menyalin file file100Giga dari host1 ke localhost (Misal 15 menit) scp host1:file100Giga file100Giga Conor menyalin file file100Giga dari localhost ke host2 (Misal 15 menit) scp file100Giga host1:file100Giga Total waktu yang dihabiskan 30 menit untuk memindahkan file dari host1 ke host2, agar lebih efisien waktu kita bisa memanfaatkan opsi -3 pada scp....</p>
-</section>
-<footer class=entry-footer>August 10, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara SCP Antar Dua Host Remote" href=https://blog.ajiarya.id/posts/linux/cara-scp-antar-dua-remote-host/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>Cara Install ZFS Pada Linux [CentOS/Rocky]</h2>
-</header>
-<section class=entry-content>
-<p>Panduan Menambahkan repository dan public signing key source /etc/os-release sudo dnf install https://zfsonlinux.org/epel/zfs-release.el${VERSION_ID/./_}.noarch.rpm sudo rpm --import /etc/pki/rpm-gpg/RPM-GPG-KEY-zfsonlinux Install package ZFS sudo yum-config-manager --disable zfs sudo yum-config-manager --enable zfs-kmod sudo dnf install epel-release kernel-devel zfs Verifikasi versi modinfo zfs | grep version Referensi OpenZFS Docs </p>
-</section>
-<footer class=entry-footer>August 9, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Install ZFS Pada Linux [CentOS/Rocky]" href=https://blog.ajiarya.id/posts/zfs/cara-install-zfs-centos/></a>
 </article>
 <footer class=page-footer>
 <nav class=pagination>

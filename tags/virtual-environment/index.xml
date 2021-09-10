@@ -5,7 +5,16 @@
     <link>https://blog.ajiarya.id/tags/virtual-environment/</link>
     <description>Recent content in Virtual Environment on Aji Arya</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 09 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.ajiarya.id/tags/virtual-environment/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 10 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.ajiarya.id/tags/virtual-environment/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cara Membuat VM Menggunakan Cloud Image - Proxmox</title>
+      <link>https://blog.ajiarya.id/posts/proxmox/cara-deploy-vm-menggunakan-cloud-image/</link>
+      <pubDate>Fri, 10 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.ajiarya.id/posts/proxmox/cara-deploy-vm-menggunakan-cloud-image/</guid>
+      <description>Cara mudah membuat VM dengan memanfaatkan cloud image</description>
+    </item>
+    
     <item>
       <title>Cara Menyiapkan Monitoring Proxmox Menggunakan InfluxDB dan Grafana</title>
       <link>https://blog.ajiarya.id/posts/proxmox/cara-menyiapkan-monitoring-proxmox/</link>
