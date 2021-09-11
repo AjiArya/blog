@@ -86,6 +86,19 @@ IMTEK
 </header>
 <article class="post-entry tag-entry">
 <header class=entry-header>
+<h2>Cara Memasang Proxmox Exporter</h2>
+</header>
+<section class=entry-content>
+<p>Prasyarat Proxmox terinstall Panduan Buat token untuk proxmox-expoter
+Buat API Token Datacenter > API Token Klik Add Masukan Token ID (Catat bagian ini) Hapus centang pada Privilege Separation Klik Add Salin Token Secret Klik “Copy Secret Value” (Catat bagian ini) Pasang proxmox-exporter
+python3 -m pip install prometheus-pve-exporter Buat servis systemd
+Buat user pve_exporter useradd --no-create-home --shell /bin/false pve_exporter Buat file konfigurasi mkdir /etc/pve_exporter cat&lt;&lt;EOF > /etc/pve_exporter/config....</p>
+</section>
+<footer class=entry-footer>September 11, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Cara Memasang Proxmox Exporter" href=https://blog.ajiarya.id/posts/proxmox/cara-memasang-proxmox-exporter/></a>
+</article>
+<article class="post-entry tag-entry">
+<header class=entry-header>
 <h2>Cara Membuat VM Menggunakan Cloud Image - Proxmox</h2>
 </header>
 <section class=entry-content>
@@ -129,16 +142,6 @@ Perbarui database OS sudo osinfo-db-import --system &lt;database_os> Verifikasi 
 </section>
 <footer class=entry-footer>August 29, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
 <a class=entry-link aria-label="post link to Cara Mengubah Format Image VM" href=https://blog.ajiarya.id/posts/linux/cara-mengubah-format-image-vm/></a>
-</article>
-<article class="post-entry tag-entry">
-<header class=entry-header>
-<h2>Cara Membuat Image Libvirt Menggunakan python-tfgen</h2>
-</header>
-<section class=entry-content>
-<p>Prasyarat Terraform python-tfgen Storage Pool (Baca disini untuk cara membuat Storage Pool) Panduan Buat yaml dengan kind: image lalu isikan dengan daftar image yang diinginkan image.yaml kind: image uri: "qemu:///system" spec: - name: debian-bullseye url: "https://cdimage.debian.org/images/cloud/bullseye/latest/debian-11-genericcloud-amd64.qcow2" pool: images - name: ubuntu-focal url: "https://cloud-images.ubuntu.com/focal/current/focal-server-cloudimg-amd64.img" pool: images Buat HCL berdasarkan yaml yang telah dibuat ./tfgen.py -f image.yaml -o image image/main.tf (Hasil tfgen) terraform { required_providers { libvirt = { source = "dmacvicar/libvirt" } } } provider "libvirt" { uri = "qemu:///system" } resource "libvirt_volume" "debian-bullseye" { name = "debian-bullseye" source = "https://cdimage....</p>
-</section>
-<footer class=entry-footer>August 17, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Membuat Image Libvirt Menggunakan python-tfgen" href=https://blog.ajiarya.id/posts/python-tfgen/cara-membuat-image-dengan-python-tfgen/></a>
 </article>
 <footer class=page-footer>
 <nav class=pagination>

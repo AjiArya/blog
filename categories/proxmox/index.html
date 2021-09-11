@@ -86,6 +86,19 @@ IMTEK
 </header>
 <article class="post-entry tag-entry">
 <header class=entry-header>
+<h2>Cara Memasang Proxmox Exporter</h2>
+</header>
+<section class=entry-content>
+<p>Prasyarat Proxmox terinstall Panduan Buat token untuk proxmox-expoter
+Buat API Token Datacenter > API Token Klik Add Masukan Token ID (Catat bagian ini) Hapus centang pada Privilege Separation Klik Add Salin Token Secret Klik “Copy Secret Value” (Catat bagian ini) Pasang proxmox-exporter
+python3 -m pip install prometheus-pve-exporter Buat servis systemd
+Buat user pve_exporter useradd --no-create-home --shell /bin/false pve_exporter Buat file konfigurasi mkdir /etc/pve_exporter cat&lt;&lt;EOF > /etc/pve_exporter/config....</p>
+</section>
+<footer class=entry-footer>September 11, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Cara Memasang Proxmox Exporter" href=https://blog.ajiarya.id/posts/proxmox/cara-memasang-proxmox-exporter/></a>
+</article>
+<article class="post-entry tag-entry">
+<header class=entry-header>
 <h2>Cara Membuat VM Menggunakan Cloud Image - Proxmox</h2>
 </header>
 <section class=entry-content>

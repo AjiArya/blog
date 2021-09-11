@@ -5,7 +5,16 @@
     <link>https://blog.ajiarya.id/tags/monitoring/</link>
     <description>Recent content in Monitoring on Aji Arya</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 09 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.ajiarya.id/tags/monitoring/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 11 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.ajiarya.id/tags/monitoring/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cara Memasang Proxmox Exporter</title>
+      <link>https://blog.ajiarya.id/posts/proxmox/cara-memasang-proxmox-exporter/</link>
+      <pubDate>Sat, 11 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.ajiarya.id/posts/proxmox/cara-memasang-proxmox-exporter/</guid>
+      <description>Cara mudah memasang Proxmox Exporter</description>
+    </item>
+    
     <item>
       <title>Cara Menyiapkan Monitoring Proxmox Menggunakan InfluxDB dan Grafana</title>
       <link>https://blog.ajiarya.id/posts/proxmox/cara-menyiapkan-monitoring-proxmox/</link>

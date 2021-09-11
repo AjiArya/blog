@@ -87,6 +87,16 @@ IMTEK
 </header>
 <article class=post-entry>
 <header class=entry-header>
+<h2>Cara Memasang OpenShift CodeReady Pada Fedora 34</h2>
+</header>
+<section class=entry-content>
+<p>Prasyarat Mesin Fedora 34 (Baremetal atau VM) Akun Red Hat Versi Sistem Operasi: Fedora 34 Cloud Image CodeReady: 1.31.2+19538dab OpenShift: 4.8.4 Panduan Update dan Upgrade package sudo dnf update -y; sudo dnf upgrade -y Install package NetworkManager dan wget sudo dnf install -y NetworkManager wget Unduh CodeReady dan salin pull secret Tautan Disini wget https://developers.redhat.com/content-gateway/file/pub/openshift-v4/clients/crc/1.31.2/crc-linux-amd64.tar.xz tar xf crc-linux-amd64.tar.xz cd crc-linux-1.31.2-amd64/ sudo mv crc /usr/local/bin # Verifikasi crc version Setup dan jalankan CodeReady (Tempel pull secret pada proses crc start) crc setup crc start Akses CodeReady...</p>
+</section>
+<footer class=entry-footer>August 29, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Cara Memasang OpenShift CodeReady Pada Fedora 34" href=https://blog.ajiarya.id/posts/openshift/cara-memasang-openshift-codeready/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
 <h2>Cara Mengubah Format Image VM</h2>
 </header>
 <section class=entry-content>
@@ -131,16 +141,6 @@ Panduan Login sebagai root sudo -i Hentikan service monitor jika masih berjalan 
 </section>
 <footer class=entry-footer>August 24, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
 <a class=entry-link aria-label="post link to Cara Membuat Ulang Ceph Monitor Yang Rusak [Manual Deployment]" href=https://blog.ajiarya.id/posts/ceph/cara-membuat-ulang-ceph-mon/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>Cara Melakukan Percabangan Dasar Bash - Bagian 2 [Periksa Direktori, File, & Variabel]</h2>
-</header>
-<section class=entry-content>
-<p>Panduan Parameter yang bisa digunakan -d true jika direktori ada -e true jika file ada -v true jika variabel memiliki nilai Contoh 1: Periksa Direktori Script #!/bin/bash if [[ -d halo ]]; then echo "Direktori ada" else echo "Direktori tidak ada" fi Contoh 2: Periksa File Script #!/bin/bash if [[ -e halo.txt ]]; then echo "File ada" else echo "File tidak ada" fi Contoh 3: Periksa Variabel Script #!...</p>
-</section>
-<footer class=entry-footer>August 23, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Melakukan Percabangan Dasar Bash - Bagian 2 [Periksa Direktori, File, & Variabel]" href=https://blog.ajiarya.id/posts/bash/cara-melakukan-percabangan-pada-bash-bagian-2/></a>
 </article>
 <footer class=page-footer>
 <nav class=pagination>
