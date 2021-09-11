@@ -2,7 +2,7 @@
 title: "Cara Menyiapkan Monitoring Proxmox Menggunakan InfluxDB dan Grafana"
 description: "Cara mudah mempersiapkan monitoring proxmox menggunakan influxdb dan grafana"
 date: "2021-09-09"
-tags: ["Virtual Environment", "Proxmox", "Virtualisasi"]
+tags: ["Virtual Environment", "Proxmox", "Virtualisasi", "Monitoring"]
 categories: ["Proxmox"]
 ShowToc: true
 TocOpen: true
