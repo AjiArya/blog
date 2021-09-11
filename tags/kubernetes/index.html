@@ -86,6 +86,17 @@ IMTEK
 </header>
 <article class="post-entry tag-entry">
 <header class=entry-header>
+<h2>Cara Menyiapkan High Availability Kubernetes Klaster Menggunakan Kubeadm</h2>
+</header>
+<section class=entry-content>
+<p>Topologi Versi Sistem Operasi Ubuntu 20.04 (Focal)
+Aplikasi HAProxy 2.0.13-2ubuntu0.3 KeepAlived 1:2.0.19-2 Containerd 1.4.9-1 Kubernetes 1.22.1-00 (kubeadm, kubelet, kubectl) Panduan Semua perintah dibawah dijalankan menggunakan user root Persiapan Sunting file /etc/hosts cat&lt;&lt;EOF >> /etc/hosts ### Lab Kubernetes ### 192.168.30.10 kubernetes-vip 192.168.30.11 kubernetes-lb1 192.168.30.12 kubernetes-lb2 192.168.30.13 kubernetes-master01 192.168.30.14 kubernetes-master02 192.168.30.15 kubernetes-master03 192.168.30.16 kubernetes-worker01 EOF update dan upgrade package-package apt update -y; apt upgrade -y HAproxy & Keepalived Pasang haproxy dan keepalived apt install -y haproxy keepalived Konfigurasi HAProxy...</p>
+</section>
+<footer class=entry-footer>September 10, 2021&nbsp;·&nbsp;4 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Cara Menyiapkan High Availability Kubernetes Klaster Menggunakan Kubeadm" href=https://blog.ajiarya.id/posts/kubernetes/cara-menyiapkan-high-availability-kubernetes-klaster-kubeadm/></a>
+</article>
+<article class="post-entry tag-entry">
+<header class=entry-header>
 <h2>Cara Memasang Minikube Pada WSL [Docker Driver]</h2>
 </header>
 <section class=entry-content>
