@@ -5,7 +5,25 @@
     <link>https://blog.ajiarya.id/tags/</link>
     <description>Recent content in Tags on Aji Arya</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 10 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.ajiarya.id/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 11 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.ajiarya.id/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Linux</title>
+      <link>https://blog.ajiarya.id/tags/linux/</link>
+      <pubDate>Sat, 11 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.ajiarya.id/tags/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SSH</title>
+      <link>https://blog.ajiarya.id/tags/ssh/</link>
+      <pubDate>Sat, 11 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.ajiarya.id/tags/ssh/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Cinder</title>
       <link>https://blog.ajiarya.id/tags/cinder/</link>
@@ -79,6 +97,15 @@
     </item>
     
     <item>
+      <title>Monitoring</title>
+      <link>https://blog.ajiarya.id/tags/monitoring/</link>
+      <pubDate>Thu, 09 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.ajiarya.id/tags/monitoring/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Ceph</title>
       <link>https://blog.ajiarya.id/tags/ceph/</link>
       <pubDate>Mon, 06 Sep 2021 00:00:00 +0000</pubDate>
@@ -102,15 +129,6 @@
       <pubDate>Sun, 05 Sep 2021 00:00:00 +0000</pubDate>
       
       <guid>https://blog.ajiarya.id/tags/dms/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Linux</title>
-      <link>https://blog.ajiarya.id/tags/linux/</link>
-      <pubDate>Sun, 05 Sep 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.ajiarya.id/tags/linux/</guid>
       <description></description>
     </item>
     
@@ -228,15 +246,6 @@
       <pubDate>Mon, 23 Aug 2021 00:00:00 +0000</pubDate>
       
       <guid>https://blog.ajiarya.id/tags/container/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>SSH</title>
-      <link>https://blog.ajiarya.id/tags/ssh/</link>
-      <pubDate>Mon, 23 Aug 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.ajiarya.id/tags/ssh/</guid>
       <description></description>
     </item>
     

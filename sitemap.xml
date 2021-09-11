@@ -3,7 +3,28 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://blog.ajiarya.id/</loc>
-    <lastmod>2021-09-10T00:00:00+00:00</lastmod>
+    <lastmod>2021-09-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.ajiarya.id/posts/linux/cara-ssh-jump/</loc>
+    <lastmod>2021-09-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.ajiarya.id/categories/</loc>
+    <lastmod>2021-09-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.ajiarya.id/tags/linux/</loc>
+    <lastmod>2021-09-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.ajiarya.id/categories/linux/</loc>
+    <lastmod>2021-09-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.ajiarya.id/posts/</loc>
+    <lastmod>2021-09-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.ajiarya.id/tags/ssh/</loc>
+    <lastmod>2021-09-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.ajiarya.id/tags/</loc>
+    <lastmod>2021-09-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.ajiarya.id/posts/proxmox/cara-deploy-vm-menggunakan-cloud-image/</loc>
     <lastmod>2021-09-10T00:00:00+00:00</lastmod>
@@ -12,9 +33,6 @@
     <lastmod>2021-09-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.ajiarya.id/posts/kubernetes/cara-menyiapkan-high-availability-kubernetes-klaster-kubeadm/</loc>
-    <lastmod>2021-09-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://blog.ajiarya.id/categories/</loc>
     <lastmod>2021-09-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.ajiarya.id/tags/cinder/</loc>
@@ -35,16 +53,10 @@
     <loc>https://blog.ajiarya.id/categories/openstack/</loc>
     <lastmod>2021-09-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.ajiarya.id/posts/</loc>
-    <lastmod>2021-09-10T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://blog.ajiarya.id/tags/proxmox/</loc>
     <lastmod>2021-09-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.ajiarya.id/categories/proxmox/</loc>
-    <lastmod>2021-09-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://blog.ajiarya.id/tags/</loc>
     <lastmod>2021-09-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.ajiarya.id/tags/virtual-environment/</loc>
@@ -57,6 +69,9 @@
     <lastmod>2021-09-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.ajiarya.id/posts/proxmox/cara-menyiapkan-monitoring-proxmox/</loc>
+    <lastmod>2021-09-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.ajiarya.id/tags/monitoring/</loc>
     <lastmod>2021-09-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.ajiarya.id/posts/ceph/cara-simulasi-kegagalan-disk-ceph/</loc>
@@ -86,9 +101,6 @@
     <loc>https://blog.ajiarya.id/tags/dms/</loc>
     <lastmod>2021-09-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.ajiarya.id/tags/linux/</loc>
-    <lastmod>2021-09-05T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://blog.ajiarya.id/posts/ceph/memilih-deployment-tool-ceph/</loc>
     <lastmod>2021-09-05T00:00:00+00:00</lastmod>
   </url><url>
@@ -114,9 +126,6 @@
     <lastmod>2021-09-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.ajiarya.id/tags/iscsi/</loc>
-    <lastmod>2021-09-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://blog.ajiarya.id/categories/linux/</loc>
     <lastmod>2021-09-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.ajiarya.id/posts/openstack/cara-setup-magnum-kolla/</loc>
@@ -198,9 +207,6 @@
     <lastmod>2021-08-23T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.ajiarya.id/categories/podman/</loc>
-    <lastmod>2021-08-23T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://blog.ajiarya.id/tags/ssh/</loc>
     <lastmod>2021-08-23T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.ajiarya.id/posts/ceph/cara-deploy-ceph-menggunakan-cephadm/</loc>

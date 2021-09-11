@@ -87,60 +87,18 @@ IMTEK
 </header>
 <article class=post-entry>
 <header class=entry-header>
-<h2>Cara SSH Jump Host</h2>
+<h2>Memasang Kata Container dengan Containerd Pada Ubuntu 20.04</h2>
 </header>
 <section class=entry-content>
-<p>Panduan Perintah # 1 Lompatan ssh -J &lt;user>@&lt;machine-1> &lt;user>@&lt;machine-2> # 2 Lompatan ssh -J &lt;user>@&lt;machine-1>,&lt;machine-2> &lt;user>@&lt;machine-3> # 3 Lompatan ssh -J &lt;user>@&lt;machine-1>,&lt;machine-2>,&lt;user>@&lt;machine-3> &lt;user>@&lt;machine-4> Contoh Contoh 1: SSH Jump dari 192.168.10.2 ke 192.168.10.3 ssh -J user@192.168.10.2 user@192.168.10.3 Contoh 2: SSH Jump dari 192.168.10.2 lalu 192.168.10.3 ke 192.168.10.4 ssh -J user@192.168.10.2,user@192.168.10.3 user@192.168.10.4 Referensi Gentoo Linux - SSH Jump Host </p>
+<p>Prasyarat Baremetal atau Virtualisasi yang mendukung Nested Virtualization Panduan 1. Pasang Repository Kata Container ARCH=$(arch) BRANCH="${BRANCH:-master}" sudo sh -c "echo 'deb http://download.opensuse.org/repositories/home:/katacontainers:/releases:/${ARCH}:/${BRANCH}/xUbuntu_$(lsb_release -rs)/ /' > /etc/apt/sources.list.d/kata-containers.list" curl -sL http://download.opensuse.org/repositories/home:/katacontainers:/releases:/${ARCH}:/${BRANCH}/xUbuntu_$(lsb_release -rs)/Release.key | sudo apt-key add - sudo -E apt-get update sudo -E apt-get -y install kata-runtime kata-proxy kata-shim 2. Periksa kemampuan host untuk menjalankan Kata Container kata-runtime kata-check Keluaran yang diharapkan
+student@kata-host:~$ kata-runtime kata-check No newer release available System is capable of running Kata Containers 3....</p>
 </section>
-<footer class=entry-footer>September 11, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara SSH Jump Host" href=https://blog.ajiarya.id/posts/linux/cara-ssh-jump/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>Cara Membuat VM Menggunakan Cloud Image - Proxmox</h2>
-</header>
-<section class=entry-content>
-<p>Prasyarat Proxmox terinstall Panduan Buat template Unduh file image cloud ubuntu 18 wget https://cloud-images.ubuntu.com/bionic/current/bionic-server-cloudimg-amd64.img Buat VM qm create 100 --memory 2048 --net0 virtio,bridge=vmbr0 Import image ke dalam local-lvm storage qm importdisk 100 bionic-server-cloudimg-amd64.img local-lvm Atur disk VM qm set 100 --scsihw virtio-scsi-pci --scsi0 local-lvm:vm-100-disk-0 Buat drive cloud-image qm set 100 --ide2 local-lvm:cloudinit Atur boot menggunakan cloud-init qm set 100 --boot c --bootdisk scsi0 Atur console qm set 100 --serial0 socket --vga serial0 Atur console qm template 100 Buat VM Klon template qm clone 100 200 --name ubuntu20 Konfigurasi publickey dan IP Address qm set 200 --sshkey ~/....</p>
-</section>
-<footer class=entry-footer>September 10, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Membuat VM Menggunakan Cloud Image - Proxmox" href=https://blog.ajiarya.id/posts/proxmox/cara-deploy-vm-menggunakan-cloud-image/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>Cara Mengubah Volume Type Dengan Backend Yang Berbeda - CLI</h2>
-</header>
-<section class=entry-content>
-<p>Prasyarat Cinder dengan 2 atau lebih backend Panduan Lihat volume type yang tersedia openstack volume type list Ubah volume type pada volume yang dimaksud openstack volume set --type &lt;new_type> --retype-policy on-demand &lt;vol_id/vol_name> Tunggu sampai proses retyping selesai </p>
-</section>
-<footer class=entry-footer>September 10, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Mengubah Volume Type Dengan Backend Yang Berbeda - CLI" href=https://blog.ajiarya.id/posts/openstack/cara-mengganti-volume-type-ke-backend-yang-berbeda-cli/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>Cara Menyiapkan High Availability Kubernetes Klaster Menggunakan Kubeadm</h2>
-</header>
-<section class=entry-content>
-<p>Topologi Versi Sistem Operasi Ubuntu 20.04 (Focal)
-Aplikasi HAProxy 2.0.13-2ubuntu0.3 KeepAlived 1:2.0.19-2 Containerd 1.4.9-1 Kubernetes 1.22.1-00 (kubeadm, kubelet, kubectl) Panduan Semua perintah dibawah dijalankan menggunakan user root Persiapan Sunting file /etc/hosts cat&lt;&lt;EOF >> /etc/hosts ### Lab Kubernetes ### 192.168.30.10 kubernetes-vip 192.168.30.11 kubernetes-lb1 192.168.30.12 kubernetes-lb2 192.168.30.13 kubernetes-master01 192.168.30.14 kubernetes-master02 192.168.30.15 kubernetes-master03 192.168.30.16 kubernetes-worker01 EOF update dan upgrade package-package apt update -y; apt upgrade -y HAproxy & Keepalived Pasang haproxy dan keepalived apt install -y haproxy keepalived Konfigurasi HAProxy...</p>
-</section>
-<footer class=entry-footer>September 10, 2021&nbsp;·&nbsp;4 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Menyiapkan High Availability Kubernetes Klaster Menggunakan Kubeadm" href=https://blog.ajiarya.id/posts/kubernetes/cara-menyiapkan-high-availability-kubernetes-klaster-kubeadm/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>Cara Menyiapkan Monitoring Proxmox Menggunakan InfluxDB dan Grafana</h2>
-</header>
-<section class=entry-content>
-<p>Prasyarat Proxmox Terinstall Panduan Pasang influxdb dan influxdb-client apt install influxdb influxdb-client Buat user database dan database influx (Dalam shell influx) Buat user dan database
-CREATE USER admin WITH PASSWORD 'keraktelor' WITH ALL PRIVILEGES CREATE DATABASE monitoring CREATE USER influx WITH PASSWORD 'piesusu' GRANT ALL ON monitoring TO influx exit Konfigurasi influxdb vi /etc/influxdb/influxdb.conf Sesuaikan baris berikut
-[[udp]] enabled = true bind-address = ":8089" database = "mondb" Restart InfluxDB systemctl restart influxdb Tambahkan Metric Server...</p>
-</section>
-<footer class=entry-footer>September 9, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Menyiapkan Monitoring Proxmox Menggunakan InfluxDB dan Grafana" href=https://blog.ajiarya.id/posts/proxmox/cara-menyiapkan-monitoring-proxmox/></a>
+<footer class=entry-footer>August 3, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Memasang Kata Container dengan Containerd Pada Ubuntu 20.04" href=https://blog.ajiarya.id/posts/kata/install-kata/></a>
 </article>
 <footer class=page-footer>
 <nav class=pagination>
-<a class=next href=https://blog.ajiarya.id/posts/page/2/>Next Page »</a>
+<a class=prev href=https://blog.ajiarya.id/posts/page/10/>« Prev Page</a>
 </nav>
 </footer>
 </main>

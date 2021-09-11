@@ -87,6 +87,16 @@ IMTEK
 </header>
 <article class=post-entry>
 <header class=entry-header>
+<h2>Cara Mengubah Format Image VM</h2>
+</header>
+<section class=entry-content>
+<p>Prasyarat Image yang ingin diubah Binary qemu-img Panduan Install qemu-img Ubuntu/Debian sudo apt install -y qemu-img RHEL/CentOS/Rocky 7 sudo yum install -y qemu-img RHEL/CentOS/Rocky 8 sudo dnf install -y qemu-img Perintah qemu-img convert -f &lt;format_sekarang> -O &lt;format_output> &lt;image_sekarang> &lt;image_output> Contoh qcow2 ke raw qemu-img convert -f qcow2 -O raw contoh.qcow2 contoh.img raw ke qcow2 qemu-img convert -f raw -O qcow2 contoh.img contoh.qcow2 vmdk ke qcow2 qemu-img convert -f vmdk -O qcow2 contoh....</p>
+</section>
+<footer class=entry-footer>August 29, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Cara Mengubah Format Image VM" href=https://blog.ajiarya.id/posts/linux/cara-mengubah-format-image-vm/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
 <h2>Cara Reset Password Root Dari OpenStack Console [RHEL/CentOS/Rocky]</h2>
 </header>
 <section class=entry-content>
@@ -131,17 +141,6 @@ Panduan Login sebagai root sudo -i Hentikan service monitor jika masih berjalan 
 </section>
 <footer class=entry-footer>August 23, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
 <a class=entry-link aria-label="post link to Cara Melakukan Percabangan Dasar Bash - Bagian 2 [Periksa Direktori, File, & Variabel]" href=https://blog.ajiarya.id/posts/bash/cara-melakukan-percabangan-pada-bash-bagian-2/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>Cara Membuat Rootless Container Podman Bisa Dikelola Sebagai Service</h2>
-</header>
-<section class=entry-content>
-<p>Prasyarat Podman Panduan Sebagai contoh kita akan membuat container nginx pada non-root user bernama student
-Buat direktori untuk menyimpan konten mkdir website echo '&lt;h1>Halo Dunia!&lt;/h1>' > website/index.html Buat container nginx podman run -d --name websiteku -p 8080:80 -v ~/website:/usr/share/nginx/html:Z nginx Verifikasi container podman ps curl localhost:8080 Contoh output [student@podman-host ~]$ podman ps CONTAINER ID IMAGE COMMAND CREATED STATUS PORTS NAMES 109ed419f29e docker.io/library/nginx:latest nginx -g daemon o....</p>
-</section>
-<footer class=entry-footer>August 23, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Membuat Rootless Container Podman Bisa Dikelola Sebagai Service" href=https://blog.ajiarya.id/posts/podman/cara-membuat-container-podman-bisa-dikelola-sebagai-service/></a>
 </article>
 <footer class=page-footer>
 <nav class=pagination>

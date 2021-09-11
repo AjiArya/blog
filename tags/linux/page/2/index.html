@@ -86,6 +86,16 @@ IMTEK
 </header>
 <article class="post-entry tag-entry">
 <header class=entry-header>
+<h2>Cara Melakukan Percabangan Dasar Bash - Bagian 2 [Periksa Direktori, File, & Variabel]</h2>
+</header>
+<section class=entry-content>
+<p>Panduan Parameter yang bisa digunakan -d true jika direktori ada -e true jika file ada -v true jika variabel memiliki nilai Contoh 1: Periksa Direktori Script #!/bin/bash if [[ -d halo ]]; then echo "Direktori ada" else echo "Direktori tidak ada" fi Contoh 2: Periksa File Script #!/bin/bash if [[ -e halo.txt ]]; then echo "File ada" else echo "File tidak ada" fi Contoh 3: Periksa Variabel Script #!...</p>
+</section>
+<footer class=entry-footer>August 23, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Cara Melakukan Percabangan Dasar Bash - Bagian 2 [Periksa Direktori, File, & Variabel]" href=https://blog.ajiarya.id/posts/bash/cara-melakukan-percabangan-pada-bash-bagian-2/></a>
+</article>
+<article class="post-entry tag-entry">
+<header class=entry-header>
 <h2>Cara Membuat Rootless Container Podman Bisa Dikelola Sebagai Service</h2>
 </header>
 <section class=entry-content>
@@ -128,16 +138,6 @@ Cara manual jika tanpa menggunakan ssh config: ssh ubuntu@1.tcp.jp.ngrok.io -p22
 </section>
 <footer class=entry-footer>August 17, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
 <a class=entry-link aria-label="post link to Cara Membuat Image Libvirt Menggunakan python-tfgen" href=https://blog.ajiarya.id/posts/python-tfgen/cara-membuat-image-dengan-python-tfgen/></a>
-</article>
-<article class="post-entry tag-entry">
-<header class=entry-header>
-<h2>Cara Membuat Network Libvirt Menggunakan python-tfgen</h2>
-</header>
-<section class=entry-content>
-<p>Prasyarat Terraform python-tfgen Panduan Buat yaml dengan kind: network lalu isikan dengan daftar network yang diinginkan network.yaml kind: network uri: "qemu:///system" spec: - name: home-lab-network mode: nat bridge: home-lab-bridge dhcp: true addresses4: "192.168.100.0/24" Buat HCL berdasarkan yaml yang telah dibuat ./tfgen.py -f network.yaml -o network image/main.tf (Hasil tfgen) terraform { required_providers { libvirt = { source = "dmacvicar/libvirt" } } } provider "libvirt" { uri = "qemu:///system" } resource "libvirt_network" "home-lab-network" { name = "home-lab-network" mode = "nat" bridge = "home-lab-bridge" mtu = 1500 autostart = true addresses = ["192....</p>
-</section>
-<footer class=entry-footer>August 17, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Membuat Network Libvirt Menggunakan python-tfgen" href=https://blog.ajiarya.id/posts/python-tfgen/cara-membuat-network-dengan-python-tfgen/></a>
 </article>
 <footer class=page-footer>
 <nav class=pagination>

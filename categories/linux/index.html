@@ -86,6 +86,16 @@ IMTEK
 </header>
 <article class="post-entry tag-entry">
 <header class=entry-header>
+<h2>Cara SSH Jump Host</h2>
+</header>
+<section class=entry-content>
+<p>Panduan Perintah # 1 Lompatan ssh -J &lt;user>@&lt;machine-1> &lt;user>@&lt;machine-2> # 2 Lompatan ssh -J &lt;user>@&lt;machine-1>,&lt;machine-2> &lt;user>@&lt;machine-3> # 3 Lompatan ssh -J &lt;user>@&lt;machine-1>,&lt;machine-2>,&lt;user>@&lt;machine-3> &lt;user>@&lt;machine-4> Contoh Contoh 1: SSH Jump dari 192.168.10.2 ke 192.168.10.3 ssh -J user@192.168.10.2 user@192.168.10.3 Contoh 2: SSH Jump dari 192.168.10.2 lalu 192.168.10.3 ke 192.168.10.4 ssh -J user@192.168.10.2,user@192.168.10.3 user@192.168.10.4 Referensi Gentoo Linux - SSH Jump Host </p>
+</section>
+<footer class=entry-footer>September 11, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Cara SSH Jump Host" href=https://blog.ajiarya.id/posts/linux/cara-ssh-jump/></a>
+</article>
+<article class="post-entry tag-entry">
+<header class=entry-header>
 <h2>Cara Menyiapkan ISCSI Initiator (Linux)</h2>
 </header>
 <section class=entry-content>
@@ -131,18 +141,6 @@ Cara manual jika tanpa menggunakan ssh config: ssh ubuntu@1.tcp.jp.ngrok.io -p22
 </section>
 <footer class=entry-footer>August 20, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
 <a class=entry-link aria-label="post link to Cara Konfigurasi SSH Config" href=https://blog.ajiarya.id/posts/linux/cara-konfigurasi-ssh-config/></a>
-</article>
-<article class="post-entry tag-entry">
-<header class=entry-header>
-<h2>Cara Local Port Forwarding SSH</h2>
-</header>
-<section class=entry-content>
-<p>Pendahuluan Ketika kita ingin mengakses sebuah layanan pada remote host yang hanya listen pada address 127.0.0.1 kita tidak bisa menggunakan fitur Dynamic Port Forwarding sebagai alternatif kita bisa menggunakan fitur Local Port Forwarding
-Panduan ssh -L [local_address_bind]:[local_port_bind]:[remote_address_bind]:[remote_port_bind] &lt;remote_host> Contoh serverku menjalankan web server yang hanya listen pada address 127.0.0.1:80 lalu saya ingin mencoba mengakses web server tersebut dari laptopku pada address 192.168.10.10:8080
-Jalankan web server menggunakan python pada serverku # Perintah python [root@serverku ~]# python3 -m http....</p>
-</section>
-<footer class=entry-footer>August 11, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Local Port Forwarding SSH" href=https://blog.ajiarya.id/posts/linux/cara-ssh-local-forwarding-port/></a>
 </article>
 <footer class=page-footer>
 <nav class=pagination>
