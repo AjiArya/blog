@@ -117,6 +117,18 @@ Debian Based sudo apt update sudo apt install -y dnsmasq RHEL Based sudo yum upd
 </article>
 <article class=post-entry>
 <header class=entry-header>
+<h2>Cara Memperbaiki Git SSH Permission Denied GitLab [Red Hat/CentOS]</h2>
+</header>
+<section class=entry-content>
+<p>Masalah git@gitlab.example.com: Permission denied (publickey,gssapi-keyex,gssapi-with-mic,password). Tidak bisa git clone walaupun sudah menambahkan public key ssh pada akun GitLab
+Kondisi Sudah menambahkan Public Key SSH pada akun GitLab Tidak bisa menjalankan git clone ke repository private walaupun sebagai pemilik repository Panduan Lihat error pada SELinux journalctl -t setroubleshoot Error terjadi karena file authorized_key
+Lihat SELinux Context pada direktori .ssh gitlab ls -Z /var/opt/gitlab/.ssh/authorized_keys # Output: # unconfined_u:object_r:var_t:s0 /var/opt/gitlab/....</p>
+</section>
+<footer class=entry-footer>September 12, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Cara Memperbaiki Git SSH Permission Denied GitLab [Red Hat/CentOS]" href=https://blog.ajiarya.id/posts/gitlab/cara-memperbaiki-git-ssh-permission-denied/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
 <h2>Cara Memasang Proxmox Exporter</h2>
 </header>
 <section class=entry-content>
@@ -147,16 +159,6 @@ Buat user pve_exporter useradd --no-create-home --shell /bin/false pve_exporter 
 </section>
 <footer class=entry-footer>September 10, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
 <a class=entry-link aria-label="post link to Cara Membuat VM Menggunakan Cloud Image - Proxmox" href=https://blog.ajiarya.id/posts/proxmox/cara-deploy-vm-menggunakan-cloud-image/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>Cara Mengubah Volume Type Dengan Backend Yang Berbeda - CLI</h2>
-</header>
-<section class=entry-content>
-<p>Prasyarat Cinder dengan 2 atau lebih backend Panduan Lihat volume type yang tersedia openstack volume type list Ubah volume type pada volume yang dimaksud openstack volume set --type &lt;new_type> --retype-policy on-demand &lt;vol_id/vol_name> Tunggu sampai proses retyping selesai </p>
-</section>
-<footer class=entry-footer>September 10, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Mengubah Volume Type Dengan Backend Yang Berbeda - CLI" href=https://blog.ajiarya.id/posts/openstack/cara-mengganti-volume-type-ke-backend-yang-berbeda-cli/></a>
 </article>
 <footer class=page-footer>
 <nav class=pagination>
