@@ -15,7 +15,7 @@ TocOpen: true
 1. Perbarui _libosinfo_
     - Debian Based
     ```bash
-    sudo apt install libosinfo
+    sudo apt install -y libosinfo
     ```
 
     - RHEL Based
