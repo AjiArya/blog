@@ -239,7 +239,7 @@ apt-mark hold kubelet kubeadm kubectl
 ## Bootstrap Master (kubernetes-master01)
 1. Bootstrap klaster kubernetes
 ```bash
-kubeadm init --pod-network-cidr=127.16.0.0/16 --control-plane-endpoint "kubernetes-vip:6443" --upload-certs
+kubeadm init --pod-network-cidr=172.16.0.0/16 --control-plane-endpoint "kubernetes-vip:6443" --upload-certs
 ```
 
 ![](/images/ha-kubernetes-kubeadm-1.png)
