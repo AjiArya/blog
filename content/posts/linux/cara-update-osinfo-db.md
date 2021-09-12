@@ -29,6 +29,11 @@ TocOpen: true
 
 https://releases.pagure.org/libosinfo/
 
+```bash
+# wget https://releases.pagure.org/libosinfo/osinfo-db-<version>.tar.xz
+wget https://releases.pagure.org/libosinfo/osinfo-db-20210903.tar.xz
+```
+
 3. Perbarui database OS
 ```bash
 sudo osinfo-db-import --system <database_os>
