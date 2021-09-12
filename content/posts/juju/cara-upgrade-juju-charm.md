@@ -8,7 +8,7 @@ ShowToc: true
 TocOpen: true
 ---
 
-# Perintah
+# Panduan
 ```bash
 juju refresh [options] <application>
 ```

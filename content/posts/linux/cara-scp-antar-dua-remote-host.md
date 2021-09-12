@@ -27,7 +27,7 @@ Total waktu yang dihabiskan 30 menit untuk memindahkan file dari host1 ke host2,
 # Prasyarat
 * localhost bisa mengakses kedua remote host
 
-# Perintah
+# Panduan
 ```bash
 scp -3 <user>@<remote_host_1>:/file/yang/ingin/dikirimkan <user>@<remote_host_2>:/lokasi/pengiriman/file
 ```

@@ -8,7 +8,7 @@ ShowToc: true
 TocOpen: true
 ---
 
-# Perintah
+# Panduan
 ## Periksa versi yang tersedia untuk diinstall
 ```bash
 sudo dnf module list container-tools

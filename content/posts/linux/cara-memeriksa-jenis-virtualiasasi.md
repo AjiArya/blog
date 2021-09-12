@@ -11,7 +11,7 @@ TocOpen: true
 # Pendahuluan
 Ketika kita menggunakan layanan VPS ataupun Public Cloud kita bisa memeriksa jenis virtualisasi yang diberikan oleh penyedia layanan dengan menggunakan perintah `dmidecode` pada sistem operasi Linux.
 
-# Perintah
+# Panduan
 ```bash
 sudo dmidecode -s system-product-name
 ```
