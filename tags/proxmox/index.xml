@@ -8,10 +8,10 @@
     <lastBuildDate>Mon, 13 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.ajiarya.id/tags/proxmox/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Cara Menyiapkan Klaster Ceph Pada Proxmox 7</title>
-      <link>https://blog.ajiarya.id/posts/proxmox/cara-deploy-ceph-proxmox-7/</link>
+      <link>https://blog.ajiarya.id/posts/proxmox/cara-menyiapkan-klaster-ceph-pada-proxmox-7/</link>
       <pubDate>Mon, 13 Sep 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.ajiarya.id/posts/proxmox/cara-deploy-ceph-proxmox-7/</guid>
+      <guid>https://blog.ajiarya.id/posts/proxmox/cara-menyiapkan-klaster-ceph-pada-proxmox-7/</guid>
       <description>Cara membuat klaster ceph pada proxmox 7</description>
     </item>
     
