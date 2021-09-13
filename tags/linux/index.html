@@ -86,6 +86,16 @@ IMTEK
 </header>
 <article class="post-entry tag-entry">
 <header class=entry-header>
+<h2>Cara Pasang Docker Pada Linux (CentOS/Ubuntu)</h2>
+</header>
+<section class=entry-content>
+<p>Panduan CentOS Pasang repository resmi docker # yum sudo yum install -y yum-utils sudo yum-config-manager \ --add-repo \ https://download.docker.com/linux/centos/docker-ce.repo # dnf sudo dnf -y install dnf-plugins-core sudo dnf config-manager \ --add-repo \ https://download.docker.com/linux/centos/docker-ce.repo Pasang docker # yum sudo yum install -y docker-ce docker-ce-cli containerd.io # dnf sudo dnf install -y docker-ce docker-ce-cli containerd.io Enable dan jalankan servis systemctl enable --now docker Verifikasi docker info Ubuntu Pasang repository resmi docker curl -fsSL https://download....</p>
+</section>
+<footer class=entry-footer>September 13, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Cara Pasang Docker Pada Linux (CentOS/Ubuntu)" href=https://blog.ajiarya.id/posts/docker/cara-pasang-docker-pada-linux/></a>
+</article>
+<article class="post-entry tag-entry">
+<header class=entry-header>
 <h2>Cara Konfigurasi DNS Server menggunakan dnsmasq</h2>
 </header>
 <section class=entry-content>
@@ -129,20 +139,6 @@ https://releases.pagure.org/libosinfo/
 </section>
 <footer class=entry-footer>September 4, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
 <a class=entry-link aria-label="post link to Cara Menyiapkan ISCSI Initiator (Linux)" href=https://blog.ajiarya.id/posts/linux/cara-menyiapkan-iscsi-initiator/></a>
-</article>
-<article class="post-entry tag-entry">
-<header class=entry-header>
-<h2>Cara Menyiapkan ISCSI Target - targetcli (Linux)</h2>
-</header>
-<section class=entry-content>
-<p>Pendahuluan iSCSI Target adalah server yang memiliki sumber daya penyimpanan dan penyimpanan tersebut bisa bisa digunakan oleh iSCSI Initiator
-targetcli adalah tool manajemen LIO (Linux IO).
-Panduan Install package targetcli
-Debian Distribution sudo apt install -y targetcli-fb RHEL Distribution sudo dnf install -y targetcli # atau sudo yum install -y targetcli Buat backstore
-backstore adalah sumber daya penyimpanan yang akan disediakan dan bisa gunakan oleh iSCSI Initiator....</p>
-</section>
-<footer class=entry-footer>September 4, 2021&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Menyiapkan ISCSI Target - targetcli (Linux)" href=https://blog.ajiarya.id/posts/linux/cara-menyiapkan-iscsi-target-targetcli/></a>
 </article>
 <footer class=page-footer>
 <nav class=pagination>

@@ -8,10 +8,22 @@
     <loc>https://blog.ajiarya.id/posts/proxmox/cara-menyiapkan-klaster-ceph-pada-proxmox-7/</loc>
     <lastmod>2021-09-13T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://blog.ajiarya.id/posts/docker/cara-pasang-docker-pada-linux/</loc>
+    <lastmod>2021-09-13T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://blog.ajiarya.id/categories/</loc>
     <lastmod>2021-09-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.ajiarya.id/tags/ceph/</loc>
+    <lastmod>2021-09-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.ajiarya.id/tags/container/</loc>
+    <lastmod>2021-09-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.ajiarya.id/categories/docker/</loc>
+    <lastmod>2021-09-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.ajiarya.id/tags/linux/</loc>
     <lastmod>2021-09-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.ajiarya.id/posts/</loc>
@@ -54,9 +66,6 @@
     <lastmod>2021-09-12T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.ajiarya.id/categories/gitlab/</loc>
-    <lastmod>2021-09-12T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://blog.ajiarya.id/tags/linux/</loc>
     <lastmod>2021-09-12T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.ajiarya.id/tags/troubleshoot/</loc>
@@ -231,9 +240,6 @@
     <lastmod>2021-08-23T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.ajiarya.id/posts/linux/cara-ssh-remote-forwarding-port/</loc>
-    <lastmod>2021-08-23T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://blog.ajiarya.id/tags/container/</loc>
     <lastmod>2021-08-23T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.ajiarya.id/categories/podman/</loc>

@@ -115,6 +115,16 @@ IMTEK
 </article>
 <article class=post-entry>
 <header class=entry-header>
+<h2>Cara Pasang Docker Pada Linux (CentOS/Ubuntu)</h2>
+</header>
+<section class=entry-content>
+<p>Panduan CentOS Pasang repository resmi docker # yum sudo yum install -y yum-utils sudo yum-config-manager \ --add-repo \ https://download.docker.com/linux/centos/docker-ce.repo # dnf sudo dnf -y install dnf-plugins-core sudo dnf config-manager \ --add-repo \ https://download.docker.com/linux/centos/docker-ce.repo Pasang docker # yum sudo yum install -y docker-ce docker-ce-cli containerd.io # dnf sudo dnf install -y docker-ce docker-ce-cli containerd.io Enable dan jalankan servis systemctl enable --now docker Verifikasi docker info Ubuntu Pasang repository resmi docker curl -fsSL https://download....</p>
+</section>
+<footer class=entry-footer>September 13, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Cara Pasang Docker Pada Linux (CentOS/Ubuntu)" href=https://blog.ajiarya.id/posts/docker/cara-pasang-docker-pada-linux/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
 <h2>Cara Konfigurasi DNS Server menggunakan dnsmasq</h2>
 </header>
 <section class=entry-content>
@@ -149,16 +159,6 @@ Buat user pve_exporter useradd --no-create-home --shell /bin/false pve_exporter 
 </section>
 <footer class=entry-footer>September 11, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
 <a class=entry-link aria-label="post link to Cara Memasang Proxmox Exporter" href=https://blog.ajiarya.id/posts/proxmox/cara-memasang-proxmox-exporter/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>Cara SSH Jump Host</h2>
-</header>
-<section class=entry-content>
-<p>Panduan Perintah # 1 Lompatan ssh -J &lt;user>@&lt;machine-1> &lt;user>@&lt;machine-2> # 2 Lompatan ssh -J &lt;user>@&lt;machine-1>,&lt;machine-2> &lt;user>@&lt;machine-3> # 3 Lompatan ssh -J &lt;user>@&lt;machine-1>,&lt;machine-2>,&lt;user>@&lt;machine-3> &lt;user>@&lt;machine-4> Contoh Contoh 1: SSH Jump dari 192.168.10.2 ke 192.168.10.3 ssh -J user@192.168.10.2 user@192.168.10.3 Contoh 2: SSH Jump dari 192.168.10.2 lalu 192.168.10.3 ke 192.168.10.4 ssh -J user@192.168.10.2,user@192.168.10.3 user@192.168.10.4 Referensi Gentoo Linux - SSH Jump Host </p>
-</section>
-<footer class=entry-footer>September 11, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara SSH Jump Host" href=https://blog.ajiarya.id/posts/linux/cara-ssh-jump/></a>
 </article>
 <footer class=page-footer>
 <nav class=pagination>
