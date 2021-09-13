@@ -87,6 +87,18 @@ IMTEK
 </header>
 <article class=post-entry>
 <header class=entry-header>
+<h2>Cara Deploy Ceph Dashboard Pada Deployment Manual</h2>
+</header>
+<section class=entry-content>
+<p>Prasyarat Klaster Ceph Panduan Install package ceph-mgr-dashboard pada semua host ceph-mgr
+Debian/Ubuntu sudo apt install -y ceph-mgr-dashboard RHEL/CentOS/Rocky 8 sudo dnf install -y ceph-mgr-dashboard RHEL/CentOS/Rocky 7 sudo yum install -y ceph-mgr-dashboard Aktifkan module dashboard pada ceph-mgr
+ceph mgr module enable dashboard Buat TLS untuk ceph dashboard ceph dashboard create-self-signed-cert Buat user echo "rahasia123" > password....</p>
+</section>
+<footer class=entry-footer>August 29, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Cara Deploy Ceph Dashboard Pada Deployment Manual" href=https://blog.ajiarya.id/posts/ceph/cara-deploy-ceph-dashboard-pada-deployment-manual/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
 <h2>Cara Memasang Minikube Pada WSL [Docker Driver]</h2>
 </header>
 <section class=entry-content>
@@ -126,19 +138,6 @@ spec: externalIPs: - &lt;IP_NODE_1> - &lt;IP_NODE_2> - &lt;IP_NODE_N> Referensi 
 </section>
 <footer class=entry-footer>August 29, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
 <a class=entry-link aria-label="post link to Cara Mengubah Format Image VM" href=https://blog.ajiarya.id/posts/linux/cara-mengubah-format-image-vm/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>Cara Reset Password Root Dari OpenStack Console [RHEL/CentOS/Rocky]</h2>
-</header>
-<section class=entry-content>
-<p>Prasyarat OpenStack User Horizon Instance RHEL/CentOS/Rocky Panduan Buka console instance pada horizon
-Masuk ke boot option dengan cara interupsi proses booting
-Reboot instance dan tekan tombol panah arah apapun di keyboard pada saat proses reboot Saat masuk boot option pilih kernel dan tekan tombol e pada keyboard
-Cari baris dengan awalan linux /boot/vmlinuz-xxxxxxxx Tambahkan baris berikut rd.break pada baris yang sama dengan linux /boot/vmlinuz-xxxxxxxx Hapus kata berikut console=ttyS0 Lalu tekan Ctrl + x Reset password root menggunakan perintah passwd...</p>
-</section>
-<footer class=entry-footer>August 29, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Reset Password Root Dari OpenStack Console [RHEL/CentOS/Rocky]" href=https://blog.ajiarya.id/posts/openstack/cara-reset-password-root-instance-centos/></a>
 </article>
 <footer class=page-footer>
 <nav class=pagination>

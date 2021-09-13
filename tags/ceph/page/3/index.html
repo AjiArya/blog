@@ -3,11 +3,11 @@
 <meta http-equiv=x-ua-compatible content="IE=edge">
 <meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
 <meta name=robots content="index, follow">
-<title>Aji Arya</title>
-<meta name=keywords content="Blog,Portfolio,PaperMod">
+<title>Ceph | Aji Arya</title>
+<meta name=keywords content>
 <meta name=description content="Aji Arya's Personal Blog">
 <meta name=author content="Aji Arya">
-<link rel=canonical href=https://blog.ajiarya.id/>
+<link rel=canonical href=https://blog.ajiarya.id/tags/ceph/>
 <meta name=google-site-verification content="7xkl7tm1-iJxieMKGetoXQpqJffAVKatOFgXg7ddX_Y">
 <link crossorigin=anonymous href=/assets/css/stylesheet.min.35cd0f65a15cafa92372b8313deef5960aae04b90ad722f2bbf509eb0468137e.css integrity="sha256-Nc0PZaFcr6kjcrgxPe71lgquBLkK1yLyu/UJ6wRoE34=" rel="preload stylesheet" as=style>
 <link rel=icon href=https://blog.ajiarya.id/favicon.ico>
@@ -18,16 +18,14 @@
 <meta name=theme-color content="#2e2e33">
 <meta name=msapplication-TileColor content="#2e2e33">
 <meta name=generator content="Hugo 0.88.1">
-<link rel=alternate type=application/rss+xml href=https://blog.ajiarya.id/index.xml>
-<link rel=alternate type=application/json href=https://blog.ajiarya.id/index.json>
-<script type=application/javascript>var doNotTrack=!1;doNotTrack||(function(a,e,f,g,b,c,d){a.GoogleAnalyticsObject=b,a[b]=a[b]||function(){(a[b].q=a[b].q||[]).push(arguments)},a[b].l=1*new Date,c=e.createElement(f),d=e.getElementsByTagName(f)[0],c.async=1,c.src=g,d.parentNode.insertBefore(c,d)}(window,document,'script','https://www.google-analytics.com/analytics.js','ga'),ga('create','UA-182251419-3','auto'),ga('send','pageview'))</script><meta property="og:title" content="Aji Arya">
+<link rel=alternate type=application/rss+xml href=https://blog.ajiarya.id/tags/ceph/index.xml>
+<script type=application/javascript>var doNotTrack=!1;doNotTrack||(function(a,e,f,g,b,c,d){a.GoogleAnalyticsObject=b,a[b]=a[b]||function(){(a[b].q=a[b].q||[]).push(arguments)},a[b].l=1*new Date,c=e.createElement(f),d=e.getElementsByTagName(f)[0],c.async=1,c.src=g,d.parentNode.insertBefore(c,d)}(window,document,'script','https://www.google-analytics.com/analytics.js','ga'),ga('create','UA-182251419-3','auto'),ga('send','pageview'))</script><meta property="og:title" content="Ceph">
 <meta property="og:description" content="Aji Arya's Personal Blog">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://blog.ajiarya.id/"><meta property="og:site_name" content="Aji Arya">
+<meta property="og:url" content="https://blog.ajiarya.id/tags/ceph/"><meta property="og:site_name" content="Aji Arya">
 <meta name=twitter:card content="summary">
-<meta name=twitter:title content="Aji Arya">
+<meta name=twitter:title content="Ceph">
 <meta name=twitter:description content="Aji Arya's Personal Blog">
-<script type=application/ld+json>{"@context":"https://schema.org","@type":"Organization","name":"Aji Arya","url":"https://blog.ajiarya.id","description":"Aji Arya\u0026#39;s Personal Blog","thumbnailUrl":"https://blog.ajiarya.id/favicon.ico","sameAs":["https://www.linkedin.com/in/ajiarya","https://instagram.com/ajiaryaa","https://twitter.com/aryasaurus","https://github.com/ajiarya"]}</script>
 </head>
 <body class=list id=top>
 <script>localStorage.getItem("pref-theme")==="dark"?document.body.classList.add('dark'):localStorage.getItem("pref-theme")==="light"?document.body.classList.remove('dark'):window.matchMedia('(prefers-color-scheme: dark)').matches&&document.body.classList.add('dark')</script>
@@ -83,29 +81,10 @@ IMTEK
 </nav>
 </header>
 <main class=main>
-<article class=post-entry>
-<header class=entry-header>
-<h2>Cara Remote Port Forwarding SSH</h2>
+<header class=page-header><div class=breadcrumbs><a href=https://blog.ajiarya.id>Home</a>&nbsp;»&nbsp;<a href=https://blog.ajiarya.id/tags/>Tags</a></div>
+<h1>Ceph</h1>
 </header>
-<section class=entry-content>
-<p>Pendahuluan Remote Port Forwarding adalah salah satu cara agar kita bisa menyediakan service atau port yang ada pada localhost agar bisa digunakan oleh remote host.
-Sebagai contoh kita akan menggunakan squid3 yang tersedia pada localhost yang kemudian akan diakses oleh remote host
-Panduan ssh -R [remote_address_bind]:[remote_port_bind]:[local_address_bind]:[local_port_bind] &lt;remote_host> Contoh laptopku menjalankan proxy server yang tersedia pada alamat 0.0.0.0:3128 lalu saya ingin mencoba mengakses proxy server tersebut dari home-lab pada alamat 127.0.0.1:8080...</p>
-</section>
-<footer class=entry-footer>August 23, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Remote Port Forwarding SSH" href=https://blog.ajiarya.id/posts/linux/cara-ssh-remote-forwarding-port/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>Cara Deploy Ceph Cluster Menggunakan cephadm Pada Rocky Linux 8</h2>
-</header>
-<section class=entry-content>
-<p>Prasyarat Minimal 3 Nodes dengan 3 disk tambahan Panduan Login sebagai root sudo -i Tambahkan host pada file /etc/hosts vim /etc/hosts /etc/hosts 127.0.0.1 localhost localhost.localdomain localhost4 localhost4.localdomain4 ::1 localhost localhost.localdomain localhost6 localhost6.localdomain6 192.168.10.201 rocky-ceph-node01 192.168.10.202 rocky-ceph-node02 192.168.10.203 rocky-ceph-node03 Update dan Upgrade package dnf update; dnf upgrade Install python3, lvm2, dan podman dnf install -y python3 lvm2 podman Unduh cephadm pada node pertama curl --silent --remote-name --location https://github....</p>
-</section>
-<footer class=entry-footer>August 22, 2021&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Deploy Ceph Cluster Menggunakan cephadm Pada Rocky Linux 8" href=https://blog.ajiarya.id/posts/ceph/cara-deploy-ceph-menggunakan-cephadm/></a>
-</article>
-<article class=post-entry>
+<article class="post-entry tag-entry">
 <header class=entry-header>
 <h2>Cara Upgrade Cluster Ceph Yang Menggunakan cephadm</h2>
 </header>
@@ -117,32 +96,9 @@ ceph orch upgrade status ceph -W cephadm ceph orch ps ceph versions ceph version
 <footer class=entry-footer>August 22, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
 <a class=entry-link aria-label="post link to Cara Upgrade Cluster Ceph Yang Menggunakan cephadm" href=https://blog.ajiarya.id/posts/ceph/cara-upgrade-cluster-cephadm/></a>
 </article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>Cara Konfigurasi SSH Config</h2>
-</header>
-<section class=entry-content>
-<p>Contoh SSH Config host &lt;nama_pintas> # Nama pintasan hostname &lt;alamat_tujuan> # Bisa IP Address ataupun domain user &lt;user> # Nama user untuk remote port &lt;port> # Port yang digunakan untuk SSH Panduan Buat file ssh config vim ~/.ssh/config ~/.ssh/config host home-lab hostname 1.tcp.jp.ngrok.io user ubuntu port 2222 Lakukan SSH ssh home-lab Catatan
-Cara manual jika tanpa menggunakan ssh config: ssh ubuntu@1.tcp.jp.ngrok.io -p2222
-</p>
-</section>
-<footer class=entry-footer>August 20, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Konfigurasi SSH Config" href=https://blog.ajiarya.id/posts/linux/cara-konfigurasi-ssh-config/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>Cara Membuat Cluster Elasticsearch 7 beserta module security xpack [Debian/Ubuntu]</h2>
-</header>
-<section class=entry-content>
-<p>Panduan Tambahkan host pada file /etc/hosts vim /etc/hosts /etc/hosts 127.0.0.1 localhost 192.168.10.71 elasticsearch-node01 192.168.10.72 elasticsearch-node02 192.168.10.73 elasticsearch-node03 Unduh dan install package elasticsearch wget https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-7.14.0-amd64.deb dpkg -i elasticsearch-7.14.0-amd64.deb Konfigurasi elasticsearch /etc/elasticsearch/elasticsearch.yml cluster.name: elasticsearch-demo node.name: elasticsearch-node01 path.data: /var/lib/elasticsearch path.logs: /var/log/elasticsearch network.host: 0.0.0.0 http.port: 9200 cluster.initial_master_nodes: ["elasticsearch-node01", "elasticsearch-node02", "elasticsearch-node03"] node.master: true node.data: true discovery.zen.ping.unicast.hosts: ["192.168.10.71" , "192.168.10.72", "192.168.10.73"] discovery.zen.minimum_master_nodes: 2 xpack.security.enabled: true xpack.security.transport.ssl.enabled: true xpack.security.transport.ssl.verification_mode: certificate xpack....</p>
-</section>
-<footer class=entry-footer>August 20, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Membuat Cluster Elasticsearch 7 beserta module security xpack [Debian/Ubuntu]" href=https://blog.ajiarya.id/posts/elk/elasticsearch/cara-membuat-cluster-elasticsearch-7/></a>
-</article>
 <footer class=page-footer>
 <nav class=pagination>
-<a class=prev href=https://blog.ajiarya.id/page/6/>« Prev Page</a>
-<a class=next href=https://blog.ajiarya.id/page/8/>Next Page »</a>
+<a class=prev href=https://blog.ajiarya.id/tags/ceph/page/2/>« Prev Page</a>
 </nav>
 </footer>
 </main>

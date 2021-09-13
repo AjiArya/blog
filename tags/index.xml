@@ -5,7 +5,52 @@
     <link>https://blog.ajiarya.id/tags/</link>
     <description>Recent content in Tags on Aji Arya</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 12 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.ajiarya.id/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 13 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.ajiarya.id/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ceph</title>
+      <link>https://blog.ajiarya.id/tags/ceph/</link>
+      <pubDate>Mon, 13 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.ajiarya.id/tags/ceph/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Proxmox</title>
+      <link>https://blog.ajiarya.id/tags/proxmox/</link>
+      <pubDate>Mon, 13 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.ajiarya.id/tags/proxmox/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Storage</title>
+      <link>https://blog.ajiarya.id/tags/storage/</link>
+      <pubDate>Mon, 13 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.ajiarya.id/tags/storage/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Virtual Environment</title>
+      <link>https://blog.ajiarya.id/tags/virtual-environment/</link>
+      <pubDate>Mon, 13 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.ajiarya.id/tags/virtual-environment/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Virtualisasi</title>
+      <link>https://blog.ajiarya.id/tags/virtualisasi/</link>
+      <pubDate>Mon, 13 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.ajiarya.id/tags/virtualisasi/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>DNS</title>
       <link>https://blog.ajiarya.id/tags/dns/</link>
@@ -61,38 +106,11 @@
     </item>
     
     <item>
-      <title>Proxmox</title>
-      <link>https://blog.ajiarya.id/tags/proxmox/</link>
-      <pubDate>Sat, 11 Sep 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.ajiarya.id/tags/proxmox/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>SSH</title>
       <link>https://blog.ajiarya.id/tags/ssh/</link>
       <pubDate>Sat, 11 Sep 2021 00:00:00 +0000</pubDate>
       
       <guid>https://blog.ajiarya.id/tags/ssh/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Virtual Environment</title>
-      <link>https://blog.ajiarya.id/tags/virtual-environment/</link>
-      <pubDate>Sat, 11 Sep 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.ajiarya.id/tags/virtual-environment/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Virtualisasi</title>
-      <link>https://blog.ajiarya.id/tags/virtualisasi/</link>
-      <pubDate>Sat, 11 Sep 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.ajiarya.id/tags/virtualisasi/</guid>
       <description></description>
     </item>
     
@@ -138,24 +156,6 @@
       <pubDate>Fri, 10 Sep 2021 00:00:00 +0000</pubDate>
       
       <guid>https://blog.ajiarya.id/tags/volume/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Ceph</title>
-      <link>https://blog.ajiarya.id/tags/ceph/</link>
-      <pubDate>Mon, 06 Sep 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.ajiarya.id/tags/ceph/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Storage</title>
-      <link>https://blog.ajiarya.id/tags/storage/</link>
-      <pubDate>Mon, 06 Sep 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.ajiarya.id/tags/storage/</guid>
       <description></description>
     </item>
     

@@ -3,15 +3,42 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://blog.ajiarya.id/</loc>
-    <lastmod>2021-09-12T00:00:00+00:00</lastmod>
+    <lastmod>2021-09-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.ajiarya.id/posts/proxmox/cara-deploy-ceph-proxmox-7/</loc>
+    <lastmod>2021-09-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.ajiarya.id/categories/</loc>
+    <lastmod>2021-09-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.ajiarya.id/tags/ceph/</loc>
+    <lastmod>2021-09-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.ajiarya.id/posts/</loc>
+    <lastmod>2021-09-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.ajiarya.id/tags/proxmox/</loc>
+    <lastmod>2021-09-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.ajiarya.id/categories/proxmox/</loc>
+    <lastmod>2021-09-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.ajiarya.id/tags/storage/</loc>
+    <lastmod>2021-09-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.ajiarya.id/tags/</loc>
+    <lastmod>2021-09-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.ajiarya.id/tags/virtual-environment/</loc>
+    <lastmod>2021-09-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.ajiarya.id/tags/virtualisasi/</loc>
+    <lastmod>2021-09-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.ajiarya.id/posts/linux/cara-konfigurasi-dns-server-menggunakan-dnsmasq/</loc>
     <lastmod>2021-09-12T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.ajiarya.id/posts/gitlab/cara-memperbaiki-git-ssh-permission-denied/</loc>
-    <lastmod>2021-09-12T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://blog.ajiarya.id/categories/</loc>
     <lastmod>2021-09-12T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.ajiarya.id/tags/dns/</loc>
@@ -32,12 +59,6 @@
     <loc>https://blog.ajiarya.id/tags/linux/</loc>
     <lastmod>2021-09-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.ajiarya.id/posts/</loc>
-    <lastmod>2021-09-12T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://blog.ajiarya.id/tags/</loc>
-    <lastmod>2021-09-12T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://blog.ajiarya.id/tags/troubleshoot/</loc>
     <lastmod>2021-09-12T00:00:00+00:00</lastmod>
   </url><url>
@@ -53,19 +74,7 @@
     <loc>https://blog.ajiarya.id/tags/monitoring/</loc>
     <lastmod>2021-09-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.ajiarya.id/tags/proxmox/</loc>
-    <lastmod>2021-09-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://blog.ajiarya.id/categories/proxmox/</loc>
-    <lastmod>2021-09-11T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://blog.ajiarya.id/tags/ssh/</loc>
-    <lastmod>2021-09-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://blog.ajiarya.id/tags/virtual-environment/</loc>
-    <lastmod>2021-09-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://blog.ajiarya.id/tags/virtualisasi/</loc>
     <lastmod>2021-09-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.ajiarya.id/posts/proxmox/cara-deploy-vm-menggunakan-cloud-image/</loc>
@@ -104,13 +113,7 @@
     <loc>https://blog.ajiarya.id/posts/ceph/cara-simulasi-kegagalan-disk-ceph/</loc>
     <lastmod>2021-09-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.ajiarya.id/tags/ceph/</loc>
-    <lastmod>2021-09-06T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://blog.ajiarya.id/categories/ceph/</loc>
-    <lastmod>2021-09-06T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://blog.ajiarya.id/tags/storage/</loc>
     <lastmod>2021-09-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.ajiarya.id/posts/linux/cara-update-osinfo-db/</loc>
