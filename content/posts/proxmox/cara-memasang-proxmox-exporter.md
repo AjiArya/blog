@@ -85,6 +85,25 @@ python3 -m pip install prometheus-pve-exporter
 4. Verifikasi dengan membuka `http://<ip_exporter>:9221/pve?target=<ip_node_pve>`
 ![](/images/proxmox-exporter-3.png)
 
+> **Catatan!**  
+> Menambahkan  job pada konfigurasi prometheus
+```yaml
+  - job_name: 'pve_exporter'
+    static_configs:
+      - targets:
+        - 192.168.10.86  # Proxmox VE node.
+        - 192.168.10.87  # Proxmox VE node.
+        - 192.168.10.88  # Proxmox VE node.
+    metrics_path: /pve
+    params:
+      module: [default]
+    relabel_configs:
+      - source_labels: [__address__]
+        target_label: __param_target
+      - source_labels: [__param_target]
+        target_label: instance
+      - target_label: __address__
+```
 
 # Referensi
 - [Github - Proxmox Exporter]()
