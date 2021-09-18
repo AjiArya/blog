@@ -87,6 +87,39 @@ IMTEK
 </header>
 <article class=post-entry>
 <header class=entry-header>
+<h2>Cara Memasang Proxmox Exporter</h2>
+</header>
+<section class=entry-content>
+<p>Prasyarat Proxmox terinstall Panduan Buat token untuk proxmox-expoter
+Buat API Token Datacenter > API Token Klik Add Masukan Token ID (Catat bagian ini) Hapus centang pada Privilege Separation Klik Add Salin Token Secret Klik “Copy Secret Value” (Catat bagian ini) Pasang proxmox-exporter
+python3 -m pip install prometheus-pve-exporter Buat servis systemd
+Buat user pve_exporter useradd --no-create-home --shell /bin/false pve_exporter Buat file konfigurasi mkdir /etc/pve_exporter cat&lt;&lt;EOF > /etc/pve_exporter/config....</p>
+</section>
+<footer class=entry-footer>September 11, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Cara Memasang Proxmox Exporter" href=https://blog.ajiarya.id/posts/proxmox/cara-memasang-proxmox-exporter/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
+<h2>Cara SSH Jump Host</h2>
+</header>
+<section class=entry-content>
+<p>Panduan Perintah # 1 Lompatan ssh -J &lt;user>@&lt;machine-1> &lt;user>@&lt;machine-2> # 2 Lompatan ssh -J &lt;user>@&lt;machine-1>,&lt;machine-2> &lt;user>@&lt;machine-3> # 3 Lompatan ssh -J &lt;user>@&lt;machine-1>,&lt;machine-2>,&lt;user>@&lt;machine-3> &lt;user>@&lt;machine-4> Contoh Contoh 1: SSH Jump dari 192.168.10.2 ke 192.168.10.3 ssh -J user@192.168.10.2 user@192.168.10.3 Contoh 2: SSH Jump dari 192.168.10.2 lalu 192.168.10.3 ke 192.168.10.4 ssh -J user@192.168.10.2,user@192.168.10.3 user@192.168.10.4 Referensi Gentoo Linux - SSH Jump Host </p>
+</section>
+<footer class=entry-footer>September 11, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Cara SSH Jump Host" href=https://blog.ajiarya.id/posts/linux/cara-ssh-jump/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
+<h2>Cara Membuat VM Menggunakan Cloud Image - Proxmox</h2>
+</header>
+<section class=entry-content>
+<p>Prasyarat Proxmox terinstall Panduan Buat template Unduh file image cloud ubuntu 18 wget https://cloud-images.ubuntu.com/bionic/current/bionic-server-cloudimg-amd64.img Buat VM qm create 100 --memory 2048 --net0 virtio,bridge=vmbr0 Import image ke dalam local-lvm storage qm importdisk 100 bionic-server-cloudimg-amd64.img local-lvm Atur disk VM qm set 100 --scsihw virtio-scsi-pci --scsi0 local-lvm:vm-100-disk-0 Buat drive cloud-image qm set 100 --ide2 local-lvm:cloudinit Atur boot menggunakan cloud-init qm set 100 --boot c --bootdisk scsi0 Atur console qm set 100 --serial0 socket --vga serial0 Atur console qm template 100 Buat VM Klon template qm clone 100 200 --name ubuntu20 Konfigurasi publickey dan IP Address qm set 200 --sshkey ~/....</p>
+</section>
+<footer class=entry-footer>September 10, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Cara Membuat VM Menggunakan Cloud Image - Proxmox" href=https://blog.ajiarya.id/posts/proxmox/cara-deploy-vm-menggunakan-cloud-image/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
 <h2>Cara Mengubah Volume Type Dengan Backend Yang Berbeda - CLI</h2>
 </header>
 <section class=entry-content>
@@ -105,42 +138,6 @@ Aplikasi HAProxy 2.0.13-2ubuntu0.3 KeepAlived 1:2.0.19-2 Containerd 1.4.9-1 Kube
 </section>
 <footer class=entry-footer>September 10, 2021&nbsp;·&nbsp;4 min&nbsp;·&nbsp;Aji Arya</footer>
 <a class=entry-link aria-label="post link to Cara Menyiapkan High Availability Kubernetes Klaster Menggunakan Kubeadm" href=https://blog.ajiarya.id/posts/kubernetes/cara-menyiapkan-high-availability-kubernetes-klaster-kubeadm/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>Cara Menyiapkan Monitoring Proxmox Menggunakan InfluxDB dan Grafana</h2>
-</header>
-<section class=entry-content>
-<p>Prasyarat Proxmox Terinstall Panduan Pasang influxdb dan influxdb-client apt install influxdb influxdb-client Buat user database dan database influx (Dalam shell influx) Buat user dan database
-CREATE USER admin WITH PASSWORD 'keraktelor' WITH ALL PRIVILEGES CREATE DATABASE monitoring CREATE USER influx WITH PASSWORD 'piesusu' GRANT ALL ON monitoring TO influx exit Konfigurasi influxdb vi /etc/influxdb/influxdb.conf Sesuaikan baris berikut
-[[udp]] enabled = true bind-address = ":8089" database = "mondb" Restart InfluxDB systemctl restart influxdb Tambahkan Metric Server...</p>
-</section>
-<footer class=entry-footer>September 9, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Menyiapkan Monitoring Proxmox Menggunakan InfluxDB dan Grafana" href=https://blog.ajiarya.id/posts/proxmox/cara-menyiapkan-monitoring-proxmox/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>Cara Simulasi Kegagalan Disk Pada Klaster Ceph</h2>
-</header>
-<section class=entry-content>
-<p>Panduan Tentukan disk untuk simulasi # Lihat OSD ceph osd tree # Temukan lokasi OSD ceph osd find &lt;osd_id> Masuk ke Node OSD ssh ceph-osd-01 Hapus device dari sysfs # echo 1 > /sys/block/BLOCK_DEVICE/device/delete echo 1 > /sys/block/sdb/device/delete Setelah beberapa saat, osd akan menjadi down dan kemudian menjadi out ceph -s ceph osd tree ceph osd tree down ceph osd tree out SCSI Scan (Untuk memunculkan SCSI yang belum terdeteksi oleh Sistem Operasi) # Tampilkan host bus ls /sys/class/scsi_host # Scan ulang scsi berdasarkan host bus echo "- - -" > /sys/class/scsi_host/hostX/scan Referensi Red Hat Ceph Storage 4 Docs - Handling a disk failure </p>
-</section>
-<footer class=entry-footer>September 6, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Simulasi Kegagalan Disk Pada Klaster Ceph" href=https://blog.ajiarya.id/posts/ceph/cara-simulasi-kegagalan-disk-ceph/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>Cara Memperbarui libosinfo osinfo-db</h2>
-</header>
-<section class=entry-content>
-<p>Pendahuluan libosinfo adalah penyedia informasi mengenai sistem operasi yang diperlukan untuk menyediakan dan mengelola virtualized environment
-Panduan Perbarui libosinfo
-Debian Based sudo apt install -y libosinfo RHEL Based sudo yum install -y libosinfo # atau sudo dnf install -y libosinfo Unduh database OS
-https://releases.pagure.org/libosinfo/
-# wget https://releases.pagure.org/libosinfo/osinfo-db-&lt;version>.tar.xz wget https://releases.pagure.org/libosinfo/osinfo-db-20210903.tar.xz Perbarui database OS sudo osinfo-db-import --system &lt;database_os> Verifikasi osinfo-query os </p>
-</section>
-<footer class=entry-footer>September 5, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Memperbarui libosinfo osinfo-db" href=https://blog.ajiarya.id/posts/linux/cara-update-osinfo-db/></a>
 </article>
 <footer class=page-footer>
 <nav class=pagination>

@@ -85,6 +85,39 @@ IMTEK
 <main class=main>
 <article class=post-entry>
 <header class=entry-header>
+<h2>Cara Memasang OpenShift CodeReady Pada Fedora 34</h2>
+</header>
+<section class=entry-content>
+<p>Prasyarat Mesin Fedora 34 (Baremetal atau VM) Akun Red Hat Versi Sistem Operasi: Fedora 34 Cloud Image CodeReady: 1.31.2+19538dab OpenShift: 4.8.4 Panduan Update dan Upgrade package sudo dnf update -y; sudo dnf upgrade -y Install package NetworkManager dan wget sudo dnf install -y NetworkManager wget Unduh CodeReady dan salin pull secret Tautan Disini wget https://developers.redhat.com/content-gateway/file/pub/openshift-v4/clients/crc/1.31.2/crc-linux-amd64.tar.xz tar xf crc-linux-amd64.tar.xz cd crc-linux-1.31.2-amd64/ sudo mv crc /usr/local/bin # Verifikasi crc version Setup dan jalankan CodeReady (Tempel pull secret pada proses crc start) crc setup crc start Akses CodeReady...</p>
+</section>
+<footer class=entry-footer>August 29, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Cara Memasang OpenShift CodeReady Pada Fedora 34" href=https://blog.ajiarya.id/posts/openshift/cara-memasang-openshift-codeready/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
+<h2>Cara Mengubah Format Image VM</h2>
+</header>
+<section class=entry-content>
+<p>Prasyarat Image yang ingin diubah Binary qemu-img Panduan Install qemu-img Ubuntu/Debian sudo apt install -y qemu-img RHEL/CentOS/Rocky 7 sudo yum install -y qemu-img RHEL/CentOS/Rocky 8 sudo dnf install -y qemu-img Perintah qemu-img convert -f &lt;format_sekarang> -O &lt;format_output> &lt;image_sekarang> &lt;image_output> Contoh qcow2 ke raw qemu-img convert -f qcow2 -O raw contoh.qcow2 contoh.img raw ke qcow2 qemu-img convert -f raw -O qcow2 contoh.img contoh.qcow2 vmdk ke qcow2 qemu-img convert -f vmdk -O qcow2 contoh....</p>
+</section>
+<footer class=entry-footer>August 29, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Cara Mengubah Format Image VM" href=https://blog.ajiarya.id/posts/linux/cara-mengubah-format-image-vm/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
+<h2>Cara Reset Password Root Dari OpenStack Console [RHEL/CentOS/Rocky]</h2>
+</header>
+<section class=entry-content>
+<p>Prasyarat OpenStack User Horizon Instance RHEL/CentOS/Rocky Panduan Buka console instance pada horizon
+Masuk ke boot option dengan cara interupsi proses booting
+Reboot instance dan tekan tombol panah arah apapun di keyboard pada saat proses reboot Saat masuk boot option pilih kernel dan tekan tombol e pada keyboard
+Cari baris dengan awalan linux /boot/vmlinuz-xxxxxxxx Tambahkan baris berikut rd.break pada baris yang sama dengan linux /boot/vmlinuz-xxxxxxxx Hapus kata berikut console=ttyS0 Lalu tekan Ctrl + x Reset password root menggunakan perintah passwd...</p>
+</section>
+<footer class=entry-footer>August 29, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Cara Reset Password Root Dari OpenStack Console [RHEL/CentOS/Rocky]" href=https://blog.ajiarya.id/posts/openstack/cara-reset-password-root-instance-centos/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
 <h2>Cara Reset Password Root Dari OpenStack Console [Ubuntu]</h2>
 </header>
 <section class=entry-content>
@@ -106,39 +139,6 @@ Panduan Login sebagai root sudo -i Hentikan service monitor jika masih berjalan 
 </section>
 <footer class=entry-footer>August 24, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
 <a class=entry-link aria-label="post link to Cara Membuat Ulang Ceph Monitor Yang Rusak [Manual Deployment]" href=https://blog.ajiarya.id/posts/ceph/cara-membuat-ulang-ceph-mon/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>Cara Melakukan Percabangan Dasar Bash - Bagian 2 [Periksa Direktori, File, & Variabel]</h2>
-</header>
-<section class=entry-content>
-<p>Panduan Parameter yang bisa digunakan -d true jika direktori ada -e true jika file ada -v true jika variabel memiliki nilai Contoh 1: Periksa Direktori Script #!/bin/bash if [[ -d halo ]]; then echo "Direktori ada" else echo "Direktori tidak ada" fi Contoh 2: Periksa File Script #!/bin/bash if [[ -e halo.txt ]]; then echo "File ada" else echo "File tidak ada" fi Contoh 3: Periksa Variabel Script #!...</p>
-</section>
-<footer class=entry-footer>August 23, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Melakukan Percabangan Dasar Bash - Bagian 2 [Periksa Direktori, File, & Variabel]" href=https://blog.ajiarya.id/posts/bash/cara-melakukan-percabangan-pada-bash-bagian-2/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>Cara Membuat Rootless Container Podman Bisa Dikelola Sebagai Service</h2>
-</header>
-<section class=entry-content>
-<p>Prasyarat Podman Panduan Sebagai contoh kita akan membuat container nginx pada non-root user bernama student
-Buat direktori untuk menyimpan konten mkdir website echo '&lt;h1>Halo Dunia!&lt;/h1>' > website/index.html Buat container nginx podman run -d --name websiteku -p 8080:80 -v ~/website:/usr/share/nginx/html:Z nginx Verifikasi container podman ps curl localhost:8080 Contoh output [student@podman-host ~]$ podman ps CONTAINER ID IMAGE COMMAND CREATED STATUS PORTS NAMES 109ed419f29e docker.io/library/nginx:latest nginx -g daemon o....</p>
-</section>
-<footer class=entry-footer>August 23, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Membuat Rootless Container Podman Bisa Dikelola Sebagai Service" href=https://blog.ajiarya.id/posts/podman/cara-membuat-container-podman-bisa-dikelola-sebagai-service/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>Cara Remote Port Forwarding SSH</h2>
-</header>
-<section class=entry-content>
-<p>Pendahuluan Remote Port Forwarding adalah salah satu cara agar kita bisa menyediakan service atau port yang ada pada localhost agar bisa digunakan oleh remote host.
-Sebagai contoh kita akan menggunakan squid3 yang tersedia pada localhost yang kemudian akan diakses oleh remote host
-Panduan ssh -R [remote_address_bind]:[remote_port_bind]:[local_address_bind]:[local_port_bind] &lt;remote_host> Contoh laptopku menjalankan proxy server yang tersedia pada alamat 0.0.0.0:3128 lalu saya ingin mencoba mengakses proxy server tersebut dari home-lab pada alamat 127.0.0.1:8080...</p>
-</section>
-<footer class=entry-footer>August 23, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Remote Port Forwarding SSH" href=https://blog.ajiarya.id/posts/linux/cara-ssh-remote-forwarding-port/></a>
 </article>
 <footer class=page-footer>
 <nav class=pagination>

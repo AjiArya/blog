@@ -87,6 +87,39 @@ IMTEK
 </header>
 <article class=post-entry>
 <header class=entry-header>
+<h2>Cara Melakukan Percabangan Dasar Bash - Bagian 1 [Operator Aritmatika]</h2>
+</header>
+<section class=entry-content>
+<p>Pendahuluan Jika kita ingin melakukan pengecekan terhadap suatu variabel maka kita membutuhkan yang namanya percabangan sebagai contoh, jika (if) variabel umur kurang dari 5 maka sama dengan balita, untuk melakukan hal tersebut berikut contoh singkatnya
+balita.sh #!/bin/bash export umur=4 # Cara 1 echo "Menjalankan cara 1" if [[ umur -lt 5 ]]; then echo "Kamu balita!" fi # Cara 2 echo "Menjalankan cara 2" if (( umur >= 5 )); then echo "Kamu balita!...</p>
+</section>
+<footer class=entry-footer>August 12, 2021&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Cara Melakukan Percabangan Dasar Bash - Bagian 1 [Operator Aritmatika]" href=https://blog.ajiarya.id/posts/bash/cara-melakukan-percabangan-pada-bash-bagian-1/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
+<h2>Cara Local Port Forwarding SSH</h2>
+</header>
+<section class=entry-content>
+<p>Pendahuluan Ketika kita ingin mengakses sebuah layanan pada remote host yang hanya listen pada address 127.0.0.1 kita tidak bisa menggunakan fitur Dynamic Port Forwarding sebagai alternatif kita bisa menggunakan fitur Local Port Forwarding
+Panduan ssh -L [local_address_bind]:[local_port_bind]:[remote_address_bind]:[remote_port_bind] &lt;remote_host> Contoh serverku menjalankan web server yang hanya listen pada address 127.0.0.1:80 lalu saya ingin mencoba mengakses web server tersebut dari laptopku pada address 192.168.10.10:8080
+Jalankan web server menggunakan python pada serverku # Perintah python [root@serverku ~]# python3 -m http....</p>
+</section>
+<footer class=entry-footer>August 11, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Cara Local Port Forwarding SSH" href=https://blog.ajiarya.id/posts/linux/cara-ssh-local-forwarding-port/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
+<h2>Cara Install Podman, Skopeo, dan Buildah Pada Linux (CentOS/Rocky)</h2>
+</header>
+<section class=entry-content>
+<p>Panduan Periksa versi yang tersedia untuk diinstall sudo dnf module list container-tools Contoh keluaran pada Rocky Linux [student@rocky ~]$ sudo dnf module list container-tools Last metadata expiration check: 0:23:42 ago on Tue Aug 10 15:24:06 2021. Rocky Linux 8 - AppStream Name Stream Profiles Summary container-tools rhel8 [d] common [d] Most recent (rolling) versions of podman, buildah, skopeo, runc, conmon, runc, conmon, CRIU, Udica, etc as well as dependencies such as container-selinux built and tested together, and updated as frequently as every 12 weeks....</p>
+</section>
+<footer class=entry-footer>August 10, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Cara Install Podman, Skopeo, dan Buildah Pada Linux (CentOS/Rocky)" href=https://blog.ajiarya.id/posts/podman/cara-install-container-tools/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
 <h2>Cara SCP Antar Dua Host Remote</h2>
 </header>
 <section class=entry-content>
@@ -106,36 +139,6 @@ Conor menyalin file file100Giga dari host1 ke localhost (Misal 15 menit) scp hos
 </section>
 <footer class=entry-footer>August 9, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
 <a class=entry-link aria-label="post link to Cara Install ZFS Pada Linux [CentOS/Rocky]" href=https://blog.ajiarya.id/posts/zfs/cara-install-zfs-centos/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>Cara Install ZFS Pada Linux [Debian]</h2>
-</header>
-<section class=entry-content>
-<p>Panduan Menambahkan backports repository Tambahkan repository sudo vi /etc/apt/sources.list.d/buster-backports.list /etc/apt/sources.list.d/buster-backports.list deb http://deb.debian.org/debian buster-backports main contrib deb-src http://deb.debian.org/debian buster-backports main contrib Tambahkan konfigurasi APT sudo vi /etc/apt/preferences.d/90_zfs /etc/apt/preferences.d/90_zfs Package: libnvpair1linux libuutil1linux libzfs2linux libzpool2linux spl-dkms zfs-dkms zfs-test zfsutils-linux zfsutils-linux-dev zfs-zed Pin: release n=buster-backports Pin-Priority: 990 Install package ZFS Install package sudo apt update sudo apt install dpkg-dev linux-headers-$(uname -r) linux-image-amd64 sudo apt install zfs-dkms zfsutils-linux Buat konfigurasi ZFS untuk kernel module load sudo sh -c "echo zfs> /etc/modules-load....</p>
-</section>
-<footer class=entry-footer>August 9, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Install ZFS Pada Linux [Debian]" href=https://blog.ajiarya.id/posts/zfs/cara-install-zfs-debian/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>Cara Install ZFS Pada Linux [Ubuntu]</h2>
-</header>
-<section class=entry-content>
-<p>Ubuntu Install package ZFS sudo apt update sudo apt install zfsutils-linux Verifikasi versi modinfo zfs | grep version Referensi OpenZFS Docs </p>
-</section>
-<footer class=entry-footer>August 9, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Install ZFS Pada Linux [Ubuntu]" href=https://blog.ajiarya.id/posts/zfs/cara-install-zfs-ubuntu/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>Cara Mengganti Password User Elasticsearch</h2>
-</header>
-<section class=entry-content>
-<p>Panduan Perintah mengganti password user sendiri curl -u &lt;user> -XPUT \ 'http://localhost:9200/_xpack/security/user/_password?pretty' \ -H 'Content-Type: application/json' -d' { "password": "&lt;password>" }' Contoh mengganti password user sendiri curl -u elastic -XPUT \ 'http://localhost:9200/_xpack/security/user/_password?pretty' \ -H 'Content-Type: application/json' -d' { "password": "sangatrahasia" }' Contoh output [root@rocky ~]# curl -u elastic -XPUT \ > 'http://localhost:9200/_xpack/security/user/_password?pretty' \ > -H 'Content-Type: application/json' -d' > { "password": "sangatrahasia" }' Enter host password for user 'elastic': { } Perintah mengganti password user lain (Admin) curl -u &lt;user_admin> -XPUT \ 'http://localhost:9200/_xpack/security/user/&lt;user_lain>/_password?...</p>
-</section>
-<footer class=entry-footer>August 9, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Mengganti Password User Elasticsearch" href=https://blog.ajiarya.id/posts/elk/elasticsearch/cara-ganti-password-elasticsearch/></a>
 </article>
 <footer class=page-footer>
 <nav class=pagination>

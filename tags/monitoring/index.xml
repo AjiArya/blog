@@ -16,6 +16,33 @@
     </item>
     
     <item>
+      <title>Cara Menyiapkan Ceph Exporter [Containerized]</title>
+      <link>https://blog.ajiarya.id/posts/ceph/cara-menyiapkan-ceph-exporter/</link>
+      <pubDate>Sat, 18 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.ajiarya.id/posts/ceph/cara-menyiapkan-ceph-exporter/</guid>
+      <description>Cara mudah menyiapkan ceph exporter</description>
+    </item>
+    
+    <item>
+      <title>Cara Menyiapkan Grafana Pada Linux (CentOS/Ubuntu)</title>
+      <link>https://blog.ajiarya.id/posts/monitoring/cara-menyiapkan-grafana/</link>
+      <pubDate>Sat, 18 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.ajiarya.id/posts/monitoring/cara-menyiapkan-grafana/</guid>
+      <description>Cara mudah menyiapkan grafana pada sistem operasi linux</description>
+    </item>
+    
+    <item>
+      <title>Cara Menyiapkan Prometheus Pada Linux</title>
+      <link>https://blog.ajiarya.id/posts/monitoring/cara-menyiapkan-prometheus/</link>
+      <pubDate>Sat, 18 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.ajiarya.id/posts/monitoring/cara-menyiapkan-prometheus/</guid>
+      <description>Cara mudah setup prometheus pada linux sebagai servis systemd</description>
+    </item>
+    
+    <item>
       <title>Cara Memasang Proxmox Exporter</title>
       <link>https://blog.ajiarya.id/posts/proxmox/cara-memasang-proxmox-exporter/</link>
       <pubDate>Sat, 11 Sep 2021 00:00:00 +0000</pubDate>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Monitoring on Aji Arya</title>
+    <link>https://blog.ajiarya.id/categories/monitoring/</link>
+    <description>Recent content in Monitoring on Aji Arya</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sat, 18 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.ajiarya.id/categories/monitoring/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cara Menyiapkan Grafana Pada Linux (CentOS/Ubuntu)</title>
+      <link>https://blog.ajiarya.id/posts/monitoring/cara-menyiapkan-grafana/</link>
+      <pubDate>Sat, 18 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.ajiarya.id/posts/monitoring/cara-menyiapkan-grafana/</guid>
+      <description>Cara mudah menyiapkan grafana pada sistem operasi linux</description>
+    </item>
+    
+    <item>
+      <title>Cara Menyiapkan Prometheus Pada Linux</title>
+      <link>https://blog.ajiarya.id/posts/monitoring/cara-menyiapkan-prometheus/</link>
+      <pubDate>Sat, 18 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.ajiarya.id/posts/monitoring/cara-menyiapkan-prometheus/</guid>
+      <description>Cara mudah setup prometheus pada linux sebagai servis systemd</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -85,6 +85,38 @@ IMTEK
 <main class=main>
 <article class=post-entry>
 <header class=entry-header>
+<h2>Cara Konfigurasi SSH Config</h2>
+</header>
+<section class=entry-content>
+<p>Contoh SSH Config host &lt;nama_pintas> # Nama pintasan hostname &lt;alamat_tujuan> # Bisa IP Address ataupun domain user &lt;user> # Nama user untuk remote port &lt;port> # Port yang digunakan untuk SSH Panduan Buat file ssh config vim ~/.ssh/config ~/.ssh/config host home-lab hostname 1.tcp.jp.ngrok.io user ubuntu port 2222 Lakukan SSH ssh home-lab Catatan
+Cara manual jika tanpa menggunakan ssh config: ssh ubuntu@1.tcp.jp.ngrok.io -p2222
+</p>
+</section>
+<footer class=entry-footer>August 20, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Cara Konfigurasi SSH Config" href=https://blog.ajiarya.id/posts/linux/cara-konfigurasi-ssh-config/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
+<h2>Cara Membuat Cluster Elasticsearch 7 beserta module security xpack [Debian/Ubuntu]</h2>
+</header>
+<section class=entry-content>
+<p>Panduan Tambahkan host pada file /etc/hosts vim /etc/hosts /etc/hosts 127.0.0.1 localhost 192.168.10.71 elasticsearch-node01 192.168.10.72 elasticsearch-node02 192.168.10.73 elasticsearch-node03 Unduh dan install package elasticsearch wget https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-7.14.0-amd64.deb dpkg -i elasticsearch-7.14.0-amd64.deb Konfigurasi elasticsearch /etc/elasticsearch/elasticsearch.yml cluster.name: elasticsearch-demo node.name: elasticsearch-node01 path.data: /var/lib/elasticsearch path.logs: /var/log/elasticsearch network.host: 0.0.0.0 http.port: 9200 cluster.initial_master_nodes: ["elasticsearch-node01", "elasticsearch-node02", "elasticsearch-node03"] node.master: true node.data: true discovery.zen.ping.unicast.hosts: ["192.168.10.71" , "192.168.10.72", "192.168.10.73"] discovery.zen.minimum_master_nodes: 2 xpack.security.enabled: true xpack.security.transport.ssl.enabled: true xpack.security.transport.ssl.verification_mode: certificate xpack....</p>
+</section>
+<footer class=entry-footer>August 20, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Cara Membuat Cluster Elasticsearch 7 beserta module security xpack [Debian/Ubuntu]" href=https://blog.ajiarya.id/posts/elk/elasticsearch/cara-membuat-cluster-elasticsearch-7/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
+<h2>Cara Membuat Image Libvirt Menggunakan python-tfgen</h2>
+</header>
+<section class=entry-content>
+<p>Prasyarat Terraform python-tfgen Storage Pool (Baca disini untuk cara membuat Storage Pool) Panduan Buat yaml dengan kind: image lalu isikan dengan daftar image yang diinginkan image.yaml kind: image uri: "qemu:///system" spec: - name: debian-bullseye url: "https://cdimage.debian.org/images/cloud/bullseye/latest/debian-11-genericcloud-amd64.qcow2" pool: images - name: ubuntu-focal url: "https://cloud-images.ubuntu.com/focal/current/focal-server-cloudimg-amd64.img" pool: images Buat HCL berdasarkan yaml yang telah dibuat ./tfgen.py -f image.yaml -o image image/main.tf (Hasil tfgen) terraform { required_providers { libvirt = { source = "dmacvicar/libvirt" } } } provider "libvirt" { uri = "qemu:///system" } resource "libvirt_volume" "debian-bullseye" { name = "debian-bullseye" source = "https://cdimage....</p>
+</section>
+<footer class=entry-footer>August 17, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Cara Membuat Image Libvirt Menggunakan python-tfgen" href=https://blog.ajiarya.id/posts/python-tfgen/cara-membuat-image-dengan-python-tfgen/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
 <h2>Cara Membuat Network Libvirt Menggunakan python-tfgen</h2>
 </header>
 <section class=entry-content>
@@ -104,38 +136,6 @@ Buat yaml dengan kind: pool pool.yaml kind: pool uri: "qemu:///system" spec: - n
 </section>
 <footer class=entry-footer>August 17, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
 <a class=entry-link aria-label="post link to Cara Membuat Storage Pool Libvirt Menggunakan python-tfgen" href=https://blog.ajiarya.id/posts/python-tfgen/cara-membuat-pool-dengan-python-tfgen/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>Cara Membuat VM Libvirt Menggunakan python-tfgen</h2>
-</header>
-<section class=entry-content>
-<p>Prasyarat Terraform python-tfgen Storage Pool (Baca disini untuk cara membuat Storage Pool) Image (Baca disini untuk cara membuat Image) Network (Baca disini untuk cara membuat Network) Panduan Buat yaml dengan kind: vm lalu isikan dengan daftar image yang diinginkan image.yaml kind: vm uri: "qemu:///system" spec: - name: vm1 hostname: vm1 nested_enabled: true os: ubuntu vcpus: 2 memory: 2G console: vnc cloud_data: users: - name: root public_key: - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDBpZKhFbJ9r/gEef9KYo13VoEgBOkyMw06aOCzltT8wsjYPRMYzb2cbuiJBqJq5sXBrpaunTh5M7F9TyHQxhZnGgGVdutX7Q3RTOxWCHNMOxnrN7gQAHQ0kdqegrvUKNB7ym/2G3baz7pmxXf+I1Tw5AChJ8kIBDB9DnzVdtnMYxT0nivY1f6gSR2cgStEsuSbZDlBQ5Lt6W+sUyNkffddpZl0+QHAFM6UFTJNcuwMBqQG75/ZcwqLkQKU6pg0kZnDgmElXtJUKu141PJ0EbhkeOsh+zjYuwScotQYbN/MLN8fAhlQLFOwX/g3o6M9A49jyHVglQCxP2mI+d3Fra+ykrcQ7eTkPncwCCEmZYLjonQl3qhHHcbM7He1kOnORdVC/f/Uz4VsX+cMn5WGs1P+qyZKRAvw6egqWAkS0GPfEjdkhqLQ4WU9mC26aaaQfBqmMos1XZ/nRTuGAc6qb0SOkz5XN0g5ISNmCUpsnxO4YocmWP/sNDRPWBIzcycZE6s= student@home-lab base_image: storage_pool: images name: ubuntu-focal disks: storage_pool: vms disks: - name: vm1-vda....</p>
-</section>
-<footer class=entry-footer>August 17, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Membuat VM Libvirt Menggunakan python-tfgen" href=https://blog.ajiarya.id/posts/python-tfgen/cara-membuat-vm-dengan-python-tfgen/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>Cara Menggunakan Terraform Libvirt Provider Dengan Bantuan python-tfgen</h2>
-</header>
-<section class=entry-content>
-<p>Pendahuluan Apa yang membuat kita malas untuk belajar atau mempraktikan ilmu IT? Membuat Lab! Tenang semua itu bisa dibuat tidak membosankan dan bisa dilakukan dengan cepat.
-Saya menggunakan KVM Host untuk melakukan riset ataupun belajar hal baru, sehingga intensitas saya dalam membuat VM itu bisa dibilang sangat sering dan saya rasa membuat VM adalah hal membosankan yang berulang-ulang sehingga saya membuat sebuah tools agar mempermudah dan mempercepat pembuatan VM.
-Panduan Unduh Terraform wget https://releases....</p>
-</section>
-<footer class=entry-footer>August 17, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Menggunakan Terraform Libvirt Provider Dengan Bantuan python-tfgen" href=https://blog.ajiarya.id/posts/linux/cara-menggunakan-terraform-libvirt-provider/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>Cara Menyiapkan Home Lab Linux [CentOS/Rocky 8]</h2>
-</header>
-<section class=entry-content>
-<p>Referensi Sewa Server Hetzner Robot - Server Auction Prasyarat Server Sistem Operasi CentOS 8 atau Rocky 8 terinstall Panduan Update & Upgrade Package sudo dnf update sudo dnf upgrade Install grup package untuk host virtualisasi sudo dnf groupinstall -y "Virtualization Host" Jalankan dan enable servis libvirt sudo systemctl enable --now libvirtd Install cockpit plugin untuk VM sudo dnf install -y cockpit-machines Jalankan dan enable servis cockpit sudo systemctl enable --now cockpit....</p>
-</section>
-<footer class=entry-footer>August 17, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Menyiapkan Home Lab Linux [CentOS/Rocky 8]" href=https://blog.ajiarya.id/posts/linux/cara-menyiapkan-home-lab-centos-rocky/></a>
 </article>
 <footer class=page-footer>
 <nav class=pagination>

@@ -96,6 +96,38 @@ IMTEK
 </article>
 <article class="post-entry tag-entry">
 <header class=entry-header>
+<h2>Cara Menyiapkan Ceph Exporter [Containerized]</h2>
+</header>
+<section class=entry-content>
+<p>Prasyarat Docker Git Panduan Clone repository ceph_exporter git clone https://github.com/digitalocean/ceph_exporter.git Buat container image cd ceph_exporter/ docker build -t digitalocean/ceph_exporter . Buat keyring untuk ceph_exporter Lakukan dari host yang memiliki ceph.conf dan ceph.client.admin.keyring untuk melakukan administrasi user ceph auth add client.ceph_exporter mon 'allow r' mgr 'allow r' osd 'allow r' mds 'allow r' ceph auth get client.ceph_exporter -o /etc/ceph/ceph.client.ceph_exporter.keyring # Salin keyring ke monitoring node scp /etc/ceph/{ceph....</p>
+</section>
+<footer class=entry-footer>September 18, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Cara Menyiapkan Ceph Exporter [Containerized]" href=https://blog.ajiarya.id/posts/ceph/cara-menyiapkan-ceph-exporter/></a>
+</article>
+<article class="post-entry tag-entry">
+<header class=entry-header>
+<h2>Cara Menyiapkan Grafana Pada Linux (CentOS/Ubuntu)</h2>
+</header>
+<section class=entry-content>
+<p>Panduan RHEL/CentOS/Rocky Menyiapkan repository grafana sudo bash -c 'cat&lt;&lt;EOF > /etc/yum.repos.d/grafana.repo [grafana] name=grafana baseurl=https://packages.grafana.com/oss/rpm repo_gpgcheck=1 enabled=1 gpgcheck=1 gpgkey=https://packages.grafana.com/gpg.key sslverify=1 sslcacert=/etc/pki/tls/certs/ca-bundle.crt EOF Pasang grafana
+yum sudo yum install -y grafana dnf sudo dnf install -y grafana Jalankan dan aktifkan servis grafana
+sudo systemctl daemon-reload sudo systemctl enable --now grafana-server Debian/Ubuntu Menyiapkan repository grafana # Menambahkan gpg key wget -q -O - https://packages....</p>
+</section>
+<footer class=entry-footer>September 18, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Cara Menyiapkan Grafana Pada Linux (CentOS/Ubuntu)" href=https://blog.ajiarya.id/posts/monitoring/cara-menyiapkan-grafana/></a>
+</article>
+<article class="post-entry tag-entry">
+<header class=entry-header>
+<h2>Cara Menyiapkan Prometheus Pada Linux</h2>
+</header>
+<section class=entry-content>
+<p>Panduan Buat user prometheus sudo useradd --no-create-home --shell /bin/false prometheus Unduh dan pasang prometheus wget https://github.com/prometheus/prometheus/releases/download/v2.30.0/prometheus-2.30.0.linux-amd64.tar.gz tar xf prometheus-2.30.0.linux-amd64.tar.gz sudo cp prometheus-2.30.0.linux-amd64/prometheus /usr/local/bin/prometheus Buat konfigurasi prometheus sudo mkdir /etc/prometheus sudo bash -c 'cat &lt;&lt;EOF > /etc/prometheus/prometheus.yml global: scrape_interval: 15s evaluation_interval: 15s scrape_configs: - job_name: 'prometheus' static_configs: - targets: - localhost:9090 EOF' Buat file systemd untuk prometheus sudo mkdir /var/lib/prometheus sudo chown prometheus:prometheus /var/lib/prometheus sudo bash -c 'cat&lt;&lt;EOF > /etc/systemd/system/prometheus....</p>
+</section>
+<footer class=entry-footer>September 18, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Cara Menyiapkan Prometheus Pada Linux" href=https://blog.ajiarya.id/posts/monitoring/cara-menyiapkan-prometheus/></a>
+</article>
+<article class="post-entry tag-entry">
+<header class=entry-header>
 <h2>Cara Memasang Proxmox Exporter</h2>
 </header>
 <section class=entry-content>
@@ -107,18 +139,11 @@ Buat user pve_exporter useradd --no-create-home --shell /bin/false pve_exporter 
 <footer class=entry-footer>September 11, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
 <a class=entry-link aria-label="post link to Cara Memasang Proxmox Exporter" href=https://blog.ajiarya.id/posts/proxmox/cara-memasang-proxmox-exporter/></a>
 </article>
-<article class="post-entry tag-entry">
-<header class=entry-header>
-<h2>Cara Menyiapkan Monitoring Proxmox Menggunakan InfluxDB dan Grafana</h2>
-</header>
-<section class=entry-content>
-<p>Prasyarat Proxmox Terinstall Panduan Pasang influxdb dan influxdb-client apt install influxdb influxdb-client Buat user database dan database influx (Dalam shell influx) Buat user dan database
-CREATE USER admin WITH PASSWORD 'keraktelor' WITH ALL PRIVILEGES CREATE DATABASE monitoring CREATE USER influx WITH PASSWORD 'piesusu' GRANT ALL ON monitoring TO influx exit Konfigurasi influxdb vi /etc/influxdb/influxdb.conf Sesuaikan baris berikut
-[[udp]] enabled = true bind-address = ":8089" database = "mondb" Restart InfluxDB systemctl restart influxdb Tambahkan Metric Server...</p>
-</section>
-<footer class=entry-footer>September 9, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Menyiapkan Monitoring Proxmox Menggunakan InfluxDB dan Grafana" href=https://blog.ajiarya.id/posts/proxmox/cara-menyiapkan-monitoring-proxmox/></a>
-</article>
+<footer class=page-footer>
+<nav class=pagination>
+<a class=next href=https://blog.ajiarya.id/tags/monitoring/page/2/>Next Page »</a>
+</nav>
+</footer>
 </main>
 <footer class=footer>
 <span>&copy; 2021 <a href=https://blog.ajiarya.id>Aji Arya</a></span>
