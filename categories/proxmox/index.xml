@@ -5,7 +5,16 @@
     <link>https://blog.ajiarya.id/categories/proxmox/</link>
     <description>Recent content in Proxmox on Aji Arya</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 13 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.ajiarya.id/categories/proxmox/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 18 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.ajiarya.id/categories/proxmox/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cara Menghapus Node Rusak Pada Proxmox</title>
+      <link>https://blog.ajiarya.id/posts/proxmox/cara-menghapus-node-rusak/</link>
+      <pubDate>Sat, 18 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.ajiarya.id/posts/proxmox/cara-menghapus-node-rusak/</guid>
+      <description>Cara menghapus node yang mengalami rusak atau kegagalan pada proxmox</description>
+    </item>
+    
     <item>
       <title>Cara Menyiapkan Klaster Ceph Pada Proxmox 7</title>
       <link>https://blog.ajiarya.id/posts/proxmox/cara-menyiapkan-klaster-ceph-pada-proxmox-7/</link>

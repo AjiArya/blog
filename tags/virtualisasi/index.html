@@ -86,6 +86,16 @@ IMTEK
 </header>
 <article class="post-entry tag-entry">
 <header class=entry-header>
+<h2>Cara Menghapus Node Rusak Pada Proxmox</h2>
+</header>
+<section class=entry-content>
+<p>Panduan SSH salah satu node yang masih bisa diakses ssh &lt;running_pve_node> Jalankan perintah berikut untuk melakukan penghapusan node pvecm delnode &lt;node_name> Hapus direktori konfigurasi node tersebut rm -rf /etc/pve/nodes/&lt;node_name> Muat ulang dashboard proxmox Referensi Proxmox Forum </p>
+</section>
+<footer class=entry-footer>September 18, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Cara Menghapus Node Rusak Pada Proxmox" href=https://blog.ajiarya.id/posts/proxmox/cara-menghapus-node-rusak/></a>
+</article>
+<article class="post-entry tag-entry">
+<header class=entry-header>
 <h2>Cara Menyiapkan Klaster Ceph Pada Proxmox 7</h2>
 </header>
 <section class=entry-content>
@@ -128,20 +138,6 @@ CREATE USER admin WITH PASSWORD 'keraktelor' WITH ALL PRIVILEGES CREATE DATABASE
 </section>
 <footer class=entry-footer>September 9, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
 <a class=entry-link aria-label="post link to Cara Menyiapkan Monitoring Proxmox Menggunakan InfluxDB dan Grafana" href=https://blog.ajiarya.id/posts/proxmox/cara-menyiapkan-monitoring-proxmox/></a>
-</article>
-<article class="post-entry tag-entry">
-<header class=entry-header>
-<h2>Cara Memperbarui libosinfo osinfo-db</h2>
-</header>
-<section class=entry-content>
-<p>Pendahuluan libosinfo adalah penyedia informasi mengenai sistem operasi yang diperlukan untuk menyediakan dan mengelola virtualized environment
-Panduan Perbarui libosinfo
-Debian Based sudo apt install -y libosinfo RHEL Based sudo yum install -y libosinfo # atau sudo dnf install -y libosinfo Unduh database OS
-https://releases.pagure.org/libosinfo/
-# wget https://releases.pagure.org/libosinfo/osinfo-db-&lt;version>.tar.xz wget https://releases.pagure.org/libosinfo/osinfo-db-20210903.tar.xz Perbarui database OS sudo osinfo-db-import --system &lt;database_os> Verifikasi osinfo-query os </p>
-</section>
-<footer class=entry-footer>September 5, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Memperbarui libosinfo osinfo-db" href=https://blog.ajiarya.id/posts/linux/cara-update-osinfo-db/></a>
 </article>
 <footer class=page-footer>
 <nav class=pagination>
