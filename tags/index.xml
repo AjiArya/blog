@@ -5,31 +5,58 @@
     <link>https://blog.ajiarya.id/tags/</link>
     <description>Recent content in Tags on Aji Arya</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 13 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.ajiarya.id/tags/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Ceph</title>
-      <link>https://blog.ajiarya.id/tags/ceph/</link>
-      <pubDate>Mon, 13 Sep 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.ajiarya.id/tags/ceph/</guid>
-      <description></description>
-    </item>
-    
+    <lastBuildDate>Sat, 18 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.ajiarya.id/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Container</title>
       <link>https://blog.ajiarya.id/tags/container/</link>
-      <pubDate>Mon, 13 Sep 2021 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 18 Sep 2021 00:00:00 +0000</pubDate>
       
       <guid>https://blog.ajiarya.id/tags/container/</guid>
       <description></description>
     </item>
     
     <item>
+      <title>Exporter</title>
+      <link>https://blog.ajiarya.id/tags/exporter/</link>
+      <pubDate>Sat, 18 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.ajiarya.id/tags/exporter/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Linux</title>
       <link>https://blog.ajiarya.id/tags/linux/</link>
-      <pubDate>Mon, 13 Sep 2021 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 18 Sep 2021 00:00:00 +0000</pubDate>
       
       <guid>https://blog.ajiarya.id/tags/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Monitoring</title>
+      <link>https://blog.ajiarya.id/tags/monitoring/</link>
+      <pubDate>Sat, 18 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.ajiarya.id/tags/monitoring/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>OpenStack</title>
+      <link>https://blog.ajiarya.id/tags/openstack/</link>
+      <pubDate>Sat, 18 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.ajiarya.id/tags/openstack/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ceph</title>
+      <link>https://blog.ajiarya.id/tags/ceph/</link>
+      <pubDate>Mon, 13 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.ajiarya.id/tags/ceph/</guid>
       <description></description>
     </item>
     
@@ -106,15 +133,6 @@
     </item>
     
     <item>
-      <title>Monitoring</title>
-      <link>https://blog.ajiarya.id/tags/monitoring/</link>
-      <pubDate>Sat, 11 Sep 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.ajiarya.id/tags/monitoring/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>SSH</title>
       <link>https://blog.ajiarya.id/tags/ssh/</link>
       <pubDate>Sat, 11 Sep 2021 00:00:00 +0000</pubDate>
@@ -147,15 +165,6 @@
       <pubDate>Fri, 10 Sep 2021 00:00:00 +0000</pubDate>
       
       <guid>https://blog.ajiarya.id/tags/kubernetes/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>OpenStack</title>
-      <link>https://blog.ajiarya.id/tags/openstack/</link>
-      <pubDate>Fri, 10 Sep 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.ajiarya.id/tags/openstack/</guid>
       <description></description>
     </item>
     
