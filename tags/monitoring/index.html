@@ -86,6 +86,18 @@ IMTEK
 </header>
 <article class="post-entry tag-entry">
 <header class=entry-header>
+<h2>Cara Menyiapkan Node Exporter Pada Linux (CentOS/Ubuntu)</h2>
+</header>
+<section class=entry-content>
+<p>Panduan Menyiapkan Node Exporter Kunjungi website prometheus untuk melihat versi node exporter yang tersedia https://prometheus.io/download/#node_exporter
+Buat user
+sudo useradd --no-create-home --shell /bin/false node_exporter Unduh, ekstrak, dan pasang node exporter wget https://github.com/prometheus/node_exporter/releases/download/v1.2.2/node_exporter-1.2.2.linux-amd64.tar.gz tar xf node_exporter-1.2.2.linux-amd64.tar.gz sudo cp node_exporter-1.2.2.linux-amd64/node_exporter /usr/local/bin/node_exporter Buat file servis node_exporter sudo bash -c 'cat&lt;&lt;EOF > /etc/systemd/system/node_exporter.service [Unit] Description=Node Exporter Wants=network-online.target After=network-online.target [Service] User=node_exporter Group=node_exporter Type=simple ExecStart=/usr/local/bin/node_exporter [Install] WantedBy=multi-user.target EOF' Jalankan servis node_exporter sudo systemctl enable --now node_exporter sudo systemctl status node_exporter Tambahkan konfigurasi pada prometheus....</p>
+</section>
+<footer class=entry-footer>October 7, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Cara Menyiapkan Node Exporter Pada Linux (CentOS/Ubuntu)" href=https://blog.ajiarya.id/posts/monitoring/cara-menyiapkan-node-exporter/></a>
+</article>
+<article class="post-entry tag-entry">
+<header class=entry-header>
 <h2>Cara Memasang OpenStack Exporter</h2>
 </header>
 <section class=entry-content>
@@ -125,19 +137,6 @@ sudo systemctl daemon-reload sudo systemctl enable --now grafana-server Debian/U
 </section>
 <footer class=entry-footer>September 18, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
 <a class=entry-link aria-label="post link to Cara Menyiapkan Prometheus Pada Linux" href=https://blog.ajiarya.id/posts/monitoring/cara-menyiapkan-prometheus/></a>
-</article>
-<article class="post-entry tag-entry">
-<header class=entry-header>
-<h2>Cara Memasang Proxmox Exporter</h2>
-</header>
-<section class=entry-content>
-<p>Prasyarat Proxmox terinstall Panduan Buat token untuk proxmox-expoter
-Buat API Token Datacenter > API Token Klik Add Masukan Token ID (Catat bagian ini) Hapus centang pada Privilege Separation Klik Add Salin Token Secret Klik “Copy Secret Value” (Catat bagian ini) Pasang proxmox-exporter
-python3 -m pip install prometheus-pve-exporter Buat servis systemd
-Buat user pve_exporter useradd --no-create-home --shell /bin/false pve_exporter Buat file konfigurasi mkdir /etc/pve_exporter cat&lt;&lt;EOF > /etc/pve_exporter/config....</p>
-</section>
-<footer class=entry-footer>September 11, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Memasang Proxmox Exporter" href=https://blog.ajiarya.id/posts/proxmox/cara-memasang-proxmox-exporter/></a>
 </article>
 <footer class=page-footer>
 <nav class=pagination>
