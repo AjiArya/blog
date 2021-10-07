@@ -86,6 +86,17 @@ IMTEK
 </header>
 <article class="post-entry tag-entry">
 <header class=entry-header>
+<h2>Cara Mengubah Device Class OSD</h2>
+</header>
+<section class=entry-content>
+<p>Pendahuluan Device Class berguna untuk mempermudah ceph untuk mendistribusikan data berdasarkan device class yang telah ditentukan didalam CRUSH Rule
+Panduan Hapus class default yang didapatkan ketika membuat OSD ceph osd crush rm-device-class &lt;osd_id> Berikan class baru pada OSD yang diinginkan ceph osd crush set-device-class performance $i Contoh memanfaatkan device class # Buat CRUSH rule # Contoh: # ceph osd crush rule create-replicated &lt;rule-name> &lt;root> &lt;failure-domain> &lt;class> ceph osd crush rule create-replicated replicated-performance default host performance # Buat pool ceph osd pool create performance-pool 32 32 replicated replicated-performance Referensi Ceph News - Crush Device Classes </p>
+</section>
+<footer class=entry-footer>September 5, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Cara Mengubah Device Class OSD" href=https://blog.ajiarya.id/posts/ceph/cara-mengubah-device-class-osd/></a>
+</article>
+<article class="post-entry tag-entry">
+<header class=entry-header>
 <h2>Memilih Deployment Tool Ceph</h2>
 </header>
 <section class=entry-content>
@@ -134,17 +145,6 @@ ceph mgr module enable dashboard Buat TLS untuk ceph dashboard ceph dashboard cr
 </section>
 <footer class=entry-footer>August 29, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
 <a class=entry-link aria-label="post link to Cara Deploy Ceph Dashboard Pada Deployment Manual" href=https://blog.ajiarya.id/posts/ceph/cara-deploy-ceph-dashboard-pada-deployment-manual/></a>
-</article>
-<article class="post-entry tag-entry">
-<header class=entry-header>
-<h2>Cara Membuat Ulang Ceph Monitor Yang Rusak [Manual Deployment]</h2>
-</header>
-<section class=entry-content>
-<p>Pendahuluan Jika mengalami kerusakan pada ceph monitor kita bisa melakukan hapus dan buat monitor yang rusak tersebut dengan ceph-monitor lainnya masih tersedia bagi cluster
-Panduan Login sebagai root sudo -i Hentikan service monitor jika masih berjalan systemctl stop ceph-mon@&lt;monitor_name> Hapus direktori monitor dan buat ulang direktori rm -rf /var/lib/ceph/mon/ceph-&lt;monitor_name> mkdir /var/lib/ceph/mon/ceph-&lt;monitor_name> Remove monitor from the cluster ceph mon rm &lt;monitor_name> Dapatkan keyring dan monmap (monitor map) ceph auth get mon....</p>
-</section>
-<footer class=entry-footer>August 24, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Membuat Ulang Ceph Monitor Yang Rusak [Manual Deployment]" href=https://blog.ajiarya.id/posts/ceph/cara-membuat-ulang-ceph-mon/></a>
 </article>
 <footer class=page-footer>
 <nav class=pagination>

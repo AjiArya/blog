@@ -87,6 +87,16 @@ IMTEK
 </header>
 <article class=post-entry>
 <header class=entry-header>
+<h2>Cara Mengatur Mode PG Autoscale Pada Ceph Pool</h2>
+</header>
+<section class=entry-content>
+<p>Panduan Merubah pengaturan pg_autoscale_mode pada ceph pool yang sudah ada ceph osd pool set &lt;pool_name> pg_autoscale_mode [warn|on|off] Cara mengatur konfigurasi default pg_autoscale_mode pada ceph pool ceph config set global osd_pool_default_autoscale_mode [warn|on|off] Referensi PG Merging dan Autotuning </p>
+</section>
+<footer class=entry-footer>October 7, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Cara Mengatur Mode PG Autoscale Pada Ceph Pool" href=https://blog.ajiarya.id/posts/ceph/cara-mengatur-mode-pg-autoscale-ceph-pool/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
 <h2>Cara Menghilangkan warning insecure global_id reclaim Pada Ceph</h2>
 </header>
 <section class=entry-content>
@@ -126,16 +136,6 @@ sudo useradd --no-create-home --shell /bin/false node_exporter Unduh, ekstrak, d
 </section>
 <footer class=entry-footer>September 18, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
 <a class=entry-link aria-label="post link to Cara Menghapus Node Rusak Pada Proxmox" href=https://blog.ajiarya.id/posts/proxmox/cara-menghapus-node-rusak/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>Cara Menyiapkan Ceph Exporter [Containerized]</h2>
-</header>
-<section class=entry-content>
-<p>Prasyarat Docker Git Panduan Clone repository ceph_exporter git clone https://github.com/digitalocean/ceph_exporter.git Buat container image cd ceph_exporter/ docker build -t digitalocean/ceph_exporter . Buat keyring untuk ceph_exporter Lakukan dari host yang memiliki ceph.conf dan ceph.client.admin.keyring untuk melakukan administrasi user ceph auth add client.ceph_exporter mon 'allow r' mgr 'allow r' osd 'allow r' mds 'allow r' ceph auth get client.ceph_exporter -o /etc/ceph/ceph.client.ceph_exporter.keyring # Salin keyring ke monitoring node scp /etc/ceph/{ceph....</p>
-</section>
-<footer class=entry-footer>September 18, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Menyiapkan Ceph Exporter [Containerized]" href=https://blog.ajiarya.id/posts/ceph/cara-menyiapkan-ceph-exporter/></a>
 </article>
 <footer class=page-footer>
 <nav class=pagination>

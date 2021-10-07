@@ -86,6 +86,16 @@ IMTEK
 </header>
 <article class="post-entry tag-entry">
 <header class=entry-header>
+<h2>Cara Mengatur Mode PG Autoscale Pada Ceph Pool</h2>
+</header>
+<section class=entry-content>
+<p>Panduan Merubah pengaturan pg_autoscale_mode pada ceph pool yang sudah ada ceph osd pool set &lt;pool_name> pg_autoscale_mode [warn|on|off] Cara mengatur konfigurasi default pg_autoscale_mode pada ceph pool ceph config set global osd_pool_default_autoscale_mode [warn|on|off] Referensi PG Merging dan Autotuning </p>
+</section>
+<footer class=entry-footer>October 7, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Cara Mengatur Mode PG Autoscale Pada Ceph Pool" href=https://blog.ajiarya.id/posts/ceph/cara-mengatur-mode-pg-autoscale-ceph-pool/></a>
+</article>
+<article class="post-entry tag-entry">
+<header class=entry-header>
 <h2>Cara Menghilangkan warning insecure global_id reclaim Pada Ceph</h2>
 </header>
 <section class=entry-content>
@@ -123,17 +133,6 @@ IMTEK
 </section>
 <footer class=entry-footer>September 5, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
 <a class=entry-link aria-label="post link to Cara Menghapus OSD [Manual]" href=https://blog.ajiarya.id/posts/ceph/cara-menghapus-osd/></a>
-</article>
-<article class="post-entry tag-entry">
-<header class=entry-header>
-<h2>Cara Mengubah Device Class OSD</h2>
-</header>
-<section class=entry-content>
-<p>Pendahuluan Device Class berguna untuk mempermudah ceph untuk mendistribusikan data berdasarkan device class yang telah ditentukan didalam CRUSH Rule
-Panduan Hapus class default yang didapatkan ketika membuat OSD ceph osd crush rm-device-class &lt;osd_id> Berikan class baru pada OSD yang diinginkan ceph osd crush set-device-class performance $i Contoh memanfaatkan device class # Buat CRUSH rule # Contoh: # ceph osd crush rule create-replicated &lt;rule-name> &lt;root> &lt;failure-domain> &lt;class> ceph osd crush rule create-replicated replicated-performance default host performance # Buat pool ceph osd pool create performance-pool 32 32 replicated replicated-performance Referensi Ceph News - Crush Device Classes </p>
-</section>
-<footer class=entry-footer>September 5, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Mengubah Device Class OSD" href=https://blog.ajiarya.id/posts/ceph/cara-mengubah-device-class-osd/></a>
 </article>
 <footer class=page-footer>
 <nav class=pagination>
