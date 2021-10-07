@@ -106,6 +106,17 @@ IMTEK
 </article>
 <article class="post-entry tag-entry">
 <header class=entry-header>
+<h2>Cara Menyiapkan Ceph Tiering</h2>
+</header>
+<section class=entry-content>
+<p>Pendahuluan Untuk menyiapkan ceph tiering kita harus menyiapkan 2 pool. 1 sebagai penyimpanan data tetap dan 1 sebagai cache.
+Panduan Buat crush rule untuk hdd dan ssd ceph osd crush rule create-replicated replicated_hdd default host hdd ceph osd crush rule create-replicated replicated_ssd default host ssd Buat pool untuk hdd dan ssd ceph osd pool create hot-storage 32 32 replicated replicated_ssd ceph osd pool create cold-storage 32 32 replicated replicated_hdd ceph osd pool application enable hot-storage rbd ceph osd pool application enable cold-storage rbd Tambahkan tier, atur cache-mode, dan atur overlay ceph osd tier add cold-storage hot-storage ceph osd tier cache-mode hot-storage writeback ceph osd tier set-overlay cold-storage hot-storage Atur hit_set_type ceph osd pool set hot-storage hit_set_type bloom Referensi Ceph Pools Ceph Tiering </p>
+</section>
+<footer class=entry-footer>October 7, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Cara Menyiapkan Ceph Tiering" href=https://blog.ajiarya.id/posts/ceph/cara-menyiapkan-ceph-tiering/></a>
+</article>
+<article class="post-entry tag-entry">
+<header class=entry-header>
 <h2>Cara Menyiapkan Ceph Exporter [Containerized]</h2>
 </header>
 <section class=entry-content>
@@ -123,16 +134,6 @@ IMTEK
 </section>
 <footer class=entry-footer>September 6, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
 <a class=entry-link aria-label="post link to Cara Simulasi Kegagalan Disk Pada Klaster Ceph" href=https://blog.ajiarya.id/posts/ceph/cara-simulasi-kegagalan-disk-ceph/></a>
-</article>
-<article class="post-entry tag-entry">
-<header class=entry-header>
-<h2>Cara Menghapus OSD [Manual]</h2>
-</header>
-<section class=entry-content>
-<p>Panduan Hentikan servis jika masih berjalan sudo systemctl stop ceph-osd@&lt;id> Atur state OSD sebagai down dan out ceph osd set out &lt;id> ceph osd set down &lt;id> Hapus OSD dari klaster ceph # Hapus auth ceph auth rm osd.&lt;osd_id> # Hapus dari CRUSH Map ceph osd crush remove osd.&lt;osd_id> # Hapus dari OSD Map ceph osd rm &lt;osd_id> Zap disk # ceph-volume lvm destroy &lt;device_path> --destroy ceph-volume lvm destroy /dev/sdX --destroy Solusi (Workaround) Tidak bisa menjalankan ceph-volume lvm destroy Catat informasi mengenai OSD yang ingin dihapus block osd_id ceph-volume lvm list Format Disk menggunakan wipefs wipefs -fa &lt;device_path> Hapus LVM jika masih ada # Lihat device mapper dmsetup ls # Hapus device mapper OSD yang ingin dihapus dmsetup remove &lt;device_map> Zap disk # ceph-volume lvm destroy &lt;device_path> --destroy ceph-volume lvm destroy /dev/sdX --destroy Referensi Ceph Docs - ceph-volume ZAP The Geek Diary - dmsetup </p>
-</section>
-<footer class=entry-footer>September 5, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Menghapus OSD [Manual]" href=https://blog.ajiarya.id/posts/ceph/cara-menghapus-osd/></a>
 </article>
 <footer class=page-footer>
 <nav class=pagination>

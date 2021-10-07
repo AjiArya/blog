@@ -87,6 +87,16 @@ IMTEK
 </header>
 <article class=post-entry>
 <header class=entry-header>
+<h2>Cara Benchmark Web Menggunakan hey</h2>
+</header>
+<section class=entry-content>
+<p>Panduan Jalankan dengan jumlah request # 1000 request hey -n 1000 # 500 request bersamaan dengan sejumlah 1000 request hey -c 500 -n 1000 Jalankan dengan durasi waktu # 30 detik hey -z 30s # 5 menit hey -z 5m # 500 request bersamaan dengan durasi 5 menit hey -c 500 -z 5m Referensi GitHub - hey Man hey - Ubuntu </p>
+</section>
+<footer class=entry-footer>October 7, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Cara Benchmark Web Menggunakan hey" href=https://blog.ajiarya.id/posts/benchmark/cara-benchmark-web/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
 <h2>Cara Mengatur Mode PG Autoscale Pada Ceph Pool</h2>
 </header>
 <section class=entry-content>
@@ -107,6 +117,17 @@ IMTEK
 </article>
 <article class=post-entry>
 <header class=entry-header>
+<h2>Cara Menyiapkan Ceph Tiering</h2>
+</header>
+<section class=entry-content>
+<p>Pendahuluan Untuk menyiapkan ceph tiering kita harus menyiapkan 2 pool. 1 sebagai penyimpanan data tetap dan 1 sebagai cache.
+Panduan Buat crush rule untuk hdd dan ssd ceph osd crush rule create-replicated replicated_hdd default host hdd ceph osd crush rule create-replicated replicated_ssd default host ssd Buat pool untuk hdd dan ssd ceph osd pool create hot-storage 32 32 replicated replicated_ssd ceph osd pool create cold-storage 32 32 replicated replicated_hdd ceph osd pool application enable hot-storage rbd ceph osd pool application enable cold-storage rbd Tambahkan tier, atur cache-mode, dan atur overlay ceph osd tier add cold-storage hot-storage ceph osd tier cache-mode hot-storage writeback ceph osd tier set-overlay cold-storage hot-storage Atur hit_set_type ceph osd pool set hot-storage hit_set_type bloom Referensi Ceph Pools Ceph Tiering </p>
+</section>
+<footer class=entry-footer>October 7, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Cara Menyiapkan Ceph Tiering" href=https://blog.ajiarya.id/posts/ceph/cara-menyiapkan-ceph-tiering/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
 <h2>Cara Menyiapkan Node Exporter Pada Linux (CentOS/Ubuntu)</h2>
 </header>
 <section class=entry-content>
@@ -116,26 +137,6 @@ sudo useradd --no-create-home --shell /bin/false node_exporter Unduh, ekstrak, d
 </section>
 <footer class=entry-footer>October 7, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
 <a class=entry-link aria-label="post link to Cara Menyiapkan Node Exporter Pada Linux (CentOS/Ubuntu)" href=https://blog.ajiarya.id/posts/monitoring/cara-menyiapkan-node-exporter/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>Cara Memasang OpenStack Exporter</h2>
-</header>
-<section class=entry-content>
-<p>Prasyarat OpenStack terinstall Panduan Buat user openstack-exporter useradd --no-create-home --shell /bin/false openstack-exporter Buat file konfigurasi mkdir /etc/openstack/ cat&lt;&lt;EOF > /etc/openstack/clouds.yaml clouds: default: region_name: &lt;region_name> identity_api_version: 3 identity_interface: &lt;endpoint_interface> # admin/internal/public auth: username: &lt;username> password: &lt;password> project_name: &lt;project_name> project_domain_name: &lt;project_domain_name> project_domain_id: &lt;project_domain_id> user_domain_name: &lt;user_domain_name> auth_url: https://&lt;keystone_endpoint>:&lt;keystone_port>/v3 verify: false EOF Buat file systemd cat&lt;&lt;EOF > /etc/systemd/system/openstack-exporter.service [Unit] Description=OpenStack Exporter OPEX Wants=network-online.target After=network-online.target [Service] User=openstack-exporter Group=openstack-exporter Type=simple ExecStart=openstack-exporter Surabaya [Install] WantedBy=multi-user....</p>
-</section>
-<footer class=entry-footer>September 18, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Memasang OpenStack Exporter" href=https://blog.ajiarya.id/posts/openstack/cara-memasang-openstack-exporter/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>Cara Menghapus Node Rusak Pada Proxmox</h2>
-</header>
-<section class=entry-content>
-<p>Panduan SSH salah satu node yang masih bisa diakses ssh &lt;running_pve_node> Jalankan perintah berikut untuk melakukan penghapusan node pvecm delnode &lt;node_name> Hapus direktori konfigurasi node tersebut rm -rf /etc/pve/nodes/&lt;node_name> Muat ulang dashboard proxmox Referensi Proxmox Forum </p>
-</section>
-<footer class=entry-footer>September 18, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Menghapus Node Rusak Pada Proxmox" href=https://blog.ajiarya.id/posts/proxmox/cara-menghapus-node-rusak/></a>
 </article>
 <footer class=page-footer>
 <nav class=pagination>

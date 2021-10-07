@@ -7,6 +7,15 @@
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Thu, 07 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.ajiarya.id/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Benchmark</title>
+      <link>https://blog.ajiarya.id/tags/benchmark/</link>
+      <pubDate>Thu, 07 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.ajiarya.id/tags/benchmark/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Ceph</title>
       <link>https://blog.ajiarya.id/tags/ceph/</link>
       <pubDate>Thu, 07 Oct 2021 00:00:00 +0000</pubDate>
@@ -48,6 +57,15 @@
       <pubDate>Thu, 07 Oct 2021 00:00:00 +0000</pubDate>
       
       <guid>https://blog.ajiarya.id/tags/visualisasi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Website</title>
+      <link>https://blog.ajiarya.id/tags/website/</link>
+      <pubDate>Thu, 07 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.ajiarya.id/tags/website/</guid>
       <description></description>
     </item>
     

@@ -85,6 +85,32 @@ IMTEK
 <main class=main>
 <article class=post-entry>
 <header class=entry-header>
+<h2>Cara Menyiapkan Nextcloud Dengan Let's Encrypt</h2>
+</header>
+<section class=entry-content>
+<p>Panduan Pasang snap (Jika belum tersedia)
+Debian Based sudo apt install -y snapd RHEL Based sudo yum install -y epel-release sudo yum install -y snapd # atau sudo dnf install -y epel-release sudo dnf install -y snapd sudo systemctl enable --now snapd.socket sudo ln -s /var/lib/snapd/snap /snap Pasang Nextcloud melalui snapd
+sudo snap install nextcloud Konfigurasi Akun administratif sudo nextcloud....</p>
+</section>
+<footer class=entry-footer>September 5, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Cara Menyiapkan Nextcloud Dengan Let's Encrypt" href=https://blog.ajiarya.id/posts/nextcloud/cara-setup-nextcloud/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
+<h2>Memilih Deployment Tool Ceph</h2>
+</header>
+<section class=entry-content>
+<p>Panduan Rekomendasi cephadm (Container)
+cephadm tersedia sejak versi v15.2.0 (Octopus). cephadm mendeploy servis-servis Ceph dalam bentuk container, dengan cephadm mempermudah untuk memanajemen klaster seperti menambahkan, menghapuskan, atau memperbarui komponen Ceph.
+cephadm mendukung docker dan podman sebagai container runtime.
+Rook (Container / Manage by Kubernetes)
+Rook tersedia sejak versi Nautilus. Rook men-deploy dan melakukan manajemen klaster Ceph yang berjalan didalam Kubernetes. Jika ingin menggunakan Ceph sebagai storage untuk klaster Kubernetes, Rook adalah tool cocok digunakan....</p>
+</section>
+<footer class=entry-footer>September 5, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Memilih Deployment Tool Ceph" href=https://blog.ajiarya.id/posts/ceph/memilih-deployment-tool-ceph/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
 <h2>Cara Menghitung Jumlah PG Untuk Klaster Ceph</h2>
 </header>
 <section class=entry-content>
@@ -120,27 +146,6 @@ backstore adalah sumber daya penyimpanan yang akan disediakan dan bisa gunakan o
 </section>
 <footer class=entry-footer>September 4, 2021&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Aji Arya</footer>
 <a class=entry-link aria-label="post link to Cara Menyiapkan ISCSI Target - targetcli (Linux)" href=https://blog.ajiarya.id/posts/linux/cara-menyiapkan-iscsi-target-targetcli/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>Cara Stop atau Pause Klaster Ceph</h2>
-</header>
-<section class=entry-content>
-<p>Pendahuluan Saat kita ingin melakukan Maintenance atau Mematikan server sebaiknya kita menghentikan atau menjeda klaster Ceph yang sedang berjalan
-Panduan Menghentikan atau melakukan pause klaster ceph osd set noout ceph osd set norecover ceph osd set norebalance ceph osd set nobackfill ceph osd set nodown ceph osd set pause Menjalankan atau menghentikan pause klaster ceph osd unset noout ceph osd unset norecover ceph osd unset norebalance ceph osd unset nobackfill ceph osd unset nodown ceph osd unset pause Referensi Red Hat Ceph Storage 3 - 2....</p>
-</section>
-<footer class=entry-footer>September 4, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Stop atau Pause Klaster Ceph" href=https://blog.ajiarya.id/posts/ceph/cara-stop-atau-pause-klaster-ceph/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>Cara Setup OpenStack Magnum Dengan Deployment Kolla-Ansible [Kubernetes COE]</h2>
-</header>
-<section class=entry-content>
-<p>Lingkungan Sistem Operasi: CentOS 8 OpenStack: Ussuri Kolla-Ansible: 10.3.0 Kubernetes Image: Fedora CoreOS 32 Panduan Install Dependensi sudo dnf install -y python3-devel libffi-devel gcc openssl-devel python3-libselinux Siapkan python3 virtual environment python3 -m venv kolla source kolla/bin/activate Upgrade package pip pip install -U pip Install kolla-ansible & ansible pip install 'ansible&lt;2.10' kolla-ansible==10.3.0 Buat direktori /etc/kolla sudo mkdir -p /etc/kolla sudo chown $USER:$USER /etc/kolla Salin globals....</p>
-</section>
-<footer class=entry-footer>August 30, 2021&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Setup OpenStack Magnum Dengan Deployment Kolla-Ansible [Kubernetes COE]" href=https://blog.ajiarya.id/posts/openstack/cara-setup-magnum-kolla/></a>
 </article>
 <footer class=page-footer>
 <nav class=pagination>

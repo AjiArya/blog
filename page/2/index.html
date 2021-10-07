@@ -85,6 +85,26 @@ IMTEK
 <main class=main>
 <article class=post-entry>
 <header class=entry-header>
+<h2>Cara Memasang OpenStack Exporter</h2>
+</header>
+<section class=entry-content>
+<p>Prasyarat OpenStack terinstall Panduan Buat user openstack-exporter useradd --no-create-home --shell /bin/false openstack-exporter Buat file konfigurasi mkdir /etc/openstack/ cat&lt;&lt;EOF > /etc/openstack/clouds.yaml clouds: default: region_name: &lt;region_name> identity_api_version: 3 identity_interface: &lt;endpoint_interface> # admin/internal/public auth: username: &lt;username> password: &lt;password> project_name: &lt;project_name> project_domain_name: &lt;project_domain_name> project_domain_id: &lt;project_domain_id> user_domain_name: &lt;user_domain_name> auth_url: https://&lt;keystone_endpoint>:&lt;keystone_port>/v3 verify: false EOF Buat file systemd cat&lt;&lt;EOF > /etc/systemd/system/openstack-exporter.service [Unit] Description=OpenStack Exporter OPEX Wants=network-online.target After=network-online.target [Service] User=openstack-exporter Group=openstack-exporter Type=simple ExecStart=openstack-exporter Surabaya [Install] WantedBy=multi-user....</p>
+</section>
+<footer class=entry-footer>September 18, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Cara Memasang OpenStack Exporter" href=https://blog.ajiarya.id/posts/openstack/cara-memasang-openstack-exporter/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
+<h2>Cara Menghapus Node Rusak Pada Proxmox</h2>
+</header>
+<section class=entry-content>
+<p>Panduan SSH salah satu node yang masih bisa diakses ssh &lt;running_pve_node> Jalankan perintah berikut untuk melakukan penghapusan node pvecm delnode &lt;node_name> Hapus direktori konfigurasi node tersebut rm -rf /etc/pve/nodes/&lt;node_name> Muat ulang dashboard proxmox Referensi Proxmox Forum </p>
+</section>
+<footer class=entry-footer>September 18, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Cara Menghapus Node Rusak Pada Proxmox" href=https://blog.ajiarya.id/posts/proxmox/cara-menghapus-node-rusak/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
 <h2>Cara Menyiapkan Ceph Exporter [Containerized]</h2>
 </header>
 <section class=entry-content>
@@ -114,28 +134,6 @@ sudo systemctl daemon-reload sudo systemctl enable --now grafana-server Debian/U
 </section>
 <footer class=entry-footer>September 18, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
 <a class=entry-link aria-label="post link to Cara Menyiapkan Prometheus Pada Linux" href=https://blog.ajiarya.id/posts/monitoring/cara-menyiapkan-prometheus/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>Cara Pasang GitLab CE [CentOS 8]</h2>
-</header>
-<section class=entry-content>
-<p>Panduan Jalankan script untuk pemasangan repository curl https://packages.gitlab.com/install/repositories/gitlab/gitlab-ce/script.rpm.sh | sudo bash Pasang GitLab
-Menggunakan alamat Domain sudo EXTERNAL_URL="https://gitlab.example.com" dnf install -y gitlab-ce Menggunakan alamat IP # dengan alamat IP sudo EXTERNAL_URL="https://192.168.10.10" dnf install -y gitlab-ce Dapatkan password untuk login pertama kali
-sudo cat /etc/gitlab/initial_root_password Masuk GitLab via browser </p>
-</section>
-<footer class=entry-footer>September 18, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Pasang GitLab CE [CentOS 8]" href=https://blog.ajiarya.id/posts/gitlab/cara-memasang-gitlab-ce/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>Cara Menyiapkan Klaster Ceph Pada Proxmox 7</h2>
-</header>
-<section class=entry-content>
-<p>Prasyarat Proxmox terinstall Panduan Bootstrap ceph Buka menu ceph Pilih menu Datacenter Pilih menu Ceph Klik “Install Ceph” Pilih versi ceph Pilih ceph version Klik “Start pacific installation” Konfirmasi instalasi Ketik “Y”. Lalu tekan tombol enter Klik “Next” Konfigurasi klaster ceph Public Network Cluster Network Jumlah replika Minimum replika Monitor node pertama Instalasi sukses....</p>
-</section>
-<footer class=entry-footer>September 13, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Menyiapkan Klaster Ceph Pada Proxmox 7" href=https://blog.ajiarya.id/posts/proxmox/cara-menyiapkan-klaster-ceph-pada-proxmox-7/></a>
 </article>
 <footer class=page-footer>
 <nav class=pagination>
