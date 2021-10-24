@@ -3,7 +3,28 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://blog.ajiarya.id/</loc>
-    <lastmod>2021-10-07T00:00:00+00:00</lastmod>
+    <lastmod>2021-10-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.ajiarya.id/posts/docker/cara-import-export-docker-image/</loc>
+    <lastmod>2021-10-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.ajiarya.id/categories/</loc>
+    <lastmod>2021-10-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.ajiarya.id/tags/container/</loc>
+    <lastmod>2021-10-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.ajiarya.id/categories/docker/</loc>
+    <lastmod>2021-10-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.ajiarya.id/tags/linux/</loc>
+    <lastmod>2021-10-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.ajiarya.id/posts/</loc>
+    <lastmod>2021-10-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.ajiarya.id/tags/</loc>
+    <lastmod>2021-10-24T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.ajiarya.id/tags/benchmark/</loc>
     <lastmod>2021-10-07T00:00:00+00:00</lastmod>
@@ -26,9 +47,6 @@
     <loc>https://blog.ajiarya.id/posts/monitoring/cara-menyiapkan-node-exporter/</loc>
     <lastmod>2021-10-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.ajiarya.id/categories/</loc>
-    <lastmod>2021-10-07T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://blog.ajiarya.id/tags/ceph/</loc>
     <lastmod>2021-10-07T00:00:00+00:00</lastmod>
   </url><url>
@@ -41,16 +59,10 @@
     <loc>https://blog.ajiarya.id/categories/monitoring/</loc>
     <lastmod>2021-10-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.ajiarya.id/posts/</loc>
-    <lastmod>2021-10-07T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://blog.ajiarya.id/tags/prometheus/</loc>
     <lastmod>2021-10-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.ajiarya.id/tags/storage/</loc>
-    <lastmod>2021-10-07T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://blog.ajiarya.id/tags/</loc>
     <lastmod>2021-10-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.ajiarya.id/tags/visualisasi/</loc>
@@ -77,19 +89,10 @@
     <loc>https://blog.ajiarya.id/posts/gitlab/cara-memasang-gitlab-ce/</loc>
     <lastmod>2021-09-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.ajiarya.id/tags/container/</loc>
-    <lastmod>2021-09-18T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://blog.ajiarya.id/categories/docker/</loc>
-    <lastmod>2021-09-18T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://blog.ajiarya.id/tags/exporter/</loc>
     <lastmod>2021-09-18T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.ajiarya.id/tags/grafana/</loc>
-    <lastmod>2021-09-18T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://blog.ajiarya.id/tags/linux/</loc>
     <lastmod>2021-09-18T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.ajiarya.id/tags/metric/</loc>

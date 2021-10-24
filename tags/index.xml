@@ -5,7 +5,25 @@
     <link>https://blog.ajiarya.id/tags/</link>
     <description>Recent content in Tags on Aji Arya</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 07 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.ajiarya.id/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 24 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.ajiarya.id/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Container</title>
+      <link>https://blog.ajiarya.id/tags/container/</link>
+      <pubDate>Sun, 24 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.ajiarya.id/tags/container/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Linux</title>
+      <link>https://blog.ajiarya.id/tags/linux/</link>
+      <pubDate>Sun, 24 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.ajiarya.id/tags/linux/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Benchmark</title>
       <link>https://blog.ajiarya.id/tags/benchmark/</link>
@@ -70,15 +88,6 @@
     </item>
     
     <item>
-      <title>Container</title>
-      <link>https://blog.ajiarya.id/tags/container/</link>
-      <pubDate>Sat, 18 Sep 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.ajiarya.id/tags/container/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Exporter</title>
       <link>https://blog.ajiarya.id/tags/exporter/</link>
       <pubDate>Sat, 18 Sep 2021 00:00:00 +0000</pubDate>
@@ -93,15 +102,6 @@
       <pubDate>Sat, 18 Sep 2021 00:00:00 +0000</pubDate>
       
       <guid>https://blog.ajiarya.id/tags/grafana/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Linux</title>
-      <link>https://blog.ajiarya.id/tags/linux/</link>
-      <pubDate>Sat, 18 Sep 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.ajiarya.id/tags/linux/</guid>
       <description></description>
     </item>
     

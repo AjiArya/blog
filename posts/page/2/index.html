@@ -87,6 +87,18 @@ IMTEK
 </header>
 <article class=post-entry>
 <header class=entry-header>
+<h2>Cara Menyiapkan Node Exporter Pada Linux (CentOS/Ubuntu)</h2>
+</header>
+<section class=entry-content>
+<p>Panduan Menyiapkan Node Exporter Kunjungi website prometheus untuk melihat versi node exporter yang tersedia https://prometheus.io/download/#node_exporter
+Buat user
+sudo useradd --no-create-home --shell /bin/false node_exporter Unduh, ekstrak, dan pasang node exporter wget https://github.com/prometheus/node_exporter/releases/download/v1.2.2/node_exporter-1.2.2.linux-amd64.tar.gz tar xf node_exporter-1.2.2.linux-amd64.tar.gz sudo cp node_exporter-1.2.2.linux-amd64/node_exporter /usr/local/bin/node_exporter Buat file servis node_exporter sudo bash -c 'cat&lt;&lt;EOF > /etc/systemd/system/node_exporter.service [Unit] Description=Node Exporter Wants=network-online.target After=network-online.target [Service] User=node_exporter Group=node_exporter Type=simple ExecStart=/usr/local/bin/node_exporter [Install] WantedBy=multi-user.target EOF' Jalankan servis node_exporter sudo systemctl enable --now node_exporter sudo systemctl status node_exporter Tambahkan konfigurasi pada prometheus....</p>
+</section>
+<footer class=entry-footer>October 7, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Cara Menyiapkan Node Exporter Pada Linux (CentOS/Ubuntu)" href=https://blog.ajiarya.id/posts/monitoring/cara-menyiapkan-node-exporter/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
 <h2>Cara Memasang OpenStack Exporter</h2>
 </header>
 <section class=entry-content>
@@ -126,16 +138,6 @@ sudo systemctl daemon-reload sudo systemctl enable --now grafana-server Debian/U
 </section>
 <footer class=entry-footer>September 18, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
 <a class=entry-link aria-label="post link to Cara Menyiapkan Grafana Pada Linux (CentOS/Ubuntu)" href=https://blog.ajiarya.id/posts/monitoring/cara-menyiapkan-grafana/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>Cara Menyiapkan Prometheus Pada Linux</h2>
-</header>
-<section class=entry-content>
-<p>Panduan Buat user prometheus sudo useradd --no-create-home --shell /bin/false prometheus Unduh dan pasang prometheus wget https://github.com/prometheus/prometheus/releases/download/v2.30.0/prometheus-2.30.0.linux-amd64.tar.gz tar xf prometheus-2.30.0.linux-amd64.tar.gz sudo cp prometheus-2.30.0.linux-amd64/prometheus /usr/local/bin/prometheus Buat konfigurasi prometheus sudo mkdir /etc/prometheus sudo bash -c 'cat &lt;&lt;EOF > /etc/prometheus/prometheus.yml global: scrape_interval: 15s evaluation_interval: 15s scrape_configs: - job_name: 'prometheus' static_configs: - targets: - localhost:9090 EOF' Buat file systemd untuk prometheus sudo mkdir /var/lib/prometheus sudo chown prometheus:prometheus /var/lib/prometheus sudo bash -c 'cat&lt;&lt;EOF > /etc/systemd/system/prometheus....</p>
-</section>
-<footer class=entry-footer>September 18, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Menyiapkan Prometheus Pada Linux" href=https://blog.ajiarya.id/posts/monitoring/cara-menyiapkan-prometheus/></a>
 </article>
 <footer class=page-footer>
 <nav class=pagination>

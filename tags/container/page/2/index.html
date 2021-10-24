@@ -3,11 +3,11 @@
 <meta http-equiv=x-ua-compatible content="IE=edge">
 <meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
 <meta name=robots content="index, follow">
-<title>Docker | Aji Arya</title>
+<title>Container | Aji Arya</title>
 <meta name=keywords content>
 <meta name=description content="Aji Arya's Personal Blog">
 <meta name=author content="Aji Arya">
-<link rel=canonical href=https://blog.ajiarya.id/categories/docker/>
+<link rel=canonical href=https://blog.ajiarya.id/tags/container/>
 <meta name=google-site-verification content="7xkl7tm1-iJxieMKGetoXQpqJffAVKatOFgXg7ddX_Y">
 <link crossorigin=anonymous href=/assets/css/stylesheet.min.35cd0f65a15cafa92372b8313deef5960aae04b90ad722f2bbf509eb0468137e.css integrity="sha256-Nc0PZaFcr6kjcrgxPe71lgquBLkK1yLyu/UJ6wRoE34=" rel="preload stylesheet" as=style>
 <link rel=icon href=https://blog.ajiarya.id/favicon.ico>
@@ -18,13 +18,13 @@
 <meta name=theme-color content="#2e2e33">
 <meta name=msapplication-TileColor content="#2e2e33">
 <meta name=generator content="Hugo 0.88.1">
-<link rel=alternate type=application/rss+xml href=https://blog.ajiarya.id/categories/docker/index.xml>
-<script type=application/javascript>var doNotTrack=!1;doNotTrack||(function(a,e,f,g,b,c,d){a.GoogleAnalyticsObject=b,a[b]=a[b]||function(){(a[b].q=a[b].q||[]).push(arguments)},a[b].l=1*new Date,c=e.createElement(f),d=e.getElementsByTagName(f)[0],c.async=1,c.src=g,d.parentNode.insertBefore(c,d)}(window,document,'script','https://www.google-analytics.com/analytics.js','ga'),ga('create','UA-182251419-3','auto'),ga('send','pageview'))</script><meta property="og:title" content="Docker">
+<link rel=alternate type=application/rss+xml href=https://blog.ajiarya.id/tags/container/index.xml>
+<script type=application/javascript>var doNotTrack=!1;doNotTrack||(function(a,e,f,g,b,c,d){a.GoogleAnalyticsObject=b,a[b]=a[b]||function(){(a[b].q=a[b].q||[]).push(arguments)},a[b].l=1*new Date,c=e.createElement(f),d=e.getElementsByTagName(f)[0],c.async=1,c.src=g,d.parentNode.insertBefore(c,d)}(window,document,'script','https://www.google-analytics.com/analytics.js','ga'),ga('create','UA-182251419-3','auto'),ga('send','pageview'))</script><meta property="og:title" content="Container">
 <meta property="og:description" content="Aji Arya's Personal Blog">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://blog.ajiarya.id/categories/docker/"><meta property="og:site_name" content="Aji Arya">
+<meta property="og:url" content="https://blog.ajiarya.id/tags/container/"><meta property="og:site_name" content="Aji Arya">
 <meta name=twitter:card content="summary">
-<meta name=twitter:title content="Docker">
+<meta name=twitter:title content="Container">
 <meta name=twitter:description content="Aji Arya's Personal Blog">
 </head>
 <body class=list id=top>
@@ -81,42 +81,25 @@ IMTEK
 </nav>
 </header>
 <main class=main>
-<header class=page-header><div class=breadcrumbs><a href=https://blog.ajiarya.id>Home</a>&nbsp;»&nbsp;<a href=https://blog.ajiarya.id/categories/>Categories</a></div>
-<h1>Docker</h1>
+<header class=page-header><div class=breadcrumbs><a href=https://blog.ajiarya.id>Home</a>&nbsp;»&nbsp;<a href=https://blog.ajiarya.id/tags/>Tags</a></div>
+<h1>Container</h1>
 </header>
 <article class="post-entry tag-entry">
 <header class=entry-header>
-<h2>Cara Import & Export Docker Image</h2>
+<h2>Memasang Kata Container dengan Containerd Pada Ubuntu 20.04</h2>
 </header>
 <section class=entry-content>
-<p>Panduan Simpan docker image Tanpa kompresi # Contoh: # docker save name_image/id_image:tag > nama_output docker save nginx:latest > nginx.tar Dengan kompresi # Contoh: # docker save name_image/id_image:tag | gzip > nama_output docker save nginx:latest | gzip > nginx.tar.gz Perbandingan tanpa kompresi dengan kompresi gzip terhadap container image nginx
-smolflow :: ~ » ls -lh nginx.tar nginx.tar.gz -rw-r--r-- 1 ada ada 132M Oct 24 20:16 nginx.tar -rw-r--r-- 1 ada ada 50M Oct 24 20:16 nginx....</p>
+<p>Prasyarat Baremetal atau Virtualisasi yang mendukung Nested Virtualization Panduan 1. Pasang Repository Kata Container ARCH=$(arch) BRANCH="${BRANCH:-master}" sudo sh -c "echo 'deb http://download.opensuse.org/repositories/home:/katacontainers:/releases:/${ARCH}:/${BRANCH}/xUbuntu_$(lsb_release -rs)/ /' > /etc/apt/sources.list.d/kata-containers.list" curl -sL http://download.opensuse.org/repositories/home:/katacontainers:/releases:/${ARCH}:/${BRANCH}/xUbuntu_$(lsb_release -rs)/Release.key | sudo apt-key add - sudo -E apt-get update sudo -E apt-get -y install kata-runtime kata-proxy kata-shim 2. Periksa kemampuan host untuk menjalankan Kata Container kata-runtime kata-check Keluaran yang diharapkan
+student@kata-host:~$ kata-runtime kata-check No newer release available System is capable of running Kata Containers 3....</p>
 </section>
-<footer class=entry-footer>October 24, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Import & Export Docker Image" href=https://blog.ajiarya.id/posts/docker/cara-import-export-docker-image/></a>
+<footer class=entry-footer>August 3, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Memasang Kata Container dengan Containerd Pada Ubuntu 20.04" href=https://blog.ajiarya.id/posts/kata/install-kata/></a>
 </article>
-<article class="post-entry tag-entry">
-<header class=entry-header>
-<h2>Cara Pasang GitLab CE [CentOS 8]</h2>
-</header>
-<section class=entry-content>
-<p>Panduan Jalankan script untuk pemasangan repository curl https://packages.gitlab.com/install/repositories/gitlab/gitlab-ce/script.rpm.sh | sudo bash Pasang GitLab
-Menggunakan alamat Domain sudo EXTERNAL_URL="https://gitlab.example.com" dnf install -y gitlab-ce Menggunakan alamat IP # dengan alamat IP sudo EXTERNAL_URL="https://192.168.10.10" dnf install -y gitlab-ce Dapatkan password untuk login pertama kali
-sudo cat /etc/gitlab/initial_root_password Masuk GitLab via browser </p>
-</section>
-<footer class=entry-footer>September 18, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Pasang GitLab CE [CentOS 8]" href=https://blog.ajiarya.id/posts/gitlab/cara-memasang-gitlab-ce/></a>
-</article>
-<article class="post-entry tag-entry">
-<header class=entry-header>
-<h2>Cara Pasang Docker Pada Linux (CentOS/Ubuntu)</h2>
-</header>
-<section class=entry-content>
-<p>Panduan CentOS Pasang repository resmi docker # yum sudo yum install -y yum-utils sudo yum-config-manager \ --add-repo \ https://download.docker.com/linux/centos/docker-ce.repo # dnf sudo dnf -y install dnf-plugins-core sudo dnf config-manager \ --add-repo \ https://download.docker.com/linux/centos/docker-ce.repo Pasang docker # yum sudo yum install -y docker-ce docker-ce-cli containerd.io # dnf sudo dnf install -y docker-ce docker-ce-cli containerd.io Enable dan jalankan servis systemctl enable --now docker Verifikasi docker info Ubuntu Pasang repository resmi docker curl -fsSL https://download....</p>
-</section>
-<footer class=entry-footer>September 13, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Pasang Docker Pada Linux (CentOS/Ubuntu)" href=https://blog.ajiarya.id/posts/docker/cara-pasang-docker-pada-linux/></a>
-</article>
+<footer class=page-footer>
+<nav class=pagination>
+<a class=prev href=https://blog.ajiarya.id/tags/container/>« Prev Page</a>
+</nav>
+</footer>
 </main>
 <footer class=footer>
 <span>&copy; 2021 <a href=https://blog.ajiarya.id>Aji Arya</a></span>

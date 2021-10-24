@@ -86,6 +86,17 @@ IMTEK
 </header>
 <article class="post-entry tag-entry">
 <header class=entry-header>
+<h2>Cara Import & Export Docker Image</h2>
+</header>
+<section class=entry-content>
+<p>Panduan Simpan docker image Tanpa kompresi # Contoh: # docker save name_image/id_image:tag > nama_output docker save nginx:latest > nginx.tar Dengan kompresi # Contoh: # docker save name_image/id_image:tag | gzip > nama_output docker save nginx:latest | gzip > nginx.tar.gz Perbandingan tanpa kompresi dengan kompresi gzip terhadap container image nginx
+smolflow :: ~ » ls -lh nginx.tar nginx.tar.gz -rw-r--r-- 1 ada ada 132M Oct 24 20:16 nginx.tar -rw-r--r-- 1 ada ada 50M Oct 24 20:16 nginx....</p>
+</section>
+<footer class=entry-footer>October 24, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Cara Import & Export Docker Image" href=https://blog.ajiarya.id/posts/docker/cara-import-export-docker-image/></a>
+</article>
+<article class="post-entry tag-entry">
+<header class=entry-header>
 <h2>Cara Pasang GitLab CE [CentOS 8]</h2>
 </header>
 <section class=entry-content>
@@ -127,17 +138,11 @@ Buat direktori untuk menyimpan konten mkdir website echo '&lt;h1>Halo Dunia!&lt;
 <footer class=entry-footer>August 10, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
 <a class=entry-link aria-label="post link to Cara Install Podman, Skopeo, dan Buildah Pada Linux (CentOS/Rocky)" href=https://blog.ajiarya.id/posts/podman/cara-install-container-tools/></a>
 </article>
-<article class="post-entry tag-entry">
-<header class=entry-header>
-<h2>Memasang Kata Container dengan Containerd Pada Ubuntu 20.04</h2>
-</header>
-<section class=entry-content>
-<p>Prasyarat Baremetal atau Virtualisasi yang mendukung Nested Virtualization Panduan 1. Pasang Repository Kata Container ARCH=$(arch) BRANCH="${BRANCH:-master}" sudo sh -c "echo 'deb http://download.opensuse.org/repositories/home:/katacontainers:/releases:/${ARCH}:/${BRANCH}/xUbuntu_$(lsb_release -rs)/ /' > /etc/apt/sources.list.d/kata-containers.list" curl -sL http://download.opensuse.org/repositories/home:/katacontainers:/releases:/${ARCH}:/${BRANCH}/xUbuntu_$(lsb_release -rs)/Release.key | sudo apt-key add - sudo -E apt-get update sudo -E apt-get -y install kata-runtime kata-proxy kata-shim 2. Periksa kemampuan host untuk menjalankan Kata Container kata-runtime kata-check Keluaran yang diharapkan
-student@kata-host:~$ kata-runtime kata-check No newer release available System is capable of running Kata Containers 3....</p>
-</section>
-<footer class=entry-footer>August 3, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Memasang Kata Container dengan Containerd Pada Ubuntu 20.04" href=https://blog.ajiarya.id/posts/kata/install-kata/></a>
-</article>
+<footer class=page-footer>
+<nav class=pagination>
+<a class=next href=https://blog.ajiarya.id/tags/container/page/2/>Next Page »</a>
+</nav>
+</footer>
 </main>
 <footer class=footer>
 <span>&copy; 2021 <a href=https://blog.ajiarya.id>Aji Arya</a></span>
