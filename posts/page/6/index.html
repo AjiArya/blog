@@ -87,6 +87,16 @@ IMTEK
 </header>
 <article class=post-entry>
 <header class=entry-header>
+<h2>Cara Menghapus OSD [Manual]</h2>
+</header>
+<section class=entry-content>
+<p>Panduan Hentikan servis jika masih berjalan sudo systemctl stop ceph-osd@&lt;id> Atur state OSD sebagai down dan out ceph osd set out &lt;id> ceph osd set down &lt;id> Hapus OSD dari klaster ceph # Hapus auth ceph auth rm osd.&lt;osd_id> # Hapus dari CRUSH Map ceph osd crush remove osd.&lt;osd_id> # Hapus dari OSD Map ceph osd rm &lt;osd_id> Zap disk # ceph-volume lvm destroy &lt;device_path> --destroy ceph-volume lvm destroy /dev/sdX --destroy Solusi (Workaround) Tidak bisa menjalankan ceph-volume lvm destroy Catat informasi mengenai OSD yang ingin dihapus block osd_id ceph-volume lvm list Format Disk menggunakan wipefs wipefs -fa &lt;device_path> Hapus LVM jika masih ada # Lihat device mapper dmsetup ls # Hapus device mapper OSD yang ingin dihapus dmsetup remove &lt;device_map> Zap disk # ceph-volume lvm destroy &lt;device_path> --destroy ceph-volume lvm destroy /dev/sdX --destroy Referensi Ceph Docs - ceph-volume ZAP The Geek Diary - dmsetup </p>
+</section>
+<footer class=entry-footer>September 5, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Cara Menghapus OSD [Manual]" href=https://blog.ajiarya.id/posts/ceph/cara-menghapus-osd/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
 <h2>Cara Mengubah Device Class OSD</h2>
 </header>
 <section class=entry-content>
@@ -135,16 +145,6 @@ Panduan Gunakan perhitungan 50-100 PG untuk 1 OSD Hitung jumlah OSD pada klaster
 </section>
 <footer class=entry-footer>September 4, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
 <a class=entry-link aria-label="post link to Cara Menghitung Jumlah PG Untuk Klaster Ceph" href=https://blog.ajiarya.id/posts/ceph/cara-menghitung-pg-untuk-klaster-ceph/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>Cara Menyiapkan ISCSI Initiator (Linux)</h2>
-</header>
-<section class=entry-content>
-<p>Panduan Install package open-iscsi Debian Based sudo apt install -y open-iscsi RHEL Based sudo dnf install -y iscsi-initiator-utils # atau sudo yum install -y iscsi-initiator-utils Konfigurasi IQN initiator sudo vim /etc/iscsi/initiatorname.iscsi Tambahkan baris berikut InitiatorName=iqn.2021-08.aa-lio-initiator:lio.initiator01 Konfigurasi iscsi initiator sudo vim /etc/iscsi/iscsid.conf Sesuaikan baris berikut node.session.auth.authmethod = CHAP node.session.auth.username = &lt;user> node.session.auth.password = &lt;password> Restart servis iscsi Debian Based sudo systemctl restart iscsid open-iscsi RHEL Based sudo systemctl restart iscsid Discover target sudo iscsiadm -m discovery -t sendtargets -p &lt;ip_iscsi_target> Masuk iSCSI target (Login) sudo iscsiadm -m node --login Verifikasi sudo iscsiadm -m session -o show Referensi Server World - iSCSI Initiator (Debian 11) Server World - iSCSI Initiator (CentOS 8) </p>
-</section>
-<footer class=entry-footer>September 4, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Menyiapkan ISCSI Initiator (Linux)" href=https://blog.ajiarya.id/posts/linux/cara-menyiapkan-iscsi-initiator/></a>
 </article>
 <footer class=page-footer>
 <nav class=pagination>

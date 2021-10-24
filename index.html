@@ -116,6 +116,16 @@ smolflow :: ~ » ls -lh nginx.tar nginx.tar.gz -rw-r--r-- 1 ada ada 132M Oct 24 
 </article>
 <article class=post-entry>
 <header class=entry-header>
+<h2>Cara Import Container Image Containerd Kubernetes</h2>
+</header>
+<section class=entry-content>
+<p>Panduan # Contoh: # ctr -n=k8s.io images import &lt;nama_file> ctr -n=k8s.io images import nginx.tar Referensi Scott’s Blog </p>
+</section>
+<footer class=entry-footer>October 24, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Cara Import Container Image Containerd Kubernetes" href=https://blog.ajiarya.id/posts/kubernetes/cara-import-container-image-containerd-kubernetes/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
 <h2>Cara Benchmark Web Menggunakan hey</h2>
 </header>
 <section class=entry-content>
@@ -143,17 +153,6 @@ smolflow :: ~ » ls -lh nginx.tar nginx.tar.gz -rw-r--r-- 1 ada ada 132M Oct 24 
 </section>
 <footer class=entry-footer>October 7, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
 <a class=entry-link aria-label="post link to Cara Menghilangkan warning insecure global_id reclaim Pada Ceph" href=https://blog.ajiarya.id/posts/ceph/cara-menghilangkan-insecure-global-id-reclaim/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>Cara Menyiapkan Ceph Tiering</h2>
-</header>
-<section class=entry-content>
-<p>Pendahuluan Untuk menyiapkan ceph tiering kita harus menyiapkan 2 pool. 1 sebagai penyimpanan data tetap dan 1 sebagai cache.
-Panduan Buat crush rule untuk hdd dan ssd ceph osd crush rule create-replicated replicated_hdd default host hdd ceph osd crush rule create-replicated replicated_ssd default host ssd Buat pool untuk hdd dan ssd ceph osd pool create hot-storage 32 32 replicated replicated_ssd ceph osd pool create cold-storage 32 32 replicated replicated_hdd ceph osd pool application enable hot-storage rbd ceph osd pool application enable cold-storage rbd Tambahkan tier, atur cache-mode, dan atur overlay ceph osd tier add cold-storage hot-storage ceph osd tier cache-mode hot-storage writeback ceph osd tier set-overlay cold-storage hot-storage Atur hit_set_type ceph osd pool set hot-storage hit_set_type bloom Referensi Ceph Pools Ceph Tiering </p>
-</section>
-<footer class=entry-footer>October 7, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Menyiapkan Ceph Tiering" href=https://blog.ajiarya.id/posts/ceph/cara-menyiapkan-ceph-tiering/></a>
 </article>
 <footer class=page-footer>
 <nav class=pagination>

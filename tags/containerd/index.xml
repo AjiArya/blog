@@ -5,7 +5,16 @@
     <link>https://blog.ajiarya.id/tags/containerd/</link>
     <description>Recent content in Containerd on Aji Arya</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 03 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.ajiarya.id/tags/containerd/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 24 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.ajiarya.id/tags/containerd/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cara Import Container Image Containerd Kubernetes</title>
+      <link>https://blog.ajiarya.id/posts/kubernetes/cara-import-container-image-containerd-kubernetes/</link>
+      <pubDate>Sun, 24 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.ajiarya.id/posts/kubernetes/cara-import-container-image-containerd-kubernetes/</guid>
+      <description>Cara import container image containerd kubernetes</description>
+    </item>
+    
     <item>
       <title>Memasang Kata Container dengan Containerd Pada Ubuntu 20.04</title>
       <link>https://blog.ajiarya.id/posts/kata/install-kata/</link>

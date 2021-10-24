@@ -16,6 +16,24 @@
     </item>
     
     <item>
+      <title>Containerd</title>
+      <link>https://blog.ajiarya.id/tags/containerd/</link>
+      <pubDate>Sun, 24 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.ajiarya.id/tags/containerd/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Kubernetes</title>
+      <link>https://blog.ajiarya.id/tags/kubernetes/</link>
+      <pubDate>Sun, 24 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.ajiarya.id/tags/kubernetes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Linux</title>
       <link>https://blog.ajiarya.id/tags/linux/</link>
       <pubDate>Sun, 24 Oct 2021 00:00:00 +0000</pubDate>
@@ -210,15 +228,6 @@
       <pubDate>Fri, 10 Sep 2021 00:00:00 +0000</pubDate>
       
       <guid>https://blog.ajiarya.id/tags/ha/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Kubernetes</title>
-      <link>https://blog.ajiarya.id/tags/kubernetes/</link>
-      <pubDate>Fri, 10 Sep 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.ajiarya.id/tags/kubernetes/</guid>
       <description></description>
     </item>
     
@@ -444,15 +453,6 @@
       <pubDate>Wed, 04 Aug 2021 00:00:00 +0000</pubDate>
       
       <guid>https://blog.ajiarya.id/tags/ubuntu/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Containerd</title>
-      <link>https://blog.ajiarya.id/tags/containerd/</link>
-      <pubDate>Tue, 03 Aug 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.ajiarya.id/tags/containerd/</guid>
       <description></description>
     </item>
     
