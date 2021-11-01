@@ -5,7 +5,16 @@
     <link>https://blog.ajiarya.id/posts/</link>
     <description>Recent content in Posts on Aji Arya</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 24 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.ajiarya.id/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 01 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.ajiarya.id/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cara Pasang NVIDIA Driver dan Library CUDNN</title>
+      <link>https://blog.ajiarya.id/posts/linux/cara-pasang-nvidia-driver/</link>
+      <pubDate>Mon, 01 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.ajiarya.id/posts/linux/cara-pasang-nvidia-driver/</guid>
+      <description>Cara pasang nvidia driver</description>
+    </item>
+    
     <item>
       <title>Cara Import &amp; Export Docker Image</title>
       <link>https://blog.ajiarya.id/posts/docker/cara-import-export-docker-image/</link>

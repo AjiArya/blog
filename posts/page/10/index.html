@@ -87,6 +87,18 @@ IMTEK
 </header>
 <article class=post-entry>
 <header class=entry-header>
+<h2>Cara Remote Port Forwarding SSH</h2>
+</header>
+<section class=entry-content>
+<p>Pendahuluan Remote Port Forwarding adalah salah satu cara agar kita bisa menyediakan service atau port yang ada pada localhost agar bisa digunakan oleh remote host.
+Sebagai contoh kita akan menggunakan squid3 yang tersedia pada localhost yang kemudian akan diakses oleh remote host
+Panduan ssh -R [remote_address_bind]:[remote_port_bind]:[local_address_bind]:[local_port_bind] &lt;remote_host> Contoh laptopku menjalankan proxy server yang tersedia pada alamat 0.0.0.0:3128 lalu saya ingin mencoba mengakses proxy server tersebut dari home-lab pada alamat 127.0.0.1:8080...</p>
+</section>
+<footer class=entry-footer>August 23, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Cara Remote Port Forwarding SSH" href=https://blog.ajiarya.id/posts/linux/cara-ssh-remote-forwarding-port/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
 <h2>Cara Deploy Ceph Cluster Menggunakan cephadm Pada Rocky Linux 8</h2>
 </header>
 <section class=entry-content>
@@ -128,16 +140,6 @@ Cara manual jika tanpa menggunakan ssh config: ssh ubuntu@1.tcp.jp.ngrok.io -p22
 </section>
 <footer class=entry-footer>August 20, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
 <a class=entry-link aria-label="post link to Cara Membuat Cluster Elasticsearch 7 beserta module security xpack [Debian/Ubuntu]" href=https://blog.ajiarya.id/posts/elk/elasticsearch/cara-membuat-cluster-elasticsearch-7/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>Cara Membuat Image Libvirt Menggunakan python-tfgen</h2>
-</header>
-<section class=entry-content>
-<p>Prasyarat Terraform python-tfgen Storage Pool (Baca disini untuk cara membuat Storage Pool) Panduan Buat yaml dengan kind: image lalu isikan dengan daftar image yang diinginkan image.yaml kind: image uri: "qemu:///system" spec: - name: debian-bullseye url: "https://cdimage.debian.org/images/cloud/bullseye/latest/debian-11-genericcloud-amd64.qcow2" pool: images - name: ubuntu-focal url: "https://cloud-images.ubuntu.com/focal/current/focal-server-cloudimg-amd64.img" pool: images Buat HCL berdasarkan yaml yang telah dibuat ./tfgen.py -f image.yaml -o image image/main.tf (Hasil tfgen) terraform { required_providers { libvirt = { source = "dmacvicar/libvirt" } } } provider "libvirt" { uri = "qemu:///system" } resource "libvirt_volume" "debian-bullseye" { name = "debian-bullseye" source = "https://cdimage....</p>
-</section>
-<footer class=entry-footer>August 17, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Membuat Image Libvirt Menggunakan python-tfgen" href=https://blog.ajiarya.id/posts/python-tfgen/cara-membuat-image-dengan-python-tfgen/></a>
 </article>
 <footer class=page-footer>
 <nav class=pagination>

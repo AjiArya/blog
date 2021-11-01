@@ -86,6 +86,16 @@ IMTEK
 </header>
 <article class="post-entry tag-entry">
 <header class=entry-header>
+<h2>Cara Pasang NVIDIA Driver dan Library CUDNN</h2>
+</header>
+<section class=entry-content>
+<p>Prasyarat Akun NVIDIA Developer Panduan Unduh cuda disini dan cudnn disini # Create directory mkdir /root/nvidia; cd /root/nvidia/ # cuda wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64/cuda-ubuntu1804.pin wget https://developer.download.nvidia.com/compute/cuda/11.4.2/local_installers/cuda-repo-ubuntu1804-11-4-local_11.4.2-470.57.02-1_amd64.deb # cudnn wget -O cudnn-11.4-linux-x64-v8.2.4.15.tgz \ https://developer.nvidia.com/compute/machine-learning/cudnn/secure/8.2.4/11.4_20210831/cudnn-11.4-linux-x64-v8.2.4.15.tgz?&lt;download_token> wget -O libcudnn8-8.2.4.15-1.cuda11.4.x86_64.rpm \ https://developer.download.nvidia.com/compute/machine-learning/cudnn/secure/8.2.4/11.4_20210831/RHEL8_1-x64/libcudnn8-8.2.4.15-1.cuda11.4.x86_64.rpm?&lt;download_token> wget -O libcudnn8-devel-8.2.4.15-1.cuda11.4.x86_64.rpm \ https://developer.download.nvidia.com/compute/machine-learning/cudnn/secure/8.2.4/11.4_20210831/RHEL8_1-x64/libcudnn8-devel-8.2.4.15-1.cuda11.4.x86_64.rpm?&lt;download_token> wget -O libcudnn8-samples-8.2.4.15-1.cuda11.4.x86_64.rpm \ https://developer.download.nvidia.com/compute/machine-learning/cudnn/secure/8.2.4/11.4_20210831/RHEL8_1-x64/libcudnn8-samples-8.2.4.15-1.cuda11.4.x86_64.rpm?&lt;download_token> Pasang cuda mv cuda-ubuntu1804.pin /etc/apt/preferences.d/cuda-repository-pin-600 dpkg -i cuda-repo-ubuntu1804-11-4-local_11.4.2-470.57.02-1_amd64.deb apt-key add /var/cuda-repo-ubuntu1804-11-4-local/7fa2af80.pub apt-get update apt-get -y install cuda Pasang cudnn library # pasang cudnn library file tar -xzvf cudnn-11....</p>
+</section>
+<footer class=entry-footer>November 1, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Cara Pasang NVIDIA Driver dan Library CUDNN" href=https://blog.ajiarya.id/posts/linux/cara-pasang-nvidia-driver/></a>
+</article>
+<article class="post-entry tag-entry">
+<header class=entry-header>
 <h2>Cara Import & Export Docker Image</h2>
 </header>
 <section class=entry-content>
@@ -128,16 +138,6 @@ Debian Based sudo apt update sudo apt install -y dnsmasq RHEL Based sudo yum upd
 </section>
 <footer class=entry-footer>September 12, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
 <a class=entry-link aria-label="post link to Cara Konfigurasi DNS Server menggunakan dnsmasq" href=https://blog.ajiarya.id/posts/linux/cara-konfigurasi-dns-server-menggunakan-dnsmasq/></a>
-</article>
-<article class="post-entry tag-entry">
-<header class=entry-header>
-<h2>Cara SSH Jump Host</h2>
-</header>
-<section class=entry-content>
-<p>Panduan Perintah # 1 Lompatan ssh -J &lt;user>@&lt;machine-1> &lt;user>@&lt;machine-2> # 2 Lompatan ssh -J &lt;user>@&lt;machine-1>,&lt;machine-2> &lt;user>@&lt;machine-3> # 3 Lompatan ssh -J &lt;user>@&lt;machine-1>,&lt;machine-2>,&lt;user>@&lt;machine-3> &lt;user>@&lt;machine-4> Contoh Contoh 1: SSH Jump dari 192.168.10.2 ke 192.168.10.3 ssh -J user@192.168.10.2 user@192.168.10.3 Contoh 2: SSH Jump dari 192.168.10.2 lalu 192.168.10.3 ke 192.168.10.4 ssh -J user@192.168.10.2,user@192.168.10.3 user@192.168.10.4 Referensi Gentoo Linux - SSH Jump Host </p>
-</section>
-<footer class=entry-footer>September 11, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara SSH Jump Host" href=https://blog.ajiarya.id/posts/linux/cara-ssh-jump/></a>
 </article>
 <footer class=page-footer>
 <nav class=pagination>

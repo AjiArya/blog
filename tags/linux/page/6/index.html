@@ -86,6 +86,18 @@ IMTEK
 </header>
 <article class="post-entry tag-entry">
 <header class=entry-header>
+<h2>Cara SCP Antar Dua Host Remote</h2>
+</header>
+<section class=entry-content>
+<p>Pendahuluan Cara ini digunakan agar kita tidak melakukan hal yang membosankan seperti kejadian berikut
+Conor ingin mengirimkan file dari host1 ke host2 dan hal yang dilakukannya adalah mengirimkan file dari host1 ke localhost terlebih dahulu dan lalu mengirimkan file dari localhost ke host2
+Conor menyalin file file100Giga dari host1 ke localhost (Misal 15 menit) scp host1:file100Giga file100Giga Conor menyalin file file100Giga dari localhost ke host2 (Misal 15 menit) scp file100Giga host1:file100Giga Total waktu yang dihabiskan 30 menit untuk memindahkan file dari host1 ke host2, agar lebih efisien waktu kita bisa memanfaatkan opsi -3 pada scp....</p>
+</section>
+<footer class=entry-footer>August 10, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Cara SCP Antar Dua Host Remote" href=https://blog.ajiarya.id/posts/linux/cara-scp-antar-dua-remote-host/></a>
+</article>
+<article class="post-entry tag-entry">
+<header class=entry-header>
 <h2>Cara Install ZFS Pada Linux [CentOS/Rocky]</h2>
 </header>
 <section class=entry-content>
@@ -125,20 +137,10 @@ Buat file dengan nama buat-user.sh #!/bin/bash for i in {1..10}; do sudo useradd
 <footer class=entry-footer>August 4, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
 <a class=entry-link aria-label="post link to Cara Melakukan Perulangan Pada Bash" href=https://blog.ajiarya.id/posts/bash/cara-looping-pada-bash/></a>
 </article>
-<article class="post-entry tag-entry">
-<header class=entry-header>
-<h2>Cara Mengetahui Virtualisasi Yang Digunakan oleh VM Linux</h2>
-</header>
-<section class=entry-content>
-<p>Pendahuluan Ketika kita menggunakan layanan VPS ataupun Public Cloud kita bisa memeriksa jenis virtualisasi yang diberikan oleh penyedia layanan dengan menggunakan perintah dmidecode pada sistem operasi Linux.
-Panduan sudo dmidecode -s system-product-name Contoh pada virtualisasi KVM student@machine:~$ sudo dmidecode -s system-product-name KVM Contoh pada virtualisasi OpenStack student@machine:~$ sudo dmidecode -s system-product-name OpenStack Compute </p>
-</section>
-<footer class=entry-footer>August 4, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Mengetahui Virtualisasi Yang Digunakan oleh VM Linux" href=https://blog.ajiarya.id/posts/linux/cara-memeriksa-jenis-virtualiasasi/></a>
-</article>
 <footer class=page-footer>
 <nav class=pagination>
 <a class=prev href=https://blog.ajiarya.id/tags/linux/page/5/>« Prev Page</a>
+<a class=next href=https://blog.ajiarya.id/tags/linux/page/7/>Next Page »</a>
 </nav>
 </footer>
 </main>
