@@ -80,7 +80,7 @@ cat /sys/block/bcache0/bcache/cache_mode
 
 Contoh keluaran
 ```bash
-root@lab:~# cat /sys/block/bcache0/bcache/cache_mode
+root@home-lab:~# cat /sys/block/bcache0/bcache/cache_mode
 [writethrough] writeback writearound none
 ```
 Dari keluaran diatas mode yang sedang aktif adalah `writethrough`
