@@ -17,7 +17,7 @@
 <link rel=mask-icon href=https://blog.ajiarya.id/%3Clink%20/%20abs%20url%3E>
 <meta name=theme-color content="#2e2e33">
 <meta name=msapplication-TileColor content="#2e2e33">
-<meta name=generator content="Hugo 0.88.1">
+<meta name=generator content="Hugo 0.89.0">
 <link rel=alternate type=application/rss+xml href=https://blog.ajiarya.id/posts/index.xml>
 <script type=application/javascript>var doNotTrack=!1;doNotTrack||(function(a,e,f,g,b,c,d){a.GoogleAnalyticsObject=b,a[b]=a[b]||function(){(a[b].q=a[b].q||[]).push(arguments)},a[b].l=1*new Date,c=e.createElement(f),d=e.getElementsByTagName(f)[0],c.async=1,c.src=g,d.parentNode.insertBefore(c,d)}(window,document,'script','https://www.google-analytics.com/analytics.js','ga'),ga('create','UA-182251419-3','auto'),ga('send','pageview'))</script><meta property="og:title" content="Posts">
 <meta property="og:description" content="Aji Arya's Personal Blog">
@@ -87,6 +87,20 @@ IMTEK
 </header>
 <article class=post-entry>
 <header class=entry-header>
+<h2>Memilih Deployment Tool Ceph</h2>
+</header>
+<section class=entry-content>
+<p>Panduan Rekomendasi cephadm (Container)
+cephadm tersedia sejak versi v15.2.0 (Octopus). cephadm mendeploy servis-servis Ceph dalam bentuk container, dengan cephadm mempermudah untuk memanajemen klaster seperti menambahkan, menghapuskan, atau memperbarui komponen Ceph.
+cephadm mendukung docker dan podman sebagai container runtime.
+Rook (Container / Manage by Kubernetes)
+Rook tersedia sejak versi Nautilus. Rook men-deploy dan melakukan manajemen klaster Ceph yang berjalan didalam Kubernetes. Jika ingin menggunakan Ceph sebagai storage untuk klaster Kubernetes, Rook adalah tool cocok digunakan....</p>
+</section>
+<footer class=entry-footer>September 5, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Memilih Deployment Tool Ceph" href=https://blog.ajiarya.id/posts/ceph/memilih-deployment-tool-ceph/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
 <h2>Cara Menghitung Jumlah PG Untuk Klaster Ceph</h2>
 </header>
 <section class=entry-content>
@@ -133,16 +147,6 @@ Panduan Menghentikan atau melakukan pause klaster ceph osd set noout ceph osd se
 </section>
 <footer class=entry-footer>September 4, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
 <a class=entry-link aria-label="post link to Cara Stop atau Pause Klaster Ceph" href=https://blog.ajiarya.id/posts/ceph/cara-stop-atau-pause-klaster-ceph/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>Cara Setup OpenStack Magnum Dengan Deployment Kolla-Ansible [Kubernetes COE]</h2>
-</header>
-<section class=entry-content>
-<p>Lingkungan Sistem Operasi: CentOS 8 OpenStack: Ussuri Kolla-Ansible: 10.3.0 Kubernetes Image: Fedora CoreOS 32 Panduan Install Dependensi sudo dnf install -y python3-devel libffi-devel gcc openssl-devel python3-libselinux Siapkan python3 virtual environment python3 -m venv kolla source kolla/bin/activate Upgrade package pip pip install -U pip Install kolla-ansible & ansible pip install 'ansible&lt;2.10' kolla-ansible==10.3.0 Buat direktori /etc/kolla sudo mkdir -p /etc/kolla sudo chown $USER:$USER /etc/kolla Salin globals....</p>
-</section>
-<footer class=entry-footer>August 30, 2021&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Setup OpenStack Magnum Dengan Deployment Kolla-Ansible [Kubernetes COE]" href=https://blog.ajiarya.id/posts/openstack/cara-setup-magnum-kolla/></a>
 </article>
 <footer class=page-footer>
 <nav class=pagination>

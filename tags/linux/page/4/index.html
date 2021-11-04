@@ -17,7 +17,7 @@
 <link rel=mask-icon href=https://blog.ajiarya.id/%3Clink%20/%20abs%20url%3E>
 <meta name=theme-color content="#2e2e33">
 <meta name=msapplication-TileColor content="#2e2e33">
-<meta name=generator content="Hugo 0.88.1">
+<meta name=generator content="Hugo 0.89.0">
 <link rel=alternate type=application/rss+xml href=https://blog.ajiarya.id/tags/linux/index.xml>
 <script type=application/javascript>var doNotTrack=!1;doNotTrack||(function(a,e,f,g,b,c,d){a.GoogleAnalyticsObject=b,a[b]=a[b]||function(){(a[b].q=a[b].q||[]).push(arguments)},a[b].l=1*new Date,c=e.createElement(f),d=e.getElementsByTagName(f)[0],c.async=1,c.src=g,d.parentNode.insertBefore(c,d)}(window,document,'script','https://www.google-analytics.com/analytics.js','ga'),ga('create','UA-182251419-3','auto'),ga('send','pageview'))</script><meta property="og:title" content="Linux">
 <meta property="og:description" content="Aji Arya's Personal Blog">
@@ -86,6 +86,16 @@ IMTEK
 </header>
 <article class="post-entry tag-entry">
 <header class=entry-header>
+<h2>Cara Membuat Image Libvirt Menggunakan python-tfgen</h2>
+</header>
+<section class=entry-content>
+<p>Prasyarat Terraform python-tfgen Storage Pool (Baca disini untuk cara membuat Storage Pool) Panduan Buat yaml dengan kind: image lalu isikan dengan daftar image yang diinginkan image.yaml kind: image uri: "qemu:///system" spec: - name: debian-bullseye url: "https://cdimage.debian.org/images/cloud/bullseye/latest/debian-11-genericcloud-amd64.qcow2" pool: images - name: ubuntu-focal url: "https://cloud-images.ubuntu.com/focal/current/focal-server-cloudimg-amd64.img" pool: images Buat HCL berdasarkan yaml yang telah dibuat ./tfgen.py -f image.yaml -o image image/main.tf (Hasil tfgen) terraform { required_providers { libvirt = { source = "dmacvicar/libvirt" } } } provider "libvirt" { uri = "qemu:///system" } resource "libvirt_volume" "debian-bullseye" { name = "debian-bullseye" source = "https://cdimage....</p>
+</section>
+<footer class=entry-footer>August 17, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Cara Membuat Image Libvirt Menggunakan python-tfgen" href=https://blog.ajiarya.id/posts/python-tfgen/cara-membuat-image-dengan-python-tfgen/></a>
+</article>
+<article class="post-entry tag-entry">
+<header class=entry-header>
 <h2>Cara Membuat Network Libvirt Menggunakan python-tfgen</h2>
 </header>
 <section class=entry-content>
@@ -127,16 +137,6 @@ Panduan Unduh Terraform wget https://releases....</p>
 </section>
 <footer class=entry-footer>August 17, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
 <a class=entry-link aria-label="post link to Cara Menggunakan Terraform Libvirt Provider Dengan Bantuan python-tfgen" href=https://blog.ajiarya.id/posts/linux/cara-menggunakan-terraform-libvirt-provider/></a>
-</article>
-<article class="post-entry tag-entry">
-<header class=entry-header>
-<h2>Cara Menyiapkan Home Lab Linux [CentOS/Rocky 8]</h2>
-</header>
-<section class=entry-content>
-<p>Referensi Sewa Server Hetzner Robot - Server Auction Prasyarat Server Sistem Operasi CentOS 8 atau Rocky 8 terinstall Panduan Update & Upgrade Package sudo dnf update sudo dnf upgrade Install grup package untuk host virtualisasi sudo dnf groupinstall -y "Virtualization Host" Jalankan dan enable servis libvirt sudo systemctl enable --now libvirtd Install cockpit plugin untuk VM sudo dnf install -y cockpit-machines Jalankan dan enable servis cockpit sudo systemctl enable --now cockpit....</p>
-</section>
-<footer class=entry-footer>August 17, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Menyiapkan Home Lab Linux [CentOS/Rocky 8]" href=https://blog.ajiarya.id/posts/linux/cara-menyiapkan-home-lab-centos-rocky/></a>
 </article>
 <footer class=page-footer>
 <nav class=pagination>

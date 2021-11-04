@@ -17,7 +17,7 @@
 <link rel=mask-icon href=https://blog.ajiarya.id/%3Clink%20/%20abs%20url%3E>
 <meta name=theme-color content="#2e2e33">
 <meta name=msapplication-TileColor content="#2e2e33">
-<meta name=generator content="Hugo 0.88.1">
+<meta name=generator content="Hugo 0.89.0">
 <link rel=alternate type=application/rss+xml href=https://blog.ajiarya.id/posts/index.xml>
 <script type=application/javascript>var doNotTrack=!1;doNotTrack||(function(a,e,f,g,b,c,d){a.GoogleAnalyticsObject=b,a[b]=a[b]||function(){(a[b].q=a[b].q||[]).push(arguments)},a[b].l=1*new Date,c=e.createElement(f),d=e.getElementsByTagName(f)[0],c.async=1,c.src=g,d.parentNode.insertBefore(c,d)}(window,document,'script','https://www.google-analytics.com/analytics.js','ga'),ga('create','UA-182251419-3','auto'),ga('send','pageview'))</script><meta property="og:title" content="Posts">
 <meta property="og:description" content="Aji Arya's Personal Blog">
@@ -87,6 +87,16 @@ IMTEK
 </header>
 <article class=post-entry>
 <header class=entry-header>
+<h2>Cara Menghapus Node Rusak Pada Proxmox</h2>
+</header>
+<section class=entry-content>
+<p>Panduan SSH salah satu node yang masih bisa diakses ssh &lt;running_pve_node> Jalankan perintah berikut untuk melakukan penghapusan node pvecm delnode &lt;node_name> Hapus direktori konfigurasi node tersebut rm -rf /etc/pve/nodes/&lt;node_name> Muat ulang dashboard proxmox Referensi Proxmox Forum </p>
+</section>
+<footer class=entry-footer>September 18, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Cara Menghapus Node Rusak Pada Proxmox" href=https://blog.ajiarya.id/posts/proxmox/cara-menghapus-node-rusak/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
 <h2>Cara Menyiapkan Ceph Exporter [Containerized]</h2>
 </header>
 <section class=entry-content>
@@ -128,16 +138,6 @@ sudo cat /etc/gitlab/initial_root_password Masuk GitLab via browser </p>
 </section>
 <footer class=entry-footer>September 18, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
 <a class=entry-link aria-label="post link to Cara Pasang GitLab CE [CentOS 8]" href=https://blog.ajiarya.id/posts/gitlab/cara-memasang-gitlab-ce/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>Cara Menyiapkan Klaster Ceph Pada Proxmox 7</h2>
-</header>
-<section class=entry-content>
-<p>Prasyarat Proxmox terinstall Panduan Bootstrap ceph Buka menu ceph Pilih menu Datacenter Pilih menu Ceph Klik “Install Ceph” Pilih versi ceph Pilih ceph version Klik “Start pacific installation” Konfirmasi instalasi Ketik “Y”. Lalu tekan tombol enter Klik “Next” Konfigurasi klaster ceph Public Network Cluster Network Jumlah replika Minimum replika Monitor node pertama Instalasi sukses....</p>
-</section>
-<footer class=entry-footer>September 13, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Menyiapkan Klaster Ceph Pada Proxmox 7" href=https://blog.ajiarya.id/posts/proxmox/cara-menyiapkan-klaster-ceph-pada-proxmox-7/></a>
 </article>
 <footer class=page-footer>
 <nav class=pagination>
