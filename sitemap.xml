@@ -23,6 +23,9 @@
     <loc>https://blog.ajiarya.id/categories/ceph/</loc>
     <lastmod>2021-11-06T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://blog.ajiarya.id/posts/ceph/cara-upgrade-bionic-octopus-ke-focal-pacific-pada-ceph-klaster/</loc>
+    <lastmod>2021-11-06T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://blog.ajiarya.id/posts/</loc>
     <lastmod>2021-11-06T00:00:00+00:00</lastmod>
   </url><url>
@@ -30,6 +33,9 @@
     <lastmod>2021-11-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.ajiarya.id/tags/</loc>
+    <lastmod>2021-11-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.ajiarya.id/tags/upgrade/</loc>
     <lastmod>2021-11-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.ajiarya.id/tags/bcache/</loc>

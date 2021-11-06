@@ -86,6 +86,16 @@ IMTEK
 </header>
 <article class="post-entry tag-entry">
 <header class=entry-header>
+<h2>Cara Menghapus OSD [Manual]</h2>
+</header>
+<section class=entry-content>
+<p>Panduan Hentikan servis jika masih berjalan sudo systemctl stop ceph-osd@&lt;id> Atur state OSD sebagai down dan out ceph osd set out &lt;id> ceph osd set down &lt;id> Hapus OSD dari klaster ceph # Hapus auth ceph auth rm osd.&lt;osd_id> # Hapus dari CRUSH Map ceph osd crush remove osd.&lt;osd_id> # Hapus dari OSD Map ceph osd rm &lt;osd_id> Zap disk # ceph-volume lvm destroy &lt;device_path> --destroy ceph-volume lvm destroy /dev/sdX --destroy Solusi (Workaround) Tidak bisa menjalankan ceph-volume lvm destroy Catat informasi mengenai OSD yang ingin dihapus block osd_id ceph-volume lvm list Format Disk menggunakan wipefs wipefs -fa &lt;device_path> Hapus LVM jika masih ada # Lihat device mapper dmsetup ls # Hapus device mapper OSD yang ingin dihapus dmsetup remove &lt;device_map> Zap disk # ceph-volume lvm destroy &lt;device_path> --destroy ceph-volume lvm destroy /dev/sdX --destroy Referensi Ceph Docs - ceph-volume ZAP The Geek Diary - dmsetup </p>
+</section>
+<footer class=entry-footer>September 5, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Cara Menghapus OSD [Manual]" href=https://blog.ajiarya.id/posts/ceph/cara-menghapus-osd/></a>
+</article>
+<article class="post-entry tag-entry">
+<header class=entry-header>
 <h2>Cara Mengubah Device Class OSD</h2>
 </header>
 <section class=entry-content>
@@ -133,18 +143,6 @@ Panduan Menghentikan atau melakukan pause klaster ceph osd set noout ceph osd se
 </section>
 <footer class=entry-footer>September 4, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
 <a class=entry-link aria-label="post link to Cara Stop atau Pause Klaster Ceph" href=https://blog.ajiarya.id/posts/ceph/cara-stop-atau-pause-klaster-ceph/></a>
-</article>
-<article class="post-entry tag-entry">
-<header class=entry-header>
-<h2>Cara Deploy Ceph Dashboard Pada Deployment Manual</h2>
-</header>
-<section class=entry-content>
-<p>Prasyarat Klaster Ceph Panduan Install package ceph-mgr-dashboard pada semua host ceph-mgr
-Debian/Ubuntu sudo apt install -y ceph-mgr-dashboard RHEL/CentOS/Rocky 8 sudo dnf install -y ceph-mgr-dashboard RHEL/CentOS/Rocky 7 sudo yum install -y ceph-mgr-dashboard Aktifkan module dashboard pada ceph-mgr
-ceph mgr module enable dashboard Buat TLS untuk ceph dashboard ceph dashboard create-self-signed-cert Buat user echo "rahasia123" > password....</p>
-</section>
-<footer class=entry-footer>August 29, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Deploy Ceph Dashboard Pada Deployment Manual" href=https://blog.ajiarya.id/posts/ceph/cara-deploy-ceph-dashboard-pada-deployment-manual/></a>
 </article>
 <footer class=page-footer>
 <nav class=pagination>

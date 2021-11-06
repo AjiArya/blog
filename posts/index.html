@@ -120,6 +120,18 @@ Panduan Aktifkan msgr2 pada ceph monitor sudo ceph mon enable-msgr2 Hasil Refere
 </article>
 <article class=post-entry>
 <header class=entry-header>
+<h2>Ceph - Cara Upgrade Dari Bionic Octopus ke Focal Pacific</h2>
+</header>
+<section class=entry-content>
+<p>Rencana Upgrade Dari:
+Ubuntu 18.04 (Bionic) Ceph 15.2.X (Octopus) Ke:
+Ubuntu 20.04 (Focal) Ceph 16.2.X (Pacific) Prasyarat Klaster dalam keadaan HEALTH_OK Panduan Pasang flag pada klaster dan set default sudo ceph osd set noout sudo ceph osd set nobackfill sudo ceph osd set norecover sudo ceph osd set norebalance Update dan upgrade package sudo apt update -y; sudo apt upgrade -y Upgrade ke Ubuntu Focal sudo apt full-upgrade sudo do-release-upgrade -f DistUpgradeViewNonInteractive Reboot mesin sudo reboot Upgrade package ceph #1: semua package ceph sudo apt install -y ceph #2: spesifik package ceph sudo apt install -y ceph-mon sudo apt install -y ceph-mgr sudo apt install -y ceph-osd Restart servis ceph-mon dan ceph-mgr sudo systemctl restart ceph-mon....</p>
+</section>
+<footer class=entry-footer>November 6, 2021&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Ceph - Cara Upgrade Dari Bionic Octopus ke Focal Pacific" href=https://blog.ajiarya.id/posts/ceph/cara-upgrade-bionic-octopus-ke-focal-pacific-pada-ceph-klaster/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
 <h2>Cara Menyiapkan Bcache</h2>
 </header>
 <section class=entry-content>
@@ -128,16 +140,6 @@ Glosari Bcache: Linux kernel block layer cache Backing Device: Tempat data disim
 </section>
 <footer class=entry-footer>November 4, 2021&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Aji Arya</footer>
 <a class=entry-link aria-label="post link to Cara Menyiapkan Bcache" href=https://blog.ajiarya.id/posts/linux/cara-menyiapkan-bcache/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>Cara Pasang NVIDIA Driver dan Library CUDNN</h2>
-</header>
-<section class=entry-content>
-<p>Prasyarat Akun NVIDIA Developer Panduan Unduh cuda disini dan cudnn disini # Create directory mkdir /root/nvidia; cd /root/nvidia/ # cuda wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64/cuda-ubuntu1804.pin wget https://developer.download.nvidia.com/compute/cuda/11.4.2/local_installers/cuda-repo-ubuntu1804-11-4-local_11.4.2-470.57.02-1_amd64.deb # cudnn wget -O cudnn-11.4-linux-x64-v8.2.4.15.tgz \ https://developer.nvidia.com/compute/machine-learning/cudnn/secure/8.2.4/11.4_20210831/cudnn-11.4-linux-x64-v8.2.4.15.tgz?&lt;download_token> wget -O libcudnn8-8.2.4.15-1.cuda11.4.x86_64.rpm \ https://developer.download.nvidia.com/compute/machine-learning/cudnn/secure/8.2.4/11.4_20210831/RHEL8_1-x64/libcudnn8-8.2.4.15-1.cuda11.4.x86_64.rpm?&lt;download_token> wget -O libcudnn8-devel-8.2.4.15-1.cuda11.4.x86_64.rpm \ https://developer.download.nvidia.com/compute/machine-learning/cudnn/secure/8.2.4/11.4_20210831/RHEL8_1-x64/libcudnn8-devel-8.2.4.15-1.cuda11.4.x86_64.rpm?&lt;download_token> wget -O libcudnn8-samples-8.2.4.15-1.cuda11.4.x86_64.rpm \ https://developer.download.nvidia.com/compute/machine-learning/cudnn/secure/8.2.4/11.4_20210831/RHEL8_1-x64/libcudnn8-samples-8.2.4.15-1.cuda11.4.x86_64.rpm?&lt;download_token> Pasang cuda mv cuda-ubuntu1804.pin /etc/apt/preferences.d/cuda-repository-pin-600 dpkg -i cuda-repo-ubuntu1804-11-4-local_11.4.2-470.57.02-1_amd64.deb apt-key add /var/cuda-repo-ubuntu1804-11-4-local/7fa2af80.pub apt-get update apt-get -y install cuda Pasang cudnn library # pasang cudnn library file tar -xzvf cudnn-11....</p>
-</section>
-<footer class=entry-footer>November 1, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Pasang NVIDIA Driver dan Library CUDNN" href=https://blog.ajiarya.id/posts/linux/cara-pasang-nvidia-driver/></a>
 </article>
 <footer class=page-footer>
 <nav class=pagination>
