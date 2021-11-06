@@ -89,7 +89,7 @@ IMTEK
 <h2>Cara Memperbaiki OSD Tidak Bisa Up Pasca Upgrade Dari Luminous</h2>
 </header>
 <section class=entry-content>
-<p>Penjelasan Error ini muncul ketika melakukan upgrade ceph luminous > mimic, mimic > octopus. OSD tidak bisa up setelah direstart
+<p>osd.X tick checking mon for new map Penjelasan Error ini muncul ketika melakukan upgrade ceph luminous > mimic, mimic > octopus. OSD tidak bisa up setelah direstart
 Panduan Atur versi minimum sebuah osd dapat berpartisipasi pada klaster # cek nilai sekarang sudo ceph osd dump | grep require_osd # lakukan perubahan sudo ceph osd require-osd-release mimic Penjelasan subcommand
 osd require-osd-release luminous|mimic|nautilus|octopus [--yes-i-really-mean-it] set the minimum allowed OSD release to participate in the cluster Restart kembali OSD yang tidak bisa up # seluruh osd pada host sudo systemctl restart ceph-osd....</p>
 </section>
