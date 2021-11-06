@@ -12,6 +12,10 @@ TocOpen: true
 
 ![](/images/ceph-osd-unable-up-2.png)
 
+```txt
+osd.X tick checking mon for new map
+```
+
 # Penjelasan
 Error ini muncul ketika melakukan upgrade ceph luminous > mimic, mimic > octopus. OSD tidak bisa up setelah direstart
 
