@@ -17,7 +17,7 @@
 <link rel=mask-icon href=https://blog.ajiarya.id/%3Clink%20/%20abs%20url%3E>
 <meta name=theme-color content="#2e2e33">
 <meta name=msapplication-TileColor content="#2e2e33">
-<meta name=generator content="Hugo 0.89.0">
+<meta name=generator content="Hugo 0.89.1">
 <link rel=alternate type=application/rss+xml href=https://blog.ajiarya.id/index.xml>
 <link rel=alternate type=application/json href=https://blog.ajiarya.id/index.json>
 <script type=application/javascript>var doNotTrack=!1;doNotTrack||(function(a,e,f,g,b,c,d){a.GoogleAnalyticsObject=b,a[b]=a[b]||function(){(a[b].q=a[b].q||[]).push(arguments)},a[b].l=1*new Date,c=e.createElement(f),d=e.getElementsByTagName(f)[0],c.async=1,c.src=g,d.parentNode.insertBefore(c,d)}(window,document,'script','https://www.google-analytics.com/analytics.js','ga'),ga('create','UA-182251419-3','auto'),ga('send','pageview'))</script><meta property="og:title" content="Aji Arya">
@@ -85,6 +85,43 @@ IMTEK
 <main class=main>
 <article class=post-entry>
 <header class=entry-header>
+<h2>Cara Konfigurasi DNS Server menggunakan dnsmasq</h2>
+</header>
+<section class=entry-content>
+<p>Pendahuluan dnsmasq adalah software open source yang digunakan untuk menyediakan layanan seperti DNS, DCHP, TFTP, router advertisement, dan network boot. dnsmasq ditujukan untuk jaringan skala kecil - menengah.
+Panduan Pasang dnsmasq
+Debian Based sudo apt update sudo apt install -y dnsmasq RHEL Based sudo yum update sudo yum install -y dnsmasq # atau sudo dnf update sudo dnf install -y dnsmasq Buat file konfigurasi...</p>
+</section>
+<footer class=entry-footer>September 12, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Cara Konfigurasi DNS Server menggunakan dnsmasq" href=https://blog.ajiarya.id/posts/linux/cara-konfigurasi-dns-server-menggunakan-dnsmasq/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
+<h2>Cara Memperbaiki Git SSH Permission Denied GitLab [Red Hat/CentOS]</h2>
+</header>
+<section class=entry-content>
+<p>Masalah git@gitlab.example.com: Permission denied (publickey,gssapi-keyex,gssapi-with-mic,password). Tidak bisa git clone walaupun sudah menambahkan public key ssh pada akun GitLab
+Kondisi Sudah menambahkan Public Key SSH pada akun GitLab Tidak bisa menjalankan git clone ke repository private walaupun sebagai pemilik repository Panduan Lihat error pada SELinux journalctl -t setroubleshoot Error terjadi karena file authorized_key
+Lihat SELinux Context pada direktori .ssh gitlab ls -Z /var/opt/gitlab/.ssh/authorized_keys # Output: # unconfined_u:object_r:var_t:s0 /var/opt/gitlab/....</p>
+</section>
+<footer class=entry-footer>September 12, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Cara Memperbaiki Git SSH Permission Denied GitLab [Red Hat/CentOS]" href=https://blog.ajiarya.id/posts/gitlab/cara-memperbaiki-git-ssh-permission-denied/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
+<h2>Cara Memasang Proxmox Exporter</h2>
+</header>
+<section class=entry-content>
+<p>Prasyarat Proxmox terinstall Panduan Buat token untuk proxmox-expoter
+Buat API Token Datacenter > API Token Klik Add Masukan Token ID (Catat bagian ini) Hapus centang pada Privilege Separation Klik Add Salin Token Secret Klik “Copy Secret Value” (Catat bagian ini) Pasang proxmox-exporter
+python3 -m pip install prometheus-pve-exporter Buat servis systemd
+Buat user pve_exporter useradd --no-create-home --shell /bin/false pve_exporter Buat file konfigurasi mkdir /etc/pve_exporter cat&lt;&lt;EOF > /etc/pve_exporter/config....</p>
+</section>
+<footer class=entry-footer>September 11, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Cara Memasang Proxmox Exporter" href=https://blog.ajiarya.id/posts/proxmox/cara-memasang-proxmox-exporter/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
 <h2>Cara SSH Jump Host</h2>
 </header>
 <section class=entry-content>
@@ -102,39 +139,6 @@ IMTEK
 </section>
 <footer class=entry-footer>September 10, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
 <a class=entry-link aria-label="post link to Cara Membuat VM Menggunakan Cloud Image - Proxmox" href=https://blog.ajiarya.id/posts/proxmox/cara-deploy-vm-menggunakan-cloud-image/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>Cara Mengubah Volume Type Dengan Backend Yang Berbeda - CLI</h2>
-</header>
-<section class=entry-content>
-<p>Prasyarat Cinder dengan 2 atau lebih backend Panduan Lihat volume type yang tersedia openstack volume type list Ubah volume type pada volume yang dimaksud openstack volume set --type &lt;new_type> --retype-policy on-demand &lt;vol_id/vol_name> Tunggu sampai proses retyping selesai </p>
-</section>
-<footer class=entry-footer>September 10, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Mengubah Volume Type Dengan Backend Yang Berbeda - CLI" href=https://blog.ajiarya.id/posts/openstack/cara-mengganti-volume-type-ke-backend-yang-berbeda-cli/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>Cara Menyiapkan High Availability Kubernetes Klaster Menggunakan Kubeadm</h2>
-</header>
-<section class=entry-content>
-<p>Topologi Versi Sistem Operasi Ubuntu 20.04 (Focal)
-Aplikasi HAProxy 2.0.13-2ubuntu0.3 KeepAlived 1:2.0.19-2 Containerd 1.4.9-1 Kubernetes 1.22.1-00 (kubeadm, kubelet, kubectl) Panduan Semua perintah dibawah dijalankan menggunakan user root Persiapan Sunting file /etc/hosts cat&lt;&lt;EOF >> /etc/hosts ### Lab Kubernetes ### 192.168.30.10 kubernetes-vip 192.168.30.11 kubernetes-lb1 192.168.30.12 kubernetes-lb2 192.168.30.13 kubernetes-master01 192.168.30.14 kubernetes-master02 192.168.30.15 kubernetes-master03 192.168.30.16 kubernetes-worker01 EOF update dan upgrade package-package apt update -y; apt upgrade -y HAproxy & Keepalived Pasang haproxy dan keepalived apt install -y haproxy keepalived Konfigurasi HAProxy...</p>
-</section>
-<footer class=entry-footer>September 10, 2021&nbsp;·&nbsp;4 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Menyiapkan High Availability Kubernetes Klaster Menggunakan Kubeadm" href=https://blog.ajiarya.id/posts/kubernetes/cara-menyiapkan-high-availability-kubernetes-klaster-kubeadm/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>Cara Menyiapkan Monitoring Proxmox Menggunakan InfluxDB dan Grafana</h2>
-</header>
-<section class=entry-content>
-<p>Prasyarat Proxmox Terinstall Panduan Pasang influxdb dan influxdb-client apt install influxdb influxdb-client Buat user database dan database influx (Dalam shell influx) Buat user dan database
-CREATE USER admin WITH PASSWORD 'keraktelor' WITH ALL PRIVILEGES CREATE DATABASE monitoring CREATE USER influx WITH PASSWORD 'piesusu' GRANT ALL ON monitoring TO influx exit Konfigurasi influxdb vi /etc/influxdb/influxdb.conf Sesuaikan baris berikut
-[[udp]] enabled = true bind-address = ":8089" database = "mondb" Restart InfluxDB systemctl restart influxdb Tambahkan Metric Server...</p>
-</section>
-<footer class=entry-footer>September 9, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Menyiapkan Monitoring Proxmox Menggunakan InfluxDB dan Grafana" href=https://blog.ajiarya.id/posts/proxmox/cara-menyiapkan-monitoring-proxmox/></a>
 </article>
 <footer class=page-footer>
 <nav class=pagination>

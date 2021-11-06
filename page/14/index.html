@@ -17,7 +17,7 @@
 <link rel=mask-icon href=https://blog.ajiarya.id/%3Clink%20/%20abs%20url%3E>
 <meta name=theme-color content="#2e2e33">
 <meta name=msapplication-TileColor content="#2e2e33">
-<meta name=generator content="Hugo 0.89.0">
+<meta name=generator content="Hugo 0.89.1">
 <link rel=alternate type=application/rss+xml href=https://blog.ajiarya.id/index.xml>
 <link rel=alternate type=application/json href=https://blog.ajiarya.id/index.json>
 <script type=application/javascript>var doNotTrack=!1;doNotTrack||(function(a,e,f,g,b,c,d){a.GoogleAnalyticsObject=b,a[b]=a[b]||function(){(a[b].q=a[b].q||[]).push(arguments)},a[b].l=1*new Date,c=e.createElement(f),d=e.getElementsByTagName(f)[0],c.async=1,c.src=g,d.parentNode.insertBefore(c,d)}(window,document,'script','https://www.google-analytics.com/analytics.js','ga'),ga('create','UA-182251419-3','auto'),ga('send','pageview'))</script><meta property="og:title" content="Aji Arya">
@@ -85,6 +85,38 @@ IMTEK
 <main class=main>
 <article class=post-entry>
 <header class=entry-header>
+<h2>Cara SCP Antar Dua Host Remote</h2>
+</header>
+<section class=entry-content>
+<p>Pendahuluan Cara ini digunakan agar kita tidak melakukan hal yang membosankan seperti kejadian berikut
+Conor ingin mengirimkan file dari host1 ke host2 dan hal yang dilakukannya adalah mengirimkan file dari host1 ke localhost terlebih dahulu dan lalu mengirimkan file dari localhost ke host2
+Conor menyalin file file100Giga dari host1 ke localhost (Misal 15 menit) scp host1:file100Giga file100Giga Conor menyalin file file100Giga dari localhost ke host2 (Misal 15 menit) scp file100Giga host1:file100Giga Total waktu yang dihabiskan 30 menit untuk memindahkan file dari host1 ke host2, agar lebih efisien waktu kita bisa memanfaatkan opsi -3 pada scp....</p>
+</section>
+<footer class=entry-footer>August 10, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Cara SCP Antar Dua Host Remote" href=https://blog.ajiarya.id/posts/linux/cara-scp-antar-dua-remote-host/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
+<h2>Cara Install ZFS Pada Linux [CentOS/Rocky]</h2>
+</header>
+<section class=entry-content>
+<p>Panduan Menambahkan repository dan public signing key source /etc/os-release sudo dnf install https://zfsonlinux.org/epel/zfs-release.el${VERSION_ID/./_}.noarch.rpm sudo rpm --import /etc/pki/rpm-gpg/RPM-GPG-KEY-zfsonlinux Install package ZFS sudo yum-config-manager --disable zfs sudo yum-config-manager --enable zfs-kmod sudo dnf install epel-release kernel-devel zfs Verifikasi versi modinfo zfs | grep version Referensi OpenZFS Docs </p>
+</section>
+<footer class=entry-footer>August 9, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Cara Install ZFS Pada Linux [CentOS/Rocky]" href=https://blog.ajiarya.id/posts/zfs/cara-install-zfs-centos/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
+<h2>Cara Install ZFS Pada Linux [Debian]</h2>
+</header>
+<section class=entry-content>
+<p>Panduan Menambahkan backports repository Tambahkan repository sudo vi /etc/apt/sources.list.d/buster-backports.list /etc/apt/sources.list.d/buster-backports.list deb http://deb.debian.org/debian buster-backports main contrib deb-src http://deb.debian.org/debian buster-backports main contrib Tambahkan konfigurasi APT sudo vi /etc/apt/preferences.d/90_zfs /etc/apt/preferences.d/90_zfs Package: libnvpair1linux libuutil1linux libzfs2linux libzpool2linux spl-dkms zfs-dkms zfs-test zfsutils-linux zfsutils-linux-dev zfs-zed Pin: release n=buster-backports Pin-Priority: 990 Install package ZFS Install package sudo apt update sudo apt install dpkg-dev linux-headers-$(uname -r) linux-image-amd64 sudo apt install zfs-dkms zfsutils-linux Buat konfigurasi ZFS untuk kernel module load sudo sh -c "echo zfs> /etc/modules-load....</p>
+</section>
+<footer class=entry-footer>August 9, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Cara Install ZFS Pada Linux [Debian]" href=https://blog.ajiarya.id/posts/zfs/cara-install-zfs-debian/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
 <h2>Cara Install ZFS Pada Linux [Ubuntu]</h2>
 </header>
 <section class=entry-content>
@@ -102,38 +134,6 @@ IMTEK
 </section>
 <footer class=entry-footer>August 9, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
 <a class=entry-link aria-label="post link to Cara Mengganti Password User Elasticsearch" href=https://blog.ajiarya.id/posts/elk/elasticsearch/cara-ganti-password-elasticsearch/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>Cara Melakukan Perulangan Pada Bash</h2>
-</header>
-<section class=entry-content>
-<p>Perulangan Pada Bash Perulangan atau Looping adalah cara mudah untuk menyelesaikan pekerjaan yang sifatnya berulang-ulang, semisal ingin membuat 10 user maka kita tidak perlu menjalankan perintah useradd 10 kali melainkan kita membuat Bash Script sebagai berikut
-Buat file dengan nama buat-user.sh #!/bin/bash for i in {1..10}; do sudo useradd user$i done Hasil Bash Script # Jalankan Script yang telah dibuat student@latihan-bash:~$ bash buat-user.sh # Verifikasi student@latihan-bash:~$ getent passwd | grep user user1:x:1002:1002::/home/user1:/bin/sh user2:x:1003:1003::/home/user2:/bin/sh user3:x:1004:1004::/home/user3:/bin/sh user4:x:1005:1005::/home/user4:/bin/sh user5:x:1006:1006::/home/user5:/bin/sh user6:x:1007:1007::/home/user6:/bin/sh user7:x:1008:1008::/home/user7:/bin/sh user8:x:1009:1009::/home/user8:/bin/sh user9:x:1010:1010::/home/user9:/bin/sh user10:x:1011:1011::/home/user10:/bin/sh Panduan Perulangan tak terbatas #!...</p>
-</section>
-<footer class=entry-footer>August 4, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Melakukan Perulangan Pada Bash" href=https://blog.ajiarya.id/posts/bash/cara-looping-pada-bash/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>Cara Memperbarui Juju Charm</h2>
-</header>
-<section class=entry-content>
-<p>Panduan juju refresh [options] &lt;application> Perbarui ke versi terbaru juju refresh &lt;application> Contoh juju refresh prometheus Perbarui ke versi revision spesifik juju refresh --revision &lt;revision number> &lt;application> Contoh juju refresh --revision 22 prometheus Perbarui ke versi channel spesifik juju refresh --channel &lt;channel> &lt;application> Contoh juju refresh --channel latest/stable prometheus </p>
-</section>
-<footer class=entry-footer>August 4, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Memperbarui Juju Charm" href=https://blog.ajiarya.id/posts/juju/cara-upgrade-juju-charm/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>Cara Mengetahui Virtualisasi Yang Digunakan oleh VM Linux</h2>
-</header>
-<section class=entry-content>
-<p>Pendahuluan Ketika kita menggunakan layanan VPS ataupun Public Cloud kita bisa memeriksa jenis virtualisasi yang diberikan oleh penyedia layanan dengan menggunakan perintah dmidecode pada sistem operasi Linux.
-Panduan sudo dmidecode -s system-product-name Contoh pada virtualisasi KVM student@machine:~$ sudo dmidecode -s system-product-name KVM Contoh pada virtualisasi OpenStack student@machine:~$ sudo dmidecode -s system-product-name OpenStack Compute </p>
-</section>
-<footer class=entry-footer>August 4, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Mengetahui Virtualisasi Yang Digunakan oleh VM Linux" href=https://blog.ajiarya.id/posts/linux/cara-memeriksa-jenis-virtualiasasi/></a>
 </article>
 <footer class=page-footer>
 <nav class=pagination>

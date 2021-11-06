@@ -17,7 +17,7 @@
 <link rel=mask-icon href=https://blog.ajiarya.id/%3Clink%20/%20abs%20url%3E>
 <meta name=theme-color content="#2e2e33">
 <meta name=msapplication-TileColor content="#2e2e33">
-<meta name=generator content="Hugo 0.89.0">
+<meta name=generator content="Hugo 0.89.1">
 <link rel=alternate type=application/rss+xml href=https://blog.ajiarya.id/tags/ceph/index.xml>
 <script type=application/javascript>var doNotTrack=!1;doNotTrack||(function(a,e,f,g,b,c,d){a.GoogleAnalyticsObject=b,a[b]=a[b]||function(){(a[b].q=a[b].q||[]).push(arguments)},a[b].l=1*new Date,c=e.createElement(f),d=e.getElementsByTagName(f)[0],c.async=1,c.src=g,d.parentNode.insertBefore(c,d)}(window,document,'script','https://www.google-analytics.com/analytics.js','ga'),ga('create','UA-182251419-3','auto'),ga('send','pageview'))</script><meta property="og:title" content="Ceph">
 <meta property="og:description" content="Aji Arya's Personal Blog">
@@ -86,6 +86,37 @@ IMTEK
 </header>
 <article class="post-entry tag-entry">
 <header class=entry-header>
+<h2>Cara Menyiapkan Ceph Tiering</h2>
+</header>
+<section class=entry-content>
+<p>Pendahuluan Untuk menyiapkan ceph tiering kita harus menyiapkan 2 pool. 1 sebagai penyimpanan data tetap dan 1 sebagai cache.
+Panduan Buat crush rule untuk hdd dan ssd ceph osd crush rule create-replicated replicated_hdd default host hdd ceph osd crush rule create-replicated replicated_ssd default host ssd Buat pool untuk hdd dan ssd ceph osd pool create hot-storage 32 32 replicated replicated_ssd ceph osd pool create cold-storage 32 32 replicated replicated_hdd ceph osd pool application enable hot-storage rbd ceph osd pool application enable cold-storage rbd Tambahkan tier, atur cache-mode, dan atur overlay ceph osd tier add cold-storage hot-storage ceph osd tier cache-mode hot-storage writeback ceph osd tier set-overlay cold-storage hot-storage Atur hit_set_type ceph osd pool set hot-storage hit_set_type bloom Referensi Ceph Pools Ceph Tiering </p>
+</section>
+<footer class=entry-footer>October 7, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Cara Menyiapkan Ceph Tiering" href=https://blog.ajiarya.id/posts/ceph/cara-menyiapkan-ceph-tiering/></a>
+</article>
+<article class="post-entry tag-entry">
+<header class=entry-header>
+<h2>Cara Menyiapkan Ceph Exporter [Containerized]</h2>
+</header>
+<section class=entry-content>
+<p>Prasyarat Docker Git Panduan Clone repository ceph_exporter git clone https://github.com/digitalocean/ceph_exporter.git Buat container image cd ceph_exporter/ docker build -t digitalocean/ceph_exporter . Buat keyring untuk ceph_exporter Lakukan dari host yang memiliki ceph.conf dan ceph.client.admin.keyring untuk melakukan administrasi user ceph auth add client.ceph_exporter mon 'allow r' mgr 'allow r' osd 'allow r' mds 'allow r' ceph auth get client.ceph_exporter -o /etc/ceph/ceph.client.ceph_exporter.keyring # Salin keyring ke monitoring node scp /etc/ceph/{ceph....</p>
+</section>
+<footer class=entry-footer>September 18, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Cara Menyiapkan Ceph Exporter [Containerized]" href=https://blog.ajiarya.id/posts/ceph/cara-menyiapkan-ceph-exporter/></a>
+</article>
+<article class="post-entry tag-entry">
+<header class=entry-header>
+<h2>Cara Menyiapkan Klaster Ceph Pada Proxmox 7</h2>
+</header>
+<section class=entry-content>
+<p>Prasyarat Proxmox terinstall Panduan Bootstrap ceph Buka menu ceph Pilih menu Datacenter Pilih menu Ceph Klik “Install Ceph” Pilih versi ceph Pilih ceph version Klik “Start pacific installation” Konfirmasi instalasi Ketik “Y”. Lalu tekan tombol enter Klik “Next” Konfigurasi klaster ceph Public Network Cluster Network Jumlah replika Minimum replika Monitor node pertama Instalasi sukses....</p>
+</section>
+<footer class=entry-footer>September 13, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Cara Menyiapkan Klaster Ceph Pada Proxmox 7" href=https://blog.ajiarya.id/posts/proxmox/cara-menyiapkan-klaster-ceph-pada-proxmox-7/></a>
+</article>
+<article class="post-entry tag-entry">
+<header class=entry-header>
 <h2>Cara Simulasi Kegagalan Disk Pada Klaster Ceph</h2>
 </header>
 <section class=entry-content>
@@ -103,45 +134,6 @@ IMTEK
 </section>
 <footer class=entry-footer>September 5, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
 <a class=entry-link aria-label="post link to Cara Menghapus OSD [Manual]" href=https://blog.ajiarya.id/posts/ceph/cara-menghapus-osd/></a>
-</article>
-<article class="post-entry tag-entry">
-<header class=entry-header>
-<h2>Cara Mengubah Device Class OSD</h2>
-</header>
-<section class=entry-content>
-<p>Pendahuluan Device Class berguna untuk mempermudah ceph untuk mendistribusikan data berdasarkan device class yang telah ditentukan didalam CRUSH Rule
-Panduan Hapus class default yang didapatkan ketika membuat OSD ceph osd crush rm-device-class &lt;osd_id> Berikan class baru pada OSD yang diinginkan ceph osd crush set-device-class performance $i Contoh memanfaatkan device class # Buat CRUSH rule # Contoh: # ceph osd crush rule create-replicated &lt;rule-name> &lt;root> &lt;failure-domain> &lt;class> ceph osd crush rule create-replicated replicated-performance default host performance # Buat pool ceph osd pool create performance-pool 32 32 replicated replicated-performance Referensi Ceph News - Crush Device Classes </p>
-</section>
-<footer class=entry-footer>September 5, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Mengubah Device Class OSD" href=https://blog.ajiarya.id/posts/ceph/cara-mengubah-device-class-osd/></a>
-</article>
-<article class="post-entry tag-entry">
-<header class=entry-header>
-<h2>Memilih Deployment Tool Ceph</h2>
-</header>
-<section class=entry-content>
-<p>Panduan Rekomendasi cephadm (Container)
-cephadm tersedia sejak versi v15.2.0 (Octopus). cephadm mendeploy servis-servis Ceph dalam bentuk container, dengan cephadm mempermudah untuk memanajemen klaster seperti menambahkan, menghapuskan, atau memperbarui komponen Ceph.
-cephadm mendukung docker dan podman sebagai container runtime.
-Rook (Container / Manage by Kubernetes)
-Rook tersedia sejak versi Nautilus. Rook men-deploy dan melakukan manajemen klaster Ceph yang berjalan didalam Kubernetes. Jika ingin menggunakan Ceph sebagai storage untuk klaster Kubernetes, Rook adalah tool cocok digunakan....</p>
-</section>
-<footer class=entry-footer>September 5, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Memilih Deployment Tool Ceph" href=https://blog.ajiarya.id/posts/ceph/memilih-deployment-tool-ceph/></a>
-</article>
-<article class="post-entry tag-entry">
-<header class=entry-header>
-<h2>Cara Menghitung Jumlah PG Untuk Klaster Ceph</h2>
-</header>
-<section class=entry-content>
-<p>Prasyarat Klaster Ceph Pendahuluan Ceph Placement Groups (PGs) adalah implementasi internal yang dilakukan oleh Ceph untuk melakukan distribusi data
-Mapping PG pada Pool
-Gambaran Pool yang menggunakan replikasi dengan nilai 2
-Sumber Gambar: https://docs.ceph.com/en/latest/rados/operations/placement-groups/
-Panduan Gunakan perhitungan 50-100 PG untuk 1 OSD Hitung jumlah OSD pada klaster Jumlah Replikasi yang diinginkan Gunakan Kalkulator PG PGCalc Contoh Klaster Ceph untuk servis OpenStack Klaster memiliki 100 OSD dengan ukuran 1 TB setiap OSD (100 TB Total) Target 100 PG untuk 1 OSD Replikasi data sebanyak 3 (Size) Alokasi pool cinder-backup 25% (25 TB) cinder-volumes 53% (53 TB) ephemeral-vms 15% (15 TB) glance-vms 7% (7 TB) Pool Name: Nama Pool Size: Ukuran replikasi atau EC (K+M) OSD: Jumlah OSD untuk pool tersebut (Berdasarkan OSD device class untuk pool) Target PGs Per OSD: Target PG untuk 1 OSD (Rekomendasi 50-100 PG) Suggested PG Count: Saran PG merupakan kelipatan 2, Jumlah PG untuk pool Referensi Ceph Docs - Placement Groups </p>
-</section>
-<footer class=entry-footer>September 4, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Menghitung Jumlah PG Untuk Klaster Ceph" href=https://blog.ajiarya.id/posts/ceph/cara-menghitung-pg-untuk-klaster-ceph/></a>
 </article>
 <footer class=page-footer>
 <nav class=pagination>

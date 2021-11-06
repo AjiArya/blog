@@ -17,7 +17,7 @@
 <link rel=mask-icon href=https://blog.ajiarya.id/%3Clink%20/%20abs%20url%3E>
 <meta name=theme-color content="#2e2e33">
 <meta name=msapplication-TileColor content="#2e2e33">
-<meta name=generator content="Hugo 0.89.0">
+<meta name=generator content="Hugo 0.89.1">
 <link rel=alternate type=application/rss+xml href=https://blog.ajiarya.id/index.xml>
 <link rel=alternate type=application/json href=https://blog.ajiarya.id/index.json>
 <script type=application/javascript>var doNotTrack=!1;doNotTrack||(function(a,e,f,g,b,c,d){a.GoogleAnalyticsObject=b,a[b]=a[b]||function(){(a[b].q=a[b].q||[]).push(arguments)},a[b].l=1*new Date,c=e.createElement(f),d=e.getElementsByTagName(f)[0],c.async=1,c.src=g,d.parentNode.insertBefore(c,d)}(window,document,'script','https://www.google-analytics.com/analytics.js','ga'),ga('create','UA-182251419-3','auto'),ga('send','pageview'))</script><meta property="og:title" content="Aji Arya">
@@ -85,6 +85,39 @@ IMTEK
 <main class=main>
 <article class=post-entry>
 <header class=entry-header>
+<h2>Cara Menyiapkan Home Lab Linux [Debian Bullseye/Ubuntu Focal]</h2>
+</header>
+<section class=entry-content>
+<p>Debian Cockpit
+Ubuntu Cockpit
+Referensi Sewa Server Hetzner Robot - Server Auction Prasyarat Server Sistem Operasi Debian 11 (Bullseye) atau Ubuntu 20.04 (Focal) terinstall Panduan Update & Upgrade package sudo apt update sudo apt upgrade Install package-package untuk host virtualisasi sudo apt install cockpit cockpit-machines qemu-system-x86 libvirt-daemon-system libvirt-clients bridge-utils Jalankan dan enable servis libvirt sudo systemctl enable --now libvirtd Jalankan dan enable servis cockpit sudo systemctl enable --now cockpit....</p>
+</section>
+<footer class=entry-footer>August 17, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Cara Menyiapkan Home Lab Linux [Debian Bullseye/Ubuntu Focal]" href=https://blog.ajiarya.id/posts/linux/cara-menyiapkan-home-lab-debian-ubuntu/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
+<h2>Cara Debug Bash Script</h2>
+</header>
+<section class=entry-content>
+<p>Panduan Gunakan kata kunci set pada bash dengan opsi -v #!/bin/bash # Tambahkan set -v pada script set -v Contoh read.sh #!/bin/bash # Baris berikut akan membuat bash script menjadi verbose set -v echo "Siapa namamu?" read NAMA echo "Berapa umurmu? (Dalam Tahun)" read UMUR # tampilkan nama echo "${NAMA}" # tampilkan umur echho "${UMUR}Tahun" # Sapa nama echo "Halo, ${NAMA}!" Ketika menjalankan read.sh...</p>
+</section>
+<footer class=entry-footer>August 12, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Cara Debug Bash Script" href=https://blog.ajiarya.id/posts/bash/cara-debug-bash/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
+<h2>Cara Melakukan Percabangan Dasar Bash - Bagian 1 [Operator Aritmatika]</h2>
+</header>
+<section class=entry-content>
+<p>Pendahuluan Jika kita ingin melakukan pengecekan terhadap suatu variabel maka kita membutuhkan yang namanya percabangan sebagai contoh, jika (if) variabel umur kurang dari 5 maka sama dengan balita, untuk melakukan hal tersebut berikut contoh singkatnya
+balita.sh #!/bin/bash export umur=4 # Cara 1 echo "Menjalankan cara 1" if [[ umur -lt 5 ]]; then echo "Kamu balita!" fi # Cara 2 echo "Menjalankan cara 2" if (( umur >= 5 )); then echo "Kamu balita!...</p>
+</section>
+<footer class=entry-footer>August 12, 2021&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Cara Melakukan Percabangan Dasar Bash - Bagian 1 [Operator Aritmatika]" href=https://blog.ajiarya.id/posts/bash/cara-melakukan-percabangan-pada-bash-bagian-1/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
 <h2>Cara Local Port Forwarding SSH</h2>
 </header>
 <section class=entry-content>
@@ -104,38 +137,6 @@ Jalankan web server menggunakan python pada serverku # Perintah python [root@ser
 </section>
 <footer class=entry-footer>August 10, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
 <a class=entry-link aria-label="post link to Cara Install Podman, Skopeo, dan Buildah Pada Linux (CentOS/Rocky)" href=https://blog.ajiarya.id/posts/podman/cara-install-container-tools/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>Cara SCP Antar Dua Host Remote</h2>
-</header>
-<section class=entry-content>
-<p>Pendahuluan Cara ini digunakan agar kita tidak melakukan hal yang membosankan seperti kejadian berikut
-Conor ingin mengirimkan file dari host1 ke host2 dan hal yang dilakukannya adalah mengirimkan file dari host1 ke localhost terlebih dahulu dan lalu mengirimkan file dari localhost ke host2
-Conor menyalin file file100Giga dari host1 ke localhost (Misal 15 menit) scp host1:file100Giga file100Giga Conor menyalin file file100Giga dari localhost ke host2 (Misal 15 menit) scp file100Giga host1:file100Giga Total waktu yang dihabiskan 30 menit untuk memindahkan file dari host1 ke host2, agar lebih efisien waktu kita bisa memanfaatkan opsi -3 pada scp....</p>
-</section>
-<footer class=entry-footer>August 10, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara SCP Antar Dua Host Remote" href=https://blog.ajiarya.id/posts/linux/cara-scp-antar-dua-remote-host/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>Cara Install ZFS Pada Linux [CentOS/Rocky]</h2>
-</header>
-<section class=entry-content>
-<p>Panduan Menambahkan repository dan public signing key source /etc/os-release sudo dnf install https://zfsonlinux.org/epel/zfs-release.el${VERSION_ID/./_}.noarch.rpm sudo rpm --import /etc/pki/rpm-gpg/RPM-GPG-KEY-zfsonlinux Install package ZFS sudo yum-config-manager --disable zfs sudo yum-config-manager --enable zfs-kmod sudo dnf install epel-release kernel-devel zfs Verifikasi versi modinfo zfs | grep version Referensi OpenZFS Docs </p>
-</section>
-<footer class=entry-footer>August 9, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Install ZFS Pada Linux [CentOS/Rocky]" href=https://blog.ajiarya.id/posts/zfs/cara-install-zfs-centos/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>Cara Install ZFS Pada Linux [Debian]</h2>
-</header>
-<section class=entry-content>
-<p>Panduan Menambahkan backports repository Tambahkan repository sudo vi /etc/apt/sources.list.d/buster-backports.list /etc/apt/sources.list.d/buster-backports.list deb http://deb.debian.org/debian buster-backports main contrib deb-src http://deb.debian.org/debian buster-backports main contrib Tambahkan konfigurasi APT sudo vi /etc/apt/preferences.d/90_zfs /etc/apt/preferences.d/90_zfs Package: libnvpair1linux libuutil1linux libzfs2linux libzpool2linux spl-dkms zfs-dkms zfs-test zfsutils-linux zfsutils-linux-dev zfs-zed Pin: release n=buster-backports Pin-Priority: 990 Install package ZFS Install package sudo apt update sudo apt install dpkg-dev linux-headers-$(uname -r) linux-image-amd64 sudo apt install zfs-dkms zfsutils-linux Buat konfigurasi ZFS untuk kernel module load sudo sh -c "echo zfs> /etc/modules-load....</p>
-</section>
-<footer class=entry-footer>August 9, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Install ZFS Pada Linux [Debian]" href=https://blog.ajiarya.id/posts/zfs/cara-install-zfs-debian/></a>
 </article>
 <footer class=page-footer>
 <nav class=pagination>

@@ -17,7 +17,7 @@
 <link rel=mask-icon href=https://blog.ajiarya.id/%3Clink%20/%20abs%20url%3E>
 <meta name=theme-color content="#2e2e33">
 <meta name=msapplication-TileColor content="#2e2e33">
-<meta name=generator content="Hugo 0.89.0">
+<meta name=generator content="Hugo 0.89.1">
 <link rel=alternate type=application/rss+xml href=https://blog.ajiarya.id/index.xml>
 <link rel=alternate type=application/json href=https://blog.ajiarya.id/index.json>
 <script type=application/javascript>var doNotTrack=!1;doNotTrack||(function(a,e,f,g,b,c,d){a.GoogleAnalyticsObject=b,a[b]=a[b]||function(){(a[b].q=a[b].q||[]).push(arguments)},a[b].l=1*new Date,c=e.createElement(f),d=e.getElementsByTagName(f)[0],c.async=1,c.src=g,d.parentNode.insertBefore(c,d)}(window,document,'script','https://www.google-analytics.com/analytics.js','ga'),ga('create','UA-182251419-3','auto'),ga('send','pageview'))</script><meta property="og:title" content="Aji Arya">
@@ -105,6 +105,39 @@ IMTEK
 </article>
 <article class=post-entry>
 <header class=entry-header>
+<h2>Cara Memperbaiki OSD Tidak Bisa Up Pasca Upgrade Dari Luminous</h2>
+</header>
+<section class=entry-content>
+<p>Penjelasan Error ini muncul ketika melakukan upgrade ceph luminous > mimic, mimic > octopus. OSD tidak bisa up setelah direstart
+Panduan Atur versi minimum sebuah osd dapat berpartisipasi pada klaster # cek nilai sekarang sudo ceph osd dump | grep require_osd # lakukan perubahan sudo ceph osd require-osd-release mimic Penjelasan subcommand
+osd require-osd-release luminous|mimic|nautilus|octopus [--yes-i-really-mean-it] set the minimum allowed OSD release to participate in the cluster Restart kembali OSD yang tidak bisa up # seluruh osd pada host sudo systemctl restart ceph-osd....</p>
+</section>
+<footer class=entry-footer>November 6, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Cara Memperbaiki OSD Tidak Bisa Up Pasca Upgrade Dari Luminous" href=https://blog.ajiarya.id/posts/ceph/cara-memperbaiki-osd-tidak-bisa-up-pasca-upgrade/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
+<h2>Cara Memperbaiki Warning Monitors Have Not Enabled msgr2 Pada Ceph</h2>
+</header>
+<section class=entry-content>
+<p>Penjelasan warning ini muncul saat melakukan upgrade dari mimic > octopus. fitur msgr2 ada semenjak rilis Nautilus.
+Panduan Aktifkan msgr2 pada ceph monitor sudo ceph mon enable-msgr2 Hasil Referensi Docs Ceph - Configuration Messenger V2 </p>
+</section>
+<footer class=entry-footer>November 6, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Cara Memperbaiki Warning Monitors Have Not Enabled msgr2 Pada Ceph" href=https://blog.ajiarya.id/posts/ceph/cara-memperbaiki-monitors-have-not-enabled-msgr2/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
+<h2>Cara Memperbaiki Warning Volumes Has Failed Dependencies Pada Ceph</h2>
+</header>
+<section class=entry-content>
+<p>Panduan Pasang package python3-distutil pada mesin-mesin ceph-mgr sudo apt install python3-distutils Restart ceph-mgr secara satu per satu sudo systemctl restart ceph-mgr.target Hasil Referensi Proxmox Forum Thread </p>
+</section>
+<footer class=entry-footer>November 6, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Cara Memperbaiki Warning Volumes Has Failed Dependencies Pada Ceph" href=https://blog.ajiarya.id/posts/ceph/cara-memperbaiki-warning-volumes-has-failed-dependencies-pada-ceph/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
 <h2>Cara Menyiapkan Bcache</h2>
 </header>
 <section class=entry-content>
@@ -123,37 +156,6 @@ Glosari Bcache: Linux kernel block layer cache Backing Device: Tempat data disim
 </section>
 <footer class=entry-footer>November 1, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
 <a class=entry-link aria-label="post link to Cara Pasang NVIDIA Driver dan Library CUDNN" href=https://blog.ajiarya.id/posts/linux/cara-pasang-nvidia-driver/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>Cara Import & Export Docker Image</h2>
-</header>
-<section class=entry-content>
-<p>Panduan Simpan docker image Tanpa kompresi # Contoh: # docker save name_image/id_image:tag > nama_output docker save nginx:latest > nginx.tar Dengan kompresi # Contoh: # docker save name_image/id_image:tag | gzip > nama_output docker save nginx:latest | gzip > nginx.tar.gz Perbandingan tanpa kompresi dengan kompresi gzip terhadap container image nginx
-smolflow :: ~ » ls -lh nginx.tar nginx.tar.gz -rw-r--r-- 1 ada ada 132M Oct 24 20:16 nginx.tar -rw-r--r-- 1 ada ada 50M Oct 24 20:16 nginx....</p>
-</section>
-<footer class=entry-footer>October 24, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Import & Export Docker Image" href=https://blog.ajiarya.id/posts/docker/cara-import-export-docker-image/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>Cara Import Container Image Containerd Kubernetes</h2>
-</header>
-<section class=entry-content>
-<p>Panduan # Contoh: # ctr -n=k8s.io images import &lt;nama_file> ctr -n=k8s.io images import nginx.tar Referensi Scott’s Blog </p>
-</section>
-<footer class=entry-footer>October 24, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Import Container Image Containerd Kubernetes" href=https://blog.ajiarya.id/posts/kubernetes/cara-import-container-image-containerd-kubernetes/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>Cara Benchmark Web Menggunakan hey</h2>
-</header>
-<section class=entry-content>
-<p>Panduan Jalankan dengan jumlah request # 1000 request hey -n 1000 # 500 request bersamaan dengan sejumlah 1000 request hey -c 500 -n 1000 Jalankan dengan durasi waktu # 30 detik hey -z 30s # 5 menit hey -z 5m # 500 request bersamaan dengan durasi 5 menit hey -c 500 -z 5m Referensi GitHub - hey Man hey - Ubuntu </p>
-</section>
-<footer class=entry-footer>October 7, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Benchmark Web Menggunakan hey" href=https://blog.ajiarya.id/posts/benchmark/cara-benchmark-web/></a>
 </article>
 <footer class=page-footer>
 <nav class=pagination>

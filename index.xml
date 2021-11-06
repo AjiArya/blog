@@ -5,7 +5,34 @@
     <link>https://blog.ajiarya.id/</link>
     <description>Recent content on Aji Arya</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 04 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.ajiarya.id/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 06 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.ajiarya.id/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cara Memperbaiki OSD Tidak Bisa Up Pasca Upgrade Dari Luminous</title>
+      <link>https://blog.ajiarya.id/posts/ceph/cara-memperbaiki-osd-tidak-bisa-up-pasca-upgrade/</link>
+      <pubDate>Sat, 06 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.ajiarya.id/posts/ceph/cara-memperbaiki-osd-tidak-bisa-up-pasca-upgrade/</guid>
+      <description>cara memperbaiki osd tidak bisa up pasca upgrade ceph dari versi luminous</description>
+    </item>
+    
+    <item>
+      <title>Cara Memperbaiki Warning Monitors Have Not Enabled msgr2 Pada Ceph</title>
+      <link>https://blog.ajiarya.id/posts/ceph/cara-memperbaiki-monitors-have-not-enabled-msgr2/</link>
+      <pubDate>Sat, 06 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.ajiarya.id/posts/ceph/cara-memperbaiki-monitors-have-not-enabled-msgr2/</guid>
+      <description>Menghilangkan warning monitors have not enabled msgr2 pada ceph</description>
+    </item>
+    
+    <item>
+      <title>Cara Memperbaiki Warning Volumes Has Failed Dependencies Pada Ceph</title>
+      <link>https://blog.ajiarya.id/posts/ceph/cara-memperbaiki-warning-volumes-has-failed-dependencies-pada-ceph/</link>
+      <pubDate>Sat, 06 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.ajiarya.id/posts/ceph/cara-memperbaiki-warning-volumes-has-failed-dependencies-pada-ceph/</guid>
+      <description>Menghilangkan warning volumes has failed dependencies pada ceph</description>
+    </item>
+    
     <item>
       <title>Cara Menyiapkan Bcache</title>
       <link>https://blog.ajiarya.id/posts/linux/cara-menyiapkan-bcache/</link>

@@ -17,7 +17,7 @@
 <link rel=mask-icon href=https://blog.ajiarya.id/%3Clink%20/%20abs%20url%3E>
 <meta name=theme-color content="#2e2e33">
 <meta name=msapplication-TileColor content="#2e2e33">
-<meta name=generator content="Hugo 0.89.0">
+<meta name=generator content="Hugo 0.89.1">
 <link rel=alternate type=application/rss+xml href=https://blog.ajiarya.id/tags/ceph/index.xml>
 <script type=application/javascript>var doNotTrack=!1;doNotTrack||(function(a,e,f,g,b,c,d){a.GoogleAnalyticsObject=b,a[b]=a[b]||function(){(a[b].q=a[b].q||[]).push(arguments)},a[b].l=1*new Date,c=e.createElement(f),d=e.getElementsByTagName(f)[0],c.async=1,c.src=g,d.parentNode.insertBefore(c,d)}(window,document,'script','https://www.google-analytics.com/analytics.js','ga'),ga('create','UA-182251419-3','auto'),ga('send','pageview'))</script><meta property="og:title" content="Ceph">
 <meta property="og:description" content="Aji Arya's Personal Blog">
@@ -86,6 +86,45 @@ IMTEK
 </header>
 <article class="post-entry tag-entry">
 <header class=entry-header>
+<h2>Cara Mengubah Device Class OSD</h2>
+</header>
+<section class=entry-content>
+<p>Pendahuluan Device Class berguna untuk mempermudah ceph untuk mendistribusikan data berdasarkan device class yang telah ditentukan didalam CRUSH Rule
+Panduan Hapus class default yang didapatkan ketika membuat OSD ceph osd crush rm-device-class &lt;osd_id> Berikan class baru pada OSD yang diinginkan ceph osd crush set-device-class performance $i Contoh memanfaatkan device class # Buat CRUSH rule # Contoh: # ceph osd crush rule create-replicated &lt;rule-name> &lt;root> &lt;failure-domain> &lt;class> ceph osd crush rule create-replicated replicated-performance default host performance # Buat pool ceph osd pool create performance-pool 32 32 replicated replicated-performance Referensi Ceph News - Crush Device Classes </p>
+</section>
+<footer class=entry-footer>September 5, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Cara Mengubah Device Class OSD" href=https://blog.ajiarya.id/posts/ceph/cara-mengubah-device-class-osd/></a>
+</article>
+<article class="post-entry tag-entry">
+<header class=entry-header>
+<h2>Memilih Deployment Tool Ceph</h2>
+</header>
+<section class=entry-content>
+<p>Panduan Rekomendasi cephadm (Container)
+cephadm tersedia sejak versi v15.2.0 (Octopus). cephadm mendeploy servis-servis Ceph dalam bentuk container, dengan cephadm mempermudah untuk memanajemen klaster seperti menambahkan, menghapuskan, atau memperbarui komponen Ceph.
+cephadm mendukung docker dan podman sebagai container runtime.
+Rook (Container / Manage by Kubernetes)
+Rook tersedia sejak versi Nautilus. Rook men-deploy dan melakukan manajemen klaster Ceph yang berjalan didalam Kubernetes. Jika ingin menggunakan Ceph sebagai storage untuk klaster Kubernetes, Rook adalah tool cocok digunakan....</p>
+</section>
+<footer class=entry-footer>September 5, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Memilih Deployment Tool Ceph" href=https://blog.ajiarya.id/posts/ceph/memilih-deployment-tool-ceph/></a>
+</article>
+<article class="post-entry tag-entry">
+<header class=entry-header>
+<h2>Cara Menghitung Jumlah PG Untuk Klaster Ceph</h2>
+</header>
+<section class=entry-content>
+<p>Prasyarat Klaster Ceph Pendahuluan Ceph Placement Groups (PGs) adalah implementasi internal yang dilakukan oleh Ceph untuk melakukan distribusi data
+Mapping PG pada Pool
+Gambaran Pool yang menggunakan replikasi dengan nilai 2
+Sumber Gambar: https://docs.ceph.com/en/latest/rados/operations/placement-groups/
+Panduan Gunakan perhitungan 50-100 PG untuk 1 OSD Hitung jumlah OSD pada klaster Jumlah Replikasi yang diinginkan Gunakan Kalkulator PG PGCalc Contoh Klaster Ceph untuk servis OpenStack Klaster memiliki 100 OSD dengan ukuran 1 TB setiap OSD (100 TB Total) Target 100 PG untuk 1 OSD Replikasi data sebanyak 3 (Size) Alokasi pool cinder-backup 25% (25 TB) cinder-volumes 53% (53 TB) ephemeral-vms 15% (15 TB) glance-vms 7% (7 TB) Pool Name: Nama Pool Size: Ukuran replikasi atau EC (K+M) OSD: Jumlah OSD untuk pool tersebut (Berdasarkan OSD device class untuk pool) Target PGs Per OSD: Target PG untuk 1 OSD (Rekomendasi 50-100 PG) Suggested PG Count: Saran PG merupakan kelipatan 2, Jumlah PG untuk pool Referensi Ceph Docs - Placement Groups </p>
+</section>
+<footer class=entry-footer>September 4, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Cara Menghitung Jumlah PG Untuk Klaster Ceph" href=https://blog.ajiarya.id/posts/ceph/cara-menghitung-pg-untuk-klaster-ceph/></a>
+</article>
+<article class="post-entry tag-entry">
+<header class=entry-header>
 <h2>Cara Stop atau Pause Klaster Ceph</h2>
 </header>
 <section class=entry-content>
@@ -107,42 +146,10 @@ ceph mgr module enable dashboard Buat TLS untuk ceph dashboard ceph dashboard cr
 <footer class=entry-footer>August 29, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
 <a class=entry-link aria-label="post link to Cara Deploy Ceph Dashboard Pada Deployment Manual" href=https://blog.ajiarya.id/posts/ceph/cara-deploy-ceph-dashboard-pada-deployment-manual/></a>
 </article>
-<article class="post-entry tag-entry">
-<header class=entry-header>
-<h2>Cara Membuat Ulang Ceph Monitor Yang Rusak [Manual Deployment]</h2>
-</header>
-<section class=entry-content>
-<p>Pendahuluan Jika mengalami kerusakan pada ceph monitor kita bisa melakukan hapus dan buat monitor yang rusak tersebut dengan ceph-monitor lainnya masih tersedia bagi cluster
-Panduan Login sebagai root sudo -i Hentikan service monitor jika masih berjalan systemctl stop ceph-mon@&lt;monitor_name> Hapus direktori monitor dan buat ulang direktori rm -rf /var/lib/ceph/mon/ceph-&lt;monitor_name> mkdir /var/lib/ceph/mon/ceph-&lt;monitor_name> Remove monitor from the cluster ceph mon rm &lt;monitor_name> Dapatkan keyring dan monmap (monitor map) ceph auth get mon....</p>
-</section>
-<footer class=entry-footer>August 24, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Membuat Ulang Ceph Monitor Yang Rusak [Manual Deployment]" href=https://blog.ajiarya.id/posts/ceph/cara-membuat-ulang-ceph-mon/></a>
-</article>
-<article class="post-entry tag-entry">
-<header class=entry-header>
-<h2>Cara Deploy Ceph Cluster Menggunakan cephadm Pada Rocky Linux 8</h2>
-</header>
-<section class=entry-content>
-<p>Prasyarat Minimal 3 Nodes dengan 3 disk tambahan Panduan Login sebagai root sudo -i Tambahkan host pada file /etc/hosts vim /etc/hosts /etc/hosts 127.0.0.1 localhost localhost.localdomain localhost4 localhost4.localdomain4 ::1 localhost localhost.localdomain localhost6 localhost6.localdomain6 192.168.10.201 rocky-ceph-node01 192.168.10.202 rocky-ceph-node02 192.168.10.203 rocky-ceph-node03 Update dan Upgrade package dnf update; dnf upgrade Install python3, lvm2, dan podman dnf install -y python3 lvm2 podman Unduh cephadm pada node pertama curl --silent --remote-name --location https://github....</p>
-</section>
-<footer class=entry-footer>August 22, 2021&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Deploy Ceph Cluster Menggunakan cephadm Pada Rocky Linux 8" href=https://blog.ajiarya.id/posts/ceph/cara-deploy-ceph-menggunakan-cephadm/></a>
-</article>
-<article class="post-entry tag-entry">
-<header class=entry-header>
-<h2>Cara Upgrade Cluster Ceph Yang Menggunakan cephadm</h2>
-</header>
-<section class=entry-content>
-<p>Panduan Periksa versi ceph yang sedang digunakan ceph versions Lihat rilis ceph dan baca catatan rilis (release note) Kunjungi Ceph Release
-Lakukan upgrade ceph orch upgrade start --ceph-version &lt;versi_ceph> # Contoh # ceph orch upgrade start --ceph-version 16.2.5 Pantau proses upgrade Gunakan perintah-perintah dibawah untuk melakukan pengecekan pada proses upgrade
-ceph orch upgrade status ceph -W cephadm ceph orch ps ceph versions ceph versions saat proses upgrade sedang berlangsung...</p>
-</section>
-<footer class=entry-footer>August 22, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Upgrade Cluster Ceph Yang Menggunakan cephadm" href=https://blog.ajiarya.id/posts/ceph/cara-upgrade-cluster-cephadm/></a>
-</article>
 <footer class=page-footer>
 <nav class=pagination>
 <a class=prev href=https://blog.ajiarya.id/tags/ceph/page/2/>« Prev Page</a>
+<a class=next href=https://blog.ajiarya.id/tags/ceph/page/4/>Next Page »</a>
 </nav>
 </footer>
 </main>

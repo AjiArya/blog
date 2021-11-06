@@ -17,7 +17,7 @@
 <link rel=mask-icon href=https://blog.ajiarya.id/%3Clink%20/%20abs%20url%3E>
 <meta name=theme-color content="#2e2e33">
 <meta name=msapplication-TileColor content="#2e2e33">
-<meta name=generator content="Hugo 0.89.0">
+<meta name=generator content="Hugo 0.89.1">
 <link rel=alternate type=application/rss+xml href=https://blog.ajiarya.id/index.xml>
 <link rel=alternate type=application/json href=https://blog.ajiarya.id/index.json>
 <script type=application/javascript>var doNotTrack=!1;doNotTrack||(function(a,e,f,g,b,c,d){a.GoogleAnalyticsObject=b,a[b]=a[b]||function(){(a[b].q=a[b].q||[]).push(arguments)},a[b].l=1*new Date,c=e.createElement(f),d=e.getElementsByTagName(f)[0],c.async=1,c.src=g,d.parentNode.insertBefore(c,d)}(window,document,'script','https://www.google-analytics.com/analytics.js','ga'),ga('create','UA-182251419-3','auto'),ga('send','pageview'))</script><meta property="og:title" content="Aji Arya">
@@ -85,6 +85,39 @@ IMTEK
 <main class=main>
 <article class=post-entry>
 <header class=entry-header>
+<h2>Cara Menyiapkan Ceph Tiering</h2>
+</header>
+<section class=entry-content>
+<p>Pendahuluan Untuk menyiapkan ceph tiering kita harus menyiapkan 2 pool. 1 sebagai penyimpanan data tetap dan 1 sebagai cache.
+Panduan Buat crush rule untuk hdd dan ssd ceph osd crush rule create-replicated replicated_hdd default host hdd ceph osd crush rule create-replicated replicated_ssd default host ssd Buat pool untuk hdd dan ssd ceph osd pool create hot-storage 32 32 replicated replicated_ssd ceph osd pool create cold-storage 32 32 replicated replicated_hdd ceph osd pool application enable hot-storage rbd ceph osd pool application enable cold-storage rbd Tambahkan tier, atur cache-mode, dan atur overlay ceph osd tier add cold-storage hot-storage ceph osd tier cache-mode hot-storage writeback ceph osd tier set-overlay cold-storage hot-storage Atur hit_set_type ceph osd pool set hot-storage hit_set_type bloom Referensi Ceph Pools Ceph Tiering </p>
+</section>
+<footer class=entry-footer>October 7, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Cara Menyiapkan Ceph Tiering" href=https://blog.ajiarya.id/posts/ceph/cara-menyiapkan-ceph-tiering/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
+<h2>Cara Menyiapkan Node Exporter Pada Linux (CentOS/Ubuntu)</h2>
+</header>
+<section class=entry-content>
+<p>Panduan Menyiapkan Node Exporter Kunjungi website prometheus untuk melihat versi node exporter yang tersedia https://prometheus.io/download/#node_exporter
+Buat user
+sudo useradd --no-create-home --shell /bin/false node_exporter Unduh, ekstrak, dan pasang node exporter wget https://github.com/prometheus/node_exporter/releases/download/v1.2.2/node_exporter-1.2.2.linux-amd64.tar.gz tar xf node_exporter-1.2.2.linux-amd64.tar.gz sudo cp node_exporter-1.2.2.linux-amd64/node_exporter /usr/local/bin/node_exporter Buat file servis node_exporter sudo bash -c 'cat&lt;&lt;EOF > /etc/systemd/system/node_exporter.service [Unit] Description=Node Exporter Wants=network-online.target After=network-online.target [Service] User=node_exporter Group=node_exporter Type=simple ExecStart=/usr/local/bin/node_exporter [Install] WantedBy=multi-user.target EOF' Jalankan servis node_exporter sudo systemctl enable --now node_exporter sudo systemctl status node_exporter Tambahkan konfigurasi pada prometheus....</p>
+</section>
+<footer class=entry-footer>October 7, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Cara Menyiapkan Node Exporter Pada Linux (CentOS/Ubuntu)" href=https://blog.ajiarya.id/posts/monitoring/cara-menyiapkan-node-exporter/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
+<h2>Cara Memasang OpenStack Exporter</h2>
+</header>
+<section class=entry-content>
+<p>Prasyarat OpenStack terinstall Panduan Buat user openstack-exporter useradd --no-create-home --shell /bin/false openstack-exporter Buat file konfigurasi mkdir /etc/openstack/ cat&lt;&lt;EOF > /etc/openstack/clouds.yaml clouds: default: region_name: &lt;region_name> identity_api_version: 3 identity_interface: &lt;endpoint_interface> # admin/internal/public auth: username: &lt;username> password: &lt;password> project_name: &lt;project_name> project_domain_name: &lt;project_domain_name> project_domain_id: &lt;project_domain_id> user_domain_name: &lt;user_domain_name> auth_url: https://&lt;keystone_endpoint>:&lt;keystone_port>/v3 verify: false EOF Buat file systemd cat&lt;&lt;EOF > /etc/systemd/system/openstack-exporter.service [Unit] Description=OpenStack Exporter OPEX Wants=network-online.target After=network-online.target [Service] User=openstack-exporter Group=openstack-exporter Type=simple ExecStart=openstack-exporter Surabaya [Install] WantedBy=multi-user....</p>
+</section>
+<footer class=entry-footer>September 18, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Cara Memasang OpenStack Exporter" href=https://blog.ajiarya.id/posts/openstack/cara-memasang-openstack-exporter/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
 <h2>Cara Menghapus Node Rusak Pada Proxmox</h2>
 </header>
 <section class=entry-content>
@@ -102,40 +135,6 @@ IMTEK
 </section>
 <footer class=entry-footer>September 18, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
 <a class=entry-link aria-label="post link to Cara Menyiapkan Ceph Exporter [Containerized]" href=https://blog.ajiarya.id/posts/ceph/cara-menyiapkan-ceph-exporter/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>Cara Menyiapkan Grafana Pada Linux (CentOS/Ubuntu)</h2>
-</header>
-<section class=entry-content>
-<p>Panduan RHEL/CentOS/Rocky Menyiapkan repository grafana sudo bash -c 'cat&lt;&lt;EOF > /etc/yum.repos.d/grafana.repo [grafana] name=grafana baseurl=https://packages.grafana.com/oss/rpm repo_gpgcheck=1 enabled=1 gpgcheck=1 gpgkey=https://packages.grafana.com/gpg.key sslverify=1 sslcacert=/etc/pki/tls/certs/ca-bundle.crt EOF Pasang grafana
-yum sudo yum install -y grafana dnf sudo dnf install -y grafana Jalankan dan aktifkan servis grafana
-sudo systemctl daemon-reload sudo systemctl enable --now grafana-server Debian/Ubuntu Menyiapkan repository grafana # Menambahkan gpg key wget -q -O - https://packages....</p>
-</section>
-<footer class=entry-footer>September 18, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Menyiapkan Grafana Pada Linux (CentOS/Ubuntu)" href=https://blog.ajiarya.id/posts/monitoring/cara-menyiapkan-grafana/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>Cara Menyiapkan Prometheus Pada Linux</h2>
-</header>
-<section class=entry-content>
-<p>Panduan Buat user prometheus sudo useradd --no-create-home --shell /bin/false prometheus Unduh dan pasang prometheus wget https://github.com/prometheus/prometheus/releases/download/v2.30.0/prometheus-2.30.0.linux-amd64.tar.gz tar xf prometheus-2.30.0.linux-amd64.tar.gz sudo cp prometheus-2.30.0.linux-amd64/prometheus /usr/local/bin/prometheus Buat konfigurasi prometheus sudo mkdir /etc/prometheus sudo bash -c 'cat &lt;&lt;EOF > /etc/prometheus/prometheus.yml global: scrape_interval: 15s evaluation_interval: 15s scrape_configs: - job_name: 'prometheus' static_configs: - targets: - localhost:9090 EOF' Buat file systemd untuk prometheus sudo mkdir /var/lib/prometheus sudo chown prometheus:prometheus /var/lib/prometheus sudo bash -c 'cat&lt;&lt;EOF > /etc/systemd/system/prometheus....</p>
-</section>
-<footer class=entry-footer>September 18, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Menyiapkan Prometheus Pada Linux" href=https://blog.ajiarya.id/posts/monitoring/cara-menyiapkan-prometheus/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>Cara Pasang GitLab CE [CentOS 8]</h2>
-</header>
-<section class=entry-content>
-<p>Panduan Jalankan script untuk pemasangan repository curl https://packages.gitlab.com/install/repositories/gitlab/gitlab-ce/script.rpm.sh | sudo bash Pasang GitLab
-Menggunakan alamat Domain sudo EXTERNAL_URL="https://gitlab.example.com" dnf install -y gitlab-ce Menggunakan alamat IP # dengan alamat IP sudo EXTERNAL_URL="https://192.168.10.10" dnf install -y gitlab-ce Dapatkan password untuk login pertama kali
-sudo cat /etc/gitlab/initial_root_password Masuk GitLab via browser </p>
-</section>
-<footer class=entry-footer>September 18, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Pasang GitLab CE [CentOS 8]" href=https://blog.ajiarya.id/posts/gitlab/cara-memasang-gitlab-ce/></a>
 </article>
 <footer class=page-footer>
 <nav class=pagination>

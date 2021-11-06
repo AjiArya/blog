@@ -17,7 +17,7 @@
 <link rel=mask-icon href=https://blog.ajiarya.id/%3Clink%20/%20abs%20url%3E>
 <meta name=theme-color content="#2e2e33">
 <meta name=msapplication-TileColor content="#2e2e33">
-<meta name=generator content="Hugo 0.89.0">
+<meta name=generator content="Hugo 0.89.1">
 <link rel=alternate type=application/rss+xml href=https://blog.ajiarya.id/tags/storage/index.xml>
 <script type=application/javascript>var doNotTrack=!1;doNotTrack||(function(a,e,f,g,b,c,d){a.GoogleAnalyticsObject=b,a[b]=a[b]||function(){(a[b].q=a[b].q||[]).push(arguments)},a[b].l=1*new Date,c=e.createElement(f),d=e.getElementsByTagName(f)[0],c.async=1,c.src=g,d.parentNode.insertBefore(c,d)}(window,document,'script','https://www.google-analytics.com/analytics.js','ga'),ga('create','UA-182251419-3','auto'),ga('send','pageview'))</script><meta property="og:title" content="Storage">
 <meta property="og:description" content="Aji Arya's Personal Blog">
@@ -86,6 +86,37 @@ IMTEK
 </header>
 <article class="post-entry tag-entry">
 <header class=entry-header>
+<h2>Cara Menghilangkan warning insecure global_id reclaim Pada Ceph</h2>
+</header>
+<section class=entry-content>
+<p>Panduan Perintah untuk mematikan fitur insecure global_id reclaim ceph config set mon auth_expose_insecure_global_id_reclaim false ceph config set mon auth_allow_insecure_global_id_reclaim false Referensi CEPH - CVE-2021-20288 </p>
+</section>
+<footer class=entry-footer>October 7, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Cara Menghilangkan warning insecure global_id reclaim Pada Ceph" href=https://blog.ajiarya.id/posts/ceph/cara-menghilangkan-insecure-global-id-reclaim/></a>
+</article>
+<article class="post-entry tag-entry">
+<header class=entry-header>
+<h2>Cara Menyiapkan Ceph Tiering</h2>
+</header>
+<section class=entry-content>
+<p>Pendahuluan Untuk menyiapkan ceph tiering kita harus menyiapkan 2 pool. 1 sebagai penyimpanan data tetap dan 1 sebagai cache.
+Panduan Buat crush rule untuk hdd dan ssd ceph osd crush rule create-replicated replicated_hdd default host hdd ceph osd crush rule create-replicated replicated_ssd default host ssd Buat pool untuk hdd dan ssd ceph osd pool create hot-storage 32 32 replicated replicated_ssd ceph osd pool create cold-storage 32 32 replicated replicated_hdd ceph osd pool application enable hot-storage rbd ceph osd pool application enable cold-storage rbd Tambahkan tier, atur cache-mode, dan atur overlay ceph osd tier add cold-storage hot-storage ceph osd tier cache-mode hot-storage writeback ceph osd tier set-overlay cold-storage hot-storage Atur hit_set_type ceph osd pool set hot-storage hit_set_type bloom Referensi Ceph Pools Ceph Tiering </p>
+</section>
+<footer class=entry-footer>October 7, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Cara Menyiapkan Ceph Tiering" href=https://blog.ajiarya.id/posts/ceph/cara-menyiapkan-ceph-tiering/></a>
+</article>
+<article class="post-entry tag-entry">
+<header class=entry-header>
+<h2>Cara Menyiapkan Ceph Exporter [Containerized]</h2>
+</header>
+<section class=entry-content>
+<p>Prasyarat Docker Git Panduan Clone repository ceph_exporter git clone https://github.com/digitalocean/ceph_exporter.git Buat container image cd ceph_exporter/ docker build -t digitalocean/ceph_exporter . Buat keyring untuk ceph_exporter Lakukan dari host yang memiliki ceph.conf dan ceph.client.admin.keyring untuk melakukan administrasi user ceph auth add client.ceph_exporter mon 'allow r' mgr 'allow r' osd 'allow r' mds 'allow r' ceph auth get client.ceph_exporter -o /etc/ceph/ceph.client.ceph_exporter.keyring # Salin keyring ke monitoring node scp /etc/ceph/{ceph....</p>
+</section>
+<footer class=entry-footer>September 18, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Cara Menyiapkan Ceph Exporter [Containerized]" href=https://blog.ajiarya.id/posts/ceph/cara-menyiapkan-ceph-exporter/></a>
+</article>
+<article class="post-entry tag-entry">
+<header class=entry-header>
 <h2>Cara Menyiapkan Klaster Ceph Pada Proxmox 7</h2>
 </header>
 <section class=entry-content>
@@ -103,41 +134,6 @@ IMTEK
 </section>
 <footer class=entry-footer>September 6, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
 <a class=entry-link aria-label="post link to Cara Simulasi Kegagalan Disk Pada Klaster Ceph" href=https://blog.ajiarya.id/posts/ceph/cara-simulasi-kegagalan-disk-ceph/></a>
-</article>
-<article class="post-entry tag-entry">
-<header class=entry-header>
-<h2>Cara Menghapus OSD [Manual]</h2>
-</header>
-<section class=entry-content>
-<p>Panduan Hentikan servis jika masih berjalan sudo systemctl stop ceph-osd@&lt;id> Atur state OSD sebagai down dan out ceph osd set out &lt;id> ceph osd set down &lt;id> Hapus OSD dari klaster ceph # Hapus auth ceph auth rm osd.&lt;osd_id> # Hapus dari CRUSH Map ceph osd crush remove osd.&lt;osd_id> # Hapus dari OSD Map ceph osd rm &lt;osd_id> Zap disk # ceph-volume lvm destroy &lt;device_path> --destroy ceph-volume lvm destroy /dev/sdX --destroy Solusi (Workaround) Tidak bisa menjalankan ceph-volume lvm destroy Catat informasi mengenai OSD yang ingin dihapus block osd_id ceph-volume lvm list Format Disk menggunakan wipefs wipefs -fa &lt;device_path> Hapus LVM jika masih ada # Lihat device mapper dmsetup ls # Hapus device mapper OSD yang ingin dihapus dmsetup remove &lt;device_map> Zap disk # ceph-volume lvm destroy &lt;device_path> --destroy ceph-volume lvm destroy /dev/sdX --destroy Referensi Ceph Docs - ceph-volume ZAP The Geek Diary - dmsetup </p>
-</section>
-<footer class=entry-footer>September 5, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Menghapus OSD [Manual]" href=https://blog.ajiarya.id/posts/ceph/cara-menghapus-osd/></a>
-</article>
-<article class="post-entry tag-entry">
-<header class=entry-header>
-<h2>Cara Mengubah Device Class OSD</h2>
-</header>
-<section class=entry-content>
-<p>Pendahuluan Device Class berguna untuk mempermudah ceph untuk mendistribusikan data berdasarkan device class yang telah ditentukan didalam CRUSH Rule
-Panduan Hapus class default yang didapatkan ketika membuat OSD ceph osd crush rm-device-class &lt;osd_id> Berikan class baru pada OSD yang diinginkan ceph osd crush set-device-class performance $i Contoh memanfaatkan device class # Buat CRUSH rule # Contoh: # ceph osd crush rule create-replicated &lt;rule-name> &lt;root> &lt;failure-domain> &lt;class> ceph osd crush rule create-replicated replicated-performance default host performance # Buat pool ceph osd pool create performance-pool 32 32 replicated replicated-performance Referensi Ceph News - Crush Device Classes </p>
-</section>
-<footer class=entry-footer>September 5, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Mengubah Device Class OSD" href=https://blog.ajiarya.id/posts/ceph/cara-mengubah-device-class-osd/></a>
-</article>
-<article class="post-entry tag-entry">
-<header class=entry-header>
-<h2>Memilih Deployment Tool Ceph</h2>
-</header>
-<section class=entry-content>
-<p>Panduan Rekomendasi cephadm (Container)
-cephadm tersedia sejak versi v15.2.0 (Octopus). cephadm mendeploy servis-servis Ceph dalam bentuk container, dengan cephadm mempermudah untuk memanajemen klaster seperti menambahkan, menghapuskan, atau memperbarui komponen Ceph.
-cephadm mendukung docker dan podman sebagai container runtime.
-Rook (Container / Manage by Kubernetes)
-Rook tersedia sejak versi Nautilus. Rook men-deploy dan melakukan manajemen klaster Ceph yang berjalan didalam Kubernetes. Jika ingin menggunakan Ceph sebagai storage untuk klaster Kubernetes, Rook adalah tool cocok digunakan....</p>
-</section>
-<footer class=entry-footer>September 5, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Memilih Deployment Tool Ceph" href=https://blog.ajiarya.id/posts/ceph/memilih-deployment-tool-ceph/></a>
 </article>
 <footer class=page-footer>
 <nav class=pagination>
