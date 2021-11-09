@@ -86,6 +86,28 @@ IMTEK
 </header>
 <article class="post-entry tag-entry">
 <header class=entry-header>
+<h2>Cara Memperbaiki Warning Volumes Has Failed Dependencies Pada Ceph</h2>
+</header>
+<section class=entry-content>
+<p>Panduan Pasang package python3-distutil pada mesin-mesin ceph-mgr sudo apt install python3-distutils Restart ceph-mgr secara satu per satu sudo systemctl restart ceph-mgr.target Hasil Referensi Proxmox Forum Thread </p>
+</section>
+<footer class=entry-footer>November 6, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Cara Memperbaiki Warning Volumes Has Failed Dependencies Pada Ceph" href=https://blog.ajiarya.id/posts/ceph/cara-memperbaiki-warning-volumes-has-failed-dependencies-pada-ceph/></a>
+</article>
+<article class="post-entry tag-entry">
+<header class=entry-header>
+<h2>Ceph - Cara Upgrade Dari Bionic Octopus ke Focal Pacific</h2>
+</header>
+<section class=entry-content>
+<p>Rencana Upgrade Dari:
+Ubuntu 18.04 (Bionic) Ceph 15.2.X (Octopus) Ke:
+Ubuntu 20.04 (Focal) Ceph 16.2.X (Pacific) Prasyarat Klaster dalam keadaan HEALTH_OK Panduan Pasang flag pada klaster dan set default sudo ceph osd set noout sudo ceph osd set nobackfill sudo ceph osd set norecover sudo ceph osd set norebalance Update dan upgrade package sudo apt update -y; sudo apt upgrade -y Upgrade ke Ubuntu Focal sudo apt full-upgrade sudo do-release-upgrade -f DistUpgradeViewNonInteractive Reboot mesin sudo reboot Upgrade package ceph #1: semua package ceph sudo apt install -y ceph #2: spesifik package ceph sudo apt install -y ceph-mon sudo apt install -y ceph-mgr sudo apt install -y ceph-osd Restart servis ceph-mon dan ceph-mgr sudo systemctl restart ceph-mon....</p>
+</section>
+<footer class=entry-footer>November 6, 2021&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Ceph - Cara Upgrade Dari Bionic Octopus ke Focal Pacific" href=https://blog.ajiarya.id/posts/ceph/cara-upgrade-bionic-octopus-ke-focal-pacific-pada-ceph-klaster/></a>
+</article>
+<article class="post-entry tag-entry">
+<header class=entry-header>
 <h2>Cara Mengatur Mode PG Autoscale Pada Ceph Pool</h2>
 </header>
 <section class=entry-content>
@@ -114,26 +136,6 @@ Panduan Buat crush rule untuk hdd dan ssd ceph osd crush rule create-replicated 
 </section>
 <footer class=entry-footer>October 7, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
 <a class=entry-link aria-label="post link to Cara Menyiapkan Ceph Tiering" href=https://blog.ajiarya.id/posts/ceph/cara-menyiapkan-ceph-tiering/></a>
-</article>
-<article class="post-entry tag-entry">
-<header class=entry-header>
-<h2>Cara Menyiapkan Ceph Exporter [Containerized]</h2>
-</header>
-<section class=entry-content>
-<p>Prasyarat Docker Git Panduan Clone repository ceph_exporter git clone https://github.com/digitalocean/ceph_exporter.git Buat container image cd ceph_exporter/ docker build -t digitalocean/ceph_exporter . Buat keyring untuk ceph_exporter Lakukan dari host yang memiliki ceph.conf dan ceph.client.admin.keyring untuk melakukan administrasi user ceph auth add client.ceph_exporter mon 'allow r' mgr 'allow r' osd 'allow r' mds 'allow r' ceph auth get client.ceph_exporter -o /etc/ceph/ceph.client.ceph_exporter.keyring # Salin keyring ke monitoring node scp /etc/ceph/{ceph....</p>
-</section>
-<footer class=entry-footer>September 18, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Menyiapkan Ceph Exporter [Containerized]" href=https://blog.ajiarya.id/posts/ceph/cara-menyiapkan-ceph-exporter/></a>
-</article>
-<article class="post-entry tag-entry">
-<header class=entry-header>
-<h2>Cara Menyiapkan Klaster Ceph Pada Proxmox 7</h2>
-</header>
-<section class=entry-content>
-<p>Prasyarat Proxmox terinstall Panduan Bootstrap ceph Buka menu ceph Pilih menu Datacenter Pilih menu Ceph Klik “Install Ceph” Pilih versi ceph Pilih ceph version Klik “Start pacific installation” Konfirmasi instalasi Ketik “Y”. Lalu tekan tombol enter Klik “Next” Konfigurasi klaster ceph Public Network Cluster Network Jumlah replika Minimum replika Monitor node pertama Instalasi sukses....</p>
-</section>
-<footer class=entry-footer>September 13, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Menyiapkan Klaster Ceph Pada Proxmox 7" href=https://blog.ajiarya.id/posts/proxmox/cara-menyiapkan-klaster-ceph-pada-proxmox-7/></a>
 </article>
 <footer class=page-footer>
 <nav class=pagination>

@@ -87,6 +87,28 @@ IMTEK
 </header>
 <article class=post-entry>
 <header class=entry-header>
+<h2>Cara Memperbaiki Warning Volumes Has Failed Dependencies Pada Ceph</h2>
+</header>
+<section class=entry-content>
+<p>Panduan Pasang package python3-distutil pada mesin-mesin ceph-mgr sudo apt install python3-distutils Restart ceph-mgr secara satu per satu sudo systemctl restart ceph-mgr.target Hasil Referensi Proxmox Forum Thread </p>
+</section>
+<footer class=entry-footer>November 6, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Cara Memperbaiki Warning Volumes Has Failed Dependencies Pada Ceph" href=https://blog.ajiarya.id/posts/ceph/cara-memperbaiki-warning-volumes-has-failed-dependencies-pada-ceph/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
+<h2>Ceph - Cara Upgrade Dari Bionic Octopus ke Focal Pacific</h2>
+</header>
+<section class=entry-content>
+<p>Rencana Upgrade Dari:
+Ubuntu 18.04 (Bionic) Ceph 15.2.X (Octopus) Ke:
+Ubuntu 20.04 (Focal) Ceph 16.2.X (Pacific) Prasyarat Klaster dalam keadaan HEALTH_OK Panduan Pasang flag pada klaster dan set default sudo ceph osd set noout sudo ceph osd set nobackfill sudo ceph osd set norecover sudo ceph osd set norebalance Update dan upgrade package sudo apt update -y; sudo apt upgrade -y Upgrade ke Ubuntu Focal sudo apt full-upgrade sudo do-release-upgrade -f DistUpgradeViewNonInteractive Reboot mesin sudo reboot Upgrade package ceph #1: semua package ceph sudo apt install -y ceph #2: spesifik package ceph sudo apt install -y ceph-mon sudo apt install -y ceph-mgr sudo apt install -y ceph-osd Restart servis ceph-mon dan ceph-mgr sudo systemctl restart ceph-mon....</p>
+</section>
+<footer class=entry-footer>November 6, 2021&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Ceph - Cara Upgrade Dari Bionic Octopus ke Focal Pacific" href=https://blog.ajiarya.id/posts/ceph/cara-upgrade-bionic-octopus-ke-focal-pacific-pada-ceph-klaster/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
 <h2>Cara Menyiapkan Bcache</h2>
 </header>
 <section class=entry-content>
@@ -116,26 +138,6 @@ smolflow :: ~ » ls -lh nginx.tar nginx.tar.gz -rw-r--r-- 1 ada ada 132M Oct 24 
 </section>
 <footer class=entry-footer>October 24, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
 <a class=entry-link aria-label="post link to Cara Import & Export Docker Image" href=https://blog.ajiarya.id/posts/docker/cara-import-export-docker-image/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>Cara Import Container Image Containerd Kubernetes</h2>
-</header>
-<section class=entry-content>
-<p>Panduan # Contoh: # ctr -n=k8s.io images import &lt;nama_file> ctr -n=k8s.io images import nginx.tar Referensi Scott’s Blog </p>
-</section>
-<footer class=entry-footer>October 24, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Import Container Image Containerd Kubernetes" href=https://blog.ajiarya.id/posts/kubernetes/cara-import-container-image-containerd-kubernetes/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>Cara Benchmark Web Menggunakan hey</h2>
-</header>
-<section class=entry-content>
-<p>Panduan Jalankan dengan jumlah request # 1000 request hey -n 1000 # 500 request bersamaan dengan sejumlah 1000 request hey -c 500 -n 1000 Jalankan dengan durasi waktu # 30 detik hey -z 30s # 5 menit hey -z 5m # 500 request bersamaan dengan durasi 5 menit hey -c 500 -z 5m Referensi GitHub - hey Man hey - Ubuntu </p>
-</section>
-<footer class=entry-footer>October 7, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Benchmark Web Menggunakan hey" href=https://blog.ajiarya.id/posts/benchmark/cara-benchmark-web/></a>
 </article>
 <footer class=page-footer>
 <nav class=pagination>

@@ -3,27 +3,36 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://blog.ajiarya.id/</loc>
-    <lastmod>2021-11-07T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://blog.ajiarya.id/posts/ceph/cara-deploy-ceph-menggunakan-ceph-deploy/</loc>
-    <lastmod>2021-11-07T00:00:00+00:00</lastmod>
+    <lastmod>2021-11-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.ajiarya.id/categories/</loc>
-    <lastmod>2021-11-07T00:00:00+00:00</lastmod>
+    <lastmod>2021-11-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.ajiarya.id/tags/ceph/</loc>
-    <lastmod>2021-11-07T00:00:00+00:00</lastmod>
+    <lastmod>2021-11-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.ajiarya.id/categories/ceph/</loc>
-    <lastmod>2021-11-07T00:00:00+00:00</lastmod>
+    <lastmod>2021-11-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.ajiarya.id/posts/ceph/cara-migrasi-ceph-daemon-ke-cephadm/</loc>
+    <lastmod>2021-11-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.ajiarya.id/posts/</loc>
-    <lastmod>2021-11-07T00:00:00+00:00</lastmod>
+    <lastmod>2021-11-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.ajiarya.id/tags/storage/</loc>
-    <lastmod>2021-11-07T00:00:00+00:00</lastmod>
+    <lastmod>2021-11-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.ajiarya.id/tags/</loc>
+    <lastmod>2021-11-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.ajiarya.id/tags/upgrade/</loc>
+    <lastmod>2021-11-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.ajiarya.id/posts/ceph/cara-upgrade-ceph-cluster-ceph-deploy/</loc>
+    <lastmod>2021-11-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.ajiarya.id/posts/ceph/cara-deploy-ceph-menggunakan-ceph-deploy/</loc>
     <lastmod>2021-11-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.ajiarya.id/posts/ceph/cara-memperbaiki-osd-tidak-bisa-up-pasca-upgrade/</loc>
@@ -36,9 +45,6 @@
     <lastmod>2021-11-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.ajiarya.id/posts/ceph/cara-upgrade-bionic-octopus-ke-focal-pacific-pada-ceph-klaster/</loc>
-    <lastmod>2021-11-06T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://blog.ajiarya.id/tags/upgrade/</loc>
     <lastmod>2021-11-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.ajiarya.id/tags/bcache/</loc>

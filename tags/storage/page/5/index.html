@@ -86,6 +86,29 @@ IMTEK
 </header>
 <article class="post-entry tag-entry">
 <header class=entry-header>
+<h2>Cara Stop atau Pause Klaster Ceph</h2>
+</header>
+<section class=entry-content>
+<p>Pendahuluan Saat kita ingin melakukan Maintenance atau Mematikan server sebaiknya kita menghentikan atau menjeda klaster Ceph yang sedang berjalan
+Panduan Menghentikan atau melakukan pause klaster ceph osd set noout ceph osd set norecover ceph osd set norebalance ceph osd set nobackfill ceph osd set nodown ceph osd set pause Menjalankan atau menghentikan pause klaster ceph osd unset noout ceph osd unset norecover ceph osd unset norebalance ceph osd unset nobackfill ceph osd unset nodown ceph osd unset pause Referensi Red Hat Ceph Storage 3 - 2....</p>
+</section>
+<footer class=entry-footer>September 4, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Cara Stop atau Pause Klaster Ceph" href=https://blog.ajiarya.id/posts/ceph/cara-stop-atau-pause-klaster-ceph/></a>
+</article>
+<article class="post-entry tag-entry">
+<header class=entry-header>
+<h2>Cara Deploy Ceph Dashboard Pada Deployment Manual</h2>
+</header>
+<section class=entry-content>
+<p>Prasyarat Klaster Ceph Panduan Install package ceph-mgr-dashboard pada semua host ceph-mgr
+Debian/Ubuntu sudo apt install -y ceph-mgr-dashboard RHEL/CentOS/Rocky 8 sudo dnf install -y ceph-mgr-dashboard RHEL/CentOS/Rocky 7 sudo yum install -y ceph-mgr-dashboard Aktifkan module dashboard pada ceph-mgr
+ceph mgr module enable dashboard Buat TLS untuk ceph dashboard ceph dashboard create-self-signed-cert Buat user echo "rahasia123" > password....</p>
+</section>
+<footer class=entry-footer>August 29, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Cara Deploy Ceph Dashboard Pada Deployment Manual" href=https://blog.ajiarya.id/posts/ceph/cara-deploy-ceph-dashboard-pada-deployment-manual/></a>
+</article>
+<article class="post-entry tag-entry">
+<header class=entry-header>
 <h2>Cara Membuat Ulang Ceph Monitor Yang Rusak [Manual Deployment]</h2>
 </header>
 <section class=entry-content>

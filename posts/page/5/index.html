@@ -87,6 +87,28 @@ IMTEK
 </header>
 <article class=post-entry>
 <header class=entry-header>
+<h2>Cara Menyiapkan Prometheus Pada Linux</h2>
+</header>
+<section class=entry-content>
+<p>Panduan Buat user prometheus sudo useradd --no-create-home --shell /bin/false prometheus Unduh dan pasang prometheus wget https://github.com/prometheus/prometheus/releases/download/v2.30.0/prometheus-2.30.0.linux-amd64.tar.gz tar xf prometheus-2.30.0.linux-amd64.tar.gz sudo cp prometheus-2.30.0.linux-amd64/prometheus /usr/local/bin/prometheus Buat konfigurasi prometheus sudo mkdir /etc/prometheus sudo bash -c 'cat &lt;&lt;EOF > /etc/prometheus/prometheus.yml global: scrape_interval: 15s evaluation_interval: 15s scrape_configs: - job_name: 'prometheus' static_configs: - targets: - localhost:9090 EOF' Buat file systemd untuk prometheus sudo mkdir /var/lib/prometheus sudo chown prometheus:prometheus /var/lib/prometheus sudo bash -c 'cat&lt;&lt;EOF > /etc/systemd/system/prometheus....</p>
+</section>
+<footer class=entry-footer>September 18, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Cara Menyiapkan Prometheus Pada Linux" href=https://blog.ajiarya.id/posts/monitoring/cara-menyiapkan-prometheus/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
+<h2>Cara Pasang GitLab CE [CentOS 8]</h2>
+</header>
+<section class=entry-content>
+<p>Panduan Jalankan script untuk pemasangan repository curl https://packages.gitlab.com/install/repositories/gitlab/gitlab-ce/script.rpm.sh | sudo bash Pasang GitLab
+Menggunakan alamat Domain sudo EXTERNAL_URL="https://gitlab.example.com" dnf install -y gitlab-ce Menggunakan alamat IP # dengan alamat IP sudo EXTERNAL_URL="https://192.168.10.10" dnf install -y gitlab-ce Dapatkan password untuk login pertama kali
+sudo cat /etc/gitlab/initial_root_password Masuk GitLab via browser </p>
+</section>
+<footer class=entry-footer>September 18, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Cara Pasang GitLab CE [CentOS 8]" href=https://blog.ajiarya.id/posts/gitlab/cara-memasang-gitlab-ce/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
 <h2>Cara Menyiapkan Klaster Ceph Pada Proxmox 7</h2>
 </header>
 <section class=entry-content>
@@ -116,31 +138,6 @@ Debian Based sudo apt update sudo apt install -y dnsmasq RHEL Based sudo yum upd
 </section>
 <footer class=entry-footer>September 12, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
 <a class=entry-link aria-label="post link to Cara Konfigurasi DNS Server menggunakan dnsmasq" href=https://blog.ajiarya.id/posts/linux/cara-konfigurasi-dns-server-menggunakan-dnsmasq/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>Cara Memperbaiki Git SSH Permission Denied GitLab [Red Hat/CentOS]</h2>
-</header>
-<section class=entry-content>
-<p>Masalah git@gitlab.example.com: Permission denied (publickey,gssapi-keyex,gssapi-with-mic,password). Tidak bisa git clone walaupun sudah menambahkan public key ssh pada akun GitLab
-Kondisi Sudah menambahkan Public Key SSH pada akun GitLab Tidak bisa menjalankan git clone ke repository private walaupun sebagai pemilik repository Panduan Lihat error pada SELinux journalctl -t setroubleshoot Error terjadi karena file authorized_key
-Lihat SELinux Context pada direktori .ssh gitlab ls -Z /var/opt/gitlab/.ssh/authorized_keys # Output: # unconfined_u:object_r:var_t:s0 /var/opt/gitlab/....</p>
-</section>
-<footer class=entry-footer>September 12, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Memperbaiki Git SSH Permission Denied GitLab [Red Hat/CentOS]" href=https://blog.ajiarya.id/posts/gitlab/cara-memperbaiki-git-ssh-permission-denied/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>Cara Memasang Proxmox Exporter</h2>
-</header>
-<section class=entry-content>
-<p>Prasyarat Proxmox terinstall Panduan Buat token untuk proxmox-expoter
-Buat API Token Datacenter > API Token Klik Add Masukan Token ID (Catat bagian ini) Hapus centang pada Privilege Separation Klik Add Salin Token Secret Klik “Copy Secret Value” (Catat bagian ini) Pasang proxmox-exporter
-python3 -m pip install prometheus-pve-exporter Buat servis systemd
-Buat user pve_exporter useradd --no-create-home --shell /bin/false pve_exporter Buat file konfigurasi mkdir /etc/pve_exporter cat&lt;&lt;EOF > /etc/pve_exporter/config....</p>
-</section>
-<footer class=entry-footer>September 11, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Memasang Proxmox Exporter" href=https://blog.ajiarya.id/posts/proxmox/cara-memasang-proxmox-exporter/></a>
 </article>
 <footer class=page-footer>
 <nav class=pagination>

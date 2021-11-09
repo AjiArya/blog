@@ -85,6 +85,27 @@ IMTEK
 <main class=main>
 <article class=post-entry>
 <header class=entry-header>
+<h2>Cara Membuat Ulang Ceph Monitor Yang Rusak [Manual Deployment]</h2>
+</header>
+<section class=entry-content>
+<p>Pendahuluan Jika mengalami kerusakan pada ceph monitor kita bisa melakukan hapus dan buat monitor yang rusak tersebut dengan ceph-monitor lainnya masih tersedia bagi cluster
+Panduan Login sebagai root sudo -i Hentikan service monitor jika masih berjalan systemctl stop ceph-mon@&lt;monitor_name> Hapus direktori monitor dan buat ulang direktori rm -rf /var/lib/ceph/mon/ceph-&lt;monitor_name> mkdir /var/lib/ceph/mon/ceph-&lt;monitor_name> Remove monitor from the cluster ceph mon rm &lt;monitor_name> Dapatkan keyring dan monmap (monitor map) ceph auth get mon....</p>
+</section>
+<footer class=entry-footer>August 24, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Cara Membuat Ulang Ceph Monitor Yang Rusak [Manual Deployment]" href=https://blog.ajiarya.id/posts/ceph/cara-membuat-ulang-ceph-mon/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
+<h2>Cara Melakukan Percabangan Dasar Bash - Bagian 2 [Periksa Direktori, File, & Variabel]</h2>
+</header>
+<section class=entry-content>
+<p>Panduan Parameter yang bisa digunakan -d true jika direktori ada -e true jika file ada -v true jika variabel memiliki nilai Contoh 1: Periksa Direktori Script #!/bin/bash if [[ -d halo ]]; then echo "Direktori ada" else echo "Direktori tidak ada" fi Contoh 2: Periksa File Script #!/bin/bash if [[ -e halo.txt ]]; then echo "File ada" else echo "File tidak ada" fi Contoh 3: Periksa Variabel Script #!...</p>
+</section>
+<footer class=entry-footer>August 23, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Cara Melakukan Percabangan Dasar Bash - Bagian 2 [Periksa Direktori, File, & Variabel]" href=https://blog.ajiarya.id/posts/bash/cara-melakukan-percabangan-pada-bash-bagian-2/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
 <h2>Cara Membuat Rootless Container Podman Bisa Dikelola Sebagai Service</h2>
 </header>
 <section class=entry-content>
@@ -115,30 +136,6 @@ Panduan ssh -R [remote_address_bind]:[remote_port_bind]:[local_address_bind]:[lo
 </section>
 <footer class=entry-footer>August 22, 2021&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Aji Arya</footer>
 <a class=entry-link aria-label="post link to Cara Deploy Ceph Cluster Menggunakan cephadm Pada Rocky Linux 8" href=https://blog.ajiarya.id/posts/ceph/cara-deploy-ceph-menggunakan-cephadm/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>Cara Upgrade Cluster Ceph Yang Menggunakan cephadm</h2>
-</header>
-<section class=entry-content>
-<p>Panduan Periksa versi ceph yang sedang digunakan ceph versions Lihat rilis ceph dan baca catatan rilis (release note) Kunjungi Ceph Release
-Lakukan upgrade ceph orch upgrade start --ceph-version &lt;versi_ceph> # Contoh # ceph orch upgrade start --ceph-version 16.2.5 Pantau proses upgrade Gunakan perintah-perintah dibawah untuk melakukan pengecekan pada proses upgrade
-ceph orch upgrade status ceph -W cephadm ceph orch ps ceph versions ceph versions saat proses upgrade sedang berlangsung...</p>
-</section>
-<footer class=entry-footer>August 22, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Upgrade Cluster Ceph Yang Menggunakan cephadm" href=https://blog.ajiarya.id/posts/ceph/cara-upgrade-cluster-cephadm/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>Cara Konfigurasi SSH Config</h2>
-</header>
-<section class=entry-content>
-<p>Contoh SSH Config host &lt;nama_pintas> # Nama pintasan hostname &lt;alamat_tujuan> # Bisa IP Address ataupun domain user &lt;user> # Nama user untuk remote port &lt;port> # Port yang digunakan untuk SSH Panduan Buat file ssh config vim ~/.ssh/config ~/.ssh/config host home-lab hostname 1.tcp.jp.ngrok.io user ubuntu port 2222 Lakukan SSH ssh home-lab Catatan
-Cara manual jika tanpa menggunakan ssh config: ssh ubuntu@1.tcp.jp.ngrok.io -p2222
-</p>
-</section>
-<footer class=entry-footer>August 20, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Konfigurasi SSH Config" href=https://blog.ajiarya.id/posts/linux/cara-konfigurasi-ssh-config/></a>
 </article>
 <footer class=page-footer>
 <nav class=pagination>

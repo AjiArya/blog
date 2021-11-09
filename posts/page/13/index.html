@@ -87,6 +87,28 @@ IMTEK
 </header>
 <article class=post-entry>
 <header class=entry-header>
+<h2>Cara Membuat Storage Pool Libvirt Menggunakan python-tfgen</h2>
+</header>
+<section class=entry-content>
+<p>Prasyarat Terraform python-tfgen Panduan Buat direktori untuk penyimpanan data mkdir -p /data/images mkdir -p /data/vms Tips!
+Mount direktori ke drive dengan kapasitas besar atau kecepatan tinggi.
+Buat yaml dengan kind: pool pool.yaml kind: pool uri: "qemu:///system" spec: - name: images path: /data/images - name: vms path: /data/vms Buat HCL berdasarkan yaml yang telah dibuat ./tfgen.py -f pool.yaml -o pool pool/main....</p>
+</section>
+<footer class=entry-footer>August 17, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Cara Membuat Storage Pool Libvirt Menggunakan python-tfgen" href=https://blog.ajiarya.id/posts/python-tfgen/cara-membuat-pool-dengan-python-tfgen/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
+<h2>Cara Membuat VM Libvirt Menggunakan python-tfgen</h2>
+</header>
+<section class=entry-content>
+<p>Prasyarat Terraform python-tfgen Storage Pool (Baca disini untuk cara membuat Storage Pool) Image (Baca disini untuk cara membuat Image) Network (Baca disini untuk cara membuat Network) Panduan Buat yaml dengan kind: vm lalu isikan dengan daftar image yang diinginkan image.yaml kind: vm uri: "qemu:///system" spec: - name: vm1 hostname: vm1 nested_enabled: true os: ubuntu vcpus: 2 memory: 2G console: vnc cloud_data: users: - name: root public_key: - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDBpZKhFbJ9r/gEef9KYo13VoEgBOkyMw06aOCzltT8wsjYPRMYzb2cbuiJBqJq5sXBrpaunTh5M7F9TyHQxhZnGgGVdutX7Q3RTOxWCHNMOxnrN7gQAHQ0kdqegrvUKNB7ym/2G3baz7pmxXf+I1Tw5AChJ8kIBDB9DnzVdtnMYxT0nivY1f6gSR2cgStEsuSbZDlBQ5Lt6W+sUyNkffddpZl0+QHAFM6UFTJNcuwMBqQG75/ZcwqLkQKU6pg0kZnDgmElXtJUKu141PJ0EbhkeOsh+zjYuwScotQYbN/MLN8fAhlQLFOwX/g3o6M9A49jyHVglQCxP2mI+d3Fra+ykrcQ7eTkPncwCCEmZYLjonQl3qhHHcbM7He1kOnORdVC/f/Uz4VsX+cMn5WGs1P+qyZKRAvw6egqWAkS0GPfEjdkhqLQ4WU9mC26aaaQfBqmMos1XZ/nRTuGAc6qb0SOkz5XN0g5ISNmCUpsnxO4YocmWP/sNDRPWBIzcycZE6s= student@home-lab base_image: storage_pool: images name: ubuntu-focal disks: storage_pool: vms disks: - name: vm1-vda....</p>
+</section>
+<footer class=entry-footer>August 17, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Cara Membuat VM Libvirt Menggunakan python-tfgen" href=https://blog.ajiarya.id/posts/python-tfgen/cara-membuat-vm-dengan-python-tfgen/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
 <h2>Cara Menggunakan Terraform Libvirt Provider Dengan Bantuan python-tfgen</h2>
 </header>
 <section class=entry-content>
@@ -118,27 +140,6 @@ Referensi Sewa Server Hetzner Robot - Server Auction Prasyarat Server Sistem Ope
 </section>
 <footer class=entry-footer>August 17, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
 <a class=entry-link aria-label="post link to Cara Menyiapkan Home Lab Linux [Debian Bullseye/Ubuntu Focal]" href=https://blog.ajiarya.id/posts/linux/cara-menyiapkan-home-lab-debian-ubuntu/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>Cara Debug Bash Script</h2>
-</header>
-<section class=entry-content>
-<p>Panduan Gunakan kata kunci set pada bash dengan opsi -v #!/bin/bash # Tambahkan set -v pada script set -v Contoh read.sh #!/bin/bash # Baris berikut akan membuat bash script menjadi verbose set -v echo "Siapa namamu?" read NAMA echo "Berapa umurmu? (Dalam Tahun)" read UMUR # tampilkan nama echo "${NAMA}" # tampilkan umur echho "${UMUR}Tahun" # Sapa nama echo "Halo, ${NAMA}!" Ketika menjalankan read.sh...</p>
-</section>
-<footer class=entry-footer>August 12, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Debug Bash Script" href=https://blog.ajiarya.id/posts/bash/cara-debug-bash/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>Cara Melakukan Percabangan Dasar Bash - Bagian 1 [Operator Aritmatika]</h2>
-</header>
-<section class=entry-content>
-<p>Pendahuluan Jika kita ingin melakukan pengecekan terhadap suatu variabel maka kita membutuhkan yang namanya percabangan sebagai contoh, jika (if) variabel umur kurang dari 5 maka sama dengan balita, untuk melakukan hal tersebut berikut contoh singkatnya
-balita.sh #!/bin/bash export umur=4 # Cara 1 echo "Menjalankan cara 1" if [[ umur -lt 5 ]]; then echo "Kamu balita!" fi # Cara 2 echo "Menjalankan cara 2" if (( umur >= 5 )); then echo "Kamu balita!...</p>
-</section>
-<footer class=entry-footer>August 12, 2021&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Melakukan Percabangan Dasar Bash - Bagian 1 [Operator Aritmatika]" href=https://blog.ajiarya.id/posts/bash/cara-melakukan-percabangan-pada-bash-bagian-1/></a>
 </article>
 <footer class=page-footer>
 <nav class=pagination>

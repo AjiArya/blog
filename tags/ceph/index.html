@@ -86,6 +86,28 @@ IMTEK
 </header>
 <article class="post-entry tag-entry">
 <header class=entry-header>
+<h2>Ceph - Cara Migrasi Ceph Daemon ke cephadm</h2>
+</header>
+<section class=entry-content>
+<p>Lingkungan Ubuntu 20.04 Focal Ceph 15.2.X Octopus Podman 3.3.1 Mesin
+hostname ip address aa-bionic-ceph01 192.168.10.211 aa-bionic-ceph02 192.168.10.212 aa-bionic-ceph03 192.168.10.213 Panduan Masuk sebagai root sudo -i Pasang cephadm pada semua host curl --silent --remote-name --location https://github.com/ceph/ceph/raw/octopus/src/cephadm/cephadm chmod +x cephadm ./cephadm install # verifikasi dpkg -l cephadm Migrasi ceph-mon, lakukan pada setiap host ceph-mon cephadm adopt --style legacy --name mon....</p>
+</section>
+<footer class=entry-footer>November 9, 2021&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Ceph - Cara Migrasi Ceph Daemon ke cephadm" href=https://blog.ajiarya.id/posts/ceph/cara-migrasi-ceph-daemon-ke-cephadm/></a>
+</article>
+<article class="post-entry tag-entry">
+<header class=entry-header>
+<h2>Upgrade Ceph Cluster (ceph-deploy)</h2>
+</header>
+<section class=entry-content>
+<p>Lingkungan Ubuntu 18.04.06 LTS (Bionic Beaver) Ubuntu Cloud Archive Repository Ceph 13.2.9 - mimic (Sebelum upgrade) Ceph 15.2.14 - octopus (Setelah upgrade) Mesin
+hostname ip address aa-bionic-ceph01 192.168.10.211 aa-bionic-ceph02 192.168.10.212 aa-bionic-ceph03 192.168.10.213 Panduan Periksa versi ceph pada klaster sudo ceph versions keluaran { "mon": { "ceph version 13.2.9 (58a2a9b31fd08d8bb3089fce0e312331502ff945) mimic (stable)": 3 }, "mgr": { "ceph version 13....</p>
+</section>
+<footer class=entry-footer>November 9, 2021&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Upgrade Ceph Cluster (ceph-deploy)" href=https://blog.ajiarya.id/posts/ceph/cara-upgrade-ceph-cluster-ceph-deploy/></a>
+</article>
+<article class="post-entry tag-entry">
+<header class=entry-header>
 <h2>Cara Menyiapkan Klaster Ceph Menggunakan Ceph Deploy (Ubuntu 18.04 Bionic)</h2>
 </header>
 <section class=entry-content>
@@ -116,28 +138,6 @@ Panduan Aktifkan msgr2 pada ceph monitor sudo ceph mon enable-msgr2 Hasil Refere
 </section>
 <footer class=entry-footer>November 6, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
 <a class=entry-link aria-label="post link to Cara Memperbaiki Warning Monitors Have Not Enabled msgr2 Pada Ceph" href=https://blog.ajiarya.id/posts/ceph/cara-memperbaiki-monitors-have-not-enabled-msgr2/></a>
-</article>
-<article class="post-entry tag-entry">
-<header class=entry-header>
-<h2>Cara Memperbaiki Warning Volumes Has Failed Dependencies Pada Ceph</h2>
-</header>
-<section class=entry-content>
-<p>Panduan Pasang package python3-distutil pada mesin-mesin ceph-mgr sudo apt install python3-distutils Restart ceph-mgr secara satu per satu sudo systemctl restart ceph-mgr.target Hasil Referensi Proxmox Forum Thread </p>
-</section>
-<footer class=entry-footer>November 6, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Memperbaiki Warning Volumes Has Failed Dependencies Pada Ceph" href=https://blog.ajiarya.id/posts/ceph/cara-memperbaiki-warning-volumes-has-failed-dependencies-pada-ceph/></a>
-</article>
-<article class="post-entry tag-entry">
-<header class=entry-header>
-<h2>Ceph - Cara Upgrade Dari Bionic Octopus ke Focal Pacific</h2>
-</header>
-<section class=entry-content>
-<p>Rencana Upgrade Dari:
-Ubuntu 18.04 (Bionic) Ceph 15.2.X (Octopus) Ke:
-Ubuntu 20.04 (Focal) Ceph 16.2.X (Pacific) Prasyarat Klaster dalam keadaan HEALTH_OK Panduan Pasang flag pada klaster dan set default sudo ceph osd set noout sudo ceph osd set nobackfill sudo ceph osd set norecover sudo ceph osd set norebalance Update dan upgrade package sudo apt update -y; sudo apt upgrade -y Upgrade ke Ubuntu Focal sudo apt full-upgrade sudo do-release-upgrade -f DistUpgradeViewNonInteractive Reboot mesin sudo reboot Upgrade package ceph #1: semua package ceph sudo apt install -y ceph #2: spesifik package ceph sudo apt install -y ceph-mon sudo apt install -y ceph-mgr sudo apt install -y ceph-osd Restart servis ceph-mon dan ceph-mgr sudo systemctl restart ceph-mon....</p>
-</section>
-<footer class=entry-footer>November 6, 2021&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Ceph - Cara Upgrade Dari Bionic Octopus ke Focal Pacific" href=https://blog.ajiarya.id/posts/ceph/cara-upgrade-bionic-octopus-ke-focal-pacific-pada-ceph-klaster/></a>
 </article>
 <footer class=page-footer>
 <nav class=pagination>
