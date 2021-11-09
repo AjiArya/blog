@@ -5,7 +5,16 @@
     <link>https://blog.ajiarya.id/categories/ceph/</link>
     <description>Recent content in Ceph on Aji Arya</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 06 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.ajiarya.id/categories/ceph/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 07 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.ajiarya.id/categories/ceph/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cara Menyiapkan Klaster Ceph Menggunakan Ceph Deploy (Ubuntu 18.04 Bionic)</title>
+      <link>https://blog.ajiarya.id/posts/ceph/cara-deploy-ceph-menggunakan-ceph-deploy/</link>
+      <pubDate>Sun, 07 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.ajiarya.id/posts/ceph/cara-deploy-ceph-menggunakan-ceph-deploy/</guid>
+      <description>Cara menyiapkan klaster ceph rilis octopus menggunakan ceph deploy pada ubuntu 18.04 bionic</description>
+    </item>
+    
     <item>
       <title>Cara Memperbaiki OSD Tidak Bisa Up Pasca Upgrade Dari Luminous</title>
       <link>https://blog.ajiarya.id/posts/ceph/cara-memperbaiki-osd-tidak-bisa-up-pasca-upgrade/</link>
