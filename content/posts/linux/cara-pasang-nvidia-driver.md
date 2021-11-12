@@ -24,12 +24,12 @@ wget https://developer.download.nvidia.com/compute/cuda/11.4.2/local_installers/
 # cudnn
 wget -O cudnn-11.4-linux-x64-v8.2.4.15.tgz \
     https://developer.nvidia.com/compute/machine-learning/cudnn/secure/8.2.4/11.4_20210831/cudnn-11.4-linux-x64-v8.2.4.15.tgz?<download_token>
-wget -O libcudnn8-8.2.4.15-1.cuda11.4.x86_64.rpm \
-    https://developer.download.nvidia.com/compute/machine-learning/cudnn/secure/8.2.4/11.4_20210831/RHEL8_1-x64/libcudnn8-8.2.4.15-1.cuda11.4.x86_64.rpm?<download_token>
-wget -O libcudnn8-devel-8.2.4.15-1.cuda11.4.x86_64.rpm \
-    https://developer.download.nvidia.com/compute/machine-learning/cudnn/secure/8.2.4/11.4_20210831/RHEL8_1-x64/libcudnn8-devel-8.2.4.15-1.cuda11.4.x86_64.rpm?<download_token>
-wget -O libcudnn8-samples-8.2.4.15-1.cuda11.4.x86_64.rpm \
-    https://developer.download.nvidia.com/compute/machine-learning/cudnn/secure/8.2.4/11.4_20210831/RHEL8_1-x64/libcudnn8-samples-8.2.4.15-1.cuda11.4.x86_64.rpm?<download_token>
+wget -O libcudnn8_8.2.4.15-1+cuda11.4_amd64.deb \
+    https://developer.download.nvidia.com/compute/machine-learning/cudnn/secure/8.2.4/11.4_20210831/cudnn-11.4-linux-x64-v8.2.4.15.tgz?<download_token>
+wget -O libcudnn8-dev_8.2.4.15-1+cuda11.4_amd64.deb \
+    https://developer.download.nvidia.com/compute/machine-learning/cudnn/secure/8.2.4/11.4_20210831/Ubuntu18_04-x64/libcudnn8-dev_8.2.4.15-1%2Bcuda11.4_amd64.deb?<download_token>
+wget -O libcudnn8-samples_8.2.4.15-1+cuda11.4_amd64.deb \
+    https://developer.download.nvidia.com/compute/machine-learning/cudnn/secure/8.2.4/11.4_20210831/Ubuntu18_04-x64/libcudnn8-samples_8.2.4.15-1%2Bcuda11.4_amd64.deb?<download_token>
 ```
 
 2. Pasang cuda
