@@ -98,7 +98,11 @@ Baca lebih lanjut [disini](https://wiki.ubuntu.com/ServerTeam/Bcache)
 
 1. Mengubah mode bache
 ```bash
-echo <mode> /sys/block/bcache0/bcache/cache_mode
+echo <mode> > /sys/block/bcache0/bcache/cache_mode
+
+# Example
+# echo writeback > /sys/block/bcache0/bcache/cache_mode
+ 
 ```
 
 # Referensi
