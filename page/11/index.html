@@ -17,7 +17,7 @@
 <link rel=mask-icon href=https://blog.ajiarya.id/%3Clink%20/%20abs%20url%3E>
 <meta name=theme-color content="#2e2e33">
 <meta name=msapplication-TileColor content="#2e2e33">
-<meta name=generator content="Hugo 0.89.2">
+<meta name=generator content="Hugo 0.91.2">
 <link rel=alternate type=application/rss+xml href=https://blog.ajiarya.id/index.xml>
 <link rel=alternate type=application/json href=https://blog.ajiarya.id/index.json>
 <script type=application/javascript>var doNotTrack=!1;doNotTrack||(function(a,e,f,g,b,c,d){a.GoogleAnalyticsObject=b,a[b]=a[b]||function(){(a[b].q=a[b].q||[]).push(arguments)},a[b].l=1*new Date,c=e.createElement(f),d=e.getElementsByTagName(f)[0],c.async=1,c.src=g,d.parentNode.insertBefore(c,d)}(window,document,'script','https://www.google-analytics.com/analytics.js','ga'),ga('create','UA-182251419-3','auto'),ga('send','pageview'))</script><meta property="og:title" content="Aji Arya">
@@ -85,6 +85,19 @@ IMTEK
 <main class=main>
 <article class=post-entry>
 <header class=entry-header>
+<h2>Cara Reset Password Root Dari OpenStack Console [Ubuntu]</h2>
+</header>
+<section class=entry-content>
+<p>Prasyarat OpenStack User Horizon Instance Ubuntu Panduan Buka console instance pada horizon
+Masuk ke boot option dengan cara interupsi proses booting
+Reboot instance dan tekan tombol Shift keyboard pada saat proses reboot Saat masuk boot option pilih kernel dan tekan tombol e pada keyboard
+Cari baris dengan awalan linux /boot/vmlinuz-xxxxxxxx Temukan ro quiet dan ganti dengan rw init=/bin/bash Hapus kata berikut console=ttyS0 Lalu tekan Ctrl + x Reset password root menggunakan perintah passwd...</p>
+</section>
+<footer class=entry-footer>August 29, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Cara Reset Password Root Dari OpenStack Console [Ubuntu]" href=https://blog.ajiarya.id/posts/openstack/cara-reset-password-root-instance-ubuntu/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
 <h2>Cara Membuat Ulang Ceph Monitor Yang Rusak [Manual Deployment]</h2>
 </header>
 <section class=entry-content>
@@ -127,16 +140,6 @@ Panduan ssh -R [remote_address_bind]:[remote_port_bind]:[local_address_bind]:[lo
 <footer class=entry-footer>August 23, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
 <a class=entry-link aria-label="post link to Cara Remote Port Forwarding SSH" href=https://blog.ajiarya.id/posts/linux/cara-ssh-remote-forwarding-port/></a>
 </article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>Cara Deploy Ceph Cluster Menggunakan cephadm Pada Rocky Linux 8</h2>
-</header>
-<section class=entry-content>
-<p>Prasyarat Minimal 3 Nodes dengan 3 disk tambahan Panduan Login sebagai root sudo -i Tambahkan host pada file /etc/hosts vim /etc/hosts /etc/hosts 127.0.0.1 localhost localhost.localdomain localhost4 localhost4.localdomain4 ::1 localhost localhost.localdomain localhost6 localhost6.localdomain6 192.168.10.201 rocky-ceph-node01 192.168.10.202 rocky-ceph-node02 192.168.10.203 rocky-ceph-node03 Update dan Upgrade package dnf update; dnf upgrade Install python3, lvm2, dan podman dnf install -y python3 lvm2 podman Unduh cephadm pada node pertama curl --silent --remote-name --location https://github....</p>
-</section>
-<footer class=entry-footer>August 22, 2021&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Deploy Ceph Cluster Menggunakan cephadm Pada Rocky Linux 8" href=https://blog.ajiarya.id/posts/ceph/cara-deploy-ceph-menggunakan-cephadm/></a>
-</article>
 <footer class=page-footer>
 <nav class=pagination>
 <a class=prev href=https://blog.ajiarya.id/page/10/>« Prev Page</a>
@@ -145,7 +148,7 @@ Panduan ssh -R [remote_address_bind]:[remote_port_bind]:[local_address_bind]:[lo
 </footer>
 </main>
 <footer class=footer>
-<span>&copy; 2021 <a href=https://blog.ajiarya.id>Aji Arya</a></span>
+<span>&copy; 2022 <a href=https://blog.ajiarya.id>Aji Arya</a></span>
 <span>
 Powered by
 <a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &

@@ -5,7 +5,16 @@
     <link>https://blog.ajiarya.id/tags/ceph/</link>
     <description>Recent content in Ceph on Aji Arya</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 09 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.ajiarya.id/tags/ceph/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 07 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.ajiarya.id/tags/ceph/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ceph - Cara Migrasi OSD Filestore ke Bluestore</title>
+      <link>https://blog.ajiarya.id/posts/ceph/cara-migrasi-filestore-ke-blustore/</link>
+      <pubDate>Tue, 07 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.ajiarya.id/posts/ceph/cara-migrasi-filestore-ke-blustore/</guid>
+      <description>Cara mudah migrasi OSD filestore ke bluestore</description>
+    </item>
+    
     <item>
       <title>Ceph - Cara Migrasi Ceph Daemon ke cephadm</title>
       <link>https://blog.ajiarya.id/posts/ceph/cara-migrasi-ceph-daemon-ke-cephadm/</link>
