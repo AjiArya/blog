@@ -71,17 +71,12 @@ Generate file ceph.conf dan ceph.client.admin.keyring
 ceph-deploy admin aa-bionic-ceph01 aa-bionic-ceph02 aa-bionic-ceph03
 ```
 
-9. Persiapkan agar host dapat melakukan administrasi klaster 
-```bash
-ceph-deploy admin aa-bionic-ceph01 aa-bionic-ceph02 aa-bionic-ceph03
-```
-
-10. Membuat ceph manager
+9. Membuat ceph manager
 ```bash
 ceph-deploy mgr create aa-bionic-ceph01 aa-bionic-ceph02 aa-bionic-ceph03
 ```
 
-11. Membuat OSD
+10. Membuat OSD
 ```bash
 ceph-deploy osd create aa-bionic-ceph01 --data /dev/vdb
 ceph-deploy osd create aa-bionic-ceph01 --data /dev/vdc
@@ -96,7 +91,7 @@ ceph-deploy osd create aa-bionic-ceph03 --data /dev/vdc
 ceph-deploy osd create aa-bionic-ceph03 --data /dev/vdd
 ```
 
-12. Hasil
+11. Hasil
 
 ![](/images/ceph-deploy-bionic.png)
 
