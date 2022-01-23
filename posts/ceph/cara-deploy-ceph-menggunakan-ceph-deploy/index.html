@@ -18,7 +18,7 @@
 <link rel=mask-icon href=https://blog.ajiarya.id/%3Clink%20/%20abs%20url%3E>
 <meta name=theme-color content="#2e2e33">
 <meta name=msapplication-TileColor content="#2e2e33">
-<meta name=generator content="Hugo 0.91.2">
+<meta name=generator content="Hugo 0.92.0">
 <script type=application/javascript>var doNotTrack=!1;doNotTrack||(function(a,e,f,g,b,c,d){a.GoogleAnalyticsObject=b,a[b]=a[b]||function(){(a[b].q=a[b].q||[]).push(arguments)},a[b].l=1*new Date,c=e.createElement(f),d=e.getElementsByTagName(f)[0],c.async=1,c.src=g,d.parentNode.insertBefore(c,d)}(window,document,'script','https://www.google-analytics.com/analytics.js','ga'),ga('create','UA-182251419-3','auto'),ga('send','pageview'))</script><meta property="og:title" content="Cara Menyiapkan Klaster Ceph Menggunakan Ceph Deploy (Ubuntu 18.04 Bionic)">
 <meta property="og:description" content="Cara menyiapkan klaster ceph rilis octopus menggunakan ceph deploy pada ubuntu 18.04 bionic">
 <meta property="og:type" content="article">
@@ -29,7 +29,7 @@
 <meta name=twitter:title content="Cara Menyiapkan Klaster Ceph Menggunakan Ceph Deploy (Ubuntu 18.04 Bionic)">
 <meta name=twitter:description content="Cara menyiapkan klaster ceph rilis octopus menggunakan ceph deploy pada ubuntu 18.04 bionic">
 <script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":2,"name":"Posts","item":"https://blog.ajiarya.id/posts/"},{"@type":"ListItem","position":3,"name":"Cara Menyiapkan Klaster Ceph Menggunakan Ceph Deploy (Ubuntu 18.04 Bionic)","item":"https://blog.ajiarya.id/posts/ceph/cara-deploy-ceph-menggunakan-ceph-deploy/"}]}</script>
-<script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"Cara Menyiapkan Klaster Ceph Menggunakan Ceph Deploy (Ubuntu 18.04 Bionic)","name":"Cara Menyiapkan Klaster Ceph Menggunakan Ceph Deploy (Ubuntu 18.04 Bionic)","description":"Cara menyiapkan klaster ceph rilis octopus menggunakan ceph deploy pada ubuntu 18.04 bionic","keywords":["Ceph","Storage"],"articleBody":"Lingkungan  Ubuntu 18.04 Bionic Ceph 15.2.X Octopus  Panduan  Siapkan file hosts pada semua host  sudo bash -c 'cat /etc/hosts ######## Lab Environment ######## 192.168.10.211 aa-bionic-ceph01 192.168.10.212 aa-bionic-ceph02 192.168.10.213 aa-bionic-ceph03 ################################# EOF' Update dan upgrade package pada semua host  sudo apt update -y; sudo apt upgrade -y Pasang uca repository pada semua host  sudo add-apt-repository cloud-archive:ussuri Pasang package ceph-deploy pada aa-bionic-ceph01  sudo apt install -y ceph-deploy Pasang package-package ceph pada semua host  mkdir ~/ceph-deploy; cd ~/ceph-deploy ceph-deploy install aa-bionic-ceph01 aa-bionic-ceph02 aa-bionic-ceph03 Inisiasi ceph monitor  ceph-deploy new aa-bionic-ceph01 aa-bionic-ceph02 aa-bionic-ceph03 ceph-deploy mon create aa-bionic-ceph01 aa-bionic-ceph02 aa-bionic-ceph03 Dapatkan keyring cluster  ceph-deploy gatherkeys aa-bionic-ceph01 Keyring yang akan didapatkan:\n ceph.bootstrap-mds.keyring ceph.bootstrap-mgr.keyring ceph.bootstrap-osd.keyring ceph.bootstrap-rgw.keyring ceph.client.admin.keyring ceph.mon.keyring  Persiapkan agar host dapat melakukan administrasi klaster Generate file ceph.conf dan ceph.client.admin.keyring  ceph-deploy admin aa-bionic-ceph01 aa-bionic-ceph02 aa-bionic-ceph03 Persiapkan agar host dapat melakukan administrasi klaster  ceph-deploy admin aa-bionic-ceph01 aa-bionic-ceph02 aa-bionic-ceph03 Membuat ceph manager  ceph-deploy mgr create aa-bionic-ceph01 aa-bionic-ceph02 aa-bionic-ceph03 Membuat OSD  ceph-deploy osd create aa-bionic-ceph01 --data /dev/vdb ceph-deploy osd create aa-bionic-ceph01 --data /dev/vdc ceph-deploy osd create aa-bionic-ceph01 --data /dev/vdd ceph-deploy osd create aa-bionic-ceph02 --data /dev/vdb ceph-deploy osd create aa-bionic-ceph02 --data /dev/vdc ceph-deploy osd create aa-bionic-ceph02 --data /dev/vdd ceph-deploy osd create aa-bionic-ceph03 --data /dev/vdb ceph-deploy osd create aa-bionic-ceph03 --data /dev/vdc ceph-deploy osd create aa-bionic-ceph03 --data /dev/vdd Hasil  Referensi  Ceph Docs - ceph-deploy Ceph Node Setup  ","wordCount":"214","inLanguage":"en","datePublished":"2021-11-07T00:00:00Z","dateModified":"2021-11-07T00:00:00Z","author":{"@type":"Person","name":"Aji Arya"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://blog.ajiarya.id/posts/ceph/cara-deploy-ceph-menggunakan-ceph-deploy/"},"publisher":{"@type":"Organization","name":"Aji Arya","logo":{"@type":"ImageObject","url":"https://blog.ajiarya.id/favicon.ico"}}}</script>
+<script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"Cara Menyiapkan Klaster Ceph Menggunakan Ceph Deploy (Ubuntu 18.04 Bionic)","name":"Cara Menyiapkan Klaster Ceph Menggunakan Ceph Deploy (Ubuntu 18.04 Bionic)","description":"Cara menyiapkan klaster ceph rilis octopus menggunakan ceph deploy pada ubuntu 18.04 bionic","keywords":["Ceph","Storage"],"articleBody":"Lingkungan  Ubuntu 18.04 Bionic Ceph 15.2.X Octopus  Panduan  Siapkan file hosts pada semua host  sudo bash -c 'cat /etc/hosts ######## Lab Environment ######## 192.168.10.211 aa-bionic-ceph01 192.168.10.212 aa-bionic-ceph02 192.168.10.213 aa-bionic-ceph03 ################################# EOF' Update dan upgrade package pada semua host  sudo apt update -y; sudo apt upgrade -y Pasang uca repository pada semua host  sudo add-apt-repository cloud-archive:ussuri Pasang package ceph-deploy pada aa-bionic-ceph01  sudo apt install -y ceph-deploy Pasang package-package ceph pada semua host  mkdir ~/ceph-deploy; cd ~/ceph-deploy ceph-deploy install aa-bionic-ceph01 aa-bionic-ceph02 aa-bionic-ceph03 Inisiasi ceph monitor  ceph-deploy new aa-bionic-ceph01 aa-bionic-ceph02 aa-bionic-ceph03 ceph-deploy mon create aa-bionic-ceph01 aa-bionic-ceph02 aa-bionic-ceph03 Dapatkan keyring cluster  ceph-deploy gatherkeys aa-bionic-ceph01 Keyring yang akan didapatkan:\n ceph.bootstrap-mds.keyring ceph.bootstrap-mgr.keyring ceph.bootstrap-osd.keyring ceph.bootstrap-rgw.keyring ceph.client.admin.keyring ceph.mon.keyring  Persiapkan agar host dapat melakukan administrasi klaster Generate file ceph.conf dan ceph.client.admin.keyring  ceph-deploy admin aa-bionic-ceph01 aa-bionic-ceph02 aa-bionic-ceph03 Membuat ceph manager  ceph-deploy mgr create aa-bionic-ceph01 aa-bionic-ceph02 aa-bionic-ceph03 Membuat OSD  ceph-deploy osd create aa-bionic-ceph01 --data /dev/vdb ceph-deploy osd create aa-bionic-ceph01 --data /dev/vdc ceph-deploy osd create aa-bionic-ceph01 --data /dev/vdd ceph-deploy osd create aa-bionic-ceph02 --data /dev/vdb ceph-deploy osd create aa-bionic-ceph02 --data /dev/vdc ceph-deploy osd create aa-bionic-ceph02 --data /dev/vdd ceph-deploy osd create aa-bionic-ceph03 --data /dev/vdb ceph-deploy osd create aa-bionic-ceph03 --data /dev/vdc ceph-deploy osd create aa-bionic-ceph03 --data /dev/vdd Hasil  Referensi  Ceph Docs - ceph-deploy Ceph Node Setup  ","wordCount":"202","inLanguage":"en","datePublished":"2021-11-07T00:00:00Z","dateModified":"2021-11-07T00:00:00Z","author":{"@type":"Person","name":"Aji Arya"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://blog.ajiarya.id/posts/ceph/cara-deploy-ceph-menggunakan-ceph-deploy/"},"publisher":{"@type":"Organization","name":"Aji Arya","logo":{"@type":"ImageObject","url":"https://blog.ajiarya.id/favicon.ico"}}}</script>
 </head>
 <body id=top>
 <script>localStorage.getItem("pref-theme")==="dark"?document.body.classList.add('dark'):localStorage.getItem("pref-theme")==="light"?document.body.classList.remove('dark'):window.matchMedia('(prefers-color-scheme: dark)').matches&&document.body.classList.add('dark')</script>
@@ -94,7 +94,7 @@ Cara Menyiapkan Klaster Ceph Menggunakan Ceph Deploy (Ubuntu 18.04 Bionic)
 <div class=post-description>
 Cara menyiapkan klaster ceph rilis octopus menggunakan ceph deploy pada ubuntu 18.04 bionic
 </div>
-<div class=post-meta>November 7, 2021&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Aji Arya&nbsp;|&nbsp;<a href=https://github.com/AjiArya/blog/tree/main/content/posts/ceph/cara-deploy-ceph-menggunakan-ceph-deploy.md rel="noopener noreferrer" target=_blank>Suggest Changes</a>
+<div class=post-meta>November 7, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya&nbsp;|&nbsp;<a href=https://github.com/AjiArya/blog/tree/main/content/posts/ceph/cara-deploy-ceph-menggunakan-ceph-deploy.md rel="noopener noreferrer" target=_blank>Suggest Changes</a>
 </div>
 </header> <div class=toc>
 <details open>
@@ -171,14 +171,10 @@ Generate file ceph.conf dan ceph.client.admin.keyring</li>
 </ol>
 <div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>ceph-deploy admin aa-bionic-ceph01 aa-bionic-ceph02 aa-bionic-ceph03
 </code></pre></div><ol start=9>
-<li>Persiapkan agar host dapat melakukan administrasi klaster</li>
-</ol>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>ceph-deploy admin aa-bionic-ceph01 aa-bionic-ceph02 aa-bionic-ceph03
-</code></pre></div><ol start=10>
 <li>Membuat ceph manager</li>
 </ol>
 <div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>ceph-deploy mgr create aa-bionic-ceph01 aa-bionic-ceph02 aa-bionic-ceph03
-</code></pre></div><ol start=11>
+</code></pre></div><ol start=10>
 <li>Membuat OSD</li>
 </ol>
 <div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>ceph-deploy osd create aa-bionic-ceph01 --data /dev/vdb
@@ -192,7 +188,7 @@ ceph-deploy osd create aa-bionic-ceph02 --data /dev/vdd
 ceph-deploy osd create aa-bionic-ceph03 --data /dev/vdb
 ceph-deploy osd create aa-bionic-ceph03 --data /dev/vdc
 ceph-deploy osd create aa-bionic-ceph03 --data /dev/vdd
-</code></pre></div><ol start=12>
+</code></pre></div><ol start=11>
 <li>Hasil</li>
 </ol>
 <p><img loading=lazy src=/images/ceph-deploy-bionic.png alt>
