@@ -17,7 +17,7 @@
 <link rel=mask-icon href=https://blog.ajiarya.id/%3Clink%20/%20abs%20url%3E>
 <meta name=theme-color content="#2e2e33">
 <meta name=msapplication-TileColor content="#2e2e33">
-<meta name=generator content="Hugo 0.92.0">
+<meta name=generator content="Hugo 0.92.2">
 <link rel=alternate type=application/rss+xml href=https://blog.ajiarya.id/posts/index.xml>
 <script type=application/javascript>var doNotTrack=!1;doNotTrack||(function(a,e,f,g,b,c,d){a.GoogleAnalyticsObject=b,a[b]=a[b]||function(){(a[b].q=a[b].q||[]).push(arguments)},a[b].l=1*new Date,c=e.createElement(f),d=e.getElementsByTagName(f)[0],c.async=1,c.src=g,d.parentNode.insertBefore(c,d)}(window,document,'script','https://www.google-analytics.com/analytics.js','ga'),ga('create','UA-182251419-3','auto'),ga('send','pageview'))</script><meta property="og:title" content="Posts">
 <meta property="og:description" content="Aji Arya's Personal Blog">
@@ -87,6 +87,16 @@ IMTEK
 </header>
 <article class=post-entry>
 <header class=entry-header>
+<h2>Cara Install Podman, Skopeo, dan Buildah Pada Linux (CentOS/Rocky)</h2>
+</header>
+<section class=entry-content>
+<p>Panduan Periksa versi yang tersedia untuk diinstall sudo dnf module list container-tools Contoh keluaran pada Rocky Linux [student@rocky ~]$ sudo dnf module list container-tools Last metadata expiration check: 0:23:42 ago on Tue Aug 10 15:24:06 2021. Rocky Linux 8 - AppStream Name Stream Profiles Summary container-tools rhel8 [d] common [d] Most recent (rolling) versions of podman, buildah, skopeo, runc, conmon, runc, conmon, CRIU, Udica, etc as well as dependencies such as container-selinux built and tested together, and updated as frequently as every 12 weeks....</p>
+</section>
+<footer class=entry-footer>August 10, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Cara Install Podman, Skopeo, dan Buildah Pada Linux (CentOS/Rocky)" href=https://blog.ajiarya.id/posts/podman/cara-install-container-tools/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
 <h2>Cara SCP Antar Dua Host Remote</h2>
 </header>
 <section class=entry-content>
@@ -126,16 +136,6 @@ Conor menyalin file file100Giga dari host1 ke localhost (Misal 15 menit) scp hos
 </section>
 <footer class=entry-footer>August 9, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
 <a class=entry-link aria-label="post link to Cara Install ZFS Pada Linux [Ubuntu]" href=https://blog.ajiarya.id/posts/zfs/cara-install-zfs-ubuntu/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>Cara Mengganti Password User Elasticsearch</h2>
-</header>
-<section class=entry-content>
-<p>Panduan Perintah mengganti password user sendiri curl -u &lt;user> -XPUT \ 'http://localhost:9200/_xpack/security/user/_password?pretty' \ -H 'Content-Type: application/json' -d' { "password": "&lt;password>" }' Contoh mengganti password user sendiri curl -u elastic -XPUT \ 'http://localhost:9200/_xpack/security/user/_password?pretty' \ -H 'Content-Type: application/json' -d' { "password": "sangatrahasia" }' Contoh output [root@rocky ~]# curl -u elastic -XPUT \ > 'http://localhost:9200/_xpack/security/user/_password?pretty' \ > -H 'Content-Type: application/json' -d' > { "password": "sangatrahasia" }' Enter host password for user 'elastic': { } Perintah mengganti password user lain (Admin) curl -u &lt;user_admin> -XPUT \ 'http://localhost:9200/_xpack/security/user/&lt;user_lain>/_password?...</p>
-</section>
-<footer class=entry-footer>August 9, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Mengganti Password User Elasticsearch" href=https://blog.ajiarya.id/posts/elk/elasticsearch/cara-ganti-password-elasticsearch/></a>
 </article>
 <footer class=page-footer>
 <nav class=pagination>

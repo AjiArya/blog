@@ -17,7 +17,7 @@
 <link rel=mask-icon href=https://blog.ajiarya.id/%3Clink%20/%20abs%20url%3E>
 <meta name=theme-color content="#2e2e33">
 <meta name=msapplication-TileColor content="#2e2e33">
-<meta name=generator content="Hugo 0.92.0">
+<meta name=generator content="Hugo 0.92.2">
 <link rel=alternate type=application/rss+xml href=https://blog.ajiarya.id/index.xml>
 <link rel=alternate type=application/json href=https://blog.ajiarya.id/index.json>
 <script type=application/javascript>var doNotTrack=!1;doNotTrack||(function(a,e,f,g,b,c,d){a.GoogleAnalyticsObject=b,a[b]=a[b]||function(){(a[b].q=a[b].q||[]).push(arguments)},a[b].l=1*new Date,c=e.createElement(f),d=e.getElementsByTagName(f)[0],c.async=1,c.src=g,d.parentNode.insertBefore(c,d)}(window,document,'script','https://www.google-analytics.com/analytics.js','ga'),ga('create','UA-182251419-3','auto'),ga('send','pageview'))</script><meta property="og:title" content="Aji Arya">
@@ -85,6 +85,19 @@ IMTEK
 <main class=main>
 <article class=post-entry>
 <header class=entry-header>
+<h2>Cara Reset Password Root Dari OpenStack Console [RHEL/CentOS/Rocky]</h2>
+</header>
+<section class=entry-content>
+<p>Prasyarat OpenStack User Horizon Instance RHEL/CentOS/Rocky Panduan Buka console instance pada horizon
+Masuk ke boot option dengan cara interupsi proses booting
+Reboot instance dan tekan tombol panah arah apapun di keyboard pada saat proses reboot Saat masuk boot option pilih kernel dan tekan tombol e pada keyboard
+Cari baris dengan awalan linux /boot/vmlinuz-xxxxxxxx Tambahkan baris berikut rd.break pada baris yang sama dengan linux /boot/vmlinuz-xxxxxxxx Hapus kata berikut console=ttyS0 Lalu tekan Ctrl + x Reset password root menggunakan perintah passwd...</p>
+</section>
+<footer class=entry-footer>August 29, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Cara Reset Password Root Dari OpenStack Console [RHEL/CentOS/Rocky]" href=https://blog.ajiarya.id/posts/openstack/cara-reset-password-root-instance-centos/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
 <h2>Cara Reset Password Root Dari OpenStack Console [Ubuntu]</h2>
 </header>
 <section class=entry-content>
@@ -127,18 +140,6 @@ Buat direktori untuk menyimpan konten mkdir website echo '&lt;h1>Halo Dunia!&lt;
 </section>
 <footer class=entry-footer>August 23, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
 <a class=entry-link aria-label="post link to Cara Membuat Rootless Container Podman Bisa Dikelola Sebagai Service" href=https://blog.ajiarya.id/posts/podman/cara-membuat-container-podman-bisa-dikelola-sebagai-service/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>Cara Remote Port Forwarding SSH</h2>
-</header>
-<section class=entry-content>
-<p>Pendahuluan Remote Port Forwarding adalah salah satu cara agar kita bisa menyediakan service atau port yang ada pada localhost agar bisa digunakan oleh remote host.
-Sebagai contoh kita akan menggunakan squid3 yang tersedia pada localhost yang kemudian akan diakses oleh remote host
-Panduan ssh -R [remote_address_bind]:[remote_port_bind]:[local_address_bind]:[local_port_bind] &lt;remote_host> Contoh laptopku menjalankan proxy server yang tersedia pada alamat 0.0.0.0:3128 lalu saya ingin mencoba mengakses proxy server tersebut dari home-lab pada alamat 127.0.0.1:8080...</p>
-</section>
-<footer class=entry-footer>August 23, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Remote Port Forwarding SSH" href=https://blog.ajiarya.id/posts/linux/cara-ssh-remote-forwarding-port/></a>
 </article>
 <footer class=page-footer>
 <nav class=pagination>

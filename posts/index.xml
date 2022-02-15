@@ -5,7 +5,16 @@
     <link>https://blog.ajiarya.id/posts/</link>
     <description>Recent content in Posts on Aji Arya</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 07 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.ajiarya.id/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 15 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.ajiarya.id/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cara Uji Coba OpenStack Octavia (CLI)</title>
+      <link>https://blog.ajiarya.id/posts/openstack/cara-uji-coba-octavia/</link>
+      <pubDate>Tue, 15 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.ajiarya.id/posts/openstack/cara-uji-coba-octavia/</guid>
+      <description>Cara uji coba OpenStack Octavia (CLI)</description>
+    </item>
+    
     <item>
       <title>Ceph - Cara Migrasi OSD Filestore ke Bluestore</title>
       <link>https://blog.ajiarya.id/posts/ceph/cara-migrasi-filestore-ke-blustore/</link>

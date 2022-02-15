@@ -17,7 +17,7 @@
 <link rel=mask-icon href=https://blog.ajiarya.id/%3Clink%20/%20abs%20url%3E>
 <meta name=theme-color content="#2e2e33">
 <meta name=msapplication-TileColor content="#2e2e33">
-<meta name=generator content="Hugo 0.92.0">
+<meta name=generator content="Hugo 0.92.2">
 <link rel=alternate type=application/rss+xml href=https://blog.ajiarya.id/categories/openstack/index.xml>
 <script type=application/javascript>var doNotTrack=!1;doNotTrack||(function(a,e,f,g,b,c,d){a.GoogleAnalyticsObject=b,a[b]=a[b]||function(){(a[b].q=a[b].q||[]).push(arguments)},a[b].l=1*new Date,c=e.createElement(f),d=e.getElementsByTagName(f)[0],c.async=1,c.src=g,d.parentNode.insertBefore(c,d)}(window,document,'script','https://www.google-analytics.com/analytics.js','ga'),ga('create','UA-182251419-3','auto'),ga('send','pageview'))</script><meta property="og:title" content="OpenStack">
 <meta property="og:description" content="Aji Arya's Personal Blog">
@@ -86,6 +86,16 @@ IMTEK
 </header>
 <article class="post-entry tag-entry">
 <header class=entry-header>
+<h2>Cara Uji Coba OpenStack Octavia (CLI)</h2>
+</header>
+<section class=entry-content>
+<p>Prasyarat OpenStack Core Service Openstack Octavia python-octaviaclient (CLI Client) pip install python-octaviaclient Panduan Buat Instance # Buat cloud-config file cat&lt;&lt;EOF > user-data.yaml #cloud-config chpasswd: list: | ubuntu:rahasia expire: false runcmd: - echo \$(hostname) > index.html - python3 -m http.server 80 EOF # Buat instance openstack server create \ --user-data user-data.yaml \ --image ubuntu-focal \ --flavor m1.small \ --boot-from-volume 5 \ --network intnet \ --key-name deployer \ --min 3 \ --max 3 \ web-basic Buat Load Balancer openstack loadbalancer create --name testlb --vip-network-id extnet # Tunggu sampai status menunjukkan status ACTIVE openstack loadbalancer show testlb Buat load balancer listener Listener adalah port yang akan digunakan oleh load balancer sebagai port untuk melayani request atau yang biasa disebut dengan frontend pada konfigurasi HAProxy...</p>
+</section>
+<footer class=entry-footer>February 15, 2022&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Cara Uji Coba OpenStack Octavia (CLI)" href=https://blog.ajiarya.id/posts/openstack/cara-uji-coba-octavia/></a>
+</article>
+<article class="post-entry tag-entry">
+<header class=entry-header>
 <h2>Cara Memasang OpenStack Exporter</h2>
 </header>
 <section class=entry-content>
@@ -127,19 +137,11 @@ Cari baris dengan awalan linux /boot/vmlinuz-xxxxxxxx Tambahkan baris berikut rd
 <footer class=entry-footer>August 29, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
 <a class=entry-link aria-label="post link to Cara Reset Password Root Dari OpenStack Console [RHEL/CentOS/Rocky]" href=https://blog.ajiarya.id/posts/openstack/cara-reset-password-root-instance-centos/></a>
 </article>
-<article class="post-entry tag-entry">
-<header class=entry-header>
-<h2>Cara Reset Password Root Dari OpenStack Console [Ubuntu]</h2>
-</header>
-<section class=entry-content>
-<p>Prasyarat OpenStack User Horizon Instance Ubuntu Panduan Buka console instance pada horizon
-Masuk ke boot option dengan cara interupsi proses booting
-Reboot instance dan tekan tombol Shift keyboard pada saat proses reboot Saat masuk boot option pilih kernel dan tekan tombol e pada keyboard
-Cari baris dengan awalan linux /boot/vmlinuz-xxxxxxxx Temukan ro quiet dan ganti dengan rw init=/bin/bash Hapus kata berikut console=ttyS0 Lalu tekan Ctrl + x Reset password root menggunakan perintah passwd...</p>
-</section>
-<footer class=entry-footer>August 29, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Reset Password Root Dari OpenStack Console [Ubuntu]" href=https://blog.ajiarya.id/posts/openstack/cara-reset-password-root-instance-ubuntu/></a>
-</article>
+<footer class=page-footer>
+<nav class=pagination>
+<a class=next href=https://blog.ajiarya.id/categories/openstack/page/2/>Next Page »</a>
+</nav>
+</footer>
 </main>
 <footer class=footer>
 <span>&copy; 2022 <a href=https://blog.ajiarya.id>Aji Arya</a></span>

@@ -17,7 +17,7 @@
 <link rel=mask-icon href=https://blog.ajiarya.id/%3Clink%20/%20abs%20url%3E>
 <meta name=theme-color content="#2e2e33">
 <meta name=msapplication-TileColor content="#2e2e33">
-<meta name=generator content="Hugo 0.92.0">
+<meta name=generator content="Hugo 0.92.2">
 <link rel=alternate type=application/rss+xml href=https://blog.ajiarya.id/posts/index.xml>
 <script type=application/javascript>var doNotTrack=!1;doNotTrack||(function(a,e,f,g,b,c,d){a.GoogleAnalyticsObject=b,a[b]=a[b]||function(){(a[b].q=a[b].q||[]).push(arguments)},a[b].l=1*new Date,c=e.createElement(f),d=e.getElementsByTagName(f)[0],c.async=1,c.src=g,d.parentNode.insertBefore(c,d)}(window,document,'script','https://www.google-analytics.com/analytics.js','ga'),ga('create','UA-182251419-3','auto'),ga('send','pageview'))</script><meta property="og:title" content="Posts">
 <meta property="og:description" content="Aji Arya's Personal Blog">
@@ -87,6 +87,18 @@ IMTEK
 </header>
 <article class=post-entry>
 <header class=entry-header>
+<h2>Cara Memperbaiki OSD Tidak Bisa Up Pasca Upgrade Dari Luminous</h2>
+</header>
+<section class=entry-content>
+<p>osd.X tick checking mon for new map Penjelasan Error ini muncul ketika melakukan upgrade ceph luminous > mimic, mimic > octopus. OSD tidak bisa up setelah direstart
+Panduan Atur versi minimum sebuah osd dapat berpartisipasi pada klaster # cek nilai sekarang sudo ceph osd dump | grep require_osd # lakukan perubahan sudo ceph osd require-osd-release mimic Penjelasan subcommand
+osd require-osd-release luminous|mimic|nautilus|octopus [--yes-i-really-mean-it] set the minimum allowed OSD release to participate in the cluster Restart kembali OSD yang tidak bisa up # seluruh osd pada host sudo systemctl restart ceph-osd....</p>
+</section>
+<footer class=entry-footer>November 6, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Cara Memperbaiki OSD Tidak Bisa Up Pasca Upgrade Dari Luminous" href=https://blog.ajiarya.id/posts/ceph/cara-memperbaiki-osd-tidak-bisa-up-pasca-upgrade/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
 <h2>Cara Memperbaiki Warning Monitors Have Not Enabled msgr2 Pada Ceph</h2>
 </header>
 <section class=entry-content>
@@ -128,16 +140,6 @@ Glosari Bcache: Linux kernel block layer cache Backing Device: Tempat data disim
 </section>
 <footer class=entry-footer>November 4, 2021&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Aji Arya</footer>
 <a class=entry-link aria-label="post link to Cara Menyiapkan Bcache" href=https://blog.ajiarya.id/posts/linux/cara-menyiapkan-bcache/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>Cara Pasang NVIDIA Driver dan Library CUDNN</h2>
-</header>
-<section class=entry-content>
-<p>Prasyarat Akun NVIDIA Developer Panduan Unduh cuda disini dan cudnn disini # Create directory mkdir /root/nvidia; cd /root/nvidia/ # cuda wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64/cuda-ubuntu1804.pin wget https://developer.download.nvidia.com/compute/cuda/11.4.2/local_installers/cuda-repo-ubuntu1804-11-4-local_11.4.2-470.57.02-1_amd64.deb # cudnn wget -O cudnn-11.4-linux-x64-v8.2.4.15.tgz \ https://developer.nvidia.com/compute/machine-learning/cudnn/secure/8.2.4/11.4_20210831/cudnn-11.4-linux-x64-v8.2.4.15.tgz?&lt;download_token> wget -O libcudnn8_8.2.4.15-1+cuda11.4_amd64.deb \ https://developer.download.nvidia.com/compute/machine-learning/cudnn/secure/8.2.4/11.4_20210831/cudnn-11.4-linux-x64-v8.2.4.15.tgz?&lt;download_token> wget -O libcudnn8-dev_8.2.4.15-1+cuda11.4_amd64.deb \ https://developer.download.nvidia.com/compute/machine-learning/cudnn/secure/8.2.4/11.4_20210831/Ubuntu18_04-x64/libcudnn8-dev_8.2.4.15-1%2Bcuda11.4_amd64.deb?&lt;download_token> wget -O libcudnn8-samples_8.2.4.15-1+cuda11.4_amd64.deb \ https://developer.download.nvidia.com/compute/machine-learning/cudnn/secure/8.2.4/11.4_20210831/Ubuntu18_04-x64/libcudnn8-samples_8.2.4.15-1%2Bcuda11.4_amd64.deb?&lt;download_token> Pasang cuda mv cuda-ubuntu1804.pin /etc/apt/preferences.d/cuda-repository-pin-600 dpkg -i cuda-repo-ubuntu1804-11-4-local_11.4.2-470.57.02-1_amd64.deb apt-key add /var/cuda-repo-ubuntu1804-11-4-local/7fa2af80.pub apt-get update apt-get -y install cuda Pasang cudnn library # pasang cudnn library file tar -xzvf cudnn-11....</p>
-</section>
-<footer class=entry-footer>November 1, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Pasang NVIDIA Driver dan Library CUDNN" href=https://blog.ajiarya.id/posts/linux/cara-pasang-nvidia-driver/></a>
 </article>
 <footer class=page-footer>
 <nav class=pagination>

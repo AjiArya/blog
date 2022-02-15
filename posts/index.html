@@ -17,7 +17,7 @@
 <link rel=mask-icon href=https://blog.ajiarya.id/%3Clink%20/%20abs%20url%3E>
 <meta name=theme-color content="#2e2e33">
 <meta name=msapplication-TileColor content="#2e2e33">
-<meta name=generator content="Hugo 0.92.0">
+<meta name=generator content="Hugo 0.92.2">
 <link rel=alternate type=application/rss+xml href=https://blog.ajiarya.id/posts/index.xml>
 <script type=application/javascript>var doNotTrack=!1;doNotTrack||(function(a,e,f,g,b,c,d){a.GoogleAnalyticsObject=b,a[b]=a[b]||function(){(a[b].q=a[b].q||[]).push(arguments)},a[b].l=1*new Date,c=e.createElement(f),d=e.getElementsByTagName(f)[0],c.async=1,c.src=g,d.parentNode.insertBefore(c,d)}(window,document,'script','https://www.google-analytics.com/analytics.js','ga'),ga('create','UA-182251419-3','auto'),ga('send','pageview'))</script><meta property="og:title" content="Posts">
 <meta property="og:description" content="Aji Arya's Personal Blog">
@@ -87,6 +87,16 @@ IMTEK
 </header>
 <article class=post-entry>
 <header class=entry-header>
+<h2>Cara Uji Coba OpenStack Octavia (CLI)</h2>
+</header>
+<section class=entry-content>
+<p>Prasyarat OpenStack Core Service Openstack Octavia python-octaviaclient (CLI Client) pip install python-octaviaclient Panduan Buat Instance # Buat cloud-config file cat&lt;&lt;EOF > user-data.yaml #cloud-config chpasswd: list: | ubuntu:rahasia expire: false runcmd: - echo \$(hostname) > index.html - python3 -m http.server 80 EOF # Buat instance openstack server create \ --user-data user-data.yaml \ --image ubuntu-focal \ --flavor m1.small \ --boot-from-volume 5 \ --network intnet \ --key-name deployer \ --min 3 \ --max 3 \ web-basic Buat Load Balancer openstack loadbalancer create --name testlb --vip-network-id extnet # Tunggu sampai status menunjukkan status ACTIVE openstack loadbalancer show testlb Buat load balancer listener Listener adalah port yang akan digunakan oleh load balancer sebagai port untuk melayani request atau yang biasa disebut dengan frontend pada konfigurasi HAProxy...</p>
+</section>
+<footer class=entry-footer>February 15, 2022&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Cara Uji Coba OpenStack Octavia (CLI)" href=https://blog.ajiarya.id/posts/openstack/cara-uji-coba-octavia/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
 <h2>Ceph - Cara Migrasi OSD Filestore ke Bluestore</h2>
 </header>
 <section class=entry-content>
@@ -127,18 +137,6 @@ hostname ip address aa-bionic-ceph01 192.168.10.211 aa-bionic-ceph02 192.168.10.
 </section>
 <footer class=entry-footer>November 7, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
 <a class=entry-link aria-label="post link to Cara Menyiapkan Klaster Ceph Menggunakan Ceph Deploy (Ubuntu 18.04 Bionic)" href=https://blog.ajiarya.id/posts/ceph/cara-deploy-ceph-menggunakan-ceph-deploy/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>Cara Memperbaiki OSD Tidak Bisa Up Pasca Upgrade Dari Luminous</h2>
-</header>
-<section class=entry-content>
-<p>osd.X tick checking mon for new map Penjelasan Error ini muncul ketika melakukan upgrade ceph luminous > mimic, mimic > octopus. OSD tidak bisa up setelah direstart
-Panduan Atur versi minimum sebuah osd dapat berpartisipasi pada klaster # cek nilai sekarang sudo ceph osd dump | grep require_osd # lakukan perubahan sudo ceph osd require-osd-release mimic Penjelasan subcommand
-osd require-osd-release luminous|mimic|nautilus|octopus [--yes-i-really-mean-it] set the minimum allowed OSD release to participate in the cluster Restart kembali OSD yang tidak bisa up # seluruh osd pada host sudo systemctl restart ceph-osd....</p>
-</section>
-<footer class=entry-footer>November 6, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Memperbaiki OSD Tidak Bisa Up Pasca Upgrade Dari Luminous" href=https://blog.ajiarya.id/posts/ceph/cara-memperbaiki-osd-tidak-bisa-up-pasca-upgrade/></a>
 </article>
 <footer class=page-footer>
 <nav class=pagination>

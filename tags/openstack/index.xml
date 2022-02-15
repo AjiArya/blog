@@ -5,7 +5,16 @@
     <link>https://blog.ajiarya.id/tags/openstack/</link>
     <description>Recent content in OpenStack on Aji Arya</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 18 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.ajiarya.id/tags/openstack/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 15 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.ajiarya.id/tags/openstack/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cara Uji Coba OpenStack Octavia (CLI)</title>
+      <link>https://blog.ajiarya.id/posts/openstack/cara-uji-coba-octavia/</link>
+      <pubDate>Tue, 15 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.ajiarya.id/posts/openstack/cara-uji-coba-octavia/</guid>
+      <description>Cara uji coba OpenStack Octavia (CLI)</description>
+    </item>
+    
     <item>
       <title>Cara Memasang OpenStack Exporter</title>
       <link>https://blog.ajiarya.id/posts/openstack/cara-memasang-openstack-exporter/</link>

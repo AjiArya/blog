@@ -17,7 +17,7 @@
 <link rel=mask-icon href=https://blog.ajiarya.id/%3Clink%20/%20abs%20url%3E>
 <meta name=theme-color content="#2e2e33">
 <meta name=msapplication-TileColor content="#2e2e33">
-<meta name=generator content="Hugo 0.92.0">
+<meta name=generator content="Hugo 0.92.2">
 <link rel=alternate type=application/rss+xml href=https://blog.ajiarya.id/posts/index.xml>
 <script type=application/javascript>var doNotTrack=!1;doNotTrack||(function(a,e,f,g,b,c,d){a.GoogleAnalyticsObject=b,a[b]=a[b]||function(){(a[b].q=a[b].q||[]).push(arguments)},a[b].l=1*new Date,c=e.createElement(f),d=e.getElementsByTagName(f)[0],c.async=1,c.src=g,d.parentNode.insertBefore(c,d)}(window,document,'script','https://www.google-analytics.com/analytics.js','ga'),ga('create','UA-182251419-3','auto'),ga('send','pageview'))</script><meta property="og:title" content="Posts">
 <meta property="og:description" content="Aji Arya's Personal Blog">
@@ -87,6 +87,20 @@ IMTEK
 </header>
 <article class=post-entry>
 <header class=entry-header>
+<h2>Cara Memperbarui libosinfo osinfo-db</h2>
+</header>
+<section class=entry-content>
+<p>Pendahuluan libosinfo adalah penyedia informasi mengenai sistem operasi yang diperlukan untuk menyediakan dan mengelola virtualized environment
+Panduan Perbarui libosinfo
+Debian Based sudo apt install -y libosinfo RHEL Based sudo yum install -y libosinfo # atau sudo dnf install -y libosinfo Unduh database OS
+https://releases.pagure.org/libosinfo/
+# wget https://releases.pagure.org/libosinfo/osinfo-db-&lt;version>.tar.xz wget https://releases.pagure.org/libosinfo/osinfo-db-20210903.tar.xz Perbarui database OS sudo osinfo-db-import --system &lt;database_os> Verifikasi osinfo-query os </p>
+</section>
+<footer class=entry-footer>September 5, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Cara Memperbarui libosinfo osinfo-db" href=https://blog.ajiarya.id/posts/linux/cara-update-osinfo-db/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
 <h2>Cara Menghapus OSD [Manual]</h2>
 </header>
 <section class=entry-content>
@@ -131,20 +145,6 @@ Rook tersedia sejak versi Nautilus. Rook men-deploy dan melakukan manajemen klas
 </section>
 <footer class=entry-footer>September 5, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
 <a class=entry-link aria-label="post link to Memilih Deployment Tool Ceph" href=https://blog.ajiarya.id/posts/ceph/memilih-deployment-tool-ceph/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>Cara Menghitung Jumlah PG Untuk Klaster Ceph</h2>
-</header>
-<section class=entry-content>
-<p>Prasyarat Klaster Ceph Pendahuluan Ceph Placement Groups (PGs) adalah implementasi internal yang dilakukan oleh Ceph untuk melakukan distribusi data
-Mapping PG pada Pool
-Gambaran Pool yang menggunakan replikasi dengan nilai 2
-Sumber Gambar: https://docs.ceph.com/en/latest/rados/operations/placement-groups/
-Panduan Gunakan perhitungan 50-100 PG untuk 1 OSD Hitung jumlah OSD pada klaster Jumlah Replikasi yang diinginkan Gunakan Kalkulator PG PGCalc Contoh Klaster Ceph untuk servis OpenStack Klaster memiliki 100 OSD dengan ukuran 1 TB setiap OSD (100 TB Total) Target 100 PG untuk 1 OSD Replikasi data sebanyak 3 (Size) Alokasi pool cinder-backup 25% (25 TB) cinder-volumes 53% (53 TB) ephemeral-vms 15% (15 TB) glance-vms 7% (7 TB) Pool Name: Nama Pool Size: Ukuran replikasi atau EC (K+M) OSD: Jumlah OSD untuk pool tersebut (Berdasarkan OSD device class untuk pool) Target PGs Per OSD: Target PG untuk 1 OSD (Rekomendasi 50-100 PG) Suggested PG Count: Saran PG merupakan kelipatan 2, Jumlah PG untuk pool Referensi Ceph Docs - Placement Groups </p>
-</section>
-<footer class=entry-footer>September 4, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Menghitung Jumlah PG Untuk Klaster Ceph" href=https://blog.ajiarya.id/posts/ceph/cara-menghitung-pg-untuk-klaster-ceph/></a>
 </article>
 <footer class=page-footer>
 <nav class=pagination>
