@@ -5,6 +5,9 @@
     <loc>https://blog.ajiarya.id/</loc>
     <lastmod>2022-02-15T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://blog.ajiarya.id/posts/openstack/cara-menambah-physical-network-neutron-kolla/</loc>
+    <lastmod>2022-02-15T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://blog.ajiarya.id/posts/openstack/cara-uji-coba-octavia/</loc>
     <lastmod>2022-02-15T00:00:00+00:00</lastmod>
   </url><url>
@@ -12,6 +15,12 @@
     <lastmod>2022-02-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.ajiarya.id/tags/load-balancer/</loc>
+    <lastmod>2022-02-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.ajiarya.id/tags/network/</loc>
+    <lastmod>2022-02-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.ajiarya.id/tags/neutron/</loc>
     <lastmod>2022-02-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.ajiarya.id/tags/octavia/</loc>

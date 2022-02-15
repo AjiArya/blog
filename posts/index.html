@@ -87,6 +87,17 @@ IMTEK
 </header>
 <article class=post-entry>
 <header class=entry-header>
+<h2>Cara Menambahkan Physical Network Neutron (kolla-ansible)</h2>
+</header>
+<section class=entry-content>
+<p>Prasyarat ansible kolla-ansible Panduan Tambahkan baris berikut pada konfigurasi /etc/kolla/globals.yml neutron_external_interface: "ens4,ens12,ens13" neutron_bridge_name: "br-ex,br-ex2,br-ex3" Rekonfigurasi servis neutron yang sudah berjalan kolla-ansible -i ~/multinode reconfigure -t openvswitch,neutron Periksa konfigurasi pada node yang menjalankan container neutron grep bridge_mappings /etc/kolla/neutron-openvswitch-agent/openvswitch_agent.ini Contoh output
+root@aa-hci01:~# grep bridge_mappings /etc/kolla/neutron-openvswitch-agent/openvswitch_agent.ini bridge_mappings = physnet1:br-ex,physnet2:br-ex2,physnet3:br-ex3 Referensi kolla-ansible Docs - Networking </p>
+</section>
+<footer class=entry-footer>February 15, 2022&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Cara Menambahkan Physical Network Neutron (kolla-ansible)" href=https://blog.ajiarya.id/posts/openstack/cara-menambah-physical-network-neutron-kolla/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
 <h2>Cara Uji Coba OpenStack Octavia (CLI)</h2>
 </header>
 <section class=entry-content>
@@ -127,16 +138,6 @@ hostname ip address aa-bionic-ceph01 192.168.10.211 aa-bionic-ceph02 192.168.10.
 </section>
 <footer class=entry-footer>November 9, 2021&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Aji Arya</footer>
 <a class=entry-link aria-label="post link to Upgrade Ceph Cluster (ceph-deploy)" href=https://blog.ajiarya.id/posts/ceph/cara-upgrade-ceph-cluster-ceph-deploy/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>Cara Menyiapkan Klaster Ceph Menggunakan Ceph Deploy (Ubuntu 18.04 Bionic)</h2>
-</header>
-<section class=entry-content>
-<p>Lingkungan Ubuntu 18.04 Bionic Ceph 15.2.X Octopus Panduan Siapkan file hosts pada semua host sudo bash -c 'cat&lt;&lt;EOF >> /etc/hosts ######## Lab Environment ######## 192.168.10.211 aa-bionic-ceph01 192.168.10.212 aa-bionic-ceph02 192.168.10.213 aa-bionic-ceph03 ################################# EOF' Update dan upgrade package pada semua host sudo apt update -y; sudo apt upgrade -y Pasang uca repository pada semua host sudo add-apt-repository cloud-archive:ussuri Pasang package ceph-deploy pada aa-bionic-ceph01 sudo apt install -y ceph-deploy Pasang package-package ceph pada semua host mkdir ~/ceph-deploy; cd ~/ceph-deploy ceph-deploy install aa-bionic-ceph01 aa-bionic-ceph02 aa-bionic-ceph03 Inisiasi ceph monitor ceph-deploy new aa-bionic-ceph01 aa-bionic-ceph02 aa-bionic-ceph03 ceph-deploy mon create aa-bionic-ceph01 aa-bionic-ceph02 aa-bionic-ceph03 Dapatkan keyring cluster ceph-deploy gatherkeys aa-bionic-ceph01 Keyring yang akan didapatkan:...</p>
-</section>
-<footer class=entry-footer>November 7, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Menyiapkan Klaster Ceph Menggunakan Ceph Deploy (Ubuntu 18.04 Bionic)" href=https://blog.ajiarya.id/posts/ceph/cara-deploy-ceph-menggunakan-ceph-deploy/></a>
 </article>
 <footer class=page-footer>
 <nav class=pagination>

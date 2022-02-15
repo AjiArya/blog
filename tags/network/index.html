@@ -3,11 +3,11 @@
 <meta http-equiv=x-ua-compatible content="IE=edge">
 <meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
 <meta name=robots content="index, follow">
-<title>OpenStack | Aji Arya</title>
+<title>Network | Aji Arya</title>
 <meta name=keywords content>
 <meta name=description content="Aji Arya's Personal Blog">
 <meta name=author content="Aji Arya">
-<link rel=canonical href=https://blog.ajiarya.id/tags/openstack/>
+<link rel=canonical href=https://blog.ajiarya.id/tags/network/>
 <meta name=google-site-verification content="7xkl7tm1-iJxieMKGetoXQpqJffAVKatOFgXg7ddX_Y">
 <link crossorigin=anonymous href=/assets/css/stylesheet.min.35cd0f65a15cafa92372b8313deef5960aae04b90ad722f2bbf509eb0468137e.css integrity="sha256-Nc0PZaFcr6kjcrgxPe71lgquBLkK1yLyu/UJ6wRoE34=" rel="preload stylesheet" as=style>
 <link rel=icon href=https://blog.ajiarya.id/favicon.ico>
@@ -18,13 +18,13 @@
 <meta name=theme-color content="#2e2e33">
 <meta name=msapplication-TileColor content="#2e2e33">
 <meta name=generator content="Hugo 0.92.2">
-<link rel=alternate type=application/rss+xml href=https://blog.ajiarya.id/tags/openstack/index.xml>
-<script type=application/javascript>var doNotTrack=!1;doNotTrack||(function(a,e,f,g,b,c,d){a.GoogleAnalyticsObject=b,a[b]=a[b]||function(){(a[b].q=a[b].q||[]).push(arguments)},a[b].l=1*new Date,c=e.createElement(f),d=e.getElementsByTagName(f)[0],c.async=1,c.src=g,d.parentNode.insertBefore(c,d)}(window,document,'script','https://www.google-analytics.com/analytics.js','ga'),ga('create','UA-182251419-3','auto'),ga('send','pageview'))</script><meta property="og:title" content="OpenStack">
+<link rel=alternate type=application/rss+xml href=https://blog.ajiarya.id/tags/network/index.xml>
+<script type=application/javascript>var doNotTrack=!1;doNotTrack||(function(a,e,f,g,b,c,d){a.GoogleAnalyticsObject=b,a[b]=a[b]||function(){(a[b].q=a[b].q||[]).push(arguments)},a[b].l=1*new Date,c=e.createElement(f),d=e.getElementsByTagName(f)[0],c.async=1,c.src=g,d.parentNode.insertBefore(c,d)}(window,document,'script','https://www.google-analytics.com/analytics.js','ga'),ga('create','UA-182251419-3','auto'),ga('send','pageview'))</script><meta property="og:title" content="Network">
 <meta property="og:description" content="Aji Arya's Personal Blog">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://blog.ajiarya.id/tags/openstack/"><meta property="og:site_name" content="Aji Arya">
+<meta property="og:url" content="https://blog.ajiarya.id/tags/network/"><meta property="og:site_name" content="Aji Arya">
 <meta name=twitter:card content="summary">
-<meta name=twitter:title content="OpenStack">
+<meta name=twitter:title content="Network">
 <meta name=twitter:description content="Aji Arya's Personal Blog">
 </head>
 <body class=list id=top>
@@ -82,39 +82,19 @@ IMTEK
 </header>
 <main class=main>
 <header class=page-header><div class=breadcrumbs><a href=https://blog.ajiarya.id>Home</a>&nbsp;»&nbsp;<a href=https://blog.ajiarya.id/tags/>Tags</a></div>
-<h1>OpenStack</h1>
+<h1>Network</h1>
 </header>
 <article class="post-entry tag-entry">
 <header class=entry-header>
-<h2>Cara Reset Password Root Dari OpenStack Console [RHEL/CentOS/Rocky]</h2>
+<h2>Cara Menambahkan Physical Network Neutron (kolla-ansible)</h2>
 </header>
 <section class=entry-content>
-<p>Prasyarat OpenStack User Horizon Instance RHEL/CentOS/Rocky Panduan Buka console instance pada horizon
-Masuk ke boot option dengan cara interupsi proses booting
-Reboot instance dan tekan tombol panah arah apapun di keyboard pada saat proses reboot Saat masuk boot option pilih kernel dan tekan tombol e pada keyboard
-Cari baris dengan awalan linux /boot/vmlinuz-xxxxxxxx Tambahkan baris berikut rd.break pada baris yang sama dengan linux /boot/vmlinuz-xxxxxxxx Hapus kata berikut console=ttyS0 Lalu tekan Ctrl + x Reset password root menggunakan perintah passwd...</p>
+<p>Prasyarat ansible kolla-ansible Panduan Tambahkan baris berikut pada konfigurasi /etc/kolla/globals.yml neutron_external_interface: "ens4,ens12,ens13" neutron_bridge_name: "br-ex,br-ex2,br-ex3" Rekonfigurasi servis neutron yang sudah berjalan kolla-ansible -i ~/multinode reconfigure -t openvswitch,neutron Periksa konfigurasi pada node yang menjalankan container neutron grep bridge_mappings /etc/kolla/neutron-openvswitch-agent/openvswitch_agent.ini Contoh output
+root@aa-hci01:~# grep bridge_mappings /etc/kolla/neutron-openvswitch-agent/openvswitch_agent.ini bridge_mappings = physnet1:br-ex,physnet2:br-ex2,physnet3:br-ex3 Referensi kolla-ansible Docs - Networking </p>
 </section>
-<footer class=entry-footer>August 29, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Reset Password Root Dari OpenStack Console [RHEL/CentOS/Rocky]" href=https://blog.ajiarya.id/posts/openstack/cara-reset-password-root-instance-centos/></a>
+<footer class=entry-footer>February 15, 2022&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Cara Menambahkan Physical Network Neutron (kolla-ansible)" href=https://blog.ajiarya.id/posts/openstack/cara-menambah-physical-network-neutron-kolla/></a>
 </article>
-<article class="post-entry tag-entry">
-<header class=entry-header>
-<h2>Cara Reset Password Root Dari OpenStack Console [Ubuntu]</h2>
-</header>
-<section class=entry-content>
-<p>Prasyarat OpenStack User Horizon Instance Ubuntu Panduan Buka console instance pada horizon
-Masuk ke boot option dengan cara interupsi proses booting
-Reboot instance dan tekan tombol Shift keyboard pada saat proses reboot Saat masuk boot option pilih kernel dan tekan tombol e pada keyboard
-Cari baris dengan awalan linux /boot/vmlinuz-xxxxxxxx Temukan ro quiet dan ganti dengan rw init=/bin/bash Hapus kata berikut console=ttyS0 Lalu tekan Ctrl + x Reset password root menggunakan perintah passwd...</p>
-</section>
-<footer class=entry-footer>August 29, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Reset Password Root Dari OpenStack Console [Ubuntu]" href=https://blog.ajiarya.id/posts/openstack/cara-reset-password-root-instance-ubuntu/></a>
-</article>
-<footer class=page-footer>
-<nav class=pagination>
-<a class=prev href=https://blog.ajiarya.id/tags/openstack/>« Prev Page</a>
-</nav>
-</footer>
 </main>
 <footer class=footer>
 <span>&copy; 2022 <a href=https://blog.ajiarya.id>Aji Arya</a></span>

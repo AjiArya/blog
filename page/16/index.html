@@ -85,6 +85,16 @@ IMTEK
 <main class=main>
 <article class=post-entry>
 <header class=entry-header>
+<h2>Cara Install ZFS Pada Linux [Ubuntu]</h2>
+</header>
+<section class=entry-content>
+<p>Ubuntu Install package ZFS sudo apt update sudo apt install zfsutils-linux Verifikasi versi modinfo zfs | grep version Referensi OpenZFS Docs </p>
+</section>
+<footer class=entry-footer>August 9, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Cara Install ZFS Pada Linux [Ubuntu]" href=https://blog.ajiarya.id/posts/zfs/cara-install-zfs-ubuntu/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
 <h2>Cara Mengganti Password User Elasticsearch</h2>
 </header>
 <section class=entry-content>
@@ -125,20 +135,10 @@ Panduan sudo dmidecode -s system-product-name Contoh pada virtualisasi KVM stude
 <footer class=entry-footer>August 4, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
 <a class=entry-link aria-label="post link to Cara Mengetahui Virtualisasi Yang Digunakan oleh VM Linux" href=https://blog.ajiarya.id/posts/linux/cara-memeriksa-jenis-virtualiasasi/></a>
 </article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>Memasang Kata Container dengan Containerd Pada Ubuntu 20.04</h2>
-</header>
-<section class=entry-content>
-<p>Prasyarat Baremetal atau Virtualisasi yang mendukung Nested Virtualization Panduan 1. Pasang Repository Kata Container ARCH=$(arch) BRANCH="${BRANCH:-master}" sudo sh -c "echo 'deb http://download.opensuse.org/repositories/home:/katacontainers:/releases:/${ARCH}:/${BRANCH}/xUbuntu_$(lsb_release -rs)/ /' > /etc/apt/sources.list.d/kata-containers.list" curl -sL http://download.opensuse.org/repositories/home:/katacontainers:/releases:/${ARCH}:/${BRANCH}/xUbuntu_$(lsb_release -rs)/Release.key | sudo apt-key add - sudo -E apt-get update sudo -E apt-get -y install kata-runtime kata-proxy kata-shim 2. Periksa kemampuan host untuk menjalankan Kata Container kata-runtime kata-check Keluaran yang diharapkan
-student@kata-host:~$ kata-runtime kata-check No newer release available System is capable of running Kata Containers 3....</p>
-</section>
-<footer class=entry-footer>August 3, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Memasang Kata Container dengan Containerd Pada Ubuntu 20.04" href=https://blog.ajiarya.id/posts/kata/install-kata/></a>
-</article>
 <footer class=page-footer>
 <nav class=pagination>
 <a class=prev href=https://blog.ajiarya.id/page/15/>« Prev Page</a>
+<a class=next href=https://blog.ajiarya.id/page/17/>Next Page »</a>
 </nav>
 </footer>
 </main>

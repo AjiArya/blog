@@ -86,6 +86,17 @@ IMTEK
 </header>
 <article class="post-entry tag-entry">
 <header class=entry-header>
+<h2>Cara Menambahkan Physical Network Neutron (kolla-ansible)</h2>
+</header>
+<section class=entry-content>
+<p>Prasyarat ansible kolla-ansible Panduan Tambahkan baris berikut pada konfigurasi /etc/kolla/globals.yml neutron_external_interface: "ens4,ens12,ens13" neutron_bridge_name: "br-ex,br-ex2,br-ex3" Rekonfigurasi servis neutron yang sudah berjalan kolla-ansible -i ~/multinode reconfigure -t openvswitch,neutron Periksa konfigurasi pada node yang menjalankan container neutron grep bridge_mappings /etc/kolla/neutron-openvswitch-agent/openvswitch_agent.ini Contoh output
+root@aa-hci01:~# grep bridge_mappings /etc/kolla/neutron-openvswitch-agent/openvswitch_agent.ini bridge_mappings = physnet1:br-ex,physnet2:br-ex2,physnet3:br-ex3 Referensi kolla-ansible Docs - Networking </p>
+</section>
+<footer class=entry-footer>February 15, 2022&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Cara Menambahkan Physical Network Neutron (kolla-ansible)" href=https://blog.ajiarya.id/posts/openstack/cara-menambah-physical-network-neutron-kolla/></a>
+</article>
+<article class="post-entry tag-entry">
+<header class=entry-header>
 <h2>Cara Uji Coba OpenStack Octavia (CLI)</h2>
 </header>
 <section class=entry-content>
@@ -123,19 +134,6 @@ IMTEK
 </section>
 <footer class=entry-footer>August 30, 2021&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Aji Arya</footer>
 <a class=entry-link aria-label="post link to Cara Setup OpenStack Magnum Dengan Deployment Kolla-Ansible [Kubernetes COE]" href=https://blog.ajiarya.id/posts/openstack/cara-setup-magnum-kolla/></a>
-</article>
-<article class="post-entry tag-entry">
-<header class=entry-header>
-<h2>Cara Reset Password Root Dari OpenStack Console [RHEL/CentOS/Rocky]</h2>
-</header>
-<section class=entry-content>
-<p>Prasyarat OpenStack User Horizon Instance RHEL/CentOS/Rocky Panduan Buka console instance pada horizon
-Masuk ke boot option dengan cara interupsi proses booting
-Reboot instance dan tekan tombol panah arah apapun di keyboard pada saat proses reboot Saat masuk boot option pilih kernel dan tekan tombol e pada keyboard
-Cari baris dengan awalan linux /boot/vmlinuz-xxxxxxxx Tambahkan baris berikut rd.break pada baris yang sama dengan linux /boot/vmlinuz-xxxxxxxx Hapus kata berikut console=ttyS0 Lalu tekan Ctrl + x Reset password root menggunakan perintah passwd...</p>
-</section>
-<footer class=entry-footer>August 29, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Reset Password Root Dari OpenStack Console [RHEL/CentOS/Rocky]" href=https://blog.ajiarya.id/posts/openstack/cara-reset-password-root-instance-centos/></a>
 </article>
 <footer class=page-footer>
 <nav class=pagination>
