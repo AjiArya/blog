@@ -42,6 +42,12 @@ address=/contoh.com/192.168.10.80
 cname=blog.contoh.com,contoh.com
 ```
 
+**Upstream DNS/DNS Forwarding**
+```ini
+server=1.1.1.1
+server=8.8.8.8
+```
+
 3. Restart servis
 ```bash
 systemctl daemon-reload
@@ -68,3 +74,4 @@ systemctl restart dnsmasq
 # Referensi
 - [man dnsmasq](https://linux.die.net/man/8/dnsmasq)
 - [Server Fault - dnsmasq resolve cname](https://serverfault.com/questions/789530/resolve-a-domain-name-to-cname-alias-locally-using-dnsmasq/947713)
+- [Wiki Arch - dnsmasqs](https://wiki.archlinux.org/title/dnsmasq)
