@@ -16,7 +16,7 @@ cat ~/.ssh/id_rsa.pub
 # simpan output
 ```
 
-2. Lihat informasi akun launchpad
+2. Menambahkan SSH Public Key pada akun Launchpad
 - Kunjungi https://launchpad.net/~\<user-id\>
 - Klik "SSH keys: +"
 ![](/images/cara-impor-ssh-key-launchpad.png)
