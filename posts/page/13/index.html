@@ -87,6 +87,18 @@ IMTEK
 </header>
 <article class=post-entry>
 <header class=entry-header>
+<h2>Cara Upgrade Cluster Ceph Yang Menggunakan cephadm</h2>
+</header>
+<section class=entry-content>
+<p>Panduan Periksa versi ceph yang sedang digunakan ceph versions Lihat rilis ceph dan baca catatan rilis (release note) Kunjungi Ceph Release
+Lakukan upgrade ceph orch upgrade start --ceph-version &lt;versi_ceph> # Contoh # ceph orch upgrade start --ceph-version 16.2.5 Pantau proses upgrade Gunakan perintah-perintah dibawah untuk melakukan pengecekan pada proses upgrade
+ceph orch upgrade status ceph -W cephadm ceph orch ps ceph versions ceph versions saat proses upgrade sedang berlangsung...</p>
+</section>
+<footer class=entry-footer>August 22, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Cara Upgrade Cluster Ceph Yang Menggunakan cephadm" href=https://blog.ajiarya.id/posts/ceph/cara-upgrade-cluster-cephadm/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
 <h2>Cara Konfigurasi SSH Config</h2>
 </header>
 <section class=entry-content>
@@ -126,18 +138,6 @@ Cara manual jika tanpa menggunakan ssh config: ssh ubuntu@1.tcp.jp.ngrok.io -p22
 </section>
 <footer class=entry-footer>August 17, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
 <a class=entry-link aria-label="post link to Cara Membuat Network Libvirt Menggunakan python-tfgen" href=https://blog.ajiarya.id/posts/python-tfgen/cara-membuat-network-dengan-python-tfgen/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>Cara Membuat Storage Pool Libvirt Menggunakan python-tfgen</h2>
-</header>
-<section class=entry-content>
-<p>Prasyarat Terraform python-tfgen Panduan Buat direktori untuk penyimpanan data mkdir -p /data/images mkdir -p /data/vms Tips!
-Mount direktori ke drive dengan kapasitas besar atau kecepatan tinggi.
-Buat yaml dengan kind: pool pool.yaml kind: pool uri: "qemu:///system" spec: - name: images path: /data/images - name: vms path: /data/vms Buat HCL berdasarkan yaml yang telah dibuat ./tfgen.py -f pool.yaml -o pool pool/main....</p>
-</section>
-<footer class=entry-footer>August 17, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Membuat Storage Pool Libvirt Menggunakan python-tfgen" href=https://blog.ajiarya.id/posts/python-tfgen/cara-membuat-pool-dengan-python-tfgen/></a>
 </article>
 <footer class=page-footer>
 <nav class=pagination>

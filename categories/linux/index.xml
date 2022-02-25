@@ -7,6 +7,15 @@
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Fri, 25 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.ajiarya.id/categories/linux/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Cara Impor SSH Key Dari Akun GitHub</title>
+      <link>https://blog.ajiarya.id/posts/linux/cara-impor-ssh-key-github/</link>
+      <pubDate>Fri, 25 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.ajiarya.id/posts/linux/cara-impor-ssh-key-github/</guid>
+      <description>Cara mudah impor ssh key dari akun github</description>
+    </item>
+    
+    <item>
       <title>Cara Impor SSH Key Dari Akun Launchpad</title>
       <link>https://blog.ajiarya.id/posts/linux/cara-impor-ssh-key-launchpad/</link>
       <pubDate>Fri, 25 Feb 2022 00:00:00 +0000</pubDate>

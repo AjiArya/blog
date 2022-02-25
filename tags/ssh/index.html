@@ -86,10 +86,20 @@ IMTEK
 </header>
 <article class="post-entry tag-entry">
 <header class=entry-header>
+<h2>Cara Impor SSH Key Dari Akun GitHub</h2>
+</header>
+<section class=entry-content>
+<p>Panduan Simpan konten file public ssh key pada clipboard cat ~/.ssh/id_rsa.pub # simpan output Menambahkan SSH Public Key pada akun GitHub Login https://github.com Kunjungi https://github.com/settings/keys dan klik “New SSH key” Salin key yang sudah tersimpan pada clipboard lalu klik “Add SSH key” Import SSH Key ssh-import-id gh:&lt;user-id> # Example: # ssh-import-id gh:ajiarya Referensi Launchpad ssh-import-id man ubuntu ssh-import-id </p>
+</section>
+<footer class=entry-footer>February 25, 2022&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Cara Impor SSH Key Dari Akun GitHub" href=https://blog.ajiarya.id/posts/linux/cara-impor-ssh-key-github/></a>
+</article>
+<article class="post-entry tag-entry">
+<header class=entry-header>
 <h2>Cara Impor SSH Key Dari Akun Launchpad</h2>
 </header>
 <section class=entry-content>
-<p>Panduan Simpan konten file public ssh key pada clipboard cat ~/.ssh/id_rsa.pub # simpan output Lihat informasi akun launchpad Kunjungi https://launchpad.net/~&lt;user-id> Klik “SSH keys: +” Salin key yang sudah tersimpan pada clipboard lalu klik “Import Public Key” Import SSH Key ssh-import-id lp:&lt;user-id> # Example: # ssh-import-id lp:aryasaurus Referensi Launchpad ssh-import-id man ubuntu ssh-import-id </p>
+<p>Panduan Simpan konten file public ssh key pada clipboard cat ~/.ssh/id_rsa.pub # simpan output Menambahkan SSH Public Key pada akun Launchpad Kunjungi https://launchpad.net/~&lt;user-id> Klik “SSH keys: +” Salin key yang sudah tersimpan pada clipboard lalu klik “Import Public Key” Import SSH Key ssh-import-id lp:&lt;user-id> # Example: # ssh-import-id lp:aryasaurus Referensi Launchpad ssh-import-id man ubuntu ssh-import-id </p>
 </section>
 <footer class=entry-footer>February 25, 2022&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
 <a class=entry-link aria-label="post link to Cara Impor SSH Key Dari Akun Launchpad" href=https://blog.ajiarya.id/posts/linux/cara-impor-ssh-key-launchpad/></a>
@@ -128,18 +138,11 @@ Cara manual jika tanpa menggunakan ssh config: ssh ubuntu@1.tcp.jp.ngrok.io -p22
 <footer class=entry-footer>August 20, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
 <a class=entry-link aria-label="post link to Cara Konfigurasi SSH Config" href=https://blog.ajiarya.id/posts/linux/cara-konfigurasi-ssh-config/></a>
 </article>
-<article class="post-entry tag-entry">
-<header class=entry-header>
-<h2>Cara Local Port Forwarding SSH</h2>
-</header>
-<section class=entry-content>
-<p>Pendahuluan Ketika kita ingin mengakses sebuah layanan pada remote host yang hanya listen pada address 127.0.0.1 kita tidak bisa menggunakan fitur Dynamic Port Forwarding sebagai alternatif kita bisa menggunakan fitur Local Port Forwarding
-Panduan ssh -L [local_address_bind]:[local_port_bind]:[remote_address_bind]:[remote_port_bind] &lt;remote_host> Contoh serverku menjalankan web server yang hanya listen pada address 127.0.0.1:80 lalu saya ingin mencoba mengakses web server tersebut dari laptopku pada address 192.168.10.10:8080
-Jalankan web server menggunakan python pada serverku # Perintah python [root@serverku ~]# python3 -m http....</p>
-</section>
-<footer class=entry-footer>August 11, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Local Port Forwarding SSH" href=https://blog.ajiarya.id/posts/linux/cara-ssh-local-forwarding-port/></a>
-</article>
+<footer class=page-footer>
+<nav class=pagination>
+<a class=next href=https://blog.ajiarya.id/tags/ssh/page/2/>Next Page »</a>
+</nav>
+</footer>
 </main>
 <footer class=footer>
 <span>&copy; 2022 <a href=https://blog.ajiarya.id>Aji Arya</a></span>
