@@ -5,7 +5,16 @@
     <link>https://blog.ajiarya.id/</link>
     <description>Recent content on Aji Arya</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 15 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.ajiarya.id/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 25 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.ajiarya.id/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cara Impor SSH Key Dari Akun Launchpad</title>
+      <link>https://blog.ajiarya.id/posts/linux/cara-impor-ssh-key-launchpad/</link>
+      <pubDate>Fri, 25 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.ajiarya.id/posts/linux/cara-impor-ssh-key-launchpad/</guid>
+      <description>Cara mudah impor ssh key dari akun launchpad</description>
+    </item>
+    
     <item>
       <title>Cara Menambahkan Physical Network Neutron (kolla-ansible)</title>
       <link>https://blog.ajiarya.id/posts/openstack/cara-menambah-physical-network-neutron-kolla/</link>

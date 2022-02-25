@@ -86,6 +86,16 @@ IMTEK
 </header>
 <article class="post-entry tag-entry">
 <header class=entry-header>
+<h2>Cara Impor SSH Key Dari Akun Launchpad</h2>
+</header>
+<section class=entry-content>
+<p>Panduan Simpan konten file public ssh key pada clipboard cat ~/.ssh/id_rsa.pub # simpan output Lihat informasi akun launchpad Kunjungi https://launchpad.net/~&lt;user-id> Klik “SSH keys: +” Salin key yang sudah tersimpan pada clipboard lalu klik “Import Public Key” Import SSH Key ssh-import-id lp:&lt;user-id> # Example: # ssh-import-id lp:aryasaurus Referensi Launchpad ssh-import-id man ubuntu ssh-import-id </p>
+</section>
+<footer class=entry-footer>February 25, 2022&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Cara Impor SSH Key Dari Akun Launchpad" href=https://blog.ajiarya.id/posts/linux/cara-impor-ssh-key-launchpad/></a>
+</article>
+<article class="post-entry tag-entry">
+<header class=entry-header>
 <h2>Cara SSH Jump Host</h2>
 </header>
 <section class=entry-content>
@@ -129,18 +139,6 @@ Panduan ssh -R [remote_address_bind]:[remote_port_bind]:[local_address_bind]:[lo
 </section>
 <footer class=entry-footer>August 23, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
 <a class=entry-link aria-label="post link to Cara Remote Port Forwarding SSH" href=https://blog.ajiarya.id/posts/linux/cara-ssh-remote-forwarding-port/></a>
-</article>
-<article class="post-entry tag-entry">
-<header class=entry-header>
-<h2>Cara Konfigurasi SSH Config</h2>
-</header>
-<section class=entry-content>
-<p>Contoh SSH Config host &lt;nama_pintas> # Nama pintasan hostname &lt;alamat_tujuan> # Bisa IP Address ataupun domain user &lt;user> # Nama user untuk remote port &lt;port> # Port yang digunakan untuk SSH Panduan Buat file ssh config vim ~/.ssh/config ~/.ssh/config host home-lab hostname 1.tcp.jp.ngrok.io user ubuntu port 2222 Lakukan SSH ssh home-lab Catatan
-Cara manual jika tanpa menggunakan ssh config: ssh ubuntu@1.tcp.jp.ngrok.io -p2222
-</p>
-</section>
-<footer class=entry-footer>August 20, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Konfigurasi SSH Config" href=https://blog.ajiarya.id/posts/linux/cara-konfigurasi-ssh-config/></a>
 </article>
 <footer class=page-footer>
 <nav class=pagination>

@@ -85,6 +85,16 @@ IMTEK
 <main class=main>
 <article class=post-entry>
 <header class=entry-header>
+<h2>Cara Benchmark Web Menggunakan hey</h2>
+</header>
+<section class=entry-content>
+<p>Panduan Jalankan dengan jumlah request # 1000 request hey -n 1000 # 500 request bersamaan dengan sejumlah 1000 request hey -c 500 -n 1000 Jalankan dengan durasi waktu # 30 detik hey -z 30s # 5 menit hey -z 5m # 500 request bersamaan dengan durasi 5 menit hey -c 500 -z 5m Referensi GitHub - hey Man hey - Ubuntu </p>
+</section>
+<footer class=entry-footer>October 7, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Cara Benchmark Web Menggunakan hey" href=https://blog.ajiarya.id/posts/benchmark/cara-benchmark-web/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
 <h2>Cara Mengatur Mode PG Autoscale Pada Ceph Pool</h2>
 </header>
 <section class=entry-content>
@@ -125,16 +135,6 @@ sudo useradd --no-create-home --shell /bin/false node_exporter Unduh, ekstrak, d
 </section>
 <footer class=entry-footer>October 7, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
 <a class=entry-link aria-label="post link to Cara Menyiapkan Node Exporter Pada Linux (CentOS/Ubuntu)" href=https://blog.ajiarya.id/posts/monitoring/cara-menyiapkan-node-exporter/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>Cara Memasang OpenStack Exporter</h2>
-</header>
-<section class=entry-content>
-<p>Prasyarat OpenStack terinstall Panduan Buat user openstack-exporter useradd --no-create-home --shell /bin/false openstack-exporter Buat file konfigurasi mkdir /etc/openstack/ cat&lt;&lt;EOF > /etc/openstack/clouds.yaml clouds: default: region_name: &lt;region_name> identity_api_version: 3 identity_interface: &lt;endpoint_interface> # admin/internal/public auth: username: &lt;username> password: &lt;password> project_name: &lt;project_name> project_domain_name: &lt;project_domain_name> project_domain_id: &lt;project_domain_id> user_domain_name: &lt;user_domain_name> auth_url: https://&lt;keystone_endpoint>:&lt;keystone_port>/v3 verify: false EOF Buat file systemd cat&lt;&lt;EOF > /etc/systemd/system/openstack-exporter.service [Unit] Description=OpenStack Exporter OPEX Wants=network-online.target After=network-online.target [Service] User=openstack-exporter Group=openstack-exporter Type=simple ExecStart=openstack-exporter Surabaya [Install] WantedBy=multi-user....</p>
-</section>
-<footer class=entry-footer>September 18, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Memasang OpenStack Exporter" href=https://blog.ajiarya.id/posts/openstack/cara-memasang-openstack-exporter/></a>
 </article>
 <footer class=page-footer>
 <nav class=pagination>

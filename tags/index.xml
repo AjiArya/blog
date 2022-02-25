@@ -5,7 +5,25 @@
     <link>https://blog.ajiarya.id/tags/</link>
     <description>Recent content in Tags on Aji Arya</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 15 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.ajiarya.id/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 25 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.ajiarya.id/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Linux</title>
+      <link>https://blog.ajiarya.id/tags/linux/</link>
+      <pubDate>Fri, 25 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.ajiarya.id/tags/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SSH</title>
+      <link>https://blog.ajiarya.id/tags/ssh/</link>
+      <pubDate>Fri, 25 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.ajiarya.id/tags/ssh/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Load Balancer</title>
       <link>https://blog.ajiarya.id/tags/load-balancer/</link>
@@ -84,15 +102,6 @@
       <pubDate>Thu, 04 Nov 2021 00:00:00 +0000</pubDate>
       
       <guid>https://blog.ajiarya.id/tags/bcache/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Linux</title>
-      <link>https://blog.ajiarya.id/tags/linux/</link>
-      <pubDate>Thu, 04 Nov 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.ajiarya.id/tags/linux/</guid>
       <description></description>
     </item>
     
@@ -273,15 +282,6 @@
       <pubDate>Sun, 12 Sep 2021 00:00:00 +0000</pubDate>
       
       <guid>https://blog.ajiarya.id/tags/gitlab/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>SSH</title>
-      <link>https://blog.ajiarya.id/tags/ssh/</link>
-      <pubDate>Sat, 11 Sep 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.ajiarya.id/tags/ssh/</guid>
       <description></description>
     </item>
     

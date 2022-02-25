@@ -86,6 +86,16 @@ IMTEK
 </header>
 <article class="post-entry tag-entry">
 <header class=entry-header>
+<h2>Cara Impor SSH Key Dari Akun Launchpad</h2>
+</header>
+<section class=entry-content>
+<p>Panduan Simpan konten file public ssh key pada clipboard cat ~/.ssh/id_rsa.pub # simpan output Lihat informasi akun launchpad Kunjungi https://launchpad.net/~&lt;user-id> Klik “SSH keys: +” Salin key yang sudah tersimpan pada clipboard lalu klik “Import Public Key” Import SSH Key ssh-import-id lp:&lt;user-id> # Example: # ssh-import-id lp:aryasaurus Referensi Launchpad ssh-import-id man ubuntu ssh-import-id </p>
+</section>
+<footer class=entry-footer>February 25, 2022&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Cara Impor SSH Key Dari Akun Launchpad" href=https://blog.ajiarya.id/posts/linux/cara-impor-ssh-key-launchpad/></a>
+</article>
+<article class="post-entry tag-entry">
+<header class=entry-header>
 <h2>Cara Menyiapkan Bcache</h2>
 </header>
 <section class=entry-content>
@@ -127,16 +137,6 @@ sudo cat /etc/gitlab/initial_root_password Masuk GitLab via browser </p>
 </section>
 <footer class=entry-footer>September 18, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
 <a class=entry-link aria-label="post link to Cara Pasang GitLab CE [CentOS 8]" href=https://blog.ajiarya.id/posts/gitlab/cara-memasang-gitlab-ce/></a>
-</article>
-<article class="post-entry tag-entry">
-<header class=entry-header>
-<h2>Cara Pasang Docker Pada Linux (CentOS/Ubuntu)</h2>
-</header>
-<section class=entry-content>
-<p>Panduan CentOS Pasang repository resmi docker # yum sudo yum install -y yum-utils sudo yum-config-manager \ --add-repo \ https://download.docker.com/linux/centos/docker-ce.repo # dnf sudo dnf -y install dnf-plugins-core sudo dnf config-manager \ --add-repo \ https://download.docker.com/linux/centos/docker-ce.repo Pasang docker # yum sudo yum install -y docker-ce docker-ce-cli containerd.io # dnf sudo dnf install -y docker-ce docker-ce-cli containerd.io Enable dan jalankan servis systemctl enable --now docker Verifikasi docker info Ubuntu Pasang repository resmi docker curl -fsSL https://download....</p>
-</section>
-<footer class=entry-footer>September 13, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Pasang Docker Pada Linux (CentOS/Ubuntu)" href=https://blog.ajiarya.id/posts/docker/cara-pasang-docker-pada-linux/></a>
 </article>
 <footer class=page-footer>
 <nav class=pagination>

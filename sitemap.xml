@@ -3,15 +3,33 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://blog.ajiarya.id/</loc>
-    <lastmod>2022-02-15T00:00:00+00:00</lastmod>
+    <lastmod>2022-02-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.ajiarya.id/posts/linux/cara-impor-ssh-key-launchpad/</loc>
+    <lastmod>2022-02-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.ajiarya.id/categories/</loc>
+    <lastmod>2022-02-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.ajiarya.id/tags/linux/</loc>
+    <lastmod>2022-02-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.ajiarya.id/categories/linux/</loc>
+    <lastmod>2022-02-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.ajiarya.id/posts/</loc>
+    <lastmod>2022-02-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.ajiarya.id/tags/ssh/</loc>
+    <lastmod>2022-02-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.ajiarya.id/tags/</loc>
+    <lastmod>2022-02-25T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.ajiarya.id/posts/openstack/cara-menambah-physical-network-neutron-kolla/</loc>
     <lastmod>2022-02-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.ajiarya.id/posts/openstack/cara-uji-coba-octavia/</loc>
-    <lastmod>2022-02-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://blog.ajiarya.id/categories/</loc>
     <lastmod>2022-02-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.ajiarya.id/tags/load-balancer/</loc>
@@ -30,12 +48,6 @@
     <lastmod>2022-02-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.ajiarya.id/categories/openstack/</loc>
-    <lastmod>2022-02-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://blog.ajiarya.id/posts/</loc>
-    <lastmod>2022-02-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://blog.ajiarya.id/tags/</loc>
     <lastmod>2022-02-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.ajiarya.id/tags/ceph/</loc>
@@ -81,9 +93,6 @@
     <lastmod>2021-11-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.ajiarya.id/posts/linux/cara-menyiapkan-bcache/</loc>
-    <lastmod>2021-11-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://blog.ajiarya.id/tags/linux/</loc>
     <lastmod>2021-11-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.ajiarya.id/posts/linux/cara-pasang-nvidia-driver/</loc>
@@ -228,12 +237,6 @@
     <lastmod>2021-09-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.ajiarya.id/posts/linux/cara-ssh-jump/</loc>
-    <lastmod>2021-09-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://blog.ajiarya.id/categories/linux/</loc>
-    <lastmod>2021-09-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://blog.ajiarya.id/tags/ssh/</loc>
     <lastmod>2021-09-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.ajiarya.id/posts/proxmox/cara-deploy-vm-menggunakan-cloud-image/</loc>
