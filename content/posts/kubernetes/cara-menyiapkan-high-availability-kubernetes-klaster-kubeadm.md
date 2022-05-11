@@ -45,7 +45,7 @@ EOF
 apt update -y; apt upgrade -y
 ```
 
-## HAproxy & Keepalived
+## Pasang HAproxy & Keepalived pada Load Balancer Node
 1. Pasang haproxy dan keepalived 
 ```bash
 apt install -y haproxy keepalived
@@ -163,7 +163,7 @@ apt install -y haproxy keepalived
     systemctl enable keepalived
     ```
 
-## Pasang container runtime pada master & worker
+## Pasang container runtime pada K8S master & node
 Kita akan menggunakan containerd
 1. Muat kernel module dan ubah beberapa parameter kernel
 ```bash
