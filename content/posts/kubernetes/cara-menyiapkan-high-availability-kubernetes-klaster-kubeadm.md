@@ -348,7 +348,7 @@ kubectl get nodes
 ![](/images/ha-kubernetes-kubeadm-6.png)
 
 # Referensi
-- [Kubespheere - HA Cluster Using Keepalived & Haproxy](https://kubesphere.io/docs/installing-on-linux/high-availability-configurations/set-up-ha-cluster-using-keepalived-haproxy/)
+- [Kubesphere - HA Cluster Using Keepalived & Haproxy](https://kubesphere.io/docs/installing-on-linux/high-availability-configurations/set-up-ha-cluster-using-keepalived-haproxy/)
 - [Docker Docs - Install Repository](https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository)
 - [Kubernetes Docs - Container Runtime](https://kubernetes.io/docs/setup/production-environment/container-runtimes/)
 - [Kubernetes Docs - Install kubeadm, kubelet, kubectl](https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/install-kubeadm/)
