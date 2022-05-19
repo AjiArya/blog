@@ -5,7 +5,16 @@
     <link>https://blog.ajiarya.id/categories/docker/</link>
     <description>Recent content in Docker on Aji Arya</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 24 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.ajiarya.id/categories/docker/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 19 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.ajiarya.id/categories/docker/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Docker Series Part 1 - Apa Itu Docker?</title>
+      <link>https://blog.ajiarya.id/posts/docker/apa-itu-docker/</link>
+      <pubDate>Thu, 19 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.ajiarya.id/posts/docker/apa-itu-docker/</guid>
+      <description>Mengenal docker</description>
+    </item>
+    
     <item>
       <title>Cara Import &amp; Export Docker Image</title>
       <link>https://blog.ajiarya.id/posts/docker/cara-import-export-docker-image/</link>
