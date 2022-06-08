@@ -8,10 +8,10 @@
     <lastBuildDate>Sun, 29 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.ajiarya.id/tags/ingress/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Cara Memasang Nginx Ingress Controller Pada Kubernetes Cluster [External IP]</title>
-      <link>https://blog.ajiarya.id/posts/kubernetes/cara-memasang-ingress-controller-pada-k8s/</link>
+      <link>https://blog.ajiarya.id/posts/kubernetes/cara-memasang-ingress-nginx-controller-pada-k8s/</link>
       <pubDate>Sun, 29 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.ajiarya.id/posts/kubernetes/cara-memasang-ingress-controller-pada-k8s/</guid>
+      <guid>https://blog.ajiarya.id/posts/kubernetes/cara-memasang-ingress-nginx-controller-pada-k8s/</guid>
       <description>Cara mudah memasang nginx ingress controller pada kubernetes cluster</description>
     </item>
     
