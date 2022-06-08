@@ -1,5 +1,5 @@
 ---
-title: "Docker Series Part 1 - Apa Itu Docker?"
+title: "Docker Series Bagian 1 - Apa Itu Docker?"
 description: "Mengenal docker"
 date: "2022-05-19"
 tags: ["Linux", "Container"]

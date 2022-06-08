@@ -1,5 +1,5 @@
 ---
-title: "Docker Series Part 2 - Memasang Docker Desktop"
+title: "Docker Series Bagian 2 - Memasang Docker Desktop"
 description: "Memasang docker desktop untuk alat belajar"
 date: "2022-06-08"
 tags: ["Linux", "Container"]
