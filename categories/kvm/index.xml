@@ -5,7 +5,16 @@
     <link>https://blog.ajiarya.id/categories/kvm/</link>
     <description>Recent content in KVM on Aji Arya</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 29 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.ajiarya.id/categories/kvm/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 23 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.ajiarya.id/categories/kvm/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cara Melepas Base Image Pada VM dengan Image QCOW2</title>
+      <link>https://blog.ajiarya.id/posts/kvm/cara-melepas-base-image-pada-vm-dengan-image-qcow2/</link>
+      <pubDate>Thu, 23 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.ajiarya.id/posts/kvm/cara-melepas-base-image-pada-vm-dengan-image-qcow2/</guid>
+      <description>Cara melepas base image atau melakukan flatten pada VM dengan image QCOW2</description>
+    </item>
+    
     <item>
       <title>Cara Mengubah Format Image VM</title>
       <link>https://blog.ajiarya.id/posts/linux/cara-mengubah-format-image-vm/</link>
