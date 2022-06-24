@@ -5,7 +5,16 @@
     <link>https://blog.ajiarya.id/categories/kubernetes/</link>
     <description>Recent content in Kubernetes on Aji Arya</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 24 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.ajiarya.id/categories/kubernetes/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 24 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.ajiarya.id/categories/kubernetes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cara Memasang gVisor Pada Kubernetes (Containerd)</title>
+      <link>https://blog.ajiarya.id/posts/kubernetes/cara-memasang-gvisor-pada-kubernetes-containerd/</link>
+      <pubDate>Fri, 24 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.ajiarya.id/posts/kubernetes/cara-memasang-gvisor-pada-kubernetes-containerd/</guid>
+      <description>Cara memasang gVisor pada Kubernetes </description>
+    </item>
+    
     <item>
       <title>Cara Import Container Image Containerd Kubernetes</title>
       <link>https://blog.ajiarya.id/posts/kubernetes/cara-import-container-image-containerd-kubernetes/</link>
