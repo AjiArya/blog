@@ -5,7 +5,16 @@
     <link>https://blog.ajiarya.id/tags/ceph/</link>
     <description>Recent content in Ceph on Aji Arya</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 07 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.ajiarya.id/tags/ceph/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 30 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.ajiarya.id/tags/ceph/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cara Deploy Ceph Quincy Secara Manual</title>
+      <link>https://blog.ajiarya.id/posts/ceph/cara-deploy-ceph-secara-manual/</link>
+      <pubDate>Tue, 30 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.ajiarya.id/posts/ceph/cara-deploy-ceph-secara-manual/</guid>
+      <description>Cara menyiapkan klaster ceph rilis quincy secara manual pada Ubuntu 20.04 LTS Focal</description>
+    </item>
+    
     <item>
       <title>Ceph - Cara Migrasi OSD Filestore ke Bluestore</title>
       <link>https://blog.ajiarya.id/posts/ceph/cara-migrasi-filestore-ke-blustore/</link>

@@ -5,7 +5,16 @@
     <link>https://blog.ajiarya.id/posts/</link>
     <description>Recent content in Posts on Aji Arya</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 28 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.ajiarya.id/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 30 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.ajiarya.id/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cara Deploy Ceph Quincy Secara Manual</title>
+      <link>https://blog.ajiarya.id/posts/ceph/cara-deploy-ceph-secara-manual/</link>
+      <pubDate>Tue, 30 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.ajiarya.id/posts/ceph/cara-deploy-ceph-secara-manual/</guid>
+      <description>Cara menyiapkan klaster ceph rilis quincy secara manual pada Ubuntu 20.04 LTS Focal</description>
+    </item>
+    
     <item>
       <title>Cara Melakukan Tune Sistem Operasi Dengan tuned-adm</title>
       <link>https://blog.ajiarya.id/posts/linux/cara-tune-sistem-operasi-dengan-tuned-adm/</link>

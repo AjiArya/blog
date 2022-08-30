@@ -5,7 +5,16 @@
     <link>https://blog.ajiarya.id/categories/</link>
     <description>Recent content in Categories on Aji Arya</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 28 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.ajiarya.id/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 30 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.ajiarya.id/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ceph</title>
+      <link>https://blog.ajiarya.id/categories/ceph/</link>
+      <pubDate>Tue, 30 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.ajiarya.id/categories/ceph/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Linux</title>
       <link>https://blog.ajiarya.id/categories/linux/</link>
@@ -48,15 +57,6 @@
       <pubDate>Tue, 15 Feb 2022 00:00:00 +0000</pubDate>
       
       <guid>https://blog.ajiarya.id/categories/openstack/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Ceph</title>
-      <link>https://blog.ajiarya.id/categories/ceph/</link>
-      <pubDate>Tue, 07 Dec 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.ajiarya.id/categories/ceph/</guid>
       <description></description>
     </item>
     
