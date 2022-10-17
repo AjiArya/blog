@@ -34,8 +34,8 @@ ceph osd rm <osd_id>
 
 4. _Zap_ disk
 ```bash
-# ceph-volume lvm destroy <device_path> --destroy
-ceph-volume lvm destroy /dev/sdX --destroy
+# ceph-volume lvm zap <device_path> --destroy
+ceph-volume lvm zap /dev/sdX --destroy
 ```
 
 ## Solusi (Workaround)
