@@ -1,9 +1,162 @@
-<!doctype html><html lang=en dir=auto><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name=robots content="index, follow"><title>Ceph | Aji Arya</title><meta name=keywords content><meta name=description content="Aji Arya's Personal Blog"><meta name=author content="Aji Arya"><link rel=canonical href=https://blog.ajiarya.id/tags/ceph/><meta name=google-site-verification content="7xkl7tm1-iJxieMKGetoXQpqJffAVKatOFgXg7ddX_Y"><link crossorigin=anonymous href=/assets/css/stylesheet.min.35cd0f65a15cafa92372b8313deef5960aae04b90ad722f2bbf509eb0468137e.css integrity="sha256-Nc0PZaFcr6kjcrgxPe71lgquBLkK1yLyu/UJ6wRoE34=" rel="preload stylesheet" as=style><link rel=icon href=https://blog.ajiarya.id/favicon.ico><link rel=icon type=image/png sizes=16x16 href=https://blog.ajiarya.id/%3Clink%20/%20abs%20url%3E><link rel=icon type=image/png sizes=32x32 href=https://blog.ajiarya.id/%3Clink%20/%20abs%20url%3E><link rel=apple-touch-icon href=https://blog.ajiarya.id/%3Clink%20/%20abs%20url%3E><link rel=mask-icon href=https://blog.ajiarya.id/%3Clink%20/%20abs%20url%3E><meta name=theme-color content="#2e2e33"><meta name=msapplication-TileColor content="#2e2e33"><meta name=generator content="Hugo 0.104.3"><link rel=alternate type=application/rss+xml href=https://blog.ajiarya.id/tags/ceph/index.xml><script type=application/javascript>var doNotTrack=!1;doNotTrack||(function(e,t,n,s,o,i,a){e.GoogleAnalyticsObject=o,e[o]=e[o]||function(){(e[o].q=e[o].q||[]).push(arguments)},e[o].l=1*new Date,i=t.createElement(n),a=t.getElementsByTagName(n)[0],i.async=1,i.src=s,a.parentNode.insertBefore(i,a)}(window,document,"script","https://www.google-analytics.com/analytics.js","ga"),ga("create","UA-182251419-3","auto"),ga("send","pageview"))</script><meta property="og:title" content="Ceph"><meta property="og:description" content="Aji Arya's Personal Blog"><meta property="og:type" content="website"><meta property="og:url" content="https://blog.ajiarya.id/tags/ceph/"><meta property="og:site_name" content="Aji Arya"><meta name=twitter:card content="summary"><meta name=twitter:title content="Ceph"><meta name=twitter:description content="Aji Arya's Personal Blog"></head><body class=list id=top><script>localStorage.getItem("pref-theme")==="dark"?document.body.classList.add("dark"):localStorage.getItem("pref-theme")==="light"?document.body.classList.remove("dark"):window.matchMedia("(prefers-color-scheme: dark)").matches&&document.body.classList.add("dark")</script><noscript><style type=text/css>#theme-toggle,.top-link{display:none}</style><style>@media(prefers-color-scheme:dark){:root{--theme:#1d1e20;--entry:#2e2e33;--primary:rgba(255, 255, 255, 0.84);--secondary:rgba(255, 255, 255, 0.56);--tertiary:rgba(255, 255, 255, 0.16);--content:rgba(255, 255, 255, 0.74);--hljs-bg:#2e2e33;--code-bg:#37383e;--border:#333}.list{background:var(--theme)}.list:not(.dark)::-webkit-scrollbar-track{background:0 0}.list:not(.dark)::-webkit-scrollbar-thumb{border-color:var(--theme)}}</style></noscript><header class=header><nav class=nav><div class=logo><a href=https://blog.ajiarya.id accesskey=h title="Aji Arya (Alt + H)">Aji Arya</a>
-<span class=logo-switches><button id=theme-toggle accesskey=t title="(Alt + T)"><svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg><svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></button></span></div><ul id=menu><li><a href=https://blog.ajiarya.id/archives/ title=Archives><span>Archives</span></a></li><li><a href=https://blog.ajiarya.id/categories/ title=Categories><span>Categories</span></a></li><li><a href=https://blog.ajiarya.id/tags/ title=Tags><span>Tags</span></a></li><li><a href=https://blog.ajiarya.id/search/ title="Search (Alt + /)" accesskey=/><span>Search</span></a></li><li><a href=https://btech.id title=Btech target=_blank rel=noreferrer><span>Btech</span></a></li><li><a href=https://imtek.id title=IMTEK target=_blank rel=noreferrer><span>IMTEK</span></a></li></ul></nav></header><main class=main><header class=page-header><div class=breadcrumbs><a href=https://blog.ajiarya.id>Home</a>&nbsp;»&nbsp;<a href=https://blog.ajiarya.id/tags/>Tags</a></div><h1>Ceph</h1></header><article class="post-entry tag-entry"><header class=entry-header><h2>Cara Deploy Ceph Quincy Secara Manual</h2></header><section class=entry-content><p>Lingkungan Ubuntu 20.04 LTS Focal Fossa Ceph 17.2.X Quincy Panduan Prasyarat (Semua Ceph Node) Konfigurasi berkas hosts cat&lt;&lt;EOF | sudo tee -a /etc/hosts 10.150.17.11 ceph01 10.150.17.12 ceph02 10.150.17.13 ceph03 EOF Memasang repository Ubuntu Cloud Archive (UCA) Focal-Yoga sudo add-apt-repository cloud-archive:yoga Update, upgrade, dan pasang ceph sudo apt update; sudo apt upgrade -y sudo apt install -y ceph Menyiapkan Ceph Monitor (ceph-mon) Eksekusi tahap 1 - 8 hanya pada ceph01 Membuat berkas konfigurasi ceph sudo apt install -y uuid FSID=$(uuid) cat&lt;&lt;EOF | sudo tee -a /etc/ceph/ceph....</p></section><footer class=entry-footer>August 30, 2022&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Aji Arya</footer><a class=entry-link aria-label="post link to Cara Deploy Ceph Quincy Secara Manual" href=https://blog.ajiarya.id/posts/ceph/cara-deploy-ceph-secara-manual/></a></article><article class="post-entry tag-entry"><header class=entry-header><h2>Ceph - Cara Migrasi OSD Filestore ke Bluestore</h2></header><section class=entry-content><p>Panduan Periksa backend OSD Filestore atau Bluestore (Node MON) ceph osd metadata &lt;osd_id> | grep osd_objectstore Periksa jumlah filestore dan bluestore yang ada pada klaster (Node MON)
-ceph osd count-metadata osd_objectstore Set out pada OSD yang ingin dimigrasi (Node MON) ceph osd out &lt;osd_id> Tunggu sampai migrasi data selesai (Node MON) while ! ceph osd safe-to-destroy $ID ; do sleep 60 ; done Matikan service ceph-osd (Node OSD) Note: Ingat osd_id...</p></section><footer class=entry-footer>December 7, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer><a class=entry-link aria-label="post link to Ceph - Cara Migrasi OSD Filestore ke Bluestore" href=https://blog.ajiarya.id/posts/ceph/cara-migrasi-filestore-ke-blustore/></a></article><article class="post-entry tag-entry"><header class=entry-header><h2>Ceph - Cara Migrasi Ceph Daemon ke cephadm</h2></header><section class=entry-content><p>Lingkungan Ubuntu 20.04 Focal Ceph 15.2.X Octopus Podman 3.3.1 Mesin
-hostname ip address aa-bionic-ceph01 192.168.10.211 aa-bionic-ceph02 192.168.10.212 aa-bionic-ceph03 192.168.10.213 Panduan Masuk sebagai root sudo -i Pasang cephadm pada semua host curl --silent --remote-name --location https://github.com/ceph/ceph/raw/octopus/src/cephadm/cephadm chmod +x cephadm ./cephadm install # verifikasi dpkg -l cephadm Migrasi ceph-mon, lakukan pada setiap host ceph-mon cephadm adopt --style legacy --name mon.$(hostname) Migrasi ceph-mgr, lakukan pada setiap host ceph-mgr cephadm adopt --style legacy --name mgr....</p></section><footer class=entry-footer>November 9, 2021&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Aji Arya</footer><a class=entry-link aria-label="post link to Ceph - Cara Migrasi Ceph Daemon ke cephadm" href=https://blog.ajiarya.id/posts/ceph/cara-migrasi-ceph-daemon-ke-cephadm/></a></article><article class="post-entry tag-entry"><header class=entry-header><h2>Upgrade Ceph Cluster (ceph-deploy)</h2></header><section class=entry-content><p>Lingkungan Ubuntu 18.04.06 LTS (Bionic Beaver) Ubuntu Cloud Archive Repository Ceph 13.2.9 - mimic (Sebelum upgrade) Ceph 15.2.14 - octopus (Setelah upgrade) Mesin
-hostname ip address aa-bionic-ceph01 192.168.10.211 aa-bionic-ceph02 192.168.10.212 aa-bionic-ceph03 192.168.10.213 Panduan Periksa versi ceph pada klaster sudo ceph versions keluaran { "mon": { "ceph version 13.2.9 (58a2a9b31fd08d8bb3089fce0e312331502ff945) mimic (stable)": 3 }, "mgr": { "ceph version 13.2.9 (58a2a9b31fd08d8bb3089fce0e312331502ff945) mimic (stable)": 3 }, "osd": { "ceph version 13.2.9 (58a2a9b31fd08d8bb3089fce0e312331502ff945) mimic (stable)": 9 }, "mds": {}, "overall": { "ceph version 13....</p></section><footer class=entry-footer>November 9, 2021&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Aji Arya</footer><a class=entry-link aria-label="post link to Upgrade Ceph Cluster (ceph-deploy)" href=https://blog.ajiarya.id/posts/ceph/cara-upgrade-ceph-cluster-ceph-deploy/></a></article><article class="post-entry tag-entry"><header class=entry-header><h2>Cara Menyiapkan Klaster Ceph Menggunakan Ceph Deploy (Ubuntu 18.04 Bionic)</h2></header><section class=entry-content><p>Lingkungan Ubuntu 18.04 Bionic Ceph 15.2.X Octopus Panduan Siapkan file hosts pada semua host sudo bash -c 'cat&lt;&lt;EOF >> /etc/hosts ######## Lab Environment ######## 192.168.10.211 aa-bionic-ceph01 192.168.10.212 aa-bionic-ceph02 192.168.10.213 aa-bionic-ceph03 ################################# EOF' Update dan upgrade package pada semua host sudo apt update -y; sudo apt upgrade -y Pasang uca repository pada semua host sudo add-apt-repository cloud-archive:ussuri Pasang package ceph-deploy pada aa-bionic-ceph01 sudo apt install -y ceph-deploy Pasang package-package ceph pada semua host mkdir ~/ceph-deploy; cd ~/ceph-deploy ceph-deploy install aa-bionic-ceph01 aa-bionic-ceph02 aa-bionic-ceph03 Inisiasi ceph monitor ceph-deploy new aa-bionic-ceph01 aa-bionic-ceph02 aa-bionic-ceph03 ceph-deploy mon create aa-bionic-ceph01 aa-bionic-ceph02 aa-bionic-ceph03 Dapatkan keyring cluster ceph-deploy gatherkeys aa-bionic-ceph01 Keyring yang akan didapatkan:...</p></section><footer class=entry-footer>November 7, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer><a class=entry-link aria-label="post link to Cara Menyiapkan Klaster Ceph Menggunakan Ceph Deploy (Ubuntu 18.04 Bionic)" href=https://blog.ajiarya.id/posts/ceph/cara-deploy-ceph-menggunakan-ceph-deploy/></a></article><footer class=page-footer><nav class=pagination><a class=next href=https://blog.ajiarya.id/tags/ceph/page/2/>Next Page »</a></nav></footer></main><footer class=footer><span>&copy; 2022 <a href=https://blog.ajiarya.id>Aji Arya</a></span>
-<span>Powered by
+<!doctype html><html lang=en dir=auto>
+<head><meta charset=utf-8>
+<meta http-equiv=x-ua-compatible content="IE=edge">
+<meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
+<meta name=robots content="index, follow">
+<title>Ceph | Aji Arya</title>
+<meta name=keywords content>
+<meta name=description content="Aji Arya's Personal Blog">
+<meta name=author content="Aji Arya">
+<link rel=canonical href=https://blog.ajiarya.id/tags/ceph/>
+<meta name=google-site-verification content="7xkl7tm1-iJxieMKGetoXQpqJffAVKatOFgXg7ddX_Y">
+<link crossorigin=anonymous href=/assets/css/stylesheet.min.35cd0f65a15cafa92372b8313deef5960aae04b90ad722f2bbf509eb0468137e.css integrity="sha256-Nc0PZaFcr6kjcrgxPe71lgquBLkK1yLyu/UJ6wRoE34=" rel="preload stylesheet" as=style>
+<link rel=icon href=https://blog.ajiarya.id/favicon.ico>
+<link rel=icon type=image/png sizes=16x16 href=https://blog.ajiarya.id/%3Clink%20/%20abs%20url%3E>
+<link rel=icon type=image/png sizes=32x32 href=https://blog.ajiarya.id/%3Clink%20/%20abs%20url%3E>
+<link rel=apple-touch-icon href=https://blog.ajiarya.id/%3Clink%20/%20abs%20url%3E>
+<link rel=mask-icon href=https://blog.ajiarya.id/%3Clink%20/%20abs%20url%3E>
+<meta name=theme-color content="#2e2e33">
+<meta name=msapplication-TileColor content="#2e2e33">
+<meta name=generator content="Hugo 0.91.2">
+<link rel=alternate type=application/rss+xml href=https://blog.ajiarya.id/tags/ceph/index.xml>
+<script type=application/javascript>var doNotTrack=!1;doNotTrack||(function(a,e,f,g,b,c,d){a.GoogleAnalyticsObject=b,a[b]=a[b]||function(){(a[b].q=a[b].q||[]).push(arguments)},a[b].l=1*new Date,c=e.createElement(f),d=e.getElementsByTagName(f)[0],c.async=1,c.src=g,d.parentNode.insertBefore(c,d)}(window,document,'script','https://www.google-analytics.com/analytics.js','ga'),ga('create','UA-182251419-3','auto'),ga('send','pageview'))</script><meta property="og:title" content="Ceph">
+<meta property="og:description" content="Aji Arya's Personal Blog">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://blog.ajiarya.id/tags/ceph/"><meta property="og:site_name" content="Aji Arya">
+<meta name=twitter:card content="summary">
+<meta name=twitter:title content="Ceph">
+<meta name=twitter:description content="Aji Arya's Personal Blog">
+</head>
+<body class=list id=top>
+<script>localStorage.getItem("pref-theme")==="dark"?document.body.classList.add('dark'):localStorage.getItem("pref-theme")==="light"?document.body.classList.remove('dark'):window.matchMedia('(prefers-color-scheme: dark)').matches&&document.body.classList.add('dark')</script>
+<noscript>
+<style type=text/css>#theme-toggle,.top-link{display:none}</style>
+<style>@media(prefers-color-scheme:dark){:root{--theme:#1d1e20;--entry:#2e2e33;--primary:rgba(255, 255, 255, 0.84);--secondary:rgba(255, 255, 255, 0.56);--tertiary:rgba(255, 255, 255, 0.16);--content:rgba(255, 255, 255, 0.74);--hljs-bg:#2e2e33;--code-bg:#37383e;--border:#333}.list{background:var(--theme)}.list:not(.dark)::-webkit-scrollbar-track{background:0 0}.list:not(.dark)::-webkit-scrollbar-thumb{border-color:var(--theme)}}</style>
+</noscript>
+<header class=header>
+<nav class=nav>
+<div class=logo>
+<a href=https://blog.ajiarya.id accesskey=h title="Aji Arya (Alt + H)">Aji Arya</a>
+<span class=logo-switches>
+<button id=theme-toggle accesskey=t title="(Alt + T)"><svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg><svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+</button>
+</span>
+</div>
+<ul id=menu>
+<li>
+<a href=https://blog.ajiarya.id/archives/ title=Archives>
+<span>Archives</span>
+</a>
+</li>
+<li>
+<a href=https://blog.ajiarya.id/categories/ title=Categories>
+<span>Categories</span>
+</a>
+</li>
+<li>
+<a href=https://blog.ajiarya.id/tags/ title=Tags>
+<span>Tags</span>
+</a>
+</li>
+<li>
+<a href=https://blog.ajiarya.id/search/ title="Search (Alt + /)" accesskey=/>
+<span>Search</span>
+</a>
+</li>
+<li>
+<a href=https://btech.id title=Btech target=_blank rel=noreferrer>
+<span>
+Btech
+</span>
+</a>
+</li>
+<li>
+<a href=https://imtek.id title=IMTEK target=_blank rel=noreferrer>
+<span>
+IMTEK
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</header>
+<main class=main>
+<header class=page-header><div class=breadcrumbs><a href=https://blog.ajiarya.id>Home</a>&nbsp;»&nbsp;<a href=https://blog.ajiarya.id/tags/>Tags</a></div>
+<h1>Ceph</h1>
+</header>
+<article class="post-entry tag-entry">
+<header class=entry-header>
+<h2>Mencoba Ceph Pada Mesin Dengan CPU ARM</h2>
+</header>
+<section class=entry-content>
+<p>Lingkungan Spesifikasi Mesin Fisik Sistem Operasi: Ubuntu 22.04 LTS Sistem Cloud: OpenStack Kolla Yoga Server: GIGABYTE R152-P33 (Disediakan oleh https://imtek.id) 1 x Ampere Computing Ampere Altra Q80-30 4 x 64GB DDR4 3200Mhz 1 x Intel Ethernet Converged Network Adapter X550T 2 x SAMSUNG NVMe SSD 970 EVO Plus 500GB 2 x SAMSUNG NVMe SSD PM9A3 960GB Spesifikasi Mesin Virtual Sistem Operasi: Ubuntu 22.04 LTS Software-defined Storage (SDS): Ceph Quincy Detil: No Hostname vCPU Memory Storage Extra Storage 1 demo-ceph01 4 8GB Disk 1: 50GB (OS) Disk 2-4: 50GB (OSD) 2 demo-ceph02 4 8GB Disk 1: 50GB (OS) Disk 2-4: 50GB (OSD) 3 demo-ceph03 4 8GB Disk 1: 50GB (OS) Disk 2-4: 50GB (OSD) Berikut merupakan tangkapan layar yang menunjukkan architecture CPU dan informasi sistem operasi Hasil percobaan Manual Berikut merupakan tangkapan layar yang menunjukkan hasil instalasi menggunakan cara manual Berikut caranya: Cara Deploy Ceph Quincy Secara Manual...</p>
+</section>
+<footer class=entry-footer>July 4, 2023&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Mencoba Ceph Pada Mesin Dengan CPU ARM" href=https://blog.ajiarya.id/posts/ceph/mencoba-ceph-pada-mesin-dengan-cpu-arm/></a>
+</article>
+<article class="post-entry tag-entry">
+<header class=entry-header>
+<h2>Cara Deploy Ceph Quincy Secara Manual</h2>
+</header>
+<section class=entry-content>
+<p>Lingkungan Ubuntu 20.04 LTS Focal Fossa Ceph 17.2.X Quincy Panduan Prasyarat (Semua Ceph Node) Konfigurasi berkas hosts cat&lt;&lt;EOF | sudo tee -a /etc/hosts 10.150.17.11 ceph01 10.150.17.12 ceph02 10.150.17.13 ceph03 EOF Memasang repository Ubuntu Cloud Archive (UCA) Focal-Yoga sudo add-apt-repository cloud-archive:yoga Update, upgrade, dan pasang ceph sudo apt update; sudo apt upgrade -y sudo apt install -y ceph Menyiapkan Ceph Monitor (ceph-mon) Eksekusi tahap 1 - 8 hanya pada ceph01 Membuat berkas konfigurasi ceph sudo apt install -y uuid FSID=$(uuid) cat&lt;&lt;EOF | sudo tee -a /etc/ceph/ceph....</p>
+</section>
+<footer class=entry-footer>August 30, 2022&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Cara Deploy Ceph Quincy Secara Manual" href=https://blog.ajiarya.id/posts/ceph/cara-deploy-ceph-secara-manual/></a>
+</article>
+<article class="post-entry tag-entry">
+<header class=entry-header>
+<h2>Ceph - Cara Migrasi OSD Filestore ke Bluestore</h2>
+</header>
+<section class=entry-content>
+<p>Panduan Periksa backend OSD Filestore atau Bluestore (Node MON) ceph osd metadata &lt;osd_id> | grep osd_objectstore Periksa jumlah filestore dan bluestore yang ada pada klaster (Node MON)
+ceph osd count-metadata osd_objectstore Set out pada OSD yang ingin dimigrasi (Node MON) ceph osd out &lt;osd_id> Tunggu sampai migrasi data selesai (Node MON) while ! ceph osd safe-to-destroy $ID ; do sleep 60 ; done Matikan service ceph-osd (Node OSD) Note: Ingat osd_id...</p>
+</section>
+<footer class=entry-footer>December 7, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Ceph - Cara Migrasi OSD Filestore ke Bluestore" href=https://blog.ajiarya.id/posts/ceph/cara-migrasi-filestore-ke-blustore/></a>
+</article>
+<article class="post-entry tag-entry">
+<header class=entry-header>
+<h2>Ceph - Cara Migrasi Ceph Daemon ke cephadm</h2>
+</header>
+<section class=entry-content>
+<p>Lingkungan Ubuntu 20.04 Focal Ceph 15.2.X Octopus Podman 3.3.1 Mesin
+hostname ip address aa-bionic-ceph01 192.168.10.211 aa-bionic-ceph02 192.168.10.212 aa-bionic-ceph03 192.168.10.213 Panduan Masuk sebagai root sudo -i Pasang cephadm pada semua host curl --silent --remote-name --location https://github.com/ceph/ceph/raw/octopus/src/cephadm/cephadm chmod +x cephadm ./cephadm install # verifikasi dpkg -l cephadm Migrasi ceph-mon, lakukan pada setiap host ceph-mon cephadm adopt --style legacy --name mon....</p>
+</section>
+<footer class=entry-footer>November 9, 2021&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Ceph - Cara Migrasi Ceph Daemon ke cephadm" href=https://blog.ajiarya.id/posts/ceph/cara-migrasi-ceph-daemon-ke-cephadm/></a>
+</article>
+<article class="post-entry tag-entry">
+<header class=entry-header>
+<h2>Upgrade Ceph Cluster (ceph-deploy)</h2>
+</header>
+<section class=entry-content>
+<p>Lingkungan Ubuntu 18.04.06 LTS (Bionic Beaver) Ubuntu Cloud Archive Repository Ceph 13.2.9 - mimic (Sebelum upgrade) Ceph 15.2.14 - octopus (Setelah upgrade) Mesin
+hostname ip address aa-bionic-ceph01 192.168.10.211 aa-bionic-ceph02 192.168.10.212 aa-bionic-ceph03 192.168.10.213 Panduan Periksa versi ceph pada klaster sudo ceph versions keluaran { "mon": { "ceph version 13.2.9 (58a2a9b31fd08d8bb3089fce0e312331502ff945) mimic (stable)": 3 }, "mgr": { "ceph version 13....</p>
+</section>
+<footer class=entry-footer>November 9, 2021&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Upgrade Ceph Cluster (ceph-deploy)" href=https://blog.ajiarya.id/posts/ceph/cara-upgrade-ceph-cluster-ceph-deploy/></a>
+</article>
+<footer class=page-footer>
+<nav class=pagination>
+<a class=next href=https://blog.ajiarya.id/tags/ceph/page/2/>Next Page »</a>
+</nav>
+</footer>
+</main>
+<footer class=footer>
+<span>&copy; 2023 <a href=https://blog.ajiarya.id>Aji Arya</a></span>
+<span>
+Powered by
 <a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &
-        <a href=https://git.io/hugopapermod rel=noopener target=_blank>PaperMod</a></span></footer><a href=#top aria-label="go to top" title="Go to Top (Alt + G)"><button class=top-link id=top-link type=button accesskey=g><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentcolor"><path d="M12 6H0l6-6z"/></svg></button></a>
-<script>let menu=document.getElementById("menu");menu.scrollLeft=localStorage.getItem("menu-scroll-position"),menu.onscroll=function(){localStorage.setItem("menu-scroll-position",menu.scrollLeft)},document.querySelectorAll('a[href^="#"]').forEach(e=>{e.addEventListener("click",function(e){e.preventDefault();var t=this.getAttribute("href").substr(1);window.matchMedia("(prefers-reduced-motion: reduce)").matches?document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView({behavior:"smooth"}),t==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${t}`)})})</script><script>var mybutton=document.getElementById("top-link");window.onscroll=function(){document.body.scrollTop>800||document.documentElement.scrollTop>800?(mybutton.style.visibility="visible",mybutton.style.opacity="1"):(mybutton.style.visibility="hidden",mybutton.style.opacity="0")}</script><script>document.getElementById("theme-toggle").addEventListener("click",()=>{document.body.className.includes("dark")?(document.body.classList.remove("dark"),localStorage.setItem("pref-theme","light")):(document.body.classList.add("dark"),localStorage.setItem("pref-theme","dark"))})</script></body></html>
+        <a href=https://git.io/hugopapermod rel=noopener target=_blank>PaperMod</a>
+</span>
+</footer>
+<a href=#top aria-label="go to top" title="Go to Top (Alt + G)">
+<button class=top-link id=top-link type=button accesskey=g><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentcolor"><path d="M12 6H0l6-6z"/></svg>
+</button>
+</a>
+<script>let menu=document.getElementById('menu');menu.scrollLeft=localStorage.getItem("menu-scroll-position"),menu.onscroll=function(){localStorage.setItem("menu-scroll-position",menu.scrollLeft)},document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener("click",function(b){b.preventDefault();var a=this.getAttribute("href").substr(1);window.matchMedia('(prefers-reduced-motion: reduce)').matches?document.querySelector(`[id='${decodeURIComponent(a)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(a)}']`).scrollIntoView({behavior:"smooth"}),a==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${a}`)})})</script>
+<script>var mybutton=document.getElementById("top-link");window.onscroll=function(){document.body.scrollTop>800||document.documentElement.scrollTop>800?(mybutton.style.visibility="visible",mybutton.style.opacity="1"):(mybutton.style.visibility="hidden",mybutton.style.opacity="0")}</script>
+<script>document.getElementById("theme-toggle").addEventListener("click",()=>{document.body.className.includes("dark")?(document.body.classList.remove('dark'),localStorage.setItem("pref-theme",'light')):(document.body.classList.add('dark'),localStorage.setItem("pref-theme",'dark'))})</script>
+</body>
+</html>

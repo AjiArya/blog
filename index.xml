@@ -5,7 +5,16 @@
     <link>https://blog.ajiarya.id/</link>
     <description>Recent content on Aji Arya</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 30 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.ajiarya.id/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 04 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.ajiarya.id/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mencoba Ceph Pada Mesin Dengan CPU ARM</title>
+      <link>https://blog.ajiarya.id/posts/ceph/mencoba-ceph-pada-mesin-dengan-cpu-arm/</link>
+      <pubDate>Tue, 04 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.ajiarya.id/posts/ceph/mencoba-ceph-pada-mesin-dengan-cpu-arm/</guid>
+      <description>Menunjukkan hasil percobaan deploy Ceph pada mesin dengan CPU ARM</description>
+    </item>
+    
     <item>
       <title>Cara Deploy Ceph Quincy Secara Manual</title>
       <link>https://blog.ajiarya.id/posts/ceph/cara-deploy-ceph-secara-manual/</link>
