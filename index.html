@@ -105,6 +105,16 @@ IMTEK
 </article>
 <article class=post-entry>
 <header class=entry-header>
+<h2>Resync Broken Juju Database (MongoDB)</h2>
+</header>
+<section class=entry-content>
+<p>Environment Juju DB snap channel: 4.0/stable Juju controller agent: 2.9.0 Operating System: Ubuntu 20.04 LTS Deployment: Juju HA Symptom Juju controller does not bind port 37017 / MongoDB Port Following error log can be found from /var/snap/juju-db/common/logs/mongodb.log [replication-0] We are too stale to use &lt;IP_ADDRESS>:37017 as a sync source. Blacklisting this sync source because our last fetched timestamp: [replication-0] could not find member to sycn from Guide 1....</p>
+</section>
+<footer class=entry-footer>July 23, 2023&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Resync Broken Juju Database (MongoDB)" href=https://blog.ajiarya.id/posts/juju/resync-broken-juju-mongodb/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
 <h2>Mencoba Ceph Pada Mesin Dengan CPU ARM</h2>
 </header>
 <section class=entry-content>
@@ -143,18 +153,6 @@ IMTEK
 </section>
 <footer class=entry-footer>June 24, 2022&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Aji Arya</footer>
 <a class=entry-link aria-label="post link to Cara Memasang gVisor Pada Kubernetes (Containerd)" href=https://blog.ajiarya.id/posts/kubernetes/cara-memasang-gvisor-pada-kubernetes-containerd/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>Cara Melepas Base Image Pada VM dengan Image QCOW2</h2>
-</header>
-<section class=entry-content>
-<p>Panduan Periksa base image qemu-img info /data/vms/example.qcow2 Contoh
-image: /data/vms/example.qcow2 file format: qcow2 virtual size: 50 GiB (53687091200 bytes) disk size: 324 KiB cluster_size: 65536 backing file: /data/isos/template-ubuntu20.img backing file format: qcow2 Format specific information: compat: 0.10 refcount bits: 16 Periksa target image VM # virsh domblklist &lt;nama_vm/domain> virsh domblklist example Contoh
-Target Source --------------------------------------------- vda example.qcow2 hdd /data/vms/sd-runner-cloudinit.iso Pastikan VM dalam kondisi menyala dan mulai flatten image # virsh blockpull &lt;nama_vm/domain> vda --wait virsh blockpull example vda --wait Verifikasi qemu-img info /data/vms/example....</p>
-</section>
-<footer class=entry-footer>June 23, 2022&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Melepas Base Image Pada VM dengan Image QCOW2" href=https://blog.ajiarya.id/posts/kvm/cara-melepas-base-image-pada-vm-dengan-image-qcow2/></a>
 </article>
 <footer class=page-footer>
 <nav class=pagination>

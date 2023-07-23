@@ -85,6 +85,18 @@ IMTEK
 <main class=main>
 <article class=post-entry>
 <header class=entry-header>
+<h2>Cara Melepas Base Image Pada VM dengan Image QCOW2</h2>
+</header>
+<section class=entry-content>
+<p>Panduan Periksa base image qemu-img info /data/vms/example.qcow2 Contoh
+image: /data/vms/example.qcow2 file format: qcow2 virtual size: 50 GiB (53687091200 bytes) disk size: 324 KiB cluster_size: 65536 backing file: /data/isos/template-ubuntu20.img backing file format: qcow2 Format specific information: compat: 0.10 refcount bits: 16 Periksa target image VM # virsh domblklist &lt;nama_vm/domain> virsh domblklist example Contoh
+Target Source --------------------------------------------- vda example.qcow2 hdd /data/vms/sd-runner-cloudinit.iso Pastikan VM dalam kondisi menyala dan mulai flatten image # virsh blockpull &lt;nama_vm/domain> vda --wait virsh blockpull example vda --wait Verifikasi qemu-img info /data/vms/example....</p>
+</section>
+<footer class=entry-footer>June 23, 2022&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Cara Melepas Base Image Pada VM dengan Image QCOW2" href=https://blog.ajiarya.id/posts/kvm/cara-melepas-base-image-pada-vm-dengan-image-qcow2/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
 <h2>Docker Series Bagian 2 - Memasang Docker Desktop</h2>
 </header>
 <section class=entry-content>
@@ -131,17 +143,6 @@ Container Runtime (runtime-spec) perangkat lunak yang bertanggung jawab untuk me
 </section>
 <footer class=entry-footer>February 25, 2022&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
 <a class=entry-link aria-label="post link to Cara Impor SSH Key Dari Akun Launchpad" href=https://blog.ajiarya.id/posts/linux/cara-impor-ssh-key-launchpad/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>Cara Menambahkan Physical Network Neutron (kolla-ansible)</h2>
-</header>
-<section class=entry-content>
-<p>Prasyarat ansible kolla-ansible Panduan Tambahkan baris berikut pada konfigurasi /etc/kolla/globals.yml neutron_external_interface: "ens4,ens12,ens13" neutron_bridge_name: "br-ex,br-ex2,br-ex3" Rekonfigurasi servis neutron yang sudah berjalan kolla-ansible -i ~/multinode reconfigure -t openvswitch,neutron Periksa konfigurasi pada node yang menjalankan container neutron grep bridge_mappings /etc/kolla/neutron-openvswitch-agent/openvswitch_agent.ini Contoh output
-root@aa-hci01:~# grep bridge_mappings /etc/kolla/neutron-openvswitch-agent/openvswitch_agent.ini bridge_mappings = physnet1:br-ex,physnet2:br-ex2,physnet3:br-ex3 Referensi kolla-ansible Docs - Networking </p>
-</section>
-<footer class=entry-footer>February 15, 2022&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Menambahkan Physical Network Neutron (kolla-ansible)" href=https://blog.ajiarya.id/posts/openstack/cara-menambah-physical-network-neutron-kolla/></a>
 </article>
 <footer class=page-footer>
 <nav class=pagination>

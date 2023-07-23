@@ -5,7 +5,52 @@
     <link>https://blog.ajiarya.id/tags/</link>
     <description>Recent content in Tags on Aji Arya</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 04 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.ajiarya.id/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 23 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.ajiarya.id/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Canonical</title>
+      <link>https://blog.ajiarya.id/tags/canonical/</link>
+      <pubDate>Sun, 23 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.ajiarya.id/tags/canonical/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Juju</title>
+      <link>https://blog.ajiarya.id/tags/juju/</link>
+      <pubDate>Sun, 23 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.ajiarya.id/tags/juju/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>MongoDB</title>
+      <link>https://blog.ajiarya.id/tags/mongodb/</link>
+      <pubDate>Sun, 23 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.ajiarya.id/tags/mongodb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Troubleshooting</title>
+      <link>https://blog.ajiarya.id/tags/troubleshooting/</link>
+      <pubDate>Sun, 23 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.ajiarya.id/tags/troubleshooting/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ubuntu</title>
+      <link>https://blog.ajiarya.id/tags/ubuntu/</link>
+      <pubDate>Sun, 23 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.ajiarya.id/tags/ubuntu/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>ARM</title>
       <link>https://blog.ajiarya.id/tags/arm/</link>
@@ -525,33 +570,6 @@
       <pubDate>Mon, 09 Aug 2021 00:00:00 +0000</pubDate>
       
       <guid>https://blog.ajiarya.id/tags/zfs/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Canonical</title>
-      <link>https://blog.ajiarya.id/tags/canonical/</link>
-      <pubDate>Wed, 04 Aug 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.ajiarya.id/tags/canonical/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Juju</title>
-      <link>https://blog.ajiarya.id/tags/juju/</link>
-      <pubDate>Wed, 04 Aug 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.ajiarya.id/tags/juju/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Ubuntu</title>
-      <link>https://blog.ajiarya.id/tags/ubuntu/</link>
-      <pubDate>Wed, 04 Aug 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.ajiarya.id/tags/ubuntu/</guid>
       <description></description>
     </item>
     

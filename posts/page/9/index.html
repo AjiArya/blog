@@ -87,6 +87,16 @@ IMTEK
 </header>
 <article class=post-entry>
 <header class=entry-header>
+<h2>Cara SSH Jump Host</h2>
+</header>
+<section class=entry-content>
+<p>Panduan Perintah # 1 Lompatan ssh -J &lt;user>@&lt;machine-1> &lt;user>@&lt;machine-2> # 2 Lompatan ssh -J &lt;user>@&lt;machine-1>,&lt;machine-2> &lt;user>@&lt;machine-3> # 3 Lompatan ssh -J &lt;user>@&lt;machine-1>,&lt;machine-2>,&lt;user>@&lt;machine-3> &lt;user>@&lt;machine-4> Contoh Contoh 1: SSH Jump dari 192.168.10.2 ke 192.168.10.3 ssh -J user@192.168.10.2 user@192.168.10.3 Contoh 2: SSH Jump dari 192.168.10.2 lalu 192.168.10.3 ke 192.168.10.4 ssh -J user@192.168.10.2,user@192.168.10.3 user@192.168.10.4 Referensi Gentoo Linux - SSH Jump Host </p>
+</section>
+<footer class=entry-footer>September 11, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Cara SSH Jump Host" href=https://blog.ajiarya.id/posts/linux/cara-ssh-jump/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
 <h2>Cara Membuat VM Menggunakan Cloud Image - Proxmox</h2>
 </header>
 <section class=entry-content>
@@ -125,18 +135,6 @@ Aplikasi HAProxy 2.0.13-2ubuntu0.3 KeepAlived 1:2.0.19-2 Containerd 1.4.9-1 Kube
 </section>
 <footer class=entry-footer>September 10, 2021&nbsp;·&nbsp;0 min&nbsp;·&nbsp;Aji Arya</footer>
 <a class=entry-link aria-label="post link to Cara Menyiapkan High Availability Kubernetes Klaster Menggunakan Kubeone" href=https://blog.ajiarya.id/posts/kubernetes/cara-menyiapkan-high-available-kubernetes-klaster-kubeone/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>Cara Menyiapkan Monitoring Proxmox Menggunakan InfluxDB dan Grafana</h2>
-</header>
-<section class=entry-content>
-<p>Prasyarat Proxmox Terinstall Panduan Pasang influxdb dan influxdb-client apt install influxdb influxdb-client Buat user database dan database influx (Dalam shell influx) Buat user dan database
-CREATE USER admin WITH PASSWORD 'keraktelor' WITH ALL PRIVILEGES CREATE DATABASE monitoring CREATE USER influx WITH PASSWORD 'piesusu' GRANT ALL ON monitoring TO influx exit Konfigurasi influxdb vi /etc/influxdb/influxdb.conf Sesuaikan baris berikut
-[[udp]] enabled = true bind-address = ":8089" database = "mondb" Restart InfluxDB systemctl restart influxdb Tambahkan Metric Server...</p>
-</section>
-<footer class=entry-footer>September 9, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Menyiapkan Monitoring Proxmox Menggunakan InfluxDB dan Grafana" href=https://blog.ajiarya.id/posts/proxmox/cara-menyiapkan-monitoring-proxmox/></a>
 </article>
 <footer class=page-footer>
 <nav class=pagination>

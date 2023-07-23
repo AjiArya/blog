@@ -5,7 +5,16 @@
     <link>https://blog.ajiarya.id/tags/canonical/</link>
     <description>Recent content in Canonical on Aji Arya</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 04 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.ajiarya.id/tags/canonical/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 23 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.ajiarya.id/tags/canonical/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Resync Broken Juju Database (MongoDB)</title>
+      <link>https://blog.ajiarya.id/posts/juju/resync-broken-juju-mongodb/</link>
+      <pubDate>Sun, 23 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.ajiarya.id/posts/juju/resync-broken-juju-mongodb/</guid>
+      <description>How to resync Juju Database (MongoDB)</description>
+    </item>
+    
     <item>
       <title>Cara Memperbarui Juju Charm</title>
       <link>https://blog.ajiarya.id/posts/juju/cara-upgrade-juju-charm/</link>

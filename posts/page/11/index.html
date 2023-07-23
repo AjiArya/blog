@@ -87,6 +87,18 @@ IMTEK
 </header>
 <article class=post-entry>
 <header class=entry-header>
+<h2>Cara Menyiapkan Nextcloud Dengan Let's Encrypt</h2>
+</header>
+<section class=entry-content>
+<p>Panduan Pasang snap (Jika belum tersedia)
+Debian Based sudo apt install -y snapd RHEL Based sudo yum install -y epel-release sudo yum install -y snapd # atau sudo dnf install -y epel-release sudo dnf install -y snapd sudo systemctl enable --now snapd.socket sudo ln -s /var/lib/snapd/snap /snap Pasang Nextcloud melalui snapd
+sudo snap install nextcloud Konfigurasi Akun administratif sudo nextcloud....</p>
+</section>
+<footer class=entry-footer>September 5, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Cara Menyiapkan Nextcloud Dengan Let's Encrypt" href=https://blog.ajiarya.id/posts/nextcloud/cara-setup-nextcloud/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
 <h2>Memilih Deployment Tool Ceph</h2>
 </header>
 <section class=entry-content>
@@ -136,17 +148,6 @@ backstore adalah sumber daya penyimpanan yang akan disediakan dan bisa gunakan o
 </section>
 <footer class=entry-footer>September 4, 2021&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Aji Arya</footer>
 <a class=entry-link aria-label="post link to Cara Menyiapkan ISCSI Target - targetcli (Linux)" href=https://blog.ajiarya.id/posts/linux/cara-menyiapkan-iscsi-target-targetcli/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>Cara Stop atau Pause Klaster Ceph</h2>
-</header>
-<section class=entry-content>
-<p>Pendahuluan Saat kita ingin melakukan Maintenance atau Mematikan server sebaiknya kita menghentikan atau menjeda klaster Ceph yang sedang berjalan
-Panduan Menghentikan atau melakukan pause klaster ceph osd set noout ceph osd set norecover ceph osd set norebalance ceph osd set nobackfill ceph osd set nodown ceph osd set pause Menjalankan atau menghentikan pause klaster ceph osd unset noout ceph osd unset norecover ceph osd unset norebalance ceph osd unset nobackfill ceph osd unset nodown ceph osd unset pause Referensi Red Hat Ceph Storage 3 - 2....</p>
-</section>
-<footer class=entry-footer>September 4, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Stop atau Pause Klaster Ceph" href=https://blog.ajiarya.id/posts/ceph/cara-stop-atau-pause-klaster-ceph/></a>
 </article>
 <footer class=page-footer>
 <nav class=pagination>
