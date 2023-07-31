@@ -86,6 +86,20 @@ IMTEK
 </header>
 <article class="post-entry tag-entry">
 <header class=entry-header>
+<h2>Memilih Deployment Tool Ceph</h2>
+</header>
+<section class=entry-content>
+<p>Panduan Rekomendasi cephadm (Container)
+cephadm tersedia sejak versi v15.2.0 (Octopus). cephadm mendeploy servis-servis Ceph dalam bentuk container, dengan cephadm mempermudah untuk memanajemen klaster seperti menambahkan, menghapuskan, atau memperbarui komponen Ceph.
+cephadm mendukung docker dan podman sebagai container runtime.
+Rook (Container / Manage by Kubernetes)
+Rook tersedia sejak versi Nautilus. Rook men-deploy dan melakukan manajemen klaster Ceph yang berjalan didalam Kubernetes. Jika ingin menggunakan Ceph sebagai storage untuk klaster Kubernetes, Rook adalah tool cocok digunakan....</p>
+</section>
+<footer class=entry-footer>September 5, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Memilih Deployment Tool Ceph" href=https://blog.ajiarya.id/posts/ceph/memilih-deployment-tool-ceph/></a>
+</article>
+<article class="post-entry tag-entry">
+<header class=entry-header>
 <h2>Cara Menghitung Jumlah PG Untuk Klaster Ceph</h2>
 </header>
 <section class=entry-content>
@@ -132,18 +146,6 @@ Panduan Menghentikan atau melakukan pause klaster ceph osd set noout ceph osd se
 </section>
 <footer class=entry-footer>September 4, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
 <a class=entry-link aria-label="post link to Cara Stop atau Pause Klaster Ceph" href=https://blog.ajiarya.id/posts/ceph/cara-stop-atau-pause-klaster-ceph/></a>
-</article>
-<article class="post-entry tag-entry">
-<header class=entry-header>
-<h2>Cara Deploy Ceph Dashboard Pada Deployment Manual</h2>
-</header>
-<section class=entry-content>
-<p>Prasyarat Klaster Ceph Panduan Install package ceph-mgr-dashboard pada semua host ceph-mgr
-Debian/Ubuntu sudo apt install -y ceph-mgr-dashboard RHEL/CentOS/Rocky 8 sudo dnf install -y ceph-mgr-dashboard RHEL/CentOS/Rocky 7 sudo yum install -y ceph-mgr-dashboard Aktifkan module dashboard pada ceph-mgr
-ceph mgr module enable dashboard Buat TLS untuk ceph dashboard ceph dashboard create-self-signed-cert Buat user echo "rahasia123" > password....</p>
-</section>
-<footer class=entry-footer>August 29, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Deploy Ceph Dashboard Pada Deployment Manual" href=https://blog.ajiarya.id/posts/ceph/cara-deploy-ceph-dashboard-pada-deployment-manual/></a>
 </article>
 <footer class=page-footer>
 <nav class=pagination>

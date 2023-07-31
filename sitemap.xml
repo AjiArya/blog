@@ -3,12 +3,36 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://blog.ajiarya.id/</loc>
-    <lastmod>2023-07-23T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://blog.ajiarya.id/tags/canonical/</loc>
-    <lastmod>2023-07-23T00:00:00+00:00</lastmod>
+    <lastmod>2023-07-31T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.ajiarya.id/categories/</loc>
+    <lastmod>2023-07-31T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.ajiarya.id/tags/ceph/</loc>
+    <lastmod>2023-07-31T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.ajiarya.id/categories/ceph/</loc>
+    <lastmod>2023-07-31T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.ajiarya.id/tags/dashboard/</loc>
+    <lastmod>2023-07-31T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.ajiarya.id/posts/ceph/how-to-reset-ceph-admin-dashboard/</loc>
+    <lastmod>2023-07-31T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.ajiarya.id/posts/</loc>
+    <lastmod>2023-07-31T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.ajiarya.id/tags/storage/</loc>
+    <lastmod>2023-07-31T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.ajiarya.id/tags/</loc>
+    <lastmod>2023-07-31T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.ajiarya.id/tags/troubleshoot/</loc>
+    <lastmod>2023-07-31T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.ajiarya.id/tags/canonical/</loc>
     <lastmod>2023-07-23T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.ajiarya.id/tags/juju/</loc>
@@ -20,13 +44,7 @@
     <loc>https://blog.ajiarya.id/tags/mongodb/</loc>
     <lastmod>2023-07-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.ajiarya.id/posts/</loc>
-    <lastmod>2023-07-23T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://blog.ajiarya.id/posts/juju/resync-broken-juju-mongodb/</loc>
-    <lastmod>2023-07-23T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://blog.ajiarya.id/tags/</loc>
     <lastmod>2023-07-23T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.ajiarya.id/tags/troubleshooting/</loc>
@@ -38,16 +56,7 @@
     <loc>https://blog.ajiarya.id/tags/arm/</loc>
     <lastmod>2023-07-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.ajiarya.id/tags/ceph/</loc>
-    <lastmod>2023-07-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://blog.ajiarya.id/categories/ceph/</loc>
-    <lastmod>2023-07-04T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://blog.ajiarya.id/posts/ceph/mencoba-ceph-pada-mesin-dengan-cpu-arm/</loc>
-    <lastmod>2023-07-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://blog.ajiarya.id/tags/storage/</loc>
     <lastmod>2023-07-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.ajiarya.id/posts/ceph/cara-deploy-ceph-secara-manual/</loc>
@@ -257,9 +266,6 @@
     <loc>https://blog.ajiarya.id/categories/proxmox/</loc>
     <lastmod>2021-09-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.ajiarya.id/tags/troubleshoot/</loc>
-    <lastmod>2021-09-18T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://blog.ajiarya.id/tags/virtual-environment/</loc>
     <lastmod>2021-09-18T00:00:00+00:00</lastmod>
   </url><url>
@@ -396,9 +402,6 @@
     <lastmod>2021-08-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.ajiarya.id/posts/openstack/cara-reset-password-root-instance-ubuntu/</loc>
-    <lastmod>2021-08-29T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://blog.ajiarya.id/tags/dashboard/</loc>
     <lastmod>2021-08-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.ajiarya.id/tags/ingress/</loc>

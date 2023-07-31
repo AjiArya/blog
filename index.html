@@ -105,6 +105,16 @@ IMTEK
 </article>
 <article class=post-entry>
 <header class=entry-header>
+<h2>How To Reset Ceph Admin Dashboard</h2>
+</header>
+<section class=entry-content>
+<p>Guide Create a file that contain new password echo -n "&lt;password>" > dashboard-password Update the password # Mimic or Older version of ceph ceph dashboard set-login-credentials admin -i dashboard-password # Nautilus or Newer version of ceph ceph dashboard ac-user-set-password admin -i dashboard-password Referensi https://docs.ceph.com/en/mimic/mgr/dashboard/ https://docs.ceph.com/en/quincy/mgr/dashboard/ </p>
+</section>
+<footer class=entry-footer>July 31, 2023&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to How To Reset Ceph Admin Dashboard" href=https://blog.ajiarya.id/posts/ceph/how-to-reset-ceph-admin-dashboard/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
 <h2>Resync Broken Juju Database (MongoDB)</h2>
 </header>
 <section class=entry-content>
@@ -142,17 +152,6 @@ IMTEK
 </section>
 <footer class=entry-footer>June 28, 2022&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
 <a class=entry-link aria-label="post link to Cara Melakukan Tune Sistem Operasi Dengan tuned-adm" href=https://blog.ajiarya.id/posts/linux/cara-tune-sistem-operasi-dengan-tuned-adm/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>Cara Memasang gVisor Pada Kubernetes (Containerd)</h2>
-</header>
-<section class=entry-content>
-<p>Lingkungan Sistem Operasi: Ubuntu 20.04 LTS Cloud Image Kubernetes: 1.22.1 Containerd: 1.6.6 Panduan Pasang repository gVisor curl -fsSL https://gvisor.dev/archive.key | gpg --dearmor -o /usr/share/keyrings/gvisor-archive-keyring.gpg echo "deb [arch=$(dpkg --print-architecture)signed-by=/usr/share/keyrings/gvisor-archive-keyring.gpg] https://storage.googleapis.com/gvisor/releases release main" | tee /etc/apt/sources.list.d/gvisor.list > /dev/null Install runsc (gVisor) apt update -y apt install -y runsc Definisikan runsc pada konfigurasi containerd vim /etc/containerd/config.toml Tambahkan baris berikut pada bagian [plugins]
----konten dari file dipotong--- [plugins] ---konten dari file dipotong--- # Tambahkan baris berikut [plugins....</p>
-</section>
-<footer class=entry-footer>June 24, 2022&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Memasang gVisor Pada Kubernetes (Containerd)" href=https://blog.ajiarya.id/posts/kubernetes/cara-memasang-gvisor-pada-kubernetes-containerd/></a>
 </article>
 <footer class=page-footer>
 <nav class=pagination>

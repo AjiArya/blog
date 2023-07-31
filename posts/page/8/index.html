@@ -87,6 +87,18 @@ IMTEK
 </header>
 <article class=post-entry>
 <header class=entry-header>
+<h2>Cara Pasang GitLab CE [CentOS 8]</h2>
+</header>
+<section class=entry-content>
+<p>Panduan Jalankan script untuk pemasangan repository curl https://packages.gitlab.com/install/repositories/gitlab/gitlab-ce/script.rpm.sh | sudo bash Pasang GitLab
+Menggunakan alamat Domain sudo EXTERNAL_URL="https://gitlab.example.com" dnf install -y gitlab-ce Menggunakan alamat IP # dengan alamat IP sudo EXTERNAL_URL="https://192.168.10.10" dnf install -y gitlab-ce Dapatkan password untuk login pertama kali
+sudo cat /etc/gitlab/initial_root_password Masuk GitLab via browser </p>
+</section>
+<footer class=entry-footer>September 18, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Cara Pasang GitLab CE [CentOS 8]" href=https://blog.ajiarya.id/posts/gitlab/cara-memasang-gitlab-ce/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
 <h2>Cara Menyiapkan Klaster Ceph Pada Proxmox 7</h2>
 </header>
 <section class=entry-content>
@@ -128,19 +140,6 @@ Lihat SELinux Context pada direktori .ssh gitlab ls -Z /var/opt/gitlab/.ssh/auth
 </section>
 <footer class=entry-footer>September 12, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
 <a class=entry-link aria-label="post link to Cara Memperbaiki Git SSH Permission Denied GitLab [Red Hat/CentOS]" href=https://blog.ajiarya.id/posts/gitlab/cara-memperbaiki-git-ssh-permission-denied/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>Cara Memasang Proxmox Exporter</h2>
-</header>
-<section class=entry-content>
-<p>Prasyarat Proxmox terinstall Panduan Buat token untuk proxmox-expoter
-Buat API Token Datacenter > API Token Klik Add Masukan Token ID (Catat bagian ini) Hapus centang pada Privilege Separation Klik Add Salin Token Secret Klik “Copy Secret Value” (Catat bagian ini) Pasang proxmox-exporter
-python3 -m pip install prometheus-pve-exporter Buat servis systemd
-Buat user pve_exporter useradd --no-create-home --shell /bin/false pve_exporter Buat file konfigurasi mkdir /etc/pve_exporter cat&lt;&lt;EOF > /etc/pve_exporter/config....</p>
-</section>
-<footer class=entry-footer>September 11, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Memasang Proxmox Exporter" href=https://blog.ajiarya.id/posts/proxmox/cara-memasang-proxmox-exporter/></a>
 </article>
 <footer class=page-footer>
 <nav class=pagination>
