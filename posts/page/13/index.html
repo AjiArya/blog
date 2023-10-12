@@ -87,6 +87,16 @@ IMTEK
 </header>
 <article class=post-entry>
 <header class=entry-header>
+<h2>Cara Memasang Minikube Pada WSL [Docker Driver]</h2>
+</header>
+<section class=entry-content>
+<p>Prasyarat Windows 10 WSL 2 Docker Desktop WSL 2 Backend Panduan Unduh dan install binary file minikube curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64 sudo install minikube-linux-amd64 /usr/local/bin/minikube Jalankan minikube menggunakan driver docker minikube start --driver=docker Unduh dan install kubectl curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl" sudo install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl Verifikasi status minikube minikube status kubectl get pods -n kube-system Referensi Docker Desktop WSL 2 backend Minikube Docker Driver Install Kubectl </p>
+</section>
+<footer class=entry-footer>August 29, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Cara Memasang Minikube Pada WSL [Docker Driver]" href=https://blog.ajiarya.id/posts/kubernetes/cara-memasang-minikube-pada-wsl/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
 <h2>Cara Memasang Nginx Ingress Controller Pada Kubernetes Cluster [External IP]</h2>
 </header>
 <section class=entry-content>
@@ -130,19 +140,6 @@ Cari baris dengan awalan linux /boot/vmlinuz-xxxxxxxx Tambahkan baris berikut rd
 </section>
 <footer class=entry-footer>August 29, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
 <a class=entry-link aria-label="post link to Cara Reset Password Root Dari OpenStack Console [RHEL/CentOS/Rocky]" href=https://blog.ajiarya.id/posts/openstack/cara-reset-password-root-instance-centos/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>Cara Reset Password Root Dari OpenStack Console [Ubuntu]</h2>
-</header>
-<section class=entry-content>
-<p>Prasyarat OpenStack User Horizon Instance Ubuntu Panduan Buka console instance pada horizon
-Masuk ke boot option dengan cara interupsi proses booting
-Reboot instance dan tekan tombol Shift keyboard pada saat proses reboot Saat masuk boot option pilih kernel dan tekan tombol e pada keyboard
-Cari baris dengan awalan linux /boot/vmlinuz-xxxxxxxx Temukan ro quiet dan ganti dengan rw init=/bin/bash Hapus kata berikut console=ttyS0 Lalu tekan Ctrl + x Reset password root menggunakan perintah passwd...</p>
-</section>
-<footer class=entry-footer>August 29, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Reset Password Root Dari OpenStack Console [Ubuntu]" href=https://blog.ajiarya.id/posts/openstack/cara-reset-password-root-instance-ubuntu/></a>
 </article>
 <footer class=page-footer>
 <nav class=pagination>

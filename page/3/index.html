@@ -85,6 +85,16 @@ IMTEK
 <main class=main>
 <article class=post-entry>
 <header class=entry-header>
+<h2>Cara Impor SSH Key Dari Akun GitHub</h2>
+</header>
+<section class=entry-content>
+<p>Panduan Simpan konten file public ssh key pada clipboard cat ~/.ssh/id_rsa.pub # simpan output Menambahkan SSH Public Key pada akun GitHub Login https://github.com Kunjungi https://github.com/settings/keys dan klik “New SSH key” Salin key yang sudah tersimpan pada clipboard lalu klik “Add SSH key” Import SSH Key ssh-import-id gh:&lt;user-id> # Example: # ssh-import-id gh:ajiarya Referensi Launchpad ssh-import-id man ubuntu ssh-import-id </p>
+</section>
+<footer class=entry-footer>February 25, 2022&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Cara Impor SSH Key Dari Akun GitHub" href=https://blog.ajiarya.id/posts/linux/cara-impor-ssh-key-github/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
 <h2>Cara Impor SSH Key Dari Akun Launchpad</h2>
 </header>
 <section class=entry-content>
@@ -124,17 +134,6 @@ ceph osd count-metadata osd_objectstore Set out pada OSD yang ingin dimigrasi (N
 </section>
 <footer class=entry-footer>December 7, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
 <a class=entry-link aria-label="post link to Ceph - Cara Migrasi OSD Filestore ke Bluestore" href=https://blog.ajiarya.id/posts/ceph/cara-migrasi-filestore-ke-blustore/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>Ceph - Cara Migrasi Ceph Daemon ke cephadm</h2>
-</header>
-<section class=entry-content>
-<p>Lingkungan Ubuntu 20.04 Focal Ceph 15.2.X Octopus Podman 3.3.1 Mesin
-hostname ip address aa-bionic-ceph01 192.168.10.211 aa-bionic-ceph02 192.168.10.212 aa-bionic-ceph03 192.168.10.213 Panduan Masuk sebagai root sudo -i Pasang cephadm pada semua host curl --silent --remote-name --location https://github.com/ceph/ceph/raw/octopus/src/cephadm/cephadm chmod +x cephadm ./cephadm install # verifikasi dpkg -l cephadm Migrasi ceph-mon, lakukan pada setiap host ceph-mon cephadm adopt --style legacy --name mon....</p>
-</section>
-<footer class=entry-footer>November 9, 2021&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Ceph - Cara Migrasi Ceph Daemon ke cephadm" href=https://blog.ajiarya.id/posts/ceph/cara-migrasi-ceph-daemon-ke-cephadm/></a>
 </article>
 <footer class=page-footer>
 <nav class=pagination>

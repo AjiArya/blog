@@ -85,6 +85,17 @@ IMTEK
 <main class=main>
 <article class=post-entry>
 <header class=entry-header>
+<h2>Cara Menyiapkan High Availability Kubernetes Klaster Menggunakan Kubeadm</h2>
+</header>
+<section class=entry-content>
+<p>Topologi Versi Sistem Operasi Ubuntu 20.04 (Focal)
+Aplikasi HAProxy 2.0.13-2ubuntu0.3 KeepAlived 1:2.0.19-2 Containerd 1.4.9-1 Kubernetes 1.22.1-00 (kubeadm, kubelet, kubectl) Panduan Semua perintah dibawah dijalankan menggunakan user root Persiapan Sunting file /etc/hosts cat&lt;&lt;EOF >> /etc/hosts ### Lab Kubernetes ### 192.168.30.10 kubernetes-vip 192.168.30.11 kubernetes-lb1 192.168.30.12 kubernetes-lb2 192.168.30.13 kubernetes-master01 192.168.30.14 kubernetes-master02 192.168.30.15 kubernetes-master03 192.168.30.16 kubernetes-worker01 EOF update dan upgrade package-package apt update -y; apt upgrade -y Pasang HAproxy & Keepalived pada Load Balancer Node Pasang haproxy dan keepalived apt install -y haproxy keepalived Konfigurasi HAProxy...</p>
+</section>
+<footer class=entry-footer>September 10, 2021&nbsp;·&nbsp;4 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Cara Menyiapkan High Availability Kubernetes Klaster Menggunakan Kubeadm" href=https://blog.ajiarya.id/posts/kubernetes/cara-menyiapkan-high-availability-kubernetes-klaster-kubeadm/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
 <h2>Cara Menyiapkan High Availability Kubernetes Klaster Menggunakan Kubeone</h2>
 </header>
 <section class=entry-content>
@@ -128,16 +139,6 @@ https://releases.pagure.org/libosinfo/
 </section>
 <footer class=entry-footer>September 5, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
 <a class=entry-link aria-label="post link to Cara Memperbarui libosinfo osinfo-db" href=https://blog.ajiarya.id/posts/linux/cara-update-osinfo-db/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>Cara Menghapus OSD [Manual]</h2>
-</header>
-<section class=entry-content>
-<p>Panduan Hentikan servis jika masih berjalan sudo systemctl stop ceph-osd@&lt;id> Atur state OSD sebagai down dan out ceph osd set out &lt;id> ceph osd set down &lt;id> Hapus OSD dari klaster ceph # Hapus auth ceph auth rm osd.&lt;osd_id> # Hapus dari CRUSH Map ceph osd crush remove osd.&lt;osd_id> # Hapus dari OSD Map ceph osd rm &lt;osd_id> Zap disk # ceph-volume lvm zap &lt;device_path> --destroy ceph-volume lvm zap /dev/sdX --destroy Solusi (Workaround) Tidak bisa menjalankan ceph-volume lvm destroy Catat informasi mengenai OSD yang ingin dihapus block osd_id ceph-volume lvm list Format Disk menggunakan wipefs wipefs -fa &lt;device_path> Hapus LVM jika masih ada # Lihat device mapper dmsetup ls # Hapus device mapper OSD yang ingin dihapus dmsetup remove &lt;device_map> Zap disk # ceph-volume lvm zap &lt;device_path> --destroy ceph-volume lvm zap /dev/sdX --destroy Referensi Ceph Docs - ceph-volume ZAP The Geek Diary - dmsetup </p>
-</section>
-<footer class=entry-footer>September 5, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Menghapus OSD [Manual]" href=https://blog.ajiarya.id/posts/ceph/cara-menghapus-osd/></a>
 </article>
 <footer class=page-footer>
 <nav class=pagination>

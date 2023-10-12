@@ -87,6 +87,17 @@ IMTEK
 </header>
 <article class=post-entry>
 <header class=entry-header>
+<h2>Ceph - Cara Migrasi Ceph Daemon ke cephadm</h2>
+</header>
+<section class=entry-content>
+<p>Lingkungan Ubuntu 20.04 Focal Ceph 15.2.X Octopus Podman 3.3.1 Mesin
+hostname ip address aa-bionic-ceph01 192.168.10.211 aa-bionic-ceph02 192.168.10.212 aa-bionic-ceph03 192.168.10.213 Panduan Masuk sebagai root sudo -i Pasang cephadm pada semua host curl --silent --remote-name --location https://github.com/ceph/ceph/raw/octopus/src/cephadm/cephadm chmod +x cephadm ./cephadm install # verifikasi dpkg -l cephadm Migrasi ceph-mon, lakukan pada setiap host ceph-mon cephadm adopt --style legacy --name mon....</p>
+</section>
+<footer class=entry-footer>November 9, 2021&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Aji Arya</footer>
+<a class=entry-link aria-label="post link to Ceph - Cara Migrasi Ceph Daemon ke cephadm" href=https://blog.ajiarya.id/posts/ceph/cara-migrasi-ceph-daemon-ke-cephadm/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
 <h2>Upgrade Ceph Cluster (ceph-deploy)</h2>
 </header>
 <section class=entry-content>
@@ -128,16 +139,6 @@ Panduan Aktifkan msgr2 pada ceph monitor sudo ceph mon enable-msgr2 Hasil Refere
 </section>
 <footer class=entry-footer>November 6, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
 <a class=entry-link aria-label="post link to Cara Memperbaiki Warning Monitors Have Not Enabled msgr2 Pada Ceph" href=https://blog.ajiarya.id/posts/ceph/cara-memperbaiki-monitors-have-not-enabled-msgr2/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>Cara Memperbaiki Warning Volumes Has Failed Dependencies Pada Ceph</h2>
-</header>
-<section class=entry-content>
-<p>Panduan Pasang package python3-distutil pada mesin-mesin ceph-mgr sudo apt install python3-distutils Restart ceph-mgr secara satu per satu sudo systemctl restart ceph-mgr.target Hasil Referensi Proxmox Forum Thread </p>
-</section>
-<footer class=entry-footer>November 6, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aji Arya</footer>
-<a class=entry-link aria-label="post link to Cara Memperbaiki Warning Volumes Has Failed Dependencies Pada Ceph" href=https://blog.ajiarya.id/posts/ceph/cara-memperbaiki-warning-volumes-has-failed-dependencies-pada-ceph/></a>
 </article>
 <footer class=page-footer>
 <nav class=pagination>
