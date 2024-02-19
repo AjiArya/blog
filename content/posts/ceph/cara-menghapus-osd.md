@@ -16,8 +16,8 @@ sudo systemctl stop ceph-osd@<id>
 
 2. Atur _state_ OSD sebagai _down_ dan _out_
 ```bash
-ceph osd set out <id>
-ceph osd set down <id>
+ceph osd out <id>
+ceph osd down <id>
 ```
 
 3. Hapus OSD dari klaster ceph
