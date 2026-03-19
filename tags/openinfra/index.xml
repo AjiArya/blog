@@ -4,16 +4,16 @@
     <title>OpenInfra on Aji Arya</title>
     <link>https://blog.ajiarya.id/tags/openinfra/</link>
     <description>Recent content in OpenInfra on Aji Arya</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 03 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.ajiarya.id/tags/openinfra/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 03 Aug 2021 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://blog.ajiarya.id/tags/openinfra/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Memasang Kata Container dengan Containerd Pada Ubuntu 20.04</title>
       <link>https://blog.ajiarya.id/posts/kata/install-kata/</link>
       <pubDate>Tue, 03 Aug 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.ajiarya.id/posts/kata/install-kata/</guid>
       <description>Cara mudah memasang Kata Container dengan Containerd pada Sistem Operasi Ubuntu 20.04</description>
     </item>
-    
   </channel>
 </rss>

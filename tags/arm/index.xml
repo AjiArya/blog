@@ -4,16 +4,16 @@
     <title>ARM on Aji Arya</title>
     <link>https://blog.ajiarya.id/tags/arm/</link>
     <description>Recent content in ARM on Aji Arya</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 04 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.ajiarya.id/tags/arm/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 04 Jul 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://blog.ajiarya.id/tags/arm/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Mencoba Ceph Pada Mesin Dengan CPU ARM</title>
       <link>https://blog.ajiarya.id/posts/ceph/mencoba-ceph-pada-mesin-dengan-cpu-arm/</link>
       <pubDate>Tue, 04 Jul 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.ajiarya.id/posts/ceph/mencoba-ceph-pada-mesin-dengan-cpu-arm/</guid>
       <description>Menunjukkan hasil percobaan deploy Ceph pada mesin dengan CPU ARM</description>
     </item>
-    
   </channel>
 </rss>

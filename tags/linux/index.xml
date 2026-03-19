@@ -4,349 +4,275 @@
     <title>Linux on Aji Arya</title>
     <link>https://blog.ajiarya.id/tags/linux/</link>
     <description>Recent content in Linux on Aji Arya</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 28 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.ajiarya.id/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 28 Jun 2022 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://blog.ajiarya.id/tags/linux/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Cara Melakukan Tune Sistem Operasi Dengan tuned-adm</title>
       <link>https://blog.ajiarya.id/posts/linux/cara-tune-sistem-operasi-dengan-tuned-adm/</link>
       <pubDate>Tue, 28 Jun 2022 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.ajiarya.id/posts/linux/cara-tune-sistem-operasi-dengan-tuned-adm/</guid>
       <description>Cara mudah melakukan tune sistem operasi Dengan tuned-adm</description>
     </item>
-    
     <item>
       <title>Cara Melepas Base Image Pada VM dengan Image QCOW2</title>
       <link>https://blog.ajiarya.id/posts/kvm/cara-melepas-base-image-pada-vm-dengan-image-qcow2/</link>
       <pubDate>Thu, 23 Jun 2022 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.ajiarya.id/posts/kvm/cara-melepas-base-image-pada-vm-dengan-image-qcow2/</guid>
       <description>Cara melepas base image atau melakukan flatten pada VM dengan image QCOW2</description>
     </item>
-    
     <item>
       <title>Docker Series Bagian 2 - Memasang Docker Desktop</title>
       <link>https://blog.ajiarya.id/posts/docker/docker-series-bagian-2-memasang-docker-deskop/</link>
       <pubDate>Wed, 08 Jun 2022 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.ajiarya.id/posts/docker/docker-series-bagian-2-memasang-docker-deskop/</guid>
       <description>Memasang docker desktop untuk alat belajar</description>
     </item>
-    
     <item>
       <title>Docker Series Bagian 1 - Apa Itu Docker?</title>
       <link>https://blog.ajiarya.id/posts/docker/docker-series-bagian-1-apa-itu-docker/</link>
       <pubDate>Thu, 19 May 2022 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.ajiarya.id/posts/docker/docker-series-bagian-1-apa-itu-docker/</guid>
       <description>Mengenal docker</description>
     </item>
-    
     <item>
       <title>Cara Impor SSH Key Dari Akun GitHub</title>
       <link>https://blog.ajiarya.id/posts/linux/cara-impor-ssh-key-github/</link>
       <pubDate>Fri, 25 Feb 2022 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.ajiarya.id/posts/linux/cara-impor-ssh-key-github/</guid>
       <description>Cara mudah impor ssh key dari akun github</description>
     </item>
-    
     <item>
       <title>Cara Impor SSH Key Dari Akun Launchpad</title>
       <link>https://blog.ajiarya.id/posts/linux/cara-impor-ssh-key-launchpad/</link>
       <pubDate>Fri, 25 Feb 2022 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.ajiarya.id/posts/linux/cara-impor-ssh-key-launchpad/</guid>
       <description>Cara mudah impor ssh key dari akun launchpad</description>
     </item>
-    
     <item>
       <title>Cara Menyiapkan Bcache</title>
       <link>https://blog.ajiarya.id/posts/linux/cara-menyiapkan-bcache/</link>
       <pubDate>Thu, 04 Nov 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.ajiarya.id/posts/linux/cara-menyiapkan-bcache/</guid>
       <description>Cara menyiapkan bcache</description>
     </item>
-    
     <item>
       <title>Cara Pasang NVIDIA Driver dan Library CUDNN</title>
       <link>https://blog.ajiarya.id/posts/linux/cara-pasang-nvidia-driver/</link>
       <pubDate>Mon, 01 Nov 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.ajiarya.id/posts/linux/cara-pasang-nvidia-driver/</guid>
       <description>Cara pasang nvidia driver</description>
     </item>
-    
     <item>
       <title>Cara Import &amp; Export Docker Image</title>
       <link>https://blog.ajiarya.id/posts/docker/cara-import-export-docker-image/</link>
       <pubDate>Sun, 24 Oct 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.ajiarya.id/posts/docker/cara-import-export-docker-image/</guid>
       <description>Cara import dan export docker image melalui Docker CLI</description>
     </item>
-    
     <item>
       <title>Cara Pasang GitLab CE [CentOS 8]</title>
       <link>https://blog.ajiarya.id/posts/gitlab/cara-memasang-gitlab-ce/</link>
       <pubDate>Sat, 18 Sep 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.ajiarya.id/posts/gitlab/cara-memasang-gitlab-ce/</guid>
       <description>Cara mudah pasang GitLab Community Edition pada sistem operasi CentOS 8</description>
     </item>
-    
     <item>
       <title>Cara Pasang Docker Pada Linux (CentOS/Ubuntu)</title>
       <link>https://blog.ajiarya.id/posts/docker/cara-pasang-docker-pada-linux/</link>
       <pubDate>Mon, 13 Sep 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.ajiarya.id/posts/docker/cara-pasang-docker-pada-linux/</guid>
       <description>Cara mudah pasang container runtime docker pada sistem operasi linux</description>
     </item>
-    
     <item>
       <title>Cara Konfigurasi DNS Server menggunakan dnsmasq</title>
       <link>https://blog.ajiarya.id/posts/linux/cara-konfigurasi-dns-server-menggunakan-dnsmasq/</link>
       <pubDate>Sun, 12 Sep 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.ajiarya.id/posts/linux/cara-konfigurasi-dns-server-menggunakan-dnsmasq/</guid>
       <description>Cara konfigurasi dnsmasq sebagai dns server</description>
     </item>
-    
     <item>
       <title>Cara SSH Jump Host</title>
       <link>https://blog.ajiarya.id/posts/linux/cara-ssh-jump/</link>
       <pubDate>Sat, 11 Sep 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.ajiarya.id/posts/linux/cara-ssh-jump/</guid>
       <description>Cara mudah melakukan ssh jump Host</description>
     </item>
-    
     <item>
       <title>Cara Memperbarui libosinfo osinfo-db</title>
       <link>https://blog.ajiarya.id/posts/linux/cara-update-osinfo-db/</link>
       <pubDate>Sun, 05 Sep 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.ajiarya.id/posts/linux/cara-update-osinfo-db/</guid>
       <description>Cara memperbarui libosinfo osinfo-db pada Linux</description>
     </item>
-    
     <item>
       <title>Cara Menyiapkan ISCSI Initiator (Linux)</title>
       <link>https://blog.ajiarya.id/posts/linux/cara-menyiapkan-iscsi-initiator/</link>
       <pubDate>Sat, 04 Sep 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.ajiarya.id/posts/linux/cara-menyiapkan-iscsi-initiator/</guid>
       <description>Cara mudah mengkonsumsi LUN yang disediakan oleh iSCSI Target</description>
     </item>
-    
     <item>
       <title>Cara Menyiapkan ISCSI Target - targetcli (Linux)</title>
       <link>https://blog.ajiarya.id/posts/linux/cara-menyiapkan-iscsi-target-targetcli/</link>
       <pubDate>Sat, 04 Sep 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.ajiarya.id/posts/linux/cara-menyiapkan-iscsi-target-targetcli/</guid>
       <description>Cara mudah menyediakan layanan iSCSI menggunakan tool targetcli</description>
     </item>
-    
     <item>
       <title>Cara Mengubah Format Image VM</title>
       <link>https://blog.ajiarya.id/posts/linux/cara-mengubah-format-image-vm/</link>
       <pubDate>Sun, 29 Aug 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.ajiarya.id/posts/linux/cara-mengubah-format-image-vm/</guid>
       <description>Cara mudah mengubah format image vm</description>
     </item>
-    
     <item>
       <title>Cara Melakukan Percabangan Dasar Bash - Bagian 2 [Periksa Direktori, File, &amp; Variabel]</title>
       <link>https://blog.ajiarya.id/posts/bash/cara-melakukan-percabangan-pada-bash-bagian-2/</link>
       <pubDate>Mon, 23 Aug 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.ajiarya.id/posts/bash/cara-melakukan-percabangan-pada-bash-bagian-2/</guid>
       <description>Cara mudah melakukan percabangan pada bash script bagian 2</description>
     </item>
-    
     <item>
       <title>Cara Membuat Rootless Container Podman Bisa Dikelola Sebagai Service</title>
       <link>https://blog.ajiarya.id/posts/podman/cara-membuat-container-podman-bisa-dikelola-sebagai-service/</link>
       <pubDate>Mon, 23 Aug 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.ajiarya.id/posts/podman/cara-membuat-container-podman-bisa-dikelola-sebagai-service/</guid>
       <description>Cara mudah membuat rootless container podman bisa dikelola sebagai service</description>
     </item>
-    
     <item>
       <title>Cara Remote Port Forwarding SSH</title>
       <link>https://blog.ajiarya.id/posts/linux/cara-ssh-remote-forwarding-port/</link>
       <pubDate>Mon, 23 Aug 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.ajiarya.id/posts/linux/cara-ssh-remote-forwarding-port/</guid>
       <description>Cara agar kita bisa mengakses port pada localhost dari remote host</description>
     </item>
-    
     <item>
       <title>Cara Konfigurasi SSH Config</title>
       <link>https://blog.ajiarya.id/posts/linux/cara-konfigurasi-ssh-config/</link>
       <pubDate>Fri, 20 Aug 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.ajiarya.id/posts/linux/cara-konfigurasi-ssh-config/</guid>
       <description>Cara membuat jalan pintas untuk ssh</description>
     </item>
-    
     <item>
       <title>Cara Membuat Image Libvirt Menggunakan python-tfgen</title>
       <link>https://blog.ajiarya.id/posts/python-tfgen/cara-membuat-image-dengan-python-tfgen/</link>
       <pubDate>Tue, 17 Aug 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.ajiarya.id/posts/python-tfgen/cara-membuat-image-dengan-python-tfgen/</guid>
       <description>python-tfgen</description>
     </item>
-    
     <item>
       <title>Cara Membuat Network Libvirt Menggunakan python-tfgen</title>
       <link>https://blog.ajiarya.id/posts/python-tfgen/cara-membuat-network-dengan-python-tfgen/</link>
       <pubDate>Tue, 17 Aug 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.ajiarya.id/posts/python-tfgen/cara-membuat-network-dengan-python-tfgen/</guid>
       <description>python-tfgen</description>
     </item>
-    
     <item>
       <title>Cara Membuat Storage Pool Libvirt Menggunakan python-tfgen</title>
       <link>https://blog.ajiarya.id/posts/python-tfgen/cara-membuat-pool-dengan-python-tfgen/</link>
       <pubDate>Tue, 17 Aug 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.ajiarya.id/posts/python-tfgen/cara-membuat-pool-dengan-python-tfgen/</guid>
       <description>python-tfgen</description>
     </item>
-    
     <item>
       <title>Cara Membuat VM Libvirt Menggunakan python-tfgen</title>
       <link>https://blog.ajiarya.id/posts/python-tfgen/cara-membuat-vm-dengan-python-tfgen/</link>
       <pubDate>Tue, 17 Aug 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.ajiarya.id/posts/python-tfgen/cara-membuat-vm-dengan-python-tfgen/</guid>
       <description>python-tfgen</description>
     </item>
-    
     <item>
       <title>Cara Menggunakan Terraform Libvirt Provider Dengan Bantuan python-tfgen</title>
       <link>https://blog.ajiarya.id/posts/linux/cara-menggunakan-terraform-libvirt-provider/</link>
       <pubDate>Tue, 17 Aug 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.ajiarya.id/posts/linux/cara-menggunakan-terraform-libvirt-provider/</guid>
       <description>Cara mudah install terraform dengan libvirt provider dan menggunakan python-tfgen untuk menghasilkan Terraform Configuration File</description>
     </item>
-    
     <item>
       <title>Cara Menyiapkan Home Lab Linux [CentOS/Rocky 8]</title>
       <link>https://blog.ajiarya.id/posts/linux/cara-menyiapkan-home-lab-centos-rocky/</link>
       <pubDate>Tue, 17 Aug 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.ajiarya.id/posts/linux/cara-menyiapkan-home-lab-centos-rocky/</guid>
       <description>Cara mudah menyiapkan home lab untuk riset</description>
     </item>
-    
     <item>
       <title>Cara Menyiapkan Home Lab Linux [Debian Bullseye/Ubuntu Focal]</title>
       <link>https://blog.ajiarya.id/posts/linux/cara-menyiapkan-home-lab-debian-ubuntu/</link>
       <pubDate>Tue, 17 Aug 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.ajiarya.id/posts/linux/cara-menyiapkan-home-lab-debian-ubuntu/</guid>
       <description>Cara mudah menyiapkan home lab untuk riset</description>
     </item>
-    
     <item>
       <title>Cara Debug Bash Script</title>
       <link>https://blog.ajiarya.id/posts/bash/cara-debug-bash/</link>
       <pubDate>Thu, 12 Aug 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.ajiarya.id/posts/bash/cara-debug-bash/</guid>
       <description>Cara mudah yang bisa dilakukan agar kita bisa memperbaiki atau debug bash script</description>
     </item>
-    
     <item>
       <title>Cara Melakukan Percabangan Dasar Bash - Bagian 1 [Operator Aritmatika]</title>
       <link>https://blog.ajiarya.id/posts/bash/cara-melakukan-percabangan-pada-bash-bagian-1/</link>
       <pubDate>Thu, 12 Aug 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.ajiarya.id/posts/bash/cara-melakukan-percabangan-pada-bash-bagian-1/</guid>
       <description>Cara mudah melakukan percabangan pada bash script bagian 1</description>
     </item>
-    
     <item>
       <title>Cara Local Port Forwarding SSH</title>
       <link>https://blog.ajiarya.id/posts/linux/cara-ssh-local-forwarding-port/</link>
       <pubDate>Wed, 11 Aug 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.ajiarya.id/posts/linux/cara-ssh-local-forwarding-port/</guid>
       <description>Cara agar kita bisa membuka port pada remote host dari localhost</description>
     </item>
-    
     <item>
       <title>Cara Install Podman, Skopeo, dan Buildah Pada Linux (CentOS/Rocky)</title>
       <link>https://blog.ajiarya.id/posts/podman/cara-install-container-tools/</link>
       <pubDate>Tue, 10 Aug 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.ajiarya.id/posts/podman/cara-install-container-tools/</guid>
       <description>Cara mudah install podman, skopeo, dan buildah pada linux</description>
     </item>
-    
     <item>
       <title>Cara SCP Antar Dua Host Remote</title>
       <link>https://blog.ajiarya.id/posts/linux/cara-scp-antar-dua-remote-host/</link>
       <pubDate>Tue, 10 Aug 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.ajiarya.id/posts/linux/cara-scp-antar-dua-remote-host/</guid>
       <description>Cara mudah mengirimkan file antara dua remote host melalui local host</description>
     </item>
-    
     <item>
       <title>Cara Install ZFS Pada Linux [CentOS/Rocky]</title>
       <link>https://blog.ajiarya.id/posts/zfs/cara-install-zfs-centos/</link>
       <pubDate>Mon, 09 Aug 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.ajiarya.id/posts/zfs/cara-install-zfs-centos/</guid>
       <description>Cara mudah install ZFS pada CentOS 8 atau Rocky 8</description>
     </item>
-    
     <item>
       <title>Cara Install ZFS Pada Linux [Debian]</title>
       <link>https://blog.ajiarya.id/posts/zfs/cara-install-zfs-debian/</link>
       <pubDate>Mon, 09 Aug 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.ajiarya.id/posts/zfs/cara-install-zfs-debian/</guid>
       <description>Cara mudah install ZFS pada Debian Buster</description>
     </item>
-    
     <item>
       <title>Cara Install ZFS Pada Linux [Ubuntu]</title>
       <link>https://blog.ajiarya.id/posts/zfs/cara-install-zfs-ubuntu/</link>
       <pubDate>Mon, 09 Aug 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.ajiarya.id/posts/zfs/cara-install-zfs-ubuntu/</guid>
       <description>Cara mudah install ZFS pada Ubuntu</description>
     </item>
-    
     <item>
       <title>Cara Melakukan Perulangan Pada Bash</title>
       <link>https://blog.ajiarya.id/posts/bash/cara-looping-pada-bash/</link>
       <pubDate>Wed, 04 Aug 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.ajiarya.id/posts/bash/cara-looping-pada-bash/</guid>
       <description>Cara mudah melakukan perulangan pada _bash script_</description>
     </item>
-    
     <item>
       <title>Cara Mengetahui Virtualisasi Yang Digunakan oleh VM Linux</title>
       <link>https://blog.ajiarya.id/posts/linux/cara-memeriksa-jenis-virtualiasasi/</link>
       <pubDate>Wed, 04 Aug 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.ajiarya.id/posts/linux/cara-memeriksa-jenis-virtualiasasi/</guid>
       <description>Cara mudah mengetahui virtualisasi yang digunakan oleh VM Linux</description>
     </item>
-    
   </channel>
 </rss>

@@ -11,10 +11,10 @@
     <loc>https://blog.ajiarya.id/categories/</loc>
     <lastmod>2023-10-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.ajiarya.id/tags/event/</loc>
+    <loc>https://blog.ajiarya.id/categories/event/</loc>
     <lastmod>2023-10-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.ajiarya.id/categories/event/</loc>
+    <loc>https://blog.ajiarya.id/tags/event/</loc>
     <lastmod>2023-10-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.ajiarya.id/tags/openstack/</loc>
@@ -26,10 +26,10 @@
     <loc>https://blog.ajiarya.id/tags/</loc>
     <lastmod>2023-10-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.ajiarya.id/tags/ceph/</loc>
+    <loc>https://blog.ajiarya.id/categories/ceph/</loc>
     <lastmod>2023-07-31T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.ajiarya.id/categories/ceph/</loc>
+    <loc>https://blog.ajiarya.id/tags/ceph/</loc>
     <lastmod>2023-07-31T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.ajiarya.id/tags/dashboard/</loc>
@@ -47,10 +47,10 @@
     <loc>https://blog.ajiarya.id/tags/canonical/</loc>
     <lastmod>2023-07-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.ajiarya.id/tags/juju/</loc>
+    <loc>https://blog.ajiarya.id/categories/juju/</loc>
     <lastmod>2023-07-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.ajiarya.id/categories/juju/</loc>
+    <loc>https://blog.ajiarya.id/tags/juju/</loc>
     <lastmod>2023-07-23T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.ajiarya.id/tags/mongodb/</loc>
@@ -77,10 +77,10 @@
     <loc>https://blog.ajiarya.id/posts/linux/cara-tune-sistem-operasi-dengan-tuned-adm/</loc>
     <lastmod>2022-06-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.ajiarya.id/tags/linux/</loc>
+    <loc>https://blog.ajiarya.id/categories/linux/</loc>
     <lastmod>2022-06-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.ajiarya.id/categories/linux/</loc>
+    <loc>https://blog.ajiarya.id/tags/linux/</loc>
     <lastmod>2022-06-28T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.ajiarya.id/tags/tune/</loc>
@@ -89,10 +89,10 @@
     <loc>https://blog.ajiarya.id/posts/kubernetes/cara-memasang-gvisor-pada-kubernetes-containerd/</loc>
     <lastmod>2022-06-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.ajiarya.id/tags/kubernetes/</loc>
+    <loc>https://blog.ajiarya.id/categories/kubernetes/</loc>
     <lastmod>2022-06-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.ajiarya.id/categories/kubernetes/</loc>
+    <loc>https://blog.ajiarya.id/tags/kubernetes/</loc>
     <lastmod>2022-06-24T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.ajiarya.id/tags/runtime/</loc>
@@ -101,10 +101,10 @@
     <loc>https://blog.ajiarya.id/posts/kvm/cara-melepas-base-image-pada-vm-dengan-image-qcow2/</loc>
     <lastmod>2022-06-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.ajiarya.id/tags/kvm/</loc>
+    <loc>https://blog.ajiarya.id/categories/kvm/</loc>
     <lastmod>2022-06-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.ajiarya.id/categories/kvm/</loc>
+    <loc>https://blog.ajiarya.id/tags/kvm/</loc>
     <lastmod>2022-06-23T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.ajiarya.id/tags/container/</loc>
@@ -176,10 +176,10 @@
     <loc>https://blog.ajiarya.id/posts/ceph/cara-upgrade-bionic-octopus-ke-focal-pacific-pada-ceph-klaster/</loc>
     <lastmod>2021-11-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.ajiarya.id/tags/bcache/</loc>
+    <loc>https://blog.ajiarya.id/categories/bcache/</loc>
     <lastmod>2021-11-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.ajiarya.id/categories/bcache/</loc>
+    <loc>https://blog.ajiarya.id/tags/bcache/</loc>
     <lastmod>2021-11-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.ajiarya.id/posts/linux/cara-menyiapkan-bcache/</loc>
@@ -191,10 +191,10 @@
     <loc>https://blog.ajiarya.id/tags/gpu/</loc>
     <lastmod>2021-11-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.ajiarya.id/tags/nvidia/</loc>
+    <loc>https://blog.ajiarya.id/categories/nvidia/</loc>
     <lastmod>2021-11-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.ajiarya.id/categories/nvidia/</loc>
+    <loc>https://blog.ajiarya.id/tags/nvidia/</loc>
     <lastmod>2021-11-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.ajiarya.id/posts/docker/cara-import-export-docker-image/</loc>
@@ -206,10 +206,10 @@
     <loc>https://blog.ajiarya.id/tags/containerd/</loc>
     <lastmod>2021-10-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.ajiarya.id/tags/benchmark/</loc>
+    <loc>https://blog.ajiarya.id/categories/benchmark/</loc>
     <lastmod>2021-10-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.ajiarya.id/categories/benchmark/</loc>
+    <loc>https://blog.ajiarya.id/tags/benchmark/</loc>
     <lastmod>2021-10-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.ajiarya.id/posts/benchmark/cara-benchmark-web/</loc>
@@ -227,10 +227,10 @@
     <loc>https://blog.ajiarya.id/posts/monitoring/cara-menyiapkan-node-exporter/</loc>
     <lastmod>2021-10-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.ajiarya.id/tags/monitoring/</loc>
+    <loc>https://blog.ajiarya.id/categories/monitoring/</loc>
     <lastmod>2021-10-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.ajiarya.id/categories/monitoring/</loc>
+    <loc>https://blog.ajiarya.id/tags/monitoring/</loc>
     <lastmod>2021-10-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.ajiarya.id/tags/prometheus/</loc>
@@ -269,10 +269,10 @@
     <loc>https://blog.ajiarya.id/tags/metric/</loc>
     <lastmod>2021-09-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.ajiarya.id/tags/proxmox/</loc>
+    <loc>https://blog.ajiarya.id/categories/proxmox/</loc>
     <lastmod>2021-09-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.ajiarya.id/categories/proxmox/</loc>
+    <loc>https://blog.ajiarya.id/tags/proxmox/</loc>
     <lastmod>2021-09-18T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.ajiarya.id/tags/virtual-environment/</loc>
@@ -293,19 +293,19 @@
     <loc>https://blog.ajiarya.id/posts/gitlab/cara-memperbaiki-git-ssh-permission-denied/</loc>
     <lastmod>2021-09-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.ajiarya.id/tags/dns/</loc>
+    <loc>https://blog.ajiarya.id/categories/dns/</loc>
     <lastmod>2021-09-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.ajiarya.id/categories/dns/</loc>
+    <loc>https://blog.ajiarya.id/tags/dns/</loc>
     <lastmod>2021-09-12T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.ajiarya.id/tags/git/</loc>
     <lastmod>2021-09-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.ajiarya.id/tags/gitlab/</loc>
+    <loc>https://blog.ajiarya.id/categories/gitlab/</loc>
     <lastmod>2021-09-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.ajiarya.id/categories/gitlab/</loc>
+    <loc>https://blog.ajiarya.id/tags/gitlab/</loc>
     <lastmod>2021-09-12T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.ajiarya.id/posts/proxmox/cara-memasang-proxmox-exporter/</loc>
@@ -359,10 +359,10 @@
     <loc>https://blog.ajiarya.id/posts/ceph/memilih-deployment-tool-ceph/</loc>
     <lastmod>2021-09-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.ajiarya.id/tags/nextcloud/</loc>
+    <loc>https://blog.ajiarya.id/categories/nextcloud/</loc>
     <lastmod>2021-09-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.ajiarya.id/categories/nextcloud/</loc>
+    <loc>https://blog.ajiarya.id/tags/nextcloud/</loc>
     <lastmod>2021-09-05T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.ajiarya.id/categories/virtualisasi/</loc>
@@ -425,19 +425,19 @@
     <loc>https://blog.ajiarya.id/tags/nginx/</loc>
     <lastmod>2021-08-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.ajiarya.id/tags/okd/</loc>
+    <loc>https://blog.ajiarya.id/categories/okd/</loc>
     <lastmod>2021-08-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.ajiarya.id/categories/okd/</loc>
+    <loc>https://blog.ajiarya.id/tags/okd/</loc>
     <lastmod>2021-08-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.ajiarya.id/posts/ceph/cara-membuat-ulang-ceph-mon/</loc>
     <lastmod>2021-08-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.ajiarya.id/tags/bash/</loc>
+    <loc>https://blog.ajiarya.id/categories/bash/</loc>
     <lastmod>2021-08-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.ajiarya.id/categories/bash/</loc>
+    <loc>https://blog.ajiarya.id/tags/bash/</loc>
     <lastmod>2021-08-23T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.ajiarya.id/posts/bash/cara-melakukan-percabangan-pada-bash-bagian-2/</loc>
@@ -467,10 +467,10 @@
     <loc>https://blog.ajiarya.id/tags/elasticsearch/</loc>
     <lastmod>2021-08-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.ajiarya.id/tags/elk/</loc>
+    <loc>https://blog.ajiarya.id/categories/elk/</loc>
     <lastmod>2021-08-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.ajiarya.id/categories/elk/</loc>
+    <loc>https://blog.ajiarya.id/tags/elk/</loc>
     <lastmod>2021-08-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.ajiarya.id/categories/automation/</loc>
@@ -539,10 +539,10 @@
     <loc>https://blog.ajiarya.id/tags/filesystem/</loc>
     <lastmod>2021-08-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.ajiarya.id/tags/zfs/</loc>
+    <loc>https://blog.ajiarya.id/categories/zfs/</loc>
     <lastmod>2021-08-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.ajiarya.id/categories/zfs/</loc>
+    <loc>https://blog.ajiarya.id/tags/zfs/</loc>
     <lastmod>2021-08-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.ajiarya.id/posts/bash/cara-looping-pada-bash/</loc>
@@ -554,10 +554,10 @@
     <loc>https://blog.ajiarya.id/posts/linux/cara-memeriksa-jenis-virtualiasasi/</loc>
     <lastmod>2021-08-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.ajiarya.id/tags/kata/</loc>
+    <loc>https://blog.ajiarya.id/categories/kata/</loc>
     <lastmod>2021-08-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.ajiarya.id/categories/kata/</loc>
+    <loc>https://blog.ajiarya.id/tags/kata/</loc>
     <lastmod>2021-08-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.ajiarya.id/posts/kata/install-kata/</loc>

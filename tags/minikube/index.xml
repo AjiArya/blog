@@ -4,16 +4,16 @@
     <title>Minikube on Aji Arya</title>
     <link>https://blog.ajiarya.id/tags/minikube/</link>
     <description>Recent content in Minikube on Aji Arya</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 29 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.ajiarya.id/tags/minikube/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 29 Aug 2021 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://blog.ajiarya.id/tags/minikube/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Cara Memasang Minikube Pada WSL [Docker Driver]</title>
       <link>https://blog.ajiarya.id/posts/kubernetes/cara-memasang-minikube-pada-wsl/</link>
       <pubDate>Sun, 29 Aug 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.ajiarya.id/posts/kubernetes/cara-memasang-minikube-pada-wsl/</guid>
       <description>Cara memasang minikube pada WSL menggunakan driver docker</description>
     </item>
-    
   </channel>
 </rss>

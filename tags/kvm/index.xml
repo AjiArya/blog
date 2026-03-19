@@ -4,88 +4,72 @@
     <title>KVM on Aji Arya</title>
     <link>https://blog.ajiarya.id/tags/kvm/</link>
     <description>Recent content in KVM on Aji Arya</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 23 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.ajiarya.id/tags/kvm/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 23 Jun 2022 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://blog.ajiarya.id/tags/kvm/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Cara Melepas Base Image Pada VM dengan Image QCOW2</title>
       <link>https://blog.ajiarya.id/posts/kvm/cara-melepas-base-image-pada-vm-dengan-image-qcow2/</link>
       <pubDate>Thu, 23 Jun 2022 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.ajiarya.id/posts/kvm/cara-melepas-base-image-pada-vm-dengan-image-qcow2/</guid>
       <description>Cara melepas base image atau melakukan flatten pada VM dengan image QCOW2</description>
     </item>
-    
     <item>
       <title>Cara Mengubah Format Image VM</title>
       <link>https://blog.ajiarya.id/posts/linux/cara-mengubah-format-image-vm/</link>
       <pubDate>Sun, 29 Aug 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.ajiarya.id/posts/linux/cara-mengubah-format-image-vm/</guid>
       <description>Cara mudah mengubah format image vm</description>
     </item>
-    
     <item>
       <title>Cara Membuat Image Libvirt Menggunakan python-tfgen</title>
       <link>https://blog.ajiarya.id/posts/python-tfgen/cara-membuat-image-dengan-python-tfgen/</link>
       <pubDate>Tue, 17 Aug 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.ajiarya.id/posts/python-tfgen/cara-membuat-image-dengan-python-tfgen/</guid>
       <description>python-tfgen</description>
     </item>
-    
     <item>
       <title>Cara Membuat Network Libvirt Menggunakan python-tfgen</title>
       <link>https://blog.ajiarya.id/posts/python-tfgen/cara-membuat-network-dengan-python-tfgen/</link>
       <pubDate>Tue, 17 Aug 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.ajiarya.id/posts/python-tfgen/cara-membuat-network-dengan-python-tfgen/</guid>
       <description>python-tfgen</description>
     </item>
-    
     <item>
       <title>Cara Membuat Storage Pool Libvirt Menggunakan python-tfgen</title>
       <link>https://blog.ajiarya.id/posts/python-tfgen/cara-membuat-pool-dengan-python-tfgen/</link>
       <pubDate>Tue, 17 Aug 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.ajiarya.id/posts/python-tfgen/cara-membuat-pool-dengan-python-tfgen/</guid>
       <description>python-tfgen</description>
     </item>
-    
     <item>
       <title>Cara Membuat VM Libvirt Menggunakan python-tfgen</title>
       <link>https://blog.ajiarya.id/posts/python-tfgen/cara-membuat-vm-dengan-python-tfgen/</link>
       <pubDate>Tue, 17 Aug 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.ajiarya.id/posts/python-tfgen/cara-membuat-vm-dengan-python-tfgen/</guid>
       <description>python-tfgen</description>
     </item>
-    
     <item>
       <title>Cara Menggunakan Terraform Libvirt Provider Dengan Bantuan python-tfgen</title>
       <link>https://blog.ajiarya.id/posts/linux/cara-menggunakan-terraform-libvirt-provider/</link>
       <pubDate>Tue, 17 Aug 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.ajiarya.id/posts/linux/cara-menggunakan-terraform-libvirt-provider/</guid>
       <description>Cara mudah install terraform dengan libvirt provider dan menggunakan python-tfgen untuk menghasilkan Terraform Configuration File</description>
     </item>
-    
     <item>
       <title>Cara Menyiapkan Home Lab Linux [CentOS/Rocky 8]</title>
       <link>https://blog.ajiarya.id/posts/linux/cara-menyiapkan-home-lab-centos-rocky/</link>
       <pubDate>Tue, 17 Aug 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.ajiarya.id/posts/linux/cara-menyiapkan-home-lab-centos-rocky/</guid>
       <description>Cara mudah menyiapkan home lab untuk riset</description>
     </item>
-    
     <item>
       <title>Cara Menyiapkan Home Lab Linux [Debian Bullseye/Ubuntu Focal]</title>
       <link>https://blog.ajiarya.id/posts/linux/cara-menyiapkan-home-lab-debian-ubuntu/</link>
       <pubDate>Tue, 17 Aug 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.ajiarya.id/posts/linux/cara-menyiapkan-home-lab-debian-ubuntu/</guid>
       <description>Cara mudah menyiapkan home lab untuk riset</description>
     </item>
-    
   </channel>
 </rss>

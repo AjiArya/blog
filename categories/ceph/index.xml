@@ -4,232 +4,184 @@
     <title>Ceph on Aji Arya</title>
     <link>https://blog.ajiarya.id/categories/ceph/</link>
     <description>Recent content in Ceph on Aji Arya</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 31 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.ajiarya.id/categories/ceph/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 31 Jul 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://blog.ajiarya.id/categories/ceph/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How To Reset Ceph Admin Dashboard</title>
       <link>https://blog.ajiarya.id/posts/ceph/how-to-reset-ceph-admin-dashboard/</link>
       <pubDate>Mon, 31 Jul 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.ajiarya.id/posts/ceph/how-to-reset-ceph-admin-dashboard/</guid>
       <description>Easy way to reset Ceph Admin User on Ceph Dashboard</description>
     </item>
-    
     <item>
       <title>Mencoba Ceph Pada Mesin Dengan CPU ARM</title>
       <link>https://blog.ajiarya.id/posts/ceph/mencoba-ceph-pada-mesin-dengan-cpu-arm/</link>
       <pubDate>Tue, 04 Jul 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.ajiarya.id/posts/ceph/mencoba-ceph-pada-mesin-dengan-cpu-arm/</guid>
       <description>Menunjukkan hasil percobaan deploy Ceph pada mesin dengan CPU ARM</description>
     </item>
-    
     <item>
       <title>Cara Deploy Ceph Quincy Secara Manual</title>
       <link>https://blog.ajiarya.id/posts/ceph/cara-deploy-ceph-secara-manual/</link>
       <pubDate>Tue, 30 Aug 2022 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.ajiarya.id/posts/ceph/cara-deploy-ceph-secara-manual/</guid>
       <description>Cara menyiapkan klaster ceph rilis quincy secara manual pada Ubuntu 20.04 LTS Focal</description>
     </item>
-    
     <item>
       <title>Ceph - Cara Migrasi OSD Filestore ke Bluestore</title>
       <link>https://blog.ajiarya.id/posts/ceph/cara-migrasi-filestore-ke-blustore/</link>
       <pubDate>Tue, 07 Dec 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.ajiarya.id/posts/ceph/cara-migrasi-filestore-ke-blustore/</guid>
       <description>Cara mudah migrasi OSD filestore ke bluestore</description>
     </item>
-    
     <item>
       <title>Ceph - Cara Migrasi Ceph Daemon ke cephadm</title>
       <link>https://blog.ajiarya.id/posts/ceph/cara-migrasi-ceph-daemon-ke-cephadm/</link>
       <pubDate>Tue, 09 Nov 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.ajiarya.id/posts/ceph/cara-migrasi-ceph-daemon-ke-cephadm/</guid>
       <description>Cara mengubah klaster ceph yang menggunakan daemon menjadi ceph yang berbasiskan container dengan cephadm</description>
     </item>
-    
     <item>
       <title>Upgrade Ceph Cluster (ceph-deploy)</title>
       <link>https://blog.ajiarya.id/posts/ceph/cara-upgrade-ceph-cluster-ceph-deploy/</link>
       <pubDate>Tue, 09 Nov 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.ajiarya.id/posts/ceph/cara-upgrade-ceph-cluster-ceph-deploy/</guid>
       <description>Upgrade ceph cluster ceph-deploy</description>
     </item>
-    
     <item>
       <title>Cara Menyiapkan Klaster Ceph Menggunakan Ceph Deploy (Ubuntu 18.04 Bionic)</title>
       <link>https://blog.ajiarya.id/posts/ceph/cara-deploy-ceph-menggunakan-ceph-deploy/</link>
       <pubDate>Sun, 07 Nov 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.ajiarya.id/posts/ceph/cara-deploy-ceph-menggunakan-ceph-deploy/</guid>
       <description>Cara menyiapkan klaster ceph rilis octopus menggunakan ceph deploy pada ubuntu 18.04 bionic</description>
     </item>
-    
     <item>
       <title>Cara Memperbaiki OSD Tidak Bisa Up Pasca Upgrade Dari Luminous</title>
       <link>https://blog.ajiarya.id/posts/ceph/cara-memperbaiki-osd-tidak-bisa-up-pasca-upgrade/</link>
       <pubDate>Sat, 06 Nov 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.ajiarya.id/posts/ceph/cara-memperbaiki-osd-tidak-bisa-up-pasca-upgrade/</guid>
       <description>cara memperbaiki osd tidak bisa up pasca upgrade ceph dari versi luminous</description>
     </item>
-    
     <item>
       <title>Cara Memperbaiki Warning Monitors Have Not Enabled msgr2 Pada Ceph</title>
       <link>https://blog.ajiarya.id/posts/ceph/cara-memperbaiki-monitors-have-not-enabled-msgr2/</link>
       <pubDate>Sat, 06 Nov 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.ajiarya.id/posts/ceph/cara-memperbaiki-monitors-have-not-enabled-msgr2/</guid>
       <description>Menghilangkan warning monitors have not enabled msgr2 pada ceph</description>
     </item>
-    
     <item>
       <title>Cara Memperbaiki Warning Volumes Has Failed Dependencies Pada Ceph</title>
       <link>https://blog.ajiarya.id/posts/ceph/cara-memperbaiki-warning-volumes-has-failed-dependencies-pada-ceph/</link>
       <pubDate>Sat, 06 Nov 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.ajiarya.id/posts/ceph/cara-memperbaiki-warning-volumes-has-failed-dependencies-pada-ceph/</guid>
       <description>Menghilangkan warning volumes has failed dependencies pada ceph</description>
     </item>
-    
     <item>
       <title>Ceph - Cara Upgrade Dari Bionic Octopus ke Focal Pacific</title>
       <link>https://blog.ajiarya.id/posts/ceph/cara-upgrade-bionic-octopus-ke-focal-pacific-pada-ceph-klaster/</link>
       <pubDate>Sat, 06 Nov 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.ajiarya.id/posts/ceph/cara-upgrade-bionic-octopus-ke-focal-pacific-pada-ceph-klaster/</guid>
       <description>Cara melakukan upgrade dari Ubuntu Bionic Ceph Octopus ke Ubuntu Focal Ceph Pacific</description>
     </item>
-    
     <item>
       <title>Cara Mengatur Mode PG Autoscale Pada Ceph Pool</title>
       <link>https://blog.ajiarya.id/posts/ceph/cara-mengatur-mode-pg-autoscale-ceph-pool/</link>
       <pubDate>Thu, 07 Oct 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.ajiarya.id/posts/ceph/cara-mengatur-mode-pg-autoscale-ceph-pool/</guid>
       <description>Cara mengatur pg_autoscale_mode pada ceph pool</description>
     </item>
-    
     <item>
       <title>Cara Menghilangkan warning insecure global_id reclaim Pada Ceph</title>
       <link>https://blog.ajiarya.id/posts/ceph/cara-menghilangkan-insecure-global-id-reclaim/</link>
       <pubDate>Thu, 07 Oct 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.ajiarya.id/posts/ceph/cara-menghilangkan-insecure-global-id-reclaim/</guid>
       <description>Cara mudah menghilangkan warning insecure global_id reclaim</description>
     </item>
-    
     <item>
       <title>Cara Menyiapkan Ceph Tiering</title>
       <link>https://blog.ajiarya.id/posts/ceph/cara-menyiapkan-ceph-tiering/</link>
       <pubDate>Thu, 07 Oct 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.ajiarya.id/posts/ceph/cara-menyiapkan-ceph-tiering/</guid>
       <description>Cara menyiapkan ceph tiering</description>
     </item>
-    
     <item>
       <title>Cara Menyiapkan Ceph Exporter [Containerized]</title>
       <link>https://blog.ajiarya.id/posts/ceph/cara-menyiapkan-ceph-exporter/</link>
       <pubDate>Sat, 18 Sep 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.ajiarya.id/posts/ceph/cara-menyiapkan-ceph-exporter/</guid>
       <description>Cara mudah menyiapkan ceph exporter</description>
     </item>
-    
     <item>
       <title>Cara Simulasi Kegagalan Disk Pada Klaster Ceph</title>
       <link>https://blog.ajiarya.id/posts/ceph/cara-simulasi-kegagalan-disk-ceph/</link>
       <pubDate>Mon, 06 Sep 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.ajiarya.id/posts/ceph/cara-simulasi-kegagalan-disk-ceph/</guid>
       <description>Cara untuk uji coba kegagalan disk pada klaster Ceph</description>
     </item>
-    
     <item>
       <title>Cara Menghapus OSD [Manual]</title>
       <link>https://blog.ajiarya.id/posts/ceph/cara-menghapus-osd/</link>
       <pubDate>Sun, 05 Sep 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.ajiarya.id/posts/ceph/cara-menghapus-osd/</guid>
       <description>Cara menghapus OSD dari klaster ceph</description>
     </item>
-    
     <item>
       <title>Cara Mengubah Device Class OSD</title>
       <link>https://blog.ajiarya.id/posts/ceph/cara-mengubah-device-class-osd/</link>
       <pubDate>Sun, 05 Sep 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.ajiarya.id/posts/ceph/cara-mengubah-device-class-osd/</guid>
       <description>Cara mudah mengubah device class OSD</description>
     </item>
-    
     <item>
       <title>Memilih Deployment Tool Ceph</title>
       <link>https://blog.ajiarya.id/posts/ceph/memilih-deployment-tool-ceph/</link>
       <pubDate>Sun, 05 Sep 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.ajiarya.id/posts/ceph/memilih-deployment-tool-ceph/</guid>
       <description>Cara memilih deployment tool ceph</description>
     </item>
-    
     <item>
       <title>Cara Menghitung Jumlah PG Untuk Klaster Ceph</title>
       <link>https://blog.ajiarya.id/posts/ceph/cara-menghitung-pg-untuk-klaster-ceph/</link>
       <pubDate>Sat, 04 Sep 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.ajiarya.id/posts/ceph/cara-menghitung-pg-untuk-klaster-ceph/</guid>
       <description>Cara mudah untuk menghitung jumlah PG untuk klaster Ceph</description>
     </item>
-    
     <item>
       <title>Cara Stop atau Pause Klaster Ceph</title>
       <link>https://blog.ajiarya.id/posts/ceph/cara-stop-atau-pause-klaster-ceph/</link>
       <pubDate>Sat, 04 Sep 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.ajiarya.id/posts/ceph/cara-stop-atau-pause-klaster-ceph/</guid>
       <description>Cara yang bisa dilakukan untuk menghentikan atau menjeda klaster Ceph</description>
     </item>
-    
     <item>
       <title>Cara Deploy Ceph Dashboard Pada Deployment Manual</title>
       <link>https://blog.ajiarya.id/posts/ceph/cara-deploy-ceph-dashboard-pada-deployment-manual/</link>
       <pubDate>Sun, 29 Aug 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.ajiarya.id/posts/ceph/cara-deploy-ceph-dashboard-pada-deployment-manual/</guid>
       <description>Cara mudah deploy ceph dashboard pada deployment manual</description>
     </item>
-    
     <item>
       <title>Cara Membuat Ulang Ceph Monitor Yang Rusak [Manual Deployment]</title>
       <link>https://blog.ajiarya.id/posts/ceph/cara-membuat-ulang-ceph-mon/</link>
       <pubDate>Tue, 24 Aug 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.ajiarya.id/posts/ceph/cara-membuat-ulang-ceph-mon/</guid>
       <description>Cara mudah membuat ulang monitor yang rusak pada ceph cluster</description>
     </item>
-    
     <item>
       <title>Cara Deploy Ceph Cluster Menggunakan cephadm Pada Rocky Linux 8</title>
       <link>https://blog.ajiarya.id/posts/ceph/cara-deploy-ceph-menggunakan-cephadm/</link>
       <pubDate>Sun, 22 Aug 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.ajiarya.id/posts/ceph/cara-deploy-ceph-menggunakan-cephadm/</guid>
       <description>Cara mudah deploy Ceph Cluster pada Rocky Linux 8</description>
     </item>
-    
     <item>
       <title>Cara Upgrade Cluster Ceph Yang Menggunakan cephadm</title>
       <link>https://blog.ajiarya.id/posts/ceph/cara-upgrade-cluster-cephadm/</link>
       <pubDate>Sun, 22 Aug 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.ajiarya.id/posts/ceph/cara-upgrade-cluster-cephadm/</guid>
       <description>Cara mudah upgrade ceph cluster yang menggunakan deployment tools cephadm</description>
     </item>
-    
   </channel>
 </rss>

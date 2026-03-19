@@ -4,601 +4,471 @@
     <title>Tags on Aji Arya</title>
     <link>https://blog.ajiarya.id/tags/</link>
     <description>Recent content in Tags on Aji Arya</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 11 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.ajiarya.id/tags/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 11 Oct 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://blog.ajiarya.id/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Event</title>
       <link>https://blog.ajiarya.id/tags/event/</link>
       <pubDate>Wed, 11 Oct 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.ajiarya.id/tags/event/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>OpenStack</title>
       <link>https://blog.ajiarya.id/tags/openstack/</link>
       <pubDate>Wed, 11 Oct 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.ajiarya.id/tags/openstack/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Ceph</title>
       <link>https://blog.ajiarya.id/tags/ceph/</link>
       <pubDate>Mon, 31 Jul 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.ajiarya.id/tags/ceph/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Dashboard</title>
       <link>https://blog.ajiarya.id/tags/dashboard/</link>
       <pubDate>Mon, 31 Jul 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.ajiarya.id/tags/dashboard/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Storage</title>
       <link>https://blog.ajiarya.id/tags/storage/</link>
       <pubDate>Mon, 31 Jul 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.ajiarya.id/tags/storage/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Troubleshoot</title>
       <link>https://blog.ajiarya.id/tags/troubleshoot/</link>
       <pubDate>Mon, 31 Jul 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.ajiarya.id/tags/troubleshoot/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Canonical</title>
       <link>https://blog.ajiarya.id/tags/canonical/</link>
       <pubDate>Sun, 23 Jul 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.ajiarya.id/tags/canonical/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Juju</title>
       <link>https://blog.ajiarya.id/tags/juju/</link>
       <pubDate>Sun, 23 Jul 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.ajiarya.id/tags/juju/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>MongoDB</title>
       <link>https://blog.ajiarya.id/tags/mongodb/</link>
       <pubDate>Sun, 23 Jul 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.ajiarya.id/tags/mongodb/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Troubleshooting</title>
       <link>https://blog.ajiarya.id/tags/troubleshooting/</link>
       <pubDate>Sun, 23 Jul 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.ajiarya.id/tags/troubleshooting/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Ubuntu</title>
       <link>https://blog.ajiarya.id/tags/ubuntu/</link>
       <pubDate>Sun, 23 Jul 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.ajiarya.id/tags/ubuntu/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>ARM</title>
       <link>https://blog.ajiarya.id/tags/arm/</link>
       <pubDate>Tue, 04 Jul 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.ajiarya.id/tags/arm/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Linux</title>
       <link>https://blog.ajiarya.id/tags/linux/</link>
       <pubDate>Tue, 28 Jun 2022 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.ajiarya.id/tags/linux/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Tune</title>
       <link>https://blog.ajiarya.id/tags/tune/</link>
       <pubDate>Tue, 28 Jun 2022 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.ajiarya.id/tags/tune/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Kubernetes</title>
       <link>https://blog.ajiarya.id/tags/kubernetes/</link>
       <pubDate>Fri, 24 Jun 2022 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.ajiarya.id/tags/kubernetes/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Runtime</title>
       <link>https://blog.ajiarya.id/tags/runtime/</link>
       <pubDate>Fri, 24 Jun 2022 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.ajiarya.id/tags/runtime/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>KVM</title>
       <link>https://blog.ajiarya.id/tags/kvm/</link>
       <pubDate>Thu, 23 Jun 2022 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.ajiarya.id/tags/kvm/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Container</title>
       <link>https://blog.ajiarya.id/tags/container/</link>
       <pubDate>Wed, 08 Jun 2022 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.ajiarya.id/tags/container/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>SSH</title>
       <link>https://blog.ajiarya.id/tags/ssh/</link>
       <pubDate>Fri, 25 Feb 2022 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.ajiarya.id/tags/ssh/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Load Balancer</title>
       <link>https://blog.ajiarya.id/tags/load-balancer/</link>
       <pubDate>Tue, 15 Feb 2022 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.ajiarya.id/tags/load-balancer/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Network</title>
       <link>https://blog.ajiarya.id/tags/network/</link>
       <pubDate>Tue, 15 Feb 2022 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.ajiarya.id/tags/network/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Neutron</title>
       <link>https://blog.ajiarya.id/tags/neutron/</link>
       <pubDate>Tue, 15 Feb 2022 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.ajiarya.id/tags/neutron/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Octavia</title>
       <link>https://blog.ajiarya.id/tags/octavia/</link>
       <pubDate>Tue, 15 Feb 2022 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.ajiarya.id/tags/octavia/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Upgrade</title>
       <link>https://blog.ajiarya.id/tags/upgrade/</link>
       <pubDate>Tue, 09 Nov 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.ajiarya.id/tags/upgrade/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Bcache</title>
       <link>https://blog.ajiarya.id/tags/bcache/</link>
       <pubDate>Thu, 04 Nov 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.ajiarya.id/tags/bcache/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>GPU</title>
       <link>https://blog.ajiarya.id/tags/gpu/</link>
       <pubDate>Mon, 01 Nov 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.ajiarya.id/tags/gpu/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>NVIDIA</title>
       <link>https://blog.ajiarya.id/tags/nvidia/</link>
       <pubDate>Mon, 01 Nov 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.ajiarya.id/tags/nvidia/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Containerd</title>
       <link>https://blog.ajiarya.id/tags/containerd/</link>
       <pubDate>Sun, 24 Oct 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.ajiarya.id/tags/containerd/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Benchmark</title>
       <link>https://blog.ajiarya.id/tags/benchmark/</link>
       <pubDate>Thu, 07 Oct 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.ajiarya.id/tags/benchmark/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Monitoring</title>
       <link>https://blog.ajiarya.id/tags/monitoring/</link>
       <pubDate>Thu, 07 Oct 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.ajiarya.id/tags/monitoring/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Prometheus</title>
       <link>https://blog.ajiarya.id/tags/prometheus/</link>
       <pubDate>Thu, 07 Oct 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.ajiarya.id/tags/prometheus/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Visualisasi</title>
       <link>https://blog.ajiarya.id/tags/visualisasi/</link>
       <pubDate>Thu, 07 Oct 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.ajiarya.id/tags/visualisasi/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Website</title>
       <link>https://blog.ajiarya.id/tags/website/</link>
       <pubDate>Thu, 07 Oct 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.ajiarya.id/tags/website/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Exporter</title>
       <link>https://blog.ajiarya.id/tags/exporter/</link>
       <pubDate>Sat, 18 Sep 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.ajiarya.id/tags/exporter/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Grafana</title>
       <link>https://blog.ajiarya.id/tags/grafana/</link>
       <pubDate>Sat, 18 Sep 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.ajiarya.id/tags/grafana/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Metric</title>
       <link>https://blog.ajiarya.id/tags/metric/</link>
       <pubDate>Sat, 18 Sep 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.ajiarya.id/tags/metric/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Proxmox</title>
       <link>https://blog.ajiarya.id/tags/proxmox/</link>
       <pubDate>Sat, 18 Sep 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.ajiarya.id/tags/proxmox/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Virtual Environment</title>
       <link>https://blog.ajiarya.id/tags/virtual-environment/</link>
       <pubDate>Sat, 18 Sep 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.ajiarya.id/tags/virtual-environment/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Virtualisasi</title>
       <link>https://blog.ajiarya.id/tags/virtualisasi/</link>
       <pubDate>Sat, 18 Sep 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.ajiarya.id/tags/virtualisasi/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>DNS</title>
       <link>https://blog.ajiarya.id/tags/dns/</link>
       <pubDate>Sun, 12 Sep 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.ajiarya.id/tags/dns/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Git</title>
       <link>https://blog.ajiarya.id/tags/git/</link>
       <pubDate>Sun, 12 Sep 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.ajiarya.id/tags/git/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>GitLab</title>
       <link>https://blog.ajiarya.id/tags/gitlab/</link>
       <pubDate>Sun, 12 Sep 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.ajiarya.id/tags/gitlab/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Cinder</title>
       <link>https://blog.ajiarya.id/tags/cinder/</link>
       <pubDate>Fri, 10 Sep 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.ajiarya.id/tags/cinder/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>HA</title>
       <link>https://blog.ajiarya.id/tags/ha/</link>
       <pubDate>Fri, 10 Sep 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.ajiarya.id/tags/ha/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Volume</title>
       <link>https://blog.ajiarya.id/tags/volume/</link>
       <pubDate>Fri, 10 Sep 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.ajiarya.id/tags/volume/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>DMS</title>
       <link>https://blog.ajiarya.id/tags/dms/</link>
       <pubDate>Sun, 05 Sep 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.ajiarya.id/tags/dms/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Nextcloud</title>
       <link>https://blog.ajiarya.id/tags/nextcloud/</link>
       <pubDate>Sun, 05 Sep 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.ajiarya.id/tags/nextcloud/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>ISCSI</title>
       <link>https://blog.ajiarya.id/tags/iscsi/</link>
       <pubDate>Sat, 04 Sep 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.ajiarya.id/tags/iscsi/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Magnum</title>
       <link>https://blog.ajiarya.id/tags/magnum/</link>
       <pubDate>Mon, 30 Aug 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.ajiarya.id/tags/magnum/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Orchestration</title>
       <link>https://blog.ajiarya.id/tags/orchestration/</link>
       <pubDate>Mon, 30 Aug 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.ajiarya.id/tags/orchestration/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Ingress</title>
       <link>https://blog.ajiarya.id/tags/ingress/</link>
       <pubDate>Sun, 29 Aug 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.ajiarya.id/tags/ingress/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Instance</title>
       <link>https://blog.ajiarya.id/tags/instance/</link>
       <pubDate>Sun, 29 Aug 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.ajiarya.id/tags/instance/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Minikube</title>
       <link>https://blog.ajiarya.id/tags/minikube/</link>
       <pubDate>Sun, 29 Aug 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.ajiarya.id/tags/minikube/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Nginx</title>
       <link>https://blog.ajiarya.id/tags/nginx/</link>
       <pubDate>Sun, 29 Aug 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.ajiarya.id/tags/nginx/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>OKD</title>
       <link>https://blog.ajiarya.id/tags/okd/</link>
       <pubDate>Sun, 29 Aug 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.ajiarya.id/tags/okd/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Bash</title>
       <link>https://blog.ajiarya.id/tags/bash/</link>
       <pubDate>Mon, 23 Aug 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.ajiarya.id/tags/bash/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Elasticsearch</title>
       <link>https://blog.ajiarya.id/tags/elasticsearch/</link>
       <pubDate>Fri, 20 Aug 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.ajiarya.id/tags/elasticsearch/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>ELK</title>
       <link>https://blog.ajiarya.id/tags/elk/</link>
       <pubDate>Fri, 20 Aug 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.ajiarya.id/tags/elk/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Cockpit</title>
       <link>https://blog.ajiarya.id/tags/cockpit/</link>
       <pubDate>Tue, 17 Aug 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.ajiarya.id/tags/cockpit/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>python-tfgen</title>
+      <title>Python-Tfgen</title>
       <link>https://blog.ajiarya.id/tags/python-tfgen/</link>
       <pubDate>Tue, 17 Aug 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.ajiarya.id/tags/python-tfgen/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Terraform</title>
       <link>https://blog.ajiarya.id/tags/terraform/</link>
       <pubDate>Tue, 17 Aug 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.ajiarya.id/tags/terraform/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>SCP</title>
       <link>https://blog.ajiarya.id/tags/scp/</link>
       <pubDate>Tue, 10 Aug 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.ajiarya.id/tags/scp/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Filesystem</title>
       <link>https://blog.ajiarya.id/tags/filesystem/</link>
       <pubDate>Mon, 09 Aug 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.ajiarya.id/tags/filesystem/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>ZFS</title>
       <link>https://blog.ajiarya.id/tags/zfs/</link>
       <pubDate>Mon, 09 Aug 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.ajiarya.id/tags/zfs/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Kata</title>
       <link>https://blog.ajiarya.id/tags/kata/</link>
       <pubDate>Tue, 03 Aug 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.ajiarya.id/tags/kata/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>OpenInfra</title>
       <link>https://blog.ajiarya.id/tags/openinfra/</link>
       <pubDate>Tue, 03 Aug 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.ajiarya.id/tags/openinfra/</guid>
       <description></description>
     </item>
-    
   </channel>
 </rss>
